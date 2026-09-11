@@ -1,18 +1,20 @@
 # When Production Gets Cheap {#sec-production-cheap}
 
-The first organizational failure caused by cheap production is not necessarily bad output. It is unmanaged abundance.
+A common early failure caused by cheap production is not bad output. It is unmanaged abundance.
 
 Consider a product team that needs to improve a checkout flow. A designer, a product manager, and a coding agent can now produce interface alternatives, working branches, test cases, and launch copy before the next morning. By Monday, the team has eighteen plausible versions.
 
 It has no shared criteria for choosing among them. Several variants depend on services the platform team has not approved. Legal needs to review two new uses of customer data. Nobody has defined what evidence would justify a release. The agent made production faster; the team made the decision surface larger.
 
-This is an **illustrative example**, not a report about a particular company. Its mechanism is common enough to be useful: when the capacity to create expands faster than the capacity to absorb what is created, work does not disappear. It waits somewhere else.
+This is an **illustrative example**, not a report about a particular company. The mechanism is the point: when the capacity to create expands faster than the capacity to absorb what is created, work does not disappear. It waits somewhere else.
 
 The team has not shortened the path from intent to result. It has moved the queue.
 
 ## A real change, stated narrowly
 
 The 2025 edition of this book described AI speed through invented ratios: one “AI year” was said to equal ten conventional years; fifteen AI days were compared with five traditional months. Those comparisons sounded precise but measured nothing. They are removed here.
+
+What I believed in 2025 was directionally right: faster production would expose slow organizational rhythms. What became clearer is that speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still takes six weeks to decide, integrate, and accept the answer. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
 
 A narrower claim is easier to defend. The marginal cost and latency of producing *some* cognitive and software artifacts have fallen sharply. The emphasis belongs on *some*. The effect varies by task, quality threshold, workflow, and consequence.
 
@@ -30,13 +32,13 @@ These findings justify attention. They do not justify declaring the autonomous c
 
 “Does AI improve productivity?” is usually too broad a question. Productivity is not an inherent property of a model. It is a result produced by a worker, a task, a tool, a process, and a measure.
 
-In a staggered rollout involving 5,179 customer-support agents, Erik Brynjolfsson, Danielle Li, and Lindsey Raymond found that access to a generative assistant increased issues resolved per hour by 14 per cent on average. The gain was much larger for novice and lower-skilled workers and minimal for the most experienced workers [@brynjolfsson-li-raymond-2025]. That is strong evidence for a specific assisted workflow. It is not evidence that every function becomes 14 per cent more productive, or that the assistant can own the customer relationship.
+In a staggered rollout involving 5,172 customer-support agents, Erik Brynjolfsson, Danielle Li, and Lindsey Raymond found that access to a generative assistant increased issues resolved per hour by 15 per cent on average. The gain was much larger for novice and lower-skilled workers and small for the most experienced workers [@brynjolfsson-li-raymond-2025]. That is strong evidence for a specific assisted workflow. It is not evidence that every function becomes 15 per cent more productive, or that the assistant can own the customer relationship.
 
 A randomized study of experienced open-source developers reached a different result. Sixteen developers completed 246 real tasks in repositories they knew well. With early-2025 AI tools, they took 19 per cent longer, even though they believed the tools had made them faster [@becker-et-al-2025]. The sample was small and the result belongs to those developers, repositories, tasks, and tools. It should not become a general claim that coding agents slow engineers.
 
 Nor should it be dismissed because tools improved later. When METR tried to update the estimate in 2026, participation choices, task selection, non-compliance, and concurrent agent work made the treatment effect difficult to identify. The researchers thought newer systems probably offered more acceleration, but described the evidence for the magnitude as weak [@metr-uplift-2026]. The methodological difficulty is itself instructive: once people delegate, supervise several runs, or choose different work because an agent is available, keyboard time stops being an adequate measure.
 
-The support and software studies do not cancel each other. They describe different systems. One offered recommendations inside a high-volume workflow with observable outcomes. The other involved experienced maintainers changing mature codebases where understanding, integration, and review are substantial parts of the work.
+The support and software studies do not cancel each other. They describe different systems. One offered recommendations inside a high-volume workflow with observable outcomes. The other involved experienced maintainers changing mature codebases where understanding, integration, and review are substantial parts of the work. A person may become faster at a task while the system around that person remains unchanged—or becomes slower under the added load.
 
 DORA’s 2025 research on software delivery describes AI as an amplifier of the surrounding organization: strong systems can convert local acceleration into performance, while weak ones can produce instability faster [@dora-2025]. That finding is observational, not proof of a universal law. It nevertheless points toward the right unit of analysis. The organization receives no value merely because an individual can generate an artifact faster.
 
@@ -126,4 +128,3 @@ Choose one workflow in which AI has increased output. Use a real unit of demand:
 This exercise will often reveal a paradox: the organization is producing more while becoming harder to steer. Decisions multiply. Dependencies accumulate. Review work arrives without capacity. Exceptions live in messages and meetings. Each unresolved queue becomes a liability that charges interest on future change.
 
 That liability is **Hidden Operational Debt**. It is where the next chapter begins.
-

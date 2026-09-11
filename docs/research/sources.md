@@ -40,14 +40,14 @@ Scope: sources used to test the 2025 premise and design the second-edition resea
 
 ### S003 — AI productivity effects are heterogeneous
 
-- **Claim:** In a staggered rollout covering 5,179 customer-support agents, access to an AI assistant increased issues resolved per hour by 14% on average, with larger gains for novice and lower-skilled workers and minimal gains for the most experienced workers.
+- **Claim:** In the final peer-reviewed study of a staggered rollout covering 5,172 customer-support agents, access to an AI assistant increased issues resolved per hour by 15% on average, with larger gains for novice and lower-skilled workers and small gains for the most experienced workers.
 - **Source:** Brynjolfsson, Li, and Raymond, *Generative AI at Work*.
-- **URL:** https://www.nber.org/papers/w31161
+- **URL:** https://academic.oup.com/qje/article/140/2/889/7990658
 - **Publication:** National Bureau of Economic Research working paper; published in *Quarterly Journal of Economics* 140(2) in 2025.
-- **Date:** April 2023; revised November 2023; journal publication 2025.
+- **Date:** Published online 4 February 2025; May 2025 issue.
 - **Why it matters:** Provides credible evidence of value in a specific assisted workflow and demonstrates that gains vary by experience.
 - **Chapter:** Chapters 1 and 7.
-- **Limitations/notes:** Assistive customer support is not autonomous execution and cannot support claims about all knowledge work.
+- **Limitations/notes:** Assistive customer support is not autonomous execution and cannot support claims about all knowledge work. The earlier working-paper version reported 5,179 agents and a 14% average gain; Chapter 1 uses the final journal sample and estimate.
 
 ### S004 — AI can reduce experienced-developer productivity in real codebases
 
