@@ -59,16 +59,16 @@ At any moment, end-to-end performance is limited by one or more constraints. Exp
 
 ```{mermaid}
 %%| label: fig-moving-constraint
-%%| fig-cap: "When generation capacity expands, the constraint moves into the surrounding operating system."
+%%| fig-cap: "When generation capacity expands, the yellow capacities can become queues in the surrounding operating system."
 %%| fig-alt: "Flow from intent through generation, selection, integration, verification, and authorization to an outcome. Context informs generation and the downstream stages. Generation is marked as expanded capacity; selection, context, integration, verification, and authorization are possible queues."
-flowchart LR
+flowchart TB
     I[Intent] --> G["Generate<br/>expanded capacity"]
-    G --> S["Select<br/>possible queue"]
-    S --> N["Integrate<br/>possible queue"]
-    N --> V["Verify<br/>possible queue"]
-    V --> A["Authorize<br/>possible queue"]
+    G --> S[Select]
+    S --> N[Integrate]
+    N --> V[Verify]
+    V --> A[Authorize]
     A --> O[Outcome]
-    C["Context<br/>possible queue"] -. informs .-> G
+    C[Context] -. informs .-> G
     C -.-> S
     C -.-> N
     C -.-> V

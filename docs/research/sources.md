@@ -1,7 +1,7 @@
 # Research Ledger
 
-Status: initial editorial research, 11 September 2026  
-Scope: sources used to test the 2025 premise and design the second-edition research plan. This is not yet the chapter-level evidence pass.
+Status: live ledger; Chapter 1 evidence pass completed 12 September 2026
+Scope: sources used to test the 2025 premise, design the second edition, and support finalized chapter claims.
 
 ## Evidence rules
 
