@@ -14,7 +14,7 @@ The team has not shortened the path from intent to result. It has moved the queu
 
 The 2025 edition of this book described AI speed through invented ratios: one “AI year” was said to equal ten conventional years; fifteen AI days were compared with five traditional months. Those comparisons sounded precise but measured nothing. They are removed here.
 
-What I believed in 2025 was directionally right: faster production would expose slow organizational rhythms. What became clearer is that speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still takes six weeks to decide, integrate, and accept the answer. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
+What I believed in 2025 was directionally right: faster production would expose slow organizational rhythms. What became clearer is that speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still moves through the same decision, integration, and acceptance cycles. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
 
 A narrower claim is easier to defend. The marginal cost and latency of producing *some* cognitive and software artifacts have fallen sharply. The emphasis belongs on *some*. The effect varies by task, quality threshold, workflow, and consequence.
 
@@ -40,7 +40,7 @@ Nor should it be dismissed because tools improved later. When METR tried to upda
 
 The support and software studies do not cancel each other. They describe different systems. One offered recommendations inside a high-volume workflow with observable outcomes. The other involved experienced maintainers changing mature codebases where understanding, integration, and review are substantial parts of the work. A person may become faster at a task while the system around that person remains unchanged—or becomes slower under the added load.
 
-DORA’s 2025 research on software delivery describes AI as an amplifier of the surrounding organization: strong systems can convert local acceleration into performance, while weak ones can produce instability faster [@dora-2025]. That finding is observational, not proof of a universal law. It nevertheless points toward the right unit of analysis. The organization receives no value merely because an individual can generate an artifact faster.
+DORA’s 2025 research on software delivery describes AI as an amplifier of the surrounding organization: strong systems can convert local acceleration into performance, while weak ones can produce instability faster [@dora-2025]. That finding is observational, not proof of a universal law. It nevertheless points toward the right unit of analysis. Faster generation alone does not tell us how much organizational value was created.
 
 We need four different words:
 
@@ -51,39 +51,44 @@ We need four different words:
 | **Outcome** | A change in customer, operational, or strategic conditions | Work shipped without measured effect |
 | **Value** | The benefit of that outcome after cost, risk, maintenance, and foregone alternatives | Model cost or hours reportedly saved |
 
-Cheap output is useful. It is simply not the same as throughput, outcome, or value.
+Cheap output is useful. It is not the same as throughput, outcome, or value.
 
 ## The constraint moves
 
-Every operating system has a limiting step. Expanding the capacity of that step is valuable until another step becomes the constraint. If a company can generate analyses, designs, code, and communications much faster without changing how it chooses, integrates, checks, and authorizes them, scarcity moves downstream.
+At any moment, end-to-end performance is limited by one or more constraints. Expanding capacity at one constraint is valuable until another limits the result. If a company can generate analyses, designs, code, and communications much faster without changing how it chooses, integrates, checks, and authorizes them, scarcity moves elsewhere.
 
 ```{mermaid}
 %%| label: fig-moving-constraint
 %%| fig-cap: "When generation capacity expands, the constraint moves into the surrounding operating system."
-%%| fig-alt: "Flow from intent through generation, selection, context, integration, verification, and authorization to an outcome. Generation is marked as expanded capacity; the downstream stages are possible queues."
+%%| fig-alt: "Flow from intent through generation, selection, integration, verification, and authorization to an outcome. Context informs generation and the downstream stages. Generation is marked as expanded capacity; selection, context, integration, verification, and authorization are possible queues."
 flowchart LR
     I[Intent] --> G["Generate<br/>expanded capacity"]
     G --> S["Select<br/>possible queue"]
-    S --> C["Contextualize<br/>possible queue"]
-    C --> N["Integrate<br/>possible queue"]
+    S --> N["Integrate<br/>possible queue"]
     N --> V["Verify<br/>possible queue"]
     V --> A["Authorize<br/>possible queue"]
     A --> O[Outcome]
+    C["Context<br/>possible queue"] -. informs .-> G
+    C -.-> S
+    C -.-> N
+    C -.-> V
     classDef expanded fill:#d8f3dc,stroke:#2d6a4f,color:#111;
     classDef queue fill:#fff3bf,stroke:#b08900,color:#111;
     class G expanded;
     class S,C,N,V,A queue;
 ```
 
-The exact sequence varies. Some decisions require context before options are generated. Verification may run continuously. Low-risk actions may be authorized in advance. The diagram is not a workflow template. It identifies five capacities that cheap production can expose.
+The exact sequence varies. Context can shape generation or arrive later to test an option. Verification may run continuously. Low-risk actions may be authorized in advance. The diagram is not a workflow template. It identifies five capacities that cheap production can expose.
 
-**Selection.** Which request deserves work? Which option deserves commitment? Generation creates alternatives; it does not make the opportunity cost of choosing one disappear. A portfolio with fifty cheap experiments can still consume the scarce attention needed to stop forty-nine of them.
+None of these capacities is new. What changes is the imbalance between them. Generative systems can increase the arrival rate of work without increasing the capacity of teams that must absorb it. Agents can also participate in the downstream steps, changing who or what selects, checks, and acts. The constraint can therefore move faster and become harder to see in conventional activity measures.
+
+**Selection.** Which request deserves work? Which option deserves commitment? Generation creates alternatives; it does not make the opportunity cost of choosing one disappear. A portfolio of cheap experiments can still consume the scarce attention needed to stop most of them.
 
 **Context.** Does the work reflect the organization’s current intent, facts, constraints, history, and policy? A fluent answer built from stale commercial terms or the wrong customer state is fast rework. Supplying context is not a one-time prompt-writing exercise. Context must be current, accessible, permitted, and traceable.
 
 **Integration.** Can the output enter a product, process, data environment, or customer relationship without transferring work to someone else? A generated feature that creates a new service dependency is not finished when its code runs. A proposal that cannot survive finance, security, or delivery constraints is not organizational throughput.
 
-**Verification.** What evidence is proportionate to the consequence? A private brainstorming note and a payment instruction should not share an evaluation regime. Verification can include tests, source checks, simulations, peer review, monitoring, or comparison with a known baseline. The point is not to inspect everything manually. It is to know why the system is trusted enough to act.
+**Verification.** What evidence is proportionate to the consequence? A private brainstorming note and a payment instruction should not share an evaluation regime. Verification can include tests, source checks, simulations, peer review, monitoring, or comparison with a known baseline. It need not mean inspecting everything manually. It should explain why the system is trusted enough to act.
 
 **Authorization.** Who—or what—may publish, deploy, spend, promise, reject, or bind the company? An agent may be technically capable of taking an action without having legitimate authority to take it. Authorization converts capability into bounded institutional power.
 
@@ -99,7 +104,7 @@ A more honest cost equation is:
 
 > **Total system cost = generation + selection + context + integration + verification + authorization + failure recovery + maintenance.**
 
-This is not an accounting standard. It is a management correction. If a pilot records only license fees and minutes saved, it can report a local gain while exporting cost to reviewers, platform teams, risk owners, or future maintainers.
+This is not an accounting standard. It is a checklist for costs that pilots often omit. If a pilot records only license fees and minutes saved, it can report a local gain while exporting cost to reviewers, platform teams, risk owners, or future maintainers.
 
 The opposite mistake is to demand that every use case prove enterprise-wide value before it begins. Learning also has value. A small experiment can be justified by the uncertainty it resolves. But that requires an explicit learning question and a stop decision. “We can generate it” is not a reason to keep it.
 

@@ -1,18 +1,17 @@
 # Editorial Review
 
 Chapter: 1 — When Production Gets Cheap  
-Status: not started; blocked until Gate 0 approval
+Status: complete — 11 September 2026
 
 ## Attack the chapter
 
-- [ ] What is vague, obvious, repeated, or asserted without evidence?
-- [ ] Does heterogeneous task evidence really justify an organization-level claim?
-- [ ] Where would an experienced COO disagree?
-- [ ] What failure mode, tradeoff, affected party, or boundary is missing?
-- [ ] Is the moving-constraint diagram usable without the prose?
-- [ ] Does the chapter advance ATOM rather than generic AI advice?
+- [x] What is vague, obvious, repeated, or asserted without evidence?
+- [x] Does heterogeneous task evidence really justify an organization-level claim?
+- [x] Where would an experienced COO disagree?
+- [x] What failure mode, tradeoff, affected party, or boundary is missing?
+- [x] Is the moving-constraint diagram usable without the prose?
+- [x] Does the chapter advance ATOM rather than generic AI advice?
 
 ## Exit
 
 Record findings by severity in review.md; revise all critical/high findings and explicitly accept or reject medium findings with reasons.
-
