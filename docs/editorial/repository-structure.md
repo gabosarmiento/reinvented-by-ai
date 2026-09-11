@@ -1,6 +1,6 @@
 # Proposed Repository Structure
 
-Status: proposed for approval; only planning files and task scaffolding are created in this phase
+Status: working structure after Gate 0; amended during Chapter 1 proof build
 
 ## Decision
 
@@ -16,7 +16,7 @@ Alternatives considered:
 | Astro/Next.js + Pandoc | Maximum web control | Creates a custom publishing system the author must maintain. |
 | Quarto | One source for HTML, EPUB, and PDF; citations; Mermaid; GitHub Pages | Requires version pinning and PDF/EPUB visual QA, but no compelling blocker is known. |
 
-The project should publish from a generated `_book/` directory to the `gh-pages` branch. Do not use `docs/` as Quarto’s output directory because `docs/` contains editorial and research records.
+The project should publish from a generated `_build/` directory to the `gh-pages` branch. Do not use `docs/` as Quarto’s output directory because `docs/` contains editorial and research records. Quarto requires the book home page at the project root, so `index.qmd` is the one published source file outside `book/`; see Decision 0005.
 
 ## Proposed tree
 
@@ -29,11 +29,11 @@ reinvented-by-ai/
 ├── LICENSE
 ├── CITATION.cff
 ├── _quarto.yml
+├── index.qmd
 ├── _brand.yml
 ├── .gitignore
 ├── .markdownlint.yml
 ├── book/
-│   ├── index.qmd
 │   ├── preface.qmd
 │   ├── part-1-the-constraint-moved/
 │   │   ├── 01-when-production-gets-cheap.qmd

@@ -1,0 +1,7 @@
+# The Adaptive Company {.unnumbered}
+
+*A Practical Operating System for Human-Agent Work*
+
+Gabriel Sarmiento
+
+AI changes more than the tools people use. It changes how intent becomes action, how authority is delegated, how evidence is produced, and how the company learns.

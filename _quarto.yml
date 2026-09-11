@@ -1,0 +1,24 @@
+project:
+  type: book
+  output-dir: _build
+
+book:
+  title: "The Adaptive Company"
+  subtitle: "A Practical Operating System for Human-Agent Work"
+  author: "Gabriel Sarmiento"
+  chapters:
+    - index.qmd
+    - book/part-1-the-constraint-moved/01-when-production-gets-cheap.qmd
+
+bibliography: book/references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+  epub:
+    toc: true
+  typst:
+    toc: true
+    number-sections: true

@@ -1,0 +1,7 @@
+/_build/
+/.quarto/
+/tmp/
+**/*_files/
+
+
+**/*.quarto_ipynb
