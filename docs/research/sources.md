@@ -192,6 +192,39 @@ Scope: sources used to test the 2025 premise and design the second-edition resea
 - **Chapter:** Publishing plan, not manuscript.
 - **Limitations/notes:** Quarto is not installed in the current local environment. Pin and test the version during the publishing phase. PDF feasibility depends on the selected engine, fonts, and diagram rendering.
 
+### S017 — Inference-price declines vary sharply by capability threshold
+
+- **Claim:** Epoch AI estimates that the price of language-model inference at fixed performance levels fell at rates ranging from roughly 9 to 900 times per year across the tasks and thresholds it examined.
+- **Source:** *LLM inference price trends*.
+- **URL:** https://epoch.ai/data-insights/llm-inference-price-trends
+- **Publication:** Epoch AI.
+- **Date:** 12 March 2025.
+- **Why it matters:** Provides the direct data source behind the cost trend used in Chapter 1 and shows why one headline decline should not be treated as a universal economic law.
+- **Chapter:** Chapter 1.
+- **Limitations/notes:** Rates depend on benchmark, performance threshold, provider, and time window. They measure inference price, not the total cost of a production workflow, and the fastest historical decline may not persist.
+
+### S018 — Newer coding-agent productivity evidence is difficult to identify cleanly
+
+- **Claim:** METR’s February 2026 update reports that its later developer study was confounded by participation selection, task choice, non-compliance, and the difficulty of measuring concurrent agent work; the authors believe newer tools probably provide more speedup than early-2025 tools but characterize their evidence for the magnitude as weak.
+- **Source:** *Update: How much does AI speed up experienced developers?*
+- **URL:** https://metr.org/blog/2026-02-24-uplift-update/
+- **Publication:** Model Evaluation & Threat Research (METR).
+- **Date:** 24 February 2026.
+- **Why it matters:** Prevents the early-2025 slowdown estimate from being presented as a current universal result and demonstrates that agentic work requires better measures than active keyboard time or participant perception.
+- **Chapter:** Chapters 1 and 13.
+- **Limitations/notes:** This is a methodological update, not a reliable new treatment-effect estimate. Do not quote exploratory subset estimates as settled productivity figures.
+
+### S019 — AI adoption amplifies the surrounding delivery system
+
+- **Claim:** DORA’s 2025 research describes AI as an amplifier of an organization’s existing strengths and weaknesses, with returns depending on the technical and organizational system around the tool.
+- **Source:** *State of AI-assisted Software Development 2025*.
+- **URL:** https://dora.dev/research/2025/dora-report/
+- **Publication:** Google Cloud / DORA.
+- **Date:** 2025.
+- **Why it matters:** Supports Chapter 1’s hypothesis that local production gains do not automatically become organizational performance and motivates the operating-model focus of the book.
+- **Chapter:** Chapters 1, 3, and 13.
+- **Limitations/notes:** Survey and observational research in software delivery. It can support a scoped association and practitioner interpretation, not a causal claim across all organizations.
+
 ## Research gaps before drafting
 
 - Independent field evidence on production agent workflows outside software.
