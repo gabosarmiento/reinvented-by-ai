@@ -1,7 +1,7 @@
 # Research Ledger
 
 Status: live ledger; Chapter 1 evidence pass completed 12 September 2026
-Scope: sources used to test the 2025 premise, design the second edition, and support finalized chapter claims.
+Scope: sources used to test the book’s premises, develop ATOM, and support finalized chapter claims.
 
 ## Evidence rules
 
@@ -111,7 +111,7 @@ Scope: sources used to test the 2025 premise, design the second edition, and sup
 - **URL:** https://openai.com/index/running-codex-safely/
 - **Publication:** OpenAI.
 - **Date:** 8 May 2026.
-- **Why it matters:** Validates the second edition’s control-plane and agent-aware evidence architecture as implementable patterns.
+- **Why it matters:** Validates the book’s control-plane and agent-aware evidence architecture as implementable patterns.
 - **Chapter:** Chapters 9, 10, and 16.
 - **Limitations/notes:** A first-party account of one company and product. Do not present it as proof of general effectiveness.
 
@@ -133,7 +133,7 @@ Scope: sources used to test the 2025 premise, design the second edition, and sup
 - **URL:** https://www.nist.gov/news-events/news/2026/02/new-concept-paper-identity-and-authority-software-agents
 - **Publication:** National Institute of Standards and Technology / National Cybersecurity Center of Excellence.
 - **Date:** 5 February 2026.
-- **Why it matters:** Supports the claim that the original book under-specified authority and that these concerns belong in the operating model.
+- **Why it matters:** Supports the decision to make authority an explicit part of the operating model.
 - **Chapter:** Chapters 9, 16, and 18.
 - **Limitations/notes:** This is a concept paper and question set, not a final standard. Use it to frame problems, not prescribe settled controls.
 
@@ -177,7 +177,7 @@ Scope: sources used to test the 2025 premise, design the second edition, and sup
 - **URL:** https://www.microsoft.com/en-us/research/blog/corpgen-advances-ai-agents-for-real-work/
 - **Publication:** Microsoft Research.
 - **Date:** 26 February 2026.
-- **Why it matters:** Directly challenges the original book’s assumption that an organizational AI core can effortlessly coordinate many simultaneous dependencies.
+- **Why it matters:** Challenges the assumption that an organizational AI core can effortlessly coordinate many simultaneous dependencies.
 - **Chapter:** Chapters 7, 8, and 16.
 - **Limitations/notes:** Inspect the paper, task environment, baselines, and exact comparison before using the numerical result. Simulation is not field deployment.
 
@@ -224,6 +224,17 @@ Scope: sources used to test the 2025 premise, design the second edition, and sup
 - **Why it matters:** Supports Chapter 1’s hypothesis that local production gains do not automatically become organizational performance and motivates the operating-model focus of the book.
 - **Chapter:** Chapters 1, 3, and 13.
 - **Limitations/notes:** Survey and observational research in software delivery. It can support a scoped association and practitioner interpretation, not a causal claim across all organizations.
+
+### S020 — AI’s economic value enters through decisions and complements
+
+- **Claim:** Joshua Gans analyzes AI as a lower-cost prediction input whose first-order economic effect operates through decisions. The book separately treats the value of prediction, substitutes and complements to prediction, automation, and system effects.
+- **Source:** *The Microeconomics of Artificial Intelligence*.
+- **URL:** https://mitpress.mit.edu/9780262553544/the-microeconomics-of-artificial-intelligence/
+- **Publication:** The MIT Press.
+- **Date:** 9 December 2025.
+- **Why it matters:** It gives the book a disciplined economic bridge from cheaper model output to organization design. Better or cheaper prediction does not create value alone; the firm also needs judgment, data, action, and a system capable of using the input. ATOM extends that lens to tool-using agents by making authority, evidence, and recovery explicit complements to execution.
+- **Chapter:** Chapters 1, 3, 6, 7, and 13.
+- **Limitations/notes:** The MIT Press summary and official table of contents were verified, as were the DOI, ISBN, date, license, and open-access status. MIT Press Direct blocked automated access to the full chapter text during this pass. The book’s formal prediction framing is analytically useful but does not by itself specify an operating model or fully capture agents that take actions through tools. Do not attribute ATOM’s extensions to Gans.
 
 ## Research gaps before drafting
 

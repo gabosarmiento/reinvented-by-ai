@@ -81,3 +81,16 @@ Ledger: S006, S019.
 
 The evidence supports a narrower and stronger opening than the original: the price and capability of production have changed materially in bounded work, but the value effect is conditional. The chapter’s original contribution is the implication that organizational bottlenecks move. That implication should be labeled as the book’s argument, not as an empirical result already proved across companies.
 
+## Author-review research addition, 12 September 2026
+
+### Question 6: What is the right economic unit of analysis?
+
+Evidence: Joshua Gans’s *The Microeconomics of Artificial Intelligence* treats AI prediction as an input to decision-making and organizes its core analysis around value, substitutes, complements, automation, and system effects. The official MIT Press description, table of contents, Crossref metadata, DOI, publication date, ISBN, license, and open-access status were verified.
+
+Use: Replace the loose claim that “intelligence is cheap” with a more disciplined claim. Lower-cost prediction or generation matters through the decisions and actions it changes. This supports the chapter’s move from model price to total system cost.
+
+Extension: Tool-using agents do more than predict. The manuscript therefore extends the complements around execution to include bounded authority, evidence, and recovery. This extension is ATOM’s argument, not a claim attributed to Gans.
+
+Limit: MIT Press Direct blocked automated access to the full chapter text in this pass. Use only claims supported by the verified publisher description and official contents until the full text can be reviewed manually.
+
+Ledger: S020.
