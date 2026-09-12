@@ -1,6 +1,6 @@
-# Second-Edition Outline
+# Book Outline
 
-Status: proposed; no chapter drafting begins before author approval  
+Status: working baseline approved at Gate 0; revise only through recorded editorial decisions.
 Recommended length: 48,000–55,000 words excluding worksheets, notes, and bibliography  
 Architecture: six parts, eighteen short chapters, preface, conclusion, and a practical field kit
 
@@ -8,7 +8,7 @@ Architecture: six parts, eighteen short chapters, preface, conclusion, and a pra
 
 The six-part direction proposed in the brief is stronger than the original eight-chapter sequence, but it needs shorter chapters and a sharper separation of concerns.
 
-The original structure moves from urgency to a comprehensive ATOM description, then repeats governance, alignment, learning, measurement, and leadership across multiple chapters. The new structure follows the life of an operating system:
+The source drafts moved from urgency to a comprehensive ATOM description, then repeated governance, alignment, learning, measurement, and leadership across multiple chapters. The book structure follows the life of an operating system:
 
 1. establish why the constraint moved;
 2. diagnose the existing system;
@@ -21,31 +21,31 @@ Each major mechanism gets one definitional home. Later chapters apply it by refe
 
 ## Front matter
 
-### Preface — What Changed Between 2025 and 2026
+### Preface — The Company Is the Design Problem
 
-Purpose: Establish the honest provenance of the book and explain why the second edition is a reconstruction of an early hypothesis.
+Purpose: Put the reader inside the transition from hands-on founder-COO to strategic company architect, and establish why AI makes organization design more urgent without making it automatic.
 
-Reader question answered: Why should I trust a revised model that was first proposed speculatively?
+Reader question answered: Why does the company still depend on me after I have delegated so much execution?
 
-Original material reused: The 2025 “day in 2026” premise and the conviction that AI changes the company, not only individual tasks.
+Original material reused: The conviction that AI changes the company, not only individual tasks.
 
-Original material removed: Claims that the first edition already described an emerging reality or a proven implementation system.
+Original material removed: Fictional future framing, public edition history, and claims that the model is already a proven implementation system.
 
-New material required: Author account of why the first edition was created, which beliefs were provisional, what work since then changed the model, and what remains a hypothesis.
+New material required: A concrete founder-COO transition: a company moving from one activity to several; the run moving to a Head of Operations; the founder still serving as analyst, integrator, and final approver; the difference between delegating execution and delegating decisions.
 
-Evidence/research required: A compact 2025–2026 timeline of material agent, evaluation, integration, and governance developments. No trend catalogue.
+Evidence/research required: Minimal. The preface should establish the reader’s operating problem. Evidence about AI economics begins in Chapter 1.
 
-Case studies/examples: Two short contrasts—one prediction that strengthened and one that failed or became more complicated.
+Case studies/examples: One clearly labeled illustrative composite grounded in the scale-up situation defined in `audience-and-positioning.md`. Replace it with an author-experience case if a suitable one is supplied.
 
-Key model/diagram: “2025 assumption / 2026 observation / second-edition consequence” table.
+Key model/diagram: None required. A short “execution delegated / decisions retained” contrast may be used if it earns its space.
 
-Expected word count: 1,500.
+Expected word count: 1,200.
 
-Takeaway: The author is not defending an old forecast; he is exposing how an operating-model hypothesis matured.
+Takeaway: The founder’s next job is not to make more decisions. It is to design a company capable of making them.
 
 Relationship to previous chapter: Opens the book.
 
-Relationship to next chapter: Establishes the evidence standard for the shift described in Chapter 1.
+Relationship to next chapter: Chapter 1 explains why cheaper prediction and production can intensify this dependency rather than resolve it.
 
 # Part I — The Constraint Moved
 
@@ -61,9 +61,9 @@ Original material removed: “One AI year equals ten business years,” “15 AI
 
 New material required: A constraint-based argument; distinction between output, throughput, outcome, and value; cheap generation versus expensive integration; the uneven economics of different tasks.
 
-Evidence/research required: Inference-cost trends; agent capability horizons and caveats; field evidence on customer support, consulting, coding, and coordination; total system cost.
+Evidence/research required: Microeconomics of prediction, judgment, complements, and system effects; inference-cost trends; agent capability horizons and caveats; field evidence on customer support, coding, and coordination; total system cost.
 
-Case studies/examples: **REAL CASE** contrasting measured customer-support gains with measured experienced-developer slowdown; **ILLUSTRATIVE EXAMPLE** of a team generating ten prototypes but lacking decision capacity to select one.
+Case studies/examples: **REAL CASE** contrasting measured customer-support gains with measured experienced-developer slowdown; **ILLUSTRATIVE COMPOSITE** of a founder-COO becoming the approval and integration bottleneck while a growing company adds business lines.
 
 Key model/diagram: “The moving constraint” chain: generate → decide → integrate → verify → operate.
 
@@ -71,7 +71,7 @@ Expected word count: 2,600.
 
 Takeaway: More production capacity creates value only if the surrounding operating system can absorb it.
 
-Relationship to previous chapter: Turns the preface’s historical reflection into a causal argument.
+Relationship to previous chapter: Turns the founder-COO’s operating problem into a causal and economic argument.
 
 Relationship to next chapter: If the constraint moved, the reader needs a way to see where the old system now accumulates debt.
 
@@ -191,11 +191,11 @@ Original material reused: Distributed decisions, decision rights, scenario suppo
 
 Original material removed: “AI provides the odds, humans make the call” as a sufficient model; automatic budget and talent reallocation.
 
-New material required: Decision inventory; accountable owner; inputs; criteria; options; consequence; reversibility; confidence; required evidence; delegation; appeal; escalation; expiry.
+New material required: Decision inventory; accountable owner; inputs; criteria; options; consequence; reversibility; confidence; required evidence; delegation; appeal; escalation; expiry; placement of rights among the center, shared functions, and business units; distinction between delegating execution and delegating the decision.
 
 Evidence/research required: Decision-rights frameworks, automation bias, calibrated uncertainty, human oversight, and accountable delegation.
 
-Case studies/examples: **ILLUSTRATIVE EXAMPLE** comparing a reversible price-test decision with an irreversible employment decision. **REAL CASE** only if documentation exposes actual rights and controls.
+Case studies/examples: **ILLUSTRATIVE EXAMPLE** comparing a reversible price-test decision with an irreversible employment decision; a recurring business-unit decision that formally belongs to a manager but returns to the founder in practice. **REAL CASE** only if documentation exposes actual rights and controls.
 
 Key model/diagram: Decision Rights Matrix and consequence × reversibility autonomy map.
 
@@ -325,11 +325,11 @@ Original material reused: Readiness assessment, visible pilot, measurable value,
 
 Original material removed: Choosing a pilot because it is high-profile; tool-first deployment; generic executive workshop; irreversible momentum.
 
-New material required: Pilot scorecard: value, frequency, latency, evaluability, data/context readiness, reversibility, consequence, integration load, sponsor, operator, and affected people.
+New material required: Pilot scorecard: value, frequency, latency, evaluability, data/context readiness, reversibility, consequence, integration load, sponsor, operator, and affected people; distinction between a new growth initiative, its operating experiment, and the conditions for transfer to the run.
 
 Evidence/research required: Pilot and experimentation practice; risk-based AI deployment; evaluation feasibility.
 
-Case studies/examples: Three candidate loops scored transparently; one selected and one rejected despite attractive demo potential.
+Case studies/examples: Three candidate loops scored transparently; one selected and one rejected despite attractive demo potential. At least one candidate should be a decision inside a new business line, not a back-office automation.
 
 Key model/diagram: Pilot Selection Worksheet.
 
@@ -377,7 +377,7 @@ Original material reused: Cycle time, cost, quality, outcomes, learning, and wee
 
 Original material removed: 30% faster decisions, 50% adoption, and a fixed ten-week success claim.
 
-New material required: Baseline and counterfactual; total cost; failure and review cost; risk-adjusted value; distribution of gains; user/affected-party feedback; exit criteria; expansion decision record.
+New material required: Baseline and counterfactual; total cost; failure and review cost; risk-adjusted value; unit margin or asset-productivity measure where relevant; distribution of gains; user/affected-party feedback; exit criteria; expansion decision record; explicit handoff criteria from exploration to the run.
 
 Evidence/research required: Productivity measurement, causal inference basics, AI evaluation, and hidden-cost accounting.
 
@@ -397,7 +397,7 @@ Relationship to next chapter: Only validated patterns are eligible to become reu
 
 ## Chapter 14 — Fractal Units, Not Fractal Bureaucracy
 
-Purpose: Make the fractal-unit hypothesis precise and show how to scale through stable interfaces and locally adaptive units.
+Purpose: Make the fractal-unit hypothesis precise and show how a company can move from one business to several through stable interfaces and locally adaptive units.
 
 Reader question answered: What should repeat when the organization expands?
 
@@ -405,11 +405,11 @@ Original material reused: Semi-autonomous units, templates, decision rights, sha
 
 Original material removed: Instant team assembly, automatic coherence, identical replication, Elements and Compounds, and “infinite” scaling.
 
-New material required: Unit contract: purpose, outcomes, inputs, outputs, dependencies, context, decisions, authority, controls, evidence, measures, learning, and sunset conditions. Define invariants versus local choices.
+New material required: Unit contract: purpose, outcomes, inputs, outputs, dependencies, context, decisions, authority, controls, evidence, measures, learning, and sunset conditions. Define invariants versus local choices. Give the reader a method for deciding what belongs inside a business unit, what should be shared, and what the center must retain.
 
 Evidence/research required: Team and platform boundaries, modular organization, federated governance, Conway’s Law, Team Topologies, and empirical limitations of re-teaming.
 
-Case studies/examples: **ILLUSTRATIVE EXAMPLE** of two units whose locally rational agents create a shared-system failure; redesigned interface contract.
+Case studies/examples: **ILLUSTRATIVE EXAMPLE** of a company adding a second business line. Two units make locally rational choices that create a shared-asset failure; the redesigned interface makes autonomy and central constraints explicit.
 
 Key model/diagram: Fractal Unit Contract and scale recursion.
 
@@ -431,7 +431,7 @@ Original material reused: Dynamic value funding, talent mobility, continuous ali
 
 Original material removed: Annual budgeting “disappears,” AI instantly identifies the ten best people, passive sentiment surveillance, and constant reshuffling.
 
-New material required: Portfolio review latency; option funding; capacity buffers; voluntary talent marketplaces; team-cohesion cost; skill evidence and appeal; knowledge product ownership; decision cadence matched to reversibility.
+New material required: Portfolio review latency; option funding; capital allocation across mature and emerging businesses; asset-return and unit-margin visibility; capacity buffers; voluntary talent marketplaces; team-cohesion cost; skill evidence and appeal; knowledge product ownership; decision cadence matched to reversibility.
 
 Evidence/research required: Dynamic resource allocation, team stability, internal talent marketplaces and bias, learning transfer, privacy and labor considerations.
 
@@ -485,11 +485,11 @@ Original material reused: Context over control, distributed leadership, coaching
 
 Original material removed: “Everyone is a leader,” leadership scoreboards, hero/future rhetoric, and generic celebration rituals.
 
-New material required: Five managerial accountabilities: set intent, design decisions, maintain context, resolve exceptions/conflicts, and develop judgment; spans and layers; what coordination should remain human; management failure modes.
+New material required: Five managerial accountabilities: set intent, design decisions, maintain context, resolve exceptions/conflicts, and develop judgment; spans and layers; building the first middle-management system; influencing C-level peers without hierarchical authority; what coordination should remain human; management failure modes; the founder whose standards repeatedly cause delegated decisions to be taken back.
 
 Evidence/research required: Work-design studies, managerial coordination, human-agent team research, psychological safety, and actual changes in management practice.
 
-Case studies/examples: **ILLUSTRATIVE WEEK** comparing a status-relay manager with a system-steward manager; **AUTHOR EXPERIENCE** on a manager who improved an interface rather than pushing a team harder.
+Case studies/examples: **ILLUSTRATIVE WEEK** comparing a status-relay manager with a system-steward manager; a founder-COO who must choose between preferred execution and a sound decision made within delegated bounds; **AUTHOR EXPERIENCE** on a manager who improved an interface rather than pushing a team harder.
 
 Key model/diagram: Managerial work before/after matrix and Synthesizer role card.
 

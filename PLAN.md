@@ -1,13 +1,13 @@
-# Reinvented by AI — Second Edition: Master Publishing Plan
+# The Adaptive Company: Master Publishing Plan
 
-Status: awaiting author approval at Gate 0  
+Status: Gate 0 approved; Chapter 1 in author review.
 Working title: *The Adaptive Company: A Practical Operating System for Human-Agent Work*  
 Publishing system: Quarto, subject to an early proof build  
 Planning date: 11 September 2026
 
 ## Outcome
 
-Create a publicly credible, evidence-aware, practical second edition that turns the early ATOM consulting concept into a coherent operating-model hypothesis readers can understand, test, and implement.
+Create a publicly credible, evidence-aware, practical book that turns the early ATOM consulting concept into a coherent operating-model hypothesis readers can understand, test, and implement.
 
 Final outputs:
 
@@ -22,13 +22,13 @@ Final outputs:
 
 No chapter prose will be drafted until the author approves or revises:
 
-1. the primary reader;
+1. the primary reader, a founder-COO or equivalent scaling a company from roughly 40 to 200 people;
 2. the recommended title and promise;
 3. the provisional definition and canonical architecture of ATOM;
 4. the eighteen-chapter structure;
 5. the disposition of Synthesizer, Fractal Unit, Agent Operations, and Hidden Operational Debt;
 6. the removal of Elements/Compounds, vendor catalogues, invented numbers, and the consulting sales funnel;
-7. the treatment of v2/v4 as archived prototypes rather than publishable prose.
+7. the treatment of source drafts as internal research material rather than part of the public narrative.
 
 Gate 0 artifacts:
 
@@ -218,7 +218,7 @@ Deliverables:
 
 - complete v2/v4 audit;
 - audience and positioning;
-- second-edition outline;
+- book outline;
 - publishing/repository plan;
 - initial research ledger;
 - chapter task scaffold.
@@ -228,8 +228,8 @@ Gate: author approves the major decisions. Then and only then begin model resear
 Suggested commits:
 
 - `editorial: audit original manuscript and prototype`
-- `editorial: define second-edition audience and positioning`
-- `outline: design the ATOM second-edition structure`
+- `editorial: define audience and positioning`
+- `outline: design the ATOM book structure`
 - `planning: add publishing plan and chapter task scaffold`
 
 ### Phase 1 — Foundation and proof build

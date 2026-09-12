@@ -1,85 +1,123 @@
 # Audience and Positioning
 
-Status: recommendation for approval before drafting
+Status: working baseline approved at Gate 0 and refined after author review on 12 September 2026.
 
 ## Audience decision
 
 ### Primary reader
 
-The operating executive responsible for redesigning how an established knowledge-work company runs—most often a COO, Chief Transformation Officer, or business-unit operator in an organization of roughly 250 to 10,000 people.
+A founder-COO or senior operating leader taking a company from roughly 40 to 200 people while the business becomes more complex.
 
-This is one reader defined by accountability, not three job titles. They own an operating result across multiple functions and cannot solve the problem by adopting one more tool.
+The company may be moving from one activity to several business lines. It may combine software with a physical product, industrial operations, energy, infrastructure, or another business where mistakes leave the screen and enter the real world. A Head of Operations or equivalent is beginning to own the run. The COO must stop being the organization’s best problem solver and become the designer of a system in which other people can decide well.
+
+This reader is specific by situation, not only title. A founder-CEO, business-unit leader, or transformation executive belongs in the primary audience when they face the same transition.
 
 ### Problem they have
 
-AI use is spreading faster than the company can govern or absorb it. Teams are buying tools, creating agents, and producing more artifacts, but decisions, context, permissions, integration, review, and accountability remain slow or unclear. Local productivity gains are not reliably becoming enterprise performance. The reader needs an operating model that increases useful autonomy without losing control.
+The company has outgrown the founder’s personal operating system.
+
+Execution has been delegated, but important decisions still return to the COO. New business lines create cross-company tradeoffs. Shared functions do not know when to impose standards and when to let a unit move. Managers wait for the founder’s view because it is faster and safer than making their own call. Strategic work is repeatedly pulled back into the run.
+
+AI increases the pressure. Teams can generate analyses, plans, product variants, code, and recommendations faster than the company can choose, integrate, authorize, and learn from them. The COO receives more options and exceptions, not automatically more organizational capacity.
+
+The practical challenge is to delegate decisions without losing economic discipline, operational control, or accountability.
+
+### Situational triggers
+
+The book becomes urgent when several of these conditions appear together:
+
+- Headcount is expected to double or triple.
+- One business line is becoming a portfolio of businesses.
+- A Head of Operations is taking responsibility for day-to-day delivery.
+- The founder still arbitrates routine cross-functional choices.
+- New growth initiatives fail to transfer cleanly from launch to run.
+- Management layers are forming without explicit decision rights.
+- Margin, asset productivity, or unit economics are harder to see as activity grows.
+- Teams use AI to produce more work, while review and coordination queues lengthen.
+- The COO’s standards improve quality but also suppress initiative.
 
 ### What they already know
 
-- The basic capabilities and limits of generative AI.
-- Agile, product, portfolio, process-improvement, or digital-transformation language.
-- The pain of annual planning, approval chains, data fragmentation, and cross-functional dependencies.
+- The mechanics of running a company under growth pressure.
+- The difference between a good slide and a functioning operating cadence.
+- Basic generative AI capabilities and their unreliability.
+- Product, Agile, portfolio, process-improvement, or digital-transformation language.
 - That pilots are easy to announce and difficult to integrate.
-- That AI governance cannot live only in a policy document or central committee.
+- That a policy document does not create operational control.
 
-The book will not teach prompt engineering, explain neural networks, or survey AI products.
+The book will not teach prompt engineering, neural networks, or a catalogue of tools.
 
 ### What they are skeptical about
 
-- Another branded framework with renamed roles.
+- Another acronym sold as a universal transformation method.
 - Claims that hierarchy, management, or planning are dead.
-- “Autonomous agents” that work only in polished demos.
-- Real-time dashboards presented as strategy.
-- Transformation timelines that promise organization-wide change in ten weeks.
-- Consultants using AI language to resell Agile or software licenses.
-- Human-in-the-loop language that hides who is accountable.
+- Autonomous-agent demonstrations with no accountable operating owner.
+- Reorganization as a substitute for deciding how decisions work.
+- Generic advice to delegate more.
+- Consultants who have never carried the operational consequence of their advice.
+- Human-in-the-loop language that leaves the actual decision right unclear.
+- Headcount promises detached from service levels, margin, and risk.
 
-The manuscript should invite this skepticism and answer it directly.
+The manuscript should earn this reader’s trust by naming mechanisms, limits, and tradeoffs. It should be willing to tell the reader when their own behavior is the bottleneck.
 
 ### What this book will teach them
 
-- Why cheaper execution moves the constraint to context, decisions, control, and integration.
-- How to diagnose Hidden Operational Debt and choose which debt to repay first.
-- How to draw and adapt the ATOM architecture: intent, context, decisions, execution, evidence, learning, and the control plane.
-- How to allocate work between humans, deterministic software, AI workflows, and agents.
-- How to assign decision rights and agent autonomy according to consequence, reversibility, confidence, and evidence.
-- How permissions, guardrails, approvals, escalation, observability, and evaluation work as one control system.
-- How to run a bounded pilot and judge it on outcomes rather than demonstrations.
-- How to scale through units with stable contracts and local adaptation.
-- How managerial work and accountability change when agents perform part of the execution.
+- Why cheap output can make the founder-COO more central unless decision architecture changes.
+- How to diagnose Hidden Operational Debt before growth compounds it.
+- How to decide what belongs in a business unit, a shared function, or the center.
+- How to delegate decisions, not only tasks, using explicit intent, thresholds, evidence, and escalation.
+- How to transfer an initiative from exploration to the run without keeping its creator permanently involved.
+- How to draw and adapt ATOM: intent, context, decisions, execution, evidence, learning, and the control plane.
+- How to allocate work among humans, deterministic software, AI workflows, and agents.
+- How to give agents bounded authority according to consequence and reversibility.
+- How to measure throughput, unit economics, risk, and learning without drowning the company in reporting.
+- How the COO and the management system must change as the company scales.
 
 ### What they should be able to do after reading it
 
-1. Explain why tool deployment is not operating-model change.
-2. Map one important workflow through all six ATOM layers and its control plane.
-3. Create an operational-debt register and baseline.
-4. Inventory material decisions and assign human and agent rights.
-5. Select a pilot with a bounded blast radius and measurable outcome.
-6. Specify an agent’s identity, permissions, approvals, evidence, and escalation path.
-7. Run a 30-day minimum viable operating loop and a 90-day proof cycle.
-8. Decide whether and how to expand without copying a rigid framework.
-9. Hold named humans accountable for outcomes produced with agents.
+1. Identify which decisions still depend on the founder and why.
+2. Map one material workflow through all six ATOM layers and its control plane.
+3. Create an operational-debt register and select the debt that constrains scale.
+4. Set decision rights across the center, shared functions, business units, humans, and agents.
+5. Define the evidence and escalation conditions required for real delegation.
+6. Select a bounded AI-enabled pilot with a measurable economic or operating result.
+7. Design the handoff from a new initiative to steady-state operations.
+8. Run a 30-day minimum viable operating loop and a 90-day proof cycle.
+9. Challenge whether their own review habits, standards, and interventions are limiting initiative.
+
+### Anti-reader
+
+This is not primarily for:
+
+- a first-time manager seeking a general introduction to management;
+- a technical team choosing an agent framework;
+- a large-enterprise innovation office with no authority over operating decisions;
+- a leader seeking a blueprint that avoids difficult tradeoffs;
+- a company whose main problem is product-market fit rather than operating scale.
 
 ## Secondary readers
 
-CIOs, CTOs, product and engineering leaders, founders, enterprise architects, risk leaders, and operating-model consultants are valid secondary readers. They should find the model useful, but the prose and examples should not change altitude to serve all of them equally.
-
-The primary reader makes the book a business operating-model book with enough technical precision to be credible. It should not become an agent-engineering manual.
+CEOs, CTOs, product and engineering leaders, business-unit heads, investors, and operating-model advisers are useful secondary readers. The prose should remain at the altitude of the accountable operator. Technical detail appears only when it changes authority, economics, risk, or workflow design.
 
 ## Category and differentiation
 
-Category: practical operating-model design for human-agent organizations.
+Category: a practical operating-model book for companies scaling with humans and software agents.
 
 The book sits between:
 
-- executive AI books that describe disruption but stop before organizational design;
+- executive AI books that describe disruption but stop before organization design;
+- scale-up books built for a world in which human managerial capacity remains the default constraint;
 - technical agent books that explain orchestration but not authority and accountability;
-- transformation frameworks that cover teams and governance but treat AI as another tool;
-- risk frameworks that specify controls but not how work should flow.
+- transformation frameworks that discuss teams and governance but treat AI as another tool;
+- risk frameworks that specify controls but not how the company should run.
 
 Distinctive position:
 
-> The difficult part of enterprise AI is no longer generating an answer. It is building an organization that can give machines useful context and bounded authority, verify what they do, and learn without surrendering human accountability.
+> The central AI problem for a scaling company is not access to intelligence. It is redesigning how intent, judgment, authority, work, and evidence move through the company so that the founder is no longer the integration layer.
+
+Positioning question:
+
+> If every important decision still returns to the COO, has the company delegated anything that matters?
 
 ## Title and subtitle alternatives
 
@@ -87,36 +125,41 @@ Distinctive position:
 
 **A Practical Operating System for Human-Agent Work**
 
-Strengths: durable, executive, centered on the organizational outcome.  
-Risk: the title alone is not uniquely ownable; the subtitle must carry the distinction.
+Strengths: durable, executive, and centered on the organizational outcome.
+
+Risk: the title alone is not unique. The subtitle must carry the distinction.
 
 ### 2. Reinvented by AI
 
-**How to Rebuild the Company’s Operating System for Humans and Agents**
+**How to Redesign the Company for Decisions at Scale**
 
-Strengths: preserves continuity with the first edition and clearly states the organizational thesis.  
-Risk: “reinvented by AI” makes AI sound like the actor and may imply technological determinism.
+Strengths: connects AI to the actual scaling problem.
+
+Risk: makes AI sound like the main actor and can imply technological determinism.
 
 ### 3. ATOM
 
-**The Adaptive Operating Model for Human-Agent Organizations**
+**The Adaptive Operating Model for Companies That Scale**
 
-Strengths: makes the model the brand and supports consulting/toolkit extensions.  
-Risk: unknown acronym, crowded word, and premature if the model has not yet earned independent recognition.
+Strengths: makes the model memorable and supports practical resources.
 
-### 4. Beyond the Copilot
+Risk: the acronym is unknown and must earn its place before it leads the book.
 
-**Designing Decisions, Control, and Accountability for the Agentic Company**
+### 4. Beyond the Operator
 
-Strengths: signals the 2025-to-2026 shift and the book’s concrete governance focus.  
-Risk: “copilot” may date quickly; “agentic” is becoming vendor language.
+**How Founders Build Companies That Can Decide Without Them**
+
+Strengths: speaks directly to the founder-COO transition.
+
+Risk: understates the human-agent operating-model contribution.
 
 ### 5. Intent In, Evidence Out
 
-**An Operating Model for Companies Built with Humans and AI Agents**
+**Decision Architecture for the Human-Agent Company**
 
-Strengths: distinctive, memorable, and tied to the canonical model.  
-Risk: less immediately recognizable as a business book; may sound like a technical controls book.
+Strengths: distinctive and tied to the canonical model.
+
+Risk: may sound narrower and more technical than the complete book.
 
 ## Recommended title
 
@@ -124,46 +167,40 @@ Risk: less immediately recognizable as a business book; may sound like a technic
 
 ## A Practical Operating System for Human-Agent Work
 
-Series/edition line where useful: **Reinvented by AI, Second Edition**.
+Why this choice: the enduring subject is the company, not the current generation of models. “Adaptive” preserves the core purpose of ATOM. “Practical operating system” promises implementation. “Human-agent work” identifies the new condition without suggesting that software owns the company.
 
-Why this choice: the enduring subject is the company, not the current generation of models. “Adaptive” preserves the A in ATOM and the author’s original concern. “Practical operating system” promises a model and implementation. “Human-agent work” identifies the new condition without saying that AI is in charge.
-
-ATOM remains the named model inside the book. It should appear on the cover or description only after the manuscript has made it coherent.
+ATOM remains the named model inside the book. It should appear on the cover or description only after the manuscript makes it concrete and coherent.
 
 ## One-sentence thesis
 
-AI becomes an organizational advantage only when a company redesigns the loop from intent to context, decision, execution, evidence, and learning—and gives agents bounded authority inside controls for which humans remain accountable.
+AI becomes an organizational advantage only when a company redesigns the loop from intent to context, decision, execution, evidence, and learning, and delegates bounded authority without delegating human accountability.
 
 ## Book promise
 
-This book gives operating leaders a concrete model and a set of working artifacts to redesign one consequential workflow for human-agent execution, prove whether it creates value, and scale it without losing control.
+This book helps a founder-COO redesign a growing company so that business units, shared functions, managers, and agents can make more decisions without routing every consequential tradeoff through the founder.
 
 ## Back-cover description
 
-AI can now draft, analyze, code, search, and act through software tools. Most companies are responding by adding these capabilities to the same planning cycles, approval chains, fragmented systems, and ambiguous decision rights they already had.
+Your company is growing. A new operating leader is taking over the run. New business lines are forming. Yet the decisions that matter still find their way back to you.
 
-That increases output. It does not necessarily improve the company.
+AI makes the problem more urgent. Teams can produce analyses, plans, code, and options faster than the company can choose, integrate, authorize, and learn from them. More output does not create a more scalable organization. It can make the founder an even tighter bottleneck.
 
-*The Adaptive Company* argues that the real opportunity is to redesign the operating system of the organization itself. It introduces ATOM, a practical model that connects strategic intent to context, decisions, human-and-agent execution, evidence, and learning. A cross-cutting control plane makes authority visible through identity, permissions, guardrails, approvals, escalation, and audit.
+*The Adaptive Company* is about redesigning the operating system of the company itself. It introduces ATOM, a practical model that connects strategic intent to context, decisions, human-and-agent execution, evidence, and learning. A cross-cutting control plane makes authority visible through identity, permissions, guardrails, approvals, escalation, and audit.
 
-This is not a forecast of fully autonomous companies. It is a field guide for accountable leaders. You will learn how to identify Hidden Operational Debt, select a bounded pilot, assign decision rights, choose appropriate levels of agent autonomy, evaluate outcomes, and scale through units that can adapt without drifting apart.
+This is not a forecast of a fully autonomous company. It is a field guide for leaders who remain accountable. You will learn how to diagnose Hidden Operational Debt, divide authority among business units and shared functions, delegate decisions instead of tasks, choose appropriate agent boundaries, transfer initiatives into the run, and scale without turning the founder into the organization’s permanent control system.
 
-The goal is not to put AI everywhere. It is to build a company that can move faster where speed matters, slow down where consequences demand it, and learn from what actually happens.
+The goal is not to remove yourself from the company. It is to stop requiring your intervention for the company to think and act well.
 
 ## Voice and authority
 
-The authorial voice should be that of a practitioner making a model more honest in public:
+The authorial voice should resemble a senior operator acting as a demanding sparring partner:
 
-- first person when drawing on author experience or revising a 2025 belief;
-- direct second person for practical decisions and worksheets;
+- direct second person for decisions, behaviors, and practical work;
+- first person only for verified author experience or a clearly owned hypothesis;
 - neutral third person for evidence and cases;
-- explicit labels for real cases, author experience, illustrative examples, and hypotheses.
-
-Use the 2025 prototype as an intellectual device:
-
-> In 2025, I thought the defining feature would be real-time intelligence. By 2026, the harder problem was clearer: authority. An agent that can see but cannot act is a dashboard. An agent that can act without bounded authority is a liability.
-
-This pattern should appear selectively, only where the evidence or the author’s experience supports a genuine revision.
+- explicit labels for real cases, author experience, illustrative examples, and hypotheses;
+- willingness to challenge the reader when control habits undermine delegation;
+- no invented personal history, public edition history, or retrospective narrative.
 
 ## Positioning exclusions
 
@@ -172,16 +209,17 @@ The book will not promise:
 - universal headcount reduction;
 - fully autonomous companies;
 - the end of managers or hierarchy;
+- a single ideal split between business units and shared functions;
 - a vendor-neutral claim followed by a vendor catalogue;
 - precise productivity gains without a defined baseline and study;
-- that “real time” is always better;
+- that real time is always better;
 - that adopting ATOM certifies responsible AI;
-- that the 90-day path completes an organizational transformation.
+- that a 90-day path completes an organizational transformation.
 
 ## Reader test
 
 Every chapter must pass this test:
 
-> Does this help the accountable operating executive make a better design decision about context, authority, execution, evidence, or learning next week?
+> Does this help a founder-COO build a company that can make a consequential decision without requiring the founder to become the analyst, integrator, and final approver?
 
 If not, it is background, decoration, or a different book.
