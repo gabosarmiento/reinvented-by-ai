@@ -63,26 +63,7 @@ Cheap output is useful. It is not the same as throughput, outcome, or value. The
 
 At any moment, end-to-end performance is limited by one or more constraints. Expanding capacity at one constraint is valuable until another limits the result. If a company can generate analyses, designs, code, and communications much faster without changing how it chooses, integrates, checks, and authorizes them, scarcity moves elsewhere.
 
-```{mermaid}
-%%| label: fig-moving-constraint
-%%| fig-cap: "When generation capacity expands, the yellow capacities can become queues in the surrounding operating system."
-%%| fig-alt: "Flow from intent through generation, selection, integration, verification, and authorization to an outcome. Context informs generation and the downstream stages. Generation is marked as expanded capacity; selection, context, integration, verification, and authorization are possible queues."
-flowchart TB
-    I[Intent] --> G["Generate<br/>expanded capacity"]
-    G --> S[Select]
-    S --> N[Integrate]
-    N --> V[Verify]
-    V --> A[Authorize]
-    A --> O[Outcome]
-    C[Context] -. informs .-> G
-    C -.-> S
-    C -.-> N
-    C -.-> V
-    classDef expanded fill:#d8f3dc,stroke:#2d6a4f,color:#111;
-    classDef queue fill:#fff3bf,stroke:#b08900,color:#111;
-    class G expanded;
-    class S,C,N,V,A queue;
-```
+![When generation capacity expands, the constraint often moves into selection, integration, verification, authorization, or context.](../../assets/diagrams/constraint-moves.png){#fig-moving-constraint fig-alt="An operating path from generation through selection, integration, verification, and authorization to an outcome. Context informs the middle stages. Generation is marked as cheaper; the surrounding capacities are marked as possible queues." width=100%}
 
 The exact sequence varies. Context can shape generation or arrive later to test an option. Verification may run continuously. Low-risk actions may be authorized in advance. The diagram is not a workflow template. It identifies five capacities that cheap production can expose.
 

@@ -75,6 +75,8 @@ Companies can apply the same discipline outside an AI product. A pricing approva
 
 Most executive dashboards describe results after the operating system has absorbed the cost. Revenue arrived. Tickets closed. Features shipped. Hiring completed. The company may be hitting those numbers through escalation, rework, and executive intervention that will not survive another doubling in volume.
 
+![Operational evidence becomes useful when AI-supported interpretation remains tied to the trace, the observed outcome, and an owner who can respond.](../../assets/diagrams/operational-debt-signals.png){#fig-operational-debt-signals fig-alt="A signal path from operational evidence to an operational trace, AI classification, a decision record, operating views, and owned alerts. A separate outcome check verifies the claimed completion and feeds the decision record." width=100%}
+
 An operational-debt dashboard sits beneath the result. It should let a leader move through three views.
 
 The first is the **outcome**. Did the customer's problem stay resolved? Did the deal produce the expected margin? Did the release improve the intended behavior? Did the new business line consume the shared capacity assumed in its model? A proxy such as "task completed" is not enough when the real result can be checked.

@@ -55,6 +55,8 @@ This is a starting posture, not a formula. Frequency changes exposure. Ten thous
 
 Human review is also not automatically a strong control. A tired approver presented with a polished recommendation may click accept. If the system sends nearly every case to the same person, review becomes a queue rather than judgment. A useful approval point tells the reviewer what is uncertain, which rules were applied, which evidence supports the recommendation, what the alternatives are, and what happens after approval.
 
+![Authority follows the consequence and reversibility of a specific decision; every execution path returns evidence.](../../assets/diagrams/decision-authority.png){#fig-decision-authority fig-alt="A decision trigger becomes a decision specification and is classified by consequence and reversibility. It then follows one of three paths: a pre-authorized action, a supervised approval gate, or a human-reserved decision. All paths return decision evidence." width=88%}
+
 OpenAI's agent-building guidance recommends intervention when failure thresholds are exceeded and for sensitive, irreversible, or high-stakes actions [@openai-agent-guide-2025]. The broader operating principle is that intervention should be triggered by consequence and uncertainty, not by the comforting phrase “human in the loop.”
 
 ## Authority is specific

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "ATOM: The Operating Loop",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1000, 860]
+  },
+  "components": [
+    { "id": "intent", "type": "external", "label": "Intent", "sublabel": "outcomes · priorities · boundaries", "tag": "INPUT", "pos": [95, 105], "size": [230, 74] },
+    { "id": "context", "type": "database", "label": "Context", "sublabel": "facts · policy · history", "pos": [675, 105], "size": [230, 74] },
+    { "id": "decision", "type": "security", "label": "Decision", "sublabel": "commitment · authority · rationale", "pos": [675, 370], "size": [230, 74] },
+    { "id": "execution", "type": "backend", "label": "Human + Agent Execution", "sublabel": "act · hand off · recover", "pos": [675, 635], "size": [230, 74] },
+    { "id": "evidence", "type": "cloud", "label": "Evidence", "sublabel": "trace · outcome · exception", "tag": "OUTPUT", "pos": [95, 635], "size": [230, 74] },
+    { "id": "learning", "type": "messagebus", "label": "Learning", "sublabel": "change policy · context · design", "pos": [95, 370], "size": [230, 74] }
+  ],
+  "boundaries": [
+    {
+      "kind": "security-group",
+      "label": "CONTROL PLANE — identity · authority · guardrails · intervention",
+      "wraps": ["intent", "context", "decision", "execution", "evidence", "learning"],
+      "pad": 54
+    }
+  ],
+  "connections": [
+    { "id": "intent-context", "from": "intent", "to": "context", "variant": "emphasis" },
+    { "id": "context-decision", "from": "context", "to": "decision", "variant": "emphasis" },
+    { "id": "decision-execution", "from": "decision", "to": "execution", "variant": "emphasis" },
+    { "id": "execution-evidence", "from": "execution", "to": "evidence", "variant": "emphasis" },
+    { "id": "evidence-learning", "from": "evidence", "to": "learning", "variant": "emphasis" },
+    { "id": "learning-intent", "from": "learning", "to": "intent", "label": "changes the next cycle", "variant": "dashed" }
+  ]
+}

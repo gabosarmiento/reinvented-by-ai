@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Fractal Units Repeat the Operating Grammar",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1160, 820]
+  },
+  "components": [
+    { "id": "portfolio", "type": "security", "label": "Enterprise Intent", "sublabel": "portfolio · capital · invariants", "pos": [455, 60], "size": [250, 76] },
+    { "id": "unitA", "type": "backend", "label": "Unit A Outcome Loop", "sublabel": "intent · authority · action · evidence", "tag": "LOCAL PRACTICE A", "pos": [105, 315], "size": [250, 92] },
+    { "id": "unitB", "type": "backend", "label": "Unit B Outcome Loop", "sublabel": "intent · authority · action · evidence", "tag": "LOCAL PRACTICE B", "pos": [805, 315], "size": [250, 92] },
+    { "id": "shared", "type": "cloud", "label": "Shared Services", "sublabel": "stable interfaces · visible scarcity", "pos": [455, 340], "size": [250, 76] },
+    { "id": "evidence", "type": "database", "label": "Enterprise Evidence", "sublabel": "outcomes · economics · risk · dependency", "pos": [455, 650], "size": [250, 76] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "UNIT A — local autonomy", "wraps": ["unitA"], "pad": 34 },
+    { "kind": "region", "label": "UNIT B — local autonomy", "wraps": ["unitB"], "pad": 34 }
+  ],
+  "connections": [
+    { "id": "portfolio-a", "from": "portfolio", "to": "unitA", "label": "intent + envelope", "variant": "emphasis" },
+    { "id": "portfolio-b", "from": "portfolio", "to": "unitB", "label": "intent + envelope", "variant": "emphasis" },
+    { "id": "shared-a", "from": "shared", "to": "unitA", "variant": "default" },
+    { "id": "shared-b", "from": "shared", "to": "unitB", "variant": "default" },
+    { "id": "unit-a-evidence", "from": "unitA", "to": "evidence", "label": "outcome trace", "variant": "dashed" },
+    { "id": "unit-b-evidence", "from": "unitB", "to": "evidence", "label": "outcome trace", "variant": "dashed" },
+    { "id": "evidence-portfolio", "from": "evidence", "to": "portfolio", "label": "portfolio learning", "variant": "emphasis", "fromSide": "right", "toSide": "right", "via": [[1120, 688], [1120, 98]] }
+  ]
+}

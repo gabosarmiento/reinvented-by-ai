@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "The Production Agent Lifecycle",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1040, 600]
+  },
+  "lanes": [
+    { "id": "main", "label": "Production lifecycle" },
+    { "id": "control", "label": "Incident control" }
+  ],
+  "states": [
+    { "id": "registered", "type": "start", "label": "Registered", "sublabel": "purpose · owner", "lane": "main", "col": 0, "step": "01" },
+    { "id": "evaluated", "type": "active", "label": "Evaluated", "sublabel": "tasks · failures", "lane": "main", "col": 1, "step": "02" },
+    { "id": "authorized", "type": "decision", "label": "Authorized", "sublabel": "identity · permission", "lane": "main", "col": 2, "step": "03" },
+    { "id": "operating", "type": "active", "label": "Operating", "sublabel": "outcome · trace · cost", "lane": "main", "col": 3, "step": "04" },
+    { "id": "retired", "type": "success", "label": "Retired", "sublabel": "access off · evidence kept", "lane": "main", "col": 4, "step": "05", "width": 132 },
+    { "id": "incident", "type": "failure", "label": "Incident Hold", "sublabel": "stop · preserve · repair", "lane": "control", "col": 1, "tag": "RECOVERABLE" }
+  ],
+  "transitions": [
+    { "id": "operating-incident", "from": "operating", "to": "incident", "label": "stop condition", "variant": "security", "route": "bottom-channel", "labelDx": 92 },
+    { "id": "incident-evaluated", "from": "incident", "to": "evaluated", "label": "repair + retest", "variant": "emphasis", "fromSide": "bottom", "toSide": "bottom", "via": [[556, 390], [248, 390]] }
+  ]
+}

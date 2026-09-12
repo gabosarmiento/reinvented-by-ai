@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "The Context Envelope",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1120, 720]
+  },
+  "components": [
+    { "id": "intent", "type": "external", "label": "Intent + Constraints", "sublabel": "outcome · priority · exclusions", "pos": [50, 120], "size": [190, 70] },
+    { "id": "systems", "type": "database", "label": "Systems of Record", "sublabel": "customer · finance · operations", "pos": [50, 315], "size": [190, 70] },
+    { "id": "external", "type": "security", "label": "External Content", "sublabel": "documents · messages · web", "tag": "UNTRUSTED", "pos": [50, 510], "size": [190, 70] },
+    { "id": "facts", "type": "database", "label": "Current Facts", "sublabel": "state + timestamp", "pos": [395, 105], "size": [165, 66] },
+    { "id": "definitions", "type": "backend", "label": "Shared Definitions", "sublabel": "terms + economics", "pos": [395, 255], "size": [165, 66] },
+    { "id": "policy", "type": "security", "label": "Policy + Rights", "sublabel": "allowed use + authority", "pos": [395, 405], "size": [165, 66] },
+    { "id": "memory", "type": "messagebus", "label": "Decision Memory", "sublabel": "rationale + precedent", "pos": [395, 555], "size": [165, 66] },
+    { "id": "decision", "type": "backend", "label": "Human + Agent Decision", "sublabel": "bounded commitment", "pos": [850, 230], "size": [215, 76] },
+    { "id": "record", "type": "cloud", "label": "Decision Record", "sublabel": "sources · action · outcome", "pos": [850, 465], "size": [215, 76] }
+  ],
+  "boundaries": [
+    { "kind": "security-group", "label": "CONTEXT ENVELOPE — current · authoritative · authorized · traceable", "wraps": ["facts", "definitions", "policy", "memory"], "pad": 42 }
+  ],
+  "connections": [
+    { "id": "intent-facts", "from": "intent", "to": "facts", "label": "scope", "variant": "emphasis" },
+    { "id": "systems-facts", "from": "systems", "to": "facts", "label": "governed state" },
+    { "id": "external-policy", "from": "external", "to": "policy", "label": "treat as data", "variant": "security" },
+    { "id": "facts-decision", "from": "facts", "to": "decision", "variant": "emphasis" },
+    { "id": "definitions-decision", "from": "definitions", "to": "decision" },
+    { "id": "policy-decision", "from": "policy", "to": "decision", "variant": "security" },
+    { "id": "memory-decision", "from": "memory", "to": "decision", "variant": "dashed" },
+    { "id": "decision-record", "from": "decision", "to": "record", "label": "produce evidence", "variant": "emphasis", "labelAt": [958, 350] },
+    { "id": "record-memory", "from": "record", "to": "memory", "label": "approved learning", "variant": "dashed", "labelDy": 64 }
+  ]
+}

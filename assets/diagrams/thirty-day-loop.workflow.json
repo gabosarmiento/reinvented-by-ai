@@ -1,0 +1,52 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Build One Operating Loop in 30 Days",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1200, 460]
+  },
+  "lanes": [
+    { "id": "build", "label": "Build path" },
+    { "id": "proof", "label": "Evidence gates", "variant": "exception" }
+  ],
+  "phases": [
+    { "id": "understand", "label": "Understand", "fromCol": 0, "toCol": 1 },
+    { "id": "construct", "label": "Construct", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "release", "label": "Release", "fromCol": 4, "toCol": 5, "variant": "security" }
+  ],
+  "mainPath": ["baseline", "authority", "environment", "shadow", "narrow", "next"],
+  "semanticChecks": {
+    "allowedRoots": ["baseline"],
+    "allowedTerminals": ["next"],
+    "requiredPaths": [
+      { "from": "baseline", "to": "next" },
+      { "from": "tests", "to": "shadow" }
+    ]
+  },
+  "nodes": [
+    { "id": "baseline", "lane": "build", "col": 0, "type": "database", "label": "Days 1–5", "sublabel": "trace the current loop", "tag": "BASELINE", "width": 150 },
+    { "id": "authority", "lane": "build", "col": 1, "type": "security", "label": "Days 6–10", "sublabel": "specify context + authority", "width": 150 },
+    { "id": "environment", "lane": "build", "col": 2, "type": "backend", "label": "Days 11–15", "sublabel": "build the controlled path", "width": 150 },
+    { "id": "shadow", "lane": "build", "col": 3, "type": "messagebus", "label": "Days 16–20", "sublabel": "run in shadow", "tag": "NO AUTHORITY", "width": 150 },
+    { "id": "narrow", "lane": "build", "col": 4, "type": "security", "label": "Days 21–25", "sublabel": "release inside limits", "tag": "NARROW", "width": 150 },
+    { "id": "next", "lane": "build", "col": 5, "type": "cloud", "label": "Days 26–30", "sublabel": "decide the next authority", "tag": "GATE", "width": 150 },
+    { "id": "measures", "lane": "proof", "col": 0, "type": "database", "label": "Baseline Measures", "sublabel": "time · quality · intervention", "width": 160 },
+    { "id": "tests", "lane": "proof", "col": 2, "type": "security", "label": "Failure Tests", "sublabel": "permissions · recovery · stop", "width": 160 },
+    { "id": "results", "lane": "proof", "col": 4, "type": "database", "label": "Outcome Review", "sublabel": "value · risk · economics", "width": 160 }
+  ],
+  "edges": [
+    { "id": "baseline-authority", "from": "baseline", "to": "authority" },
+    { "id": "authority-environment", "from": "authority", "to": "environment", "variant": "security" },
+    { "id": "environment-shadow", "from": "environment", "to": "shadow", "variant": "emphasis" },
+    { "id": "shadow-narrow", "from": "shadow", "to": "narrow", "variant": "security" },
+    { "id": "narrow-next", "from": "narrow", "to": "next", "variant": "emphasis" },
+    { "id": "baseline-measures", "from": "baseline", "to": "measures", "variant": "dashed", "role": "branch" },
+    { "id": "measures-authority", "from": "measures", "to": "authority", "label": "current baseline", "variant": "dashed", "role": "return" },
+    { "id": "environment-tests", "from": "environment", "to": "tests", "variant": "security", "role": "branch" },
+    { "id": "tests-shadow", "from": "tests", "to": "shadow", "label": "must pass", "variant": "security", "role": "branch" },
+    { "id": "narrow-results", "from": "narrow", "to": "results", "variant": "dashed", "role": "branch" },
+    { "id": "results-next", "from": "results", "to": "next", "label": "expand · revise · stop", "variant": "emphasis", "role": "return" }
+  ]
+}

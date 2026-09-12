@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Evidence Turns Execution Into Learning",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1200, 550]
+  },
+  "lanes": [
+    { "id": "operation", "label": "Operating path" },
+    { "id": "evidence", "label": "Evidence path" },
+    { "id": "learning", "label": "Learning authority", "variant": "exception" }
+  ],
+  "phases": [
+    { "id": "commit", "label": "Commit", "fromCol": 0, "toCol": 1 },
+    { "id": "execute", "label": "Execute + observe", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "adapt", "label": "Evaluate + change", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": ["trigger", "decision", "action", "outcome", "record", "evaluate", "change"],
+  "semanticChecks": {
+    "allowedRoots": ["trigger"],
+    "allowedTerminals": ["change"],
+    "requiredPaths": [
+      { "from": "trigger", "to": "change" },
+      { "from": "action", "to": "record" }
+    ]
+  },
+  "nodes": [
+    { "id": "trigger", "lane": "operation", "col": 0, "type": "external", "label": "Trigger", "sublabel": "material change in state", "width": 150 },
+    { "id": "decision", "lane": "operation", "col": 1, "type": "security", "label": "Decision", "sublabel": "authority + rationale", "width": 150 },
+    { "id": "action", "lane": "operation", "col": 2, "type": "backend", "label": "Action", "sublabel": "human + agent work", "width": 150 },
+    { "id": "outcome", "lane": "operation", "col": 3, "type": "cloud", "label": "Outcome State", "sublabel": "result, not self-report", "width": 155 },
+    { "id": "record", "lane": "evidence", "col": 3, "type": "database", "label": "Decision Record", "sublabel": "input · action · result", "tag": "TRACEABLE", "width": 172 },
+    { "id": "evaluate", "lane": "learning", "col": 4, "type": "messagebus", "label": "Evaluate", "sublabel": "exceptions · incidents", "width": 168 },
+    { "id": "change", "lane": "learning", "col": 5, "type": "security", "label": "Authorized Change", "sublabel": "policy · context · test · design", "width": 172 }
+  ],
+  "edges": [
+    { "id": "trigger-decision", "from": "trigger", "to": "decision" },
+    { "id": "decision-action", "from": "decision", "to": "action", "variant": "emphasis" },
+    { "id": "action-outcome", "from": "action", "to": "outcome", "variant": "emphasis" },
+    { "id": "outcome-record", "from": "outcome", "to": "record", "variant": "emphasis" },
+    { "id": "record-evaluate", "from": "record", "to": "evaluate", "variant": "dashed" },
+    { "id": "evaluate-change", "from": "evaluate", "to": "change", "label": "owner approves", "variant": "security" },
+    { "id": "decision-record", "from": "decision", "to": "record", "label": "commitment", "variant": "dashed", "role": "branch" },
+    { "id": "action-record", "from": "action", "to": "record", "label": "tool calls + overrides", "variant": "dashed", "role": "branch" }
+  ]
+}

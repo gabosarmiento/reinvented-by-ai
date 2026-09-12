@@ -6,6 +6,8 @@ The difference is substantial. A demo begins with curated input, ends with an ou
 
 The following thirty-day sequence continues the **illustrative onboarding pilot** from the previous chapter. It is a sequence of design gates, not a promise that every company should deploy in a month. A regulated or high-consequence process may require much longer. A simple internal loop may move faster.
 
+![The thirty-day build moves from baseline to bounded release, with evidence gates governing each increase in authority.](../../assets/diagrams/thirty-day-loop.png){#fig-thirty-day-loop fig-alt="A six-stage build path covering days 1 to 30: baseline, context and authority, controlled path, shadow operation, narrow release, and the next authority decision. Baseline measures, failure tests, and outcome review act as evidence gates." width=100%}
+
 ## Days 1–5: establish the baseline
 
 The owner selects one customer segment and one exception class. The team exports prior cases and reconstructs the current path: trigger, data sources, handoffs, decisions, waiting, rework, outcome, and later repeat contact.

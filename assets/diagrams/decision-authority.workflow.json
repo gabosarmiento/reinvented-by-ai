@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Authority Is Granted Per Decision",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1150, 1030]
+  },
+  "lanes": [
+    { "id": "design", "label": "Decision design" },
+    { "id": "delegated", "label": "Delegated authority" },
+    { "id": "reserved", "label": "Human-reserved authority", "variant": "exception" }
+  ],
+  "phases": [
+    { "id": "define", "label": "Define", "fromCol": 0, "toCol": 1 },
+    { "id": "bound", "label": "Bound", "fromCol": 2, "toCol": 3, "variant": "security" },
+    { "id": "act", "label": "Act + prove", "fromCol": 4, "toCol": 5, "variant": "emphasis" }
+  ],
+  "mainPath": ["trigger", "spec", "classify", "approval", "action", "evidence"],
+  "semanticChecks": {
+    "allowedRoots": ["trigger"],
+    "allowedTerminals": ["evidence"],
+    "requiredPaths": [
+      { "from": "trigger", "to": "evidence" },
+      { "from": "classify", "to": "human" }
+    ]
+  },
+  "nodes": [
+    { "id": "trigger", "lane": "design", "col": 0, "type": "external", "label": "Decision Trigger", "sublabel": "a commitment is due", "width": 155 },
+    { "id": "spec", "lane": "design", "col": 1, "type": "backend", "label": "Decision Specification", "sublabel": "inputs · objective · deadline", "width": 165 },
+    { "id": "classify", "lane": "design", "col": 2, "type": "security", "label": "Consequence + Reversibility", "sublabel": "defines the authority envelope", "width": 180 },
+    { "id": "approval", "lane": "delegated", "col": 3, "type": "security", "label": "Approval Gate", "sublabel": "required condition met?", "tag": "SUPERVISED", "width": 155 },
+    { "id": "preauth", "lane": "delegated", "col": 4, "type": "backend", "label": "Pre-authorized Action", "sublabel": "inside explicit limits", "tag": "AUTONOMOUS", "width": 165 },
+    { "id": "action", "lane": "delegated", "col": 4, "type": "messagebus", "label": "Bounded Action", "sublabel": "execute or stop", "width": 155, "yOffset": 88 },
+    { "id": "human", "lane": "reserved", "col": 3, "type": "external", "label": "Human Decision", "sublabel": "agent prepares evidence", "tag": "RESERVED", "width": 155 },
+    { "id": "evidence", "lane": "delegated", "col": 5, "type": "database", "label": "Decision Evidence", "sublabel": "authority · rationale · outcome", "width": 165 }
+  ],
+  "edges": [
+    { "id": "trigger-spec", "from": "trigger", "to": "spec" },
+    { "id": "spec-classify", "from": "spec", "to": "classify", "variant": "emphasis" },
+    { "id": "classify-approval", "from": "classify", "to": "approval", "label": "approval required", "variant": "security" },
+    { "id": "approval-action", "from": "approval", "to": "action", "variant": "emphasis" },
+    { "id": "action-evidence", "from": "action", "to": "evidence", "variant": "emphasis" },
+    { "id": "classify-preauth", "from": "classify", "to": "preauth", "label": "inside limits", "variant": "dashed", "role": "branch" },
+    { "id": "preauth-evidence", "from": "preauth", "to": "evidence", "variant": "dashed", "role": "branch" },
+    { "id": "classify-human", "from": "classify", "to": "human", "label": "reserved decision", "variant": "security", "role": "branch" },
+    { "id": "human-evidence", "from": "human", "to": "evidence", "variant": "security", "role": "return" }
+  ]
+}

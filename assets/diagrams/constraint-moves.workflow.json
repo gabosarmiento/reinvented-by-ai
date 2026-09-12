@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Where the Constraint Moves",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1200, 420]
+  },
+  "lanes": [
+    { "id": "flow", "label": "Operating path" },
+    { "id": "foundation", "label": "Required context" }
+  ],
+  "phases": [
+    { "id": "create", "label": "Creation", "fromCol": 0, "toCol": 0, "variant": "emphasis" },
+    { "id": "absorb", "label": "Organizational absorption", "fromCol": 1, "toCol": 4 },
+    { "id": "result", "label": "Result", "fromCol": 5, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": ["generate", "select", "integrate", "verify", "authorize", "outcome"],
+  "semanticChecks": {
+    "allowedRoots": ["generate", "context"],
+    "allowedTerminals": ["outcome"],
+    "requiredPaths": [
+      { "from": "generate", "to": "outcome" },
+      { "from": "context", "to": "verify" }
+    ]
+  },
+  "nodes": [
+    { "id": "generate", "lane": "flow", "col": 0, "type": "backend", "label": "Generate", "sublabel": "capacity expands", "tag": "CHEAPER", "width": 150 },
+    { "id": "select", "lane": "flow", "col": 1, "type": "security", "label": "Select", "sublabel": "choose what matters", "tag": "QUEUE", "width": 150 },
+    { "id": "integrate", "lane": "flow", "col": 2, "type": "security", "label": "Integrate", "sublabel": "fit the system", "tag": "QUEUE", "width": 150 },
+    { "id": "verify", "lane": "flow", "col": 3, "type": "security", "label": "Verify", "sublabel": "produce confidence", "tag": "QUEUE", "width": 150 },
+    { "id": "authorize", "lane": "flow", "col": 4, "type": "security", "label": "Authorize", "sublabel": "permit commitment", "tag": "QUEUE", "width": 150 },
+    { "id": "outcome", "lane": "flow", "col": 5, "type": "cloud", "label": "Outcome", "sublabel": "value after total cost", "width": 150 },
+    { "id": "context", "lane": "foundation", "col": 2, "type": "database", "label": "Context", "sublabel": "facts · policy · history", "tag": "CAN CONSTRAIN", "width": 176 }
+  ],
+  "edges": [
+    { "id": "generate-select", "from": "generate", "to": "select", "variant": "emphasis" },
+    { "id": "select-integrate", "from": "select", "to": "integrate" },
+    { "id": "integrate-verify", "from": "integrate", "to": "verify" },
+    { "id": "verify-authorize", "from": "verify", "to": "authorize" },
+    { "id": "authorize-outcome", "from": "authorize", "to": "outcome", "variant": "emphasis" },
+    { "id": "context-select", "from": "context", "to": "select", "label": "informs", "variant": "dashed", "role": "branch" },
+    { "id": "context-integrate", "from": "context", "to": "integrate", "variant": "dashed", "role": "branch" },
+    { "id": "context-verify", "from": "context", "to": "verify", "variant": "dashed", "role": "branch" }
+  ]
+}

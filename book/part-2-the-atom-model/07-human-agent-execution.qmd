@@ -62,6 +62,8 @@ The safe state matters. If an agent pauses a factory order, does production cont
 
 Review capacity must be designed with execution capacity. If coding agents can open twenty pull requests while qualified maintainers can review four, the system should limit starts, strengthen automated tests, split the changes differently, or narrow agent scope. Additional generation creates a queue, not leverage.
 
+![A useful handoff specifies the task, context, authority, stop rules, resulting state, and evidence returned to the accountable operator.](../../assets/diagrams/human-agent-handoff.png){#fig-human-agent-handoff fig-alt="A sequence among an accountable operator, Synthesizer, specialist agent, policy gate, business tool, and evidence store. The operator delegates an outcome and limits; the agent requests authority, performs an approved action, records evidence, and returns control through the Synthesizer." width=92%}
+
 ## The person needs a control surface
 
 Human review should be designed as an operating interface. A reviewer needs to see the proposed action, relevant evidence, applicable rule, uncertainty, alternatives, exposure, and deadline. She should be able to approve, edit, reject, request more context, or change the route. Her action and rationale become part of the trace.

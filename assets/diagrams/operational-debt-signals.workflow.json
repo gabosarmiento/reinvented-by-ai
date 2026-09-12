@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "From Operational Traces to Management Signals",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "viewBox": [1200, 430]
+  },
+  "lanes": [
+    { "id": "signal", "label": "Signal path" },
+    { "id": "verification", "label": "Outcome verification", "variant": "exception" }
+  ],
+  "phases": [
+    { "id": "collect", "label": "Collect", "fromCol": 0, "toCol": 1 },
+    { "id": "interpret", "label": "Interpret", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "operate", "label": "Operate", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": ["sources", "trace", "classify", "record", "views", "alerts"],
+  "semanticChecks": {
+    "allowedRoots": ["sources"],
+    "allowedTerminals": ["alerts"],
+    "requiredPaths": [
+      { "from": "sources", "to": "alerts" },
+      { "from": "outcome", "to": "record" }
+    ]
+  },
+  "nodes": [
+    { "id": "sources", "lane": "signal", "col": 0, "type": "database", "label": "Operational Evidence", "sublabel": "customer · systems · software", "width": 168 },
+    { "id": "trace", "lane": "signal", "col": 1, "type": "messagebus", "label": "Operational Trace", "sublabel": "wait · handoff · action", "tag": "SOURCE ATTACHED", "width": 160 },
+    { "id": "classify", "lane": "signal", "col": 2, "type": "backend", "label": "AI Classification", "sublabel": "themes · exceptions · causes", "tag": "PROPOSED", "width": 160 },
+    { "id": "record", "lane": "signal", "col": 3, "type": "database", "label": "Decision Record", "sublabel": "path joined to outcome", "width": 160 },
+    { "id": "views", "lane": "signal", "col": 4, "type": "frontend", "label": "Operating Views", "sublabel": "outcome · path · boundary", "width": 160 },
+    { "id": "alerts", "lane": "signal", "col": 5, "type": "security", "label": "Owned Alerts", "sublabel": "drift · tail · concentration", "width": 160 },
+    { "id": "outcome", "lane": "verification", "col": 3, "type": "security", "label": "Outcome Check", "sublabel": "result · cost · reversals", "tag": "VERIFIED", "width": 160 }
+  ],
+  "edges": [
+    { "id": "sources-trace", "from": "sources", "to": "trace", "variant": "emphasis" },
+    { "id": "trace-classify", "from": "trace", "to": "classify", "variant": "dashed" },
+    { "id": "classify-record", "from": "classify", "to": "record", "variant": "dashed" },
+    { "id": "record-views", "from": "record", "to": "views", "variant": "emphasis" },
+    { "id": "views-alerts", "from": "views", "to": "alerts", "variant": "security" },
+    { "id": "trace-outcome", "from": "trace", "to": "outcome", "label": "claimed completion", "variant": "security", "role": "branch" },
+    { "id": "outcome-record", "from": "outcome", "to": "record", "label": "observed result", "variant": "emphasis", "role": "return" }
+  ]
+}

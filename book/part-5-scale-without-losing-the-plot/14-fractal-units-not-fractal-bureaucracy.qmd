@@ -10,6 +10,8 @@ ATOM uses the term **Fractal Unit** for a semi-autonomous group that can run a c
 
 The repeatable object is not the team diagram. It is the contract.
 
+![Fractal Units share enterprise intent, evidence, and stable service interfaces while retaining different local operating practices.](../../assets/diagrams/fractal-units.png){#fig-fractal-units fig-alt="Enterprise intent sets an authority envelope for two local outcome loops. Shared services expose stable interfaces and scarcity. Each unit returns outcome evidence for portfolio learning while keeping its own local practice." width=96%}
+
 ## A unit earns autonomy by closing a loop
 
 A collection of people does not become a unit because it receives a name, leader, and targets. It becomes an operating unit when it can observe an outcome, make relevant decisions, execute inside defined boundaries, and learn from the result.

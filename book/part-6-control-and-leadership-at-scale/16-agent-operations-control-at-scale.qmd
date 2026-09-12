@@ -8,6 +8,8 @@ The company needs an **Agent Operations** capability. It may begin as a responsi
 
 This is different from an AI centre of excellence. A centre often advises projects and spreads methods. Agent Operations runs common control infrastructure and the lifecycle of production actors. It does not decide which customer outcomes a unit should pursue.
 
+![A production agent should move through registration, evaluation, authorization, operation, and retirement; incidents force a stop, repair, and retest.](../../assets/diagrams/agent-lifecycle.png){#fig-agent-lifecycle fig-alt="A production lifecycle from registered to evaluated, authorized, operating, and retired. A stop condition moves an operating agent to incident hold, after which repair and retesting return it to evaluation." width=100%}
+
 ## Register the actors {.unlisted}
 
 Every production agent should have a registry entry containing:

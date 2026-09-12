@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "A Controlled Human–Agent Handoff",
+    "quality_profile": "showcase",
+    "legend": { "mode": "hidden" },
+    "column_fit": "spread",
+    "viewBox": [1040, 900]
+  },
+  "participants": [
+    { "id": "operator", "type": "external", "label": "Operator", "sublabel": "accountable owner" },
+    { "id": "synth", "type": "backend", "label": "Synthesizer", "sublabel": "holds coherence" },
+    { "id": "agent", "type": "backend", "label": "Specialist Agent", "sublabel": "performs task" },
+    { "id": "policy", "type": "security", "label": "Policy Gate", "sublabel": "checks authority" },
+    { "id": "tool", "type": "cloud", "label": "Business Tool", "sublabel": "changes state" },
+    { "id": "evidence", "type": "database", "label": "Evidence Store", "sublabel": "retains trace" }
+  ],
+  "segments": [
+    { "from": 150, "to": 290, "label": "Delegate" },
+    { "from": 310, "to": 525, "label": "Execute inside the envelope" },
+    { "from": 545, "to": 760, "label": "Return control with evidence" }
+  ],
+  "messages": [
+    { "id": "operator-synth", "from": "operator", "to": "synth", "y": 185, "label": "outcome + limits", "variant": "emphasis" },
+    { "id": "synth-agent", "from": "synth", "to": "agent", "y": 235, "label": "task + context + stop rules", "variant": "default" },
+    { "id": "agent-policy", "from": "agent", "to": "policy", "y": 335, "label": "request state-changing action", "variant": "security" },
+    { "id": "policy-agent", "from": "policy", "to": "agent", "y": 385, "label": "bounded authority", "variant": "return" },
+    { "id": "agent-tool", "from": "agent", "to": "tool", "y": 435, "label": "execute approved action", "variant": "emphasis" },
+    { "id": "tool-agent", "from": "tool", "to": "agent", "y": 485, "label": "resulting system state", "variant": "return" },
+    { "id": "agent-evidence", "from": "agent", "to": "evidence", "y": 570, "label": "inputs + tool calls + result", "variant": "dashed" },
+    { "id": "agent-synth", "from": "agent", "to": "synth", "y": 620, "label": "completion or exception", "variant": "return" },
+    { "id": "synth-operator", "from": "synth", "to": "operator", "y": 670, "label": "decision-ready summary", "variant": "emphasis" },
+    { "id": "operator-synth-final", "from": "operator", "to": "synth", "y": 720, "label": "approve · revise · stop", "variant": "security" },
+    { "id": "synth-evidence", "from": "synth", "to": "evidence", "y": 770, "label": "final decision + owner", "variant": "dashed" }
+  ],
+  "activations": [
+    { "participant": "synth", "from": 178, "to": 778, "type": "backend" },
+    { "participant": "agent", "from": 228, "to": 628, "type": "backend" },
+    { "participant": "policy", "from": 328, "to": 392, "type": "security" },
+    { "participant": "tool", "from": 428, "to": 492, "type": "cloud" },
+    { "participant": "evidence", "from": 563, "to": 778, "type": "database" }
+  ]
+}

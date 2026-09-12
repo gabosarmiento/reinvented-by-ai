@@ -13,27 +13,7 @@ ATOM has six connected layers and one control plane. Read them clockwise as a lo
 
 The **control plane** crosses the loop. It provides identity, permissions, limits, approvals, monitoring, intervention, rollback, and accountability.
 
-```{mermaid}
-%%| label: fig-atom-canonical
-%%| fig-cap: "The canonical ATOM loop: intent enters, evidence returns, and learning changes the next cycle. The control plane constrains every layer."
-%%| fig-alt: "A loop through Intent, Context, Decisions, Execution, Evidence, and Learning, surrounded by a Control Plane."
-flowchart LR
-    I[Intent] --> C[Context]
-    C --> D[Decisions]
-    D --> X["Human + Agent<br/>Execution"]
-    X --> E[Evidence]
-    E --> L[Learning]
-    L --> I
-    L --> C
-    P["CONTROL PLANE<br/>identity · authority · guardrails · intervention"] -.-> C
-    P -.-> D
-    P -.-> X
-    P -.-> E
-    classDef core fill:#eaf4ff,stroke:#1876c9,color:#111;
-    classDef control fill:#fff3bf,stroke:#9a7200,color:#111;
-    class I,C,D,X,E,L core;
-    class P control;
-```
+![The canonical ATOM loop: intent enters, evidence returns, and learning changes the next cycle. The control plane constrains the whole loop.](../../assets/diagrams/atom-canonical.png){#fig-atom-canonical fig-alt="A compact clockwise loop connecting Intent, Context, Decision, Human and Agent Execution, Evidence, and Learning. The complete loop sits inside a control-plane boundary containing identity, authority, guardrails, and intervention." width=88%}
 
 That is the complete model. The rest of the book makes each part operational.
 

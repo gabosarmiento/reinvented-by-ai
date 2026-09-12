@@ -12,6 +12,8 @@ ATOM therefore treats evidence as a product of execution. The system must preser
 2. Did it work for the business and the affected party?
 3. What is allowed to change because of what we learned?
 
+![A trace explains the path, an outcome proves the resulting state, and a named owner controls what the organization changes next.](../../assets/diagrams/evidence-learning-loop.png){#fig-evidence-learning-loop fig-alt="A workflow from trigger to decision, action, and outcome state. The decision, action, and outcome feed a traceable decision record. Evaluation of the record leads to an authorized change in policy, context, tests, or design." width=100%}
+
 ## Record the path and the resulting state
 
 A useful trace connects:
