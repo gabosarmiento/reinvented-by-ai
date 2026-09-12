@@ -8,6 +8,10 @@ A randomized field experiment gave half of 6,000 knowledge workers access to gen
 
 The tool improved a local action. The shared routine remained intact.
 
+That distinction explains why adoption dashboards and operating results often diverge. A company may report thousands of prompts, broad license activation, and enthusiastic employee stories while decisions still wait for the same executives. The evidence of use is real. The inference about transformation is not.
+
+Tools spread through tasks because the user can usually decide alone. Operating models change through agreements among people who own different constraints. Sales cannot unilaterally redefine recognized margin. A business unit cannot promise shared engineering capacity that the platform team has not allocated. An agent cannot give itself permission to change a customer contract. These dependencies make system change slower than tool adoption even when everybody likes the tool.
+
 ## What an operating model contains
 
 An operating model is the set of arrangements that converts strategy into repeated results. It includes more than process. It determines:
@@ -22,6 +26,8 @@ An operating model is the set of arrangements that converts strategy into repeat
 
 An AI tool changes the operating model only when it changes one or more of those arrangements. A meeting summary may save time. A decision record that automatically captures the evidence, owner, authority, dissent, and later outcome changes how the company learns. The interface looks similar; the institutional effect is different.
 
+The definition also prevents an org-chart mistake. Reporting lines are one part of the model, but moving a team under a different executive does not repair a missing interface or an ambiguous right. Companies often reorganize because boxes are visible while decision paths are not. Six months later, the same conflict has new attendees.
+
 Consider a discount approval. Sales prepares the request, finance checks margin, legal checks terms, and the COO approves. An assistant can draft each handoff. The request moves through the same rights, queues, and data gaps, only with better prose. If the company instead defines a discount envelope, makes current cost and capacity visible, delegates decisions inside the envelope, and logs exceptions with outcomes, the operating model has changed. AI may support the new path. It did not cause the redesign.
 
 ## The paved cow path
@@ -31,6 +37,12 @@ Automation often preserves an old compromise because the current process is the 
 This is the paved cow path failure. A temporary approval becomes a permanent API. A spreadsheet built to reconcile two unreliable systems becomes an automated reconciliation service. A weekly status meeting becomes an AI-generated status pack. Friction declines, so the underlying liability attracts less attention.
 
 The result can be rational. Paying the interest more cheaply may be worthwhile while the company prepares a deeper change. The error is reporting the saving as transformation.
+
+Consider customer onboarding. A new customer completes a form. Operations re-enters information into an internal system. Finance checks commercial terms. Security reviews the configuration. Customer success explains missing details to the customer. An agent can read the form, populate the internal record, draft the requests, and chase replies. Cycle time falls.
+
+If the same data remains defined differently across systems, the agent has become an unusually efficient reconciler. If every non-standard term still waits for a senior executive because authority is unclear, the agent has become an unusually efficient escalator. Both uses may create value. Neither changes the company's ability to absorb a new product or business unit.
+
+A redesign would ask which customer facts should be captured once, which system owns them, which configurations fit a standard policy, which exceptions require judgment, and who may decide them. The agent then operates inside a simpler path and makes that path observable. Automation follows design rather than substituting for it.
 
 There are three levels of improvement:
 
@@ -42,6 +54,8 @@ There are three levels of improvement:
 
 The levels build on one another. A task improvement can fund a workflow redesign. A successful workflow can reveal a better allocation of authority. Problems begin when management assumes the levels are interchangeable.
 
+There is no shame in staying at the first level. A lawyer who drafts a first version faster or an analyst who explores more alternatives may be worth the license. The organization should name the result accurately. Honest local gains are more useful than inflated enterprise claims because they reveal where the next constraint actually moved.
+
 ## Local output can create system load
 
 Every team can optimize itself and make the company slower.
@@ -52,6 +66,16 @@ The correct unit of analysis is the complete path from intent to verified result
 
 This does not require a central transformation office to approve every use. Teams should experiment. But every material pilot needs an owner for the end-to-end result, not merely the tool. That owner should know which metric may improve, which downstream cost may rise, and what would justify stopping.
 
+The owner also needs a counter-metric. If generated sales proposals increase, track acceptance, margin, revision, and delivery exceptions. If code output rises, track accepted throughput, change failure, review load, and maintainability. If an assistant closes support cases, track repeat contact and customer outcome. A local measure tells the team whether the tool is active. A counter-metric shows whether the rest of the system is paying for that activity.
+
+## Bottom-up adoption still matters
+
+Operating design should not become an excuse for central control. Many valuable uses are discovered by people close to the work. A mandated enterprise program can freeze learning while it waits for a perfect architecture.
+
+The better pattern has two speeds. People experiment with bounded, reversible work using approved tools and data. When a use begins to affect customers, shared systems, money, rights, or other teams, it crosses an operating threshold. The owner must then make context, authority, controls, evidence, and downstream effects explicit.
+
+This threshold avoids both extremes. The company does not review every private draft. It also does not allow a useful personal shortcut to become an invisible production dependency.
+
 ## The test
 
 Before calling an initiative an operating-model change, complete this sentence:
@@ -59,6 +83,12 @@ Before calling an initiative an operating-model change, complete this sentence:
 > We used to rely on **[old intent, context, right, interface, control, evidence, or learning mechanism]**. We now rely on **[new mechanism]**, which allows **[specific changed behavior]** while protecting **[specific consequence]**.
 
 “Employees now use copilots” fails the test. “Business-unit leads now decide discounts inside a live margin and capacity envelope, while exceptions route to finance with a trace” passes it.
+
+An AI-using leader can apply the test directly. Give an approved assistant the pilot description, workflow records, policy, and outcome data. Ask it to produce two maps: what changed inside the task, and what changed in the surrounding operating system. Require source evidence for each claim and ask which costs may have moved to another team.
+
+> **Pilot audit prompt:** Separate the observed change into task, workflow, and operating-model effects. For each claimed benefit, identify the complete path to a customer or economic outcome, the downstream work created, the decision right affected, the evidence available, and the strongest alternative explanation. Do not treat adoption, output volume, or reported time saved as proof of enterprise value.
+
+The response is an argument to test, not a verdict. Its value is that management can perform this challenge while the pilot is still small.
 
 The distinction protects the company from two mistakes. The first is underestimating a useful local tool because it did not transform the enterprise. The second is overestimating adoption because many people opened an application.
 

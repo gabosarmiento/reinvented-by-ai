@@ -37,6 +37,8 @@ flowchart LR
 
 That is the complete model. The rest of the book makes each part operational.
 
+The loop can be entered from two directions. Leadership can begin with intent: a strategic outcome that needs an operating path. Operations can begin with evidence: a recurring failure, customer signal, or exception that reveals the present system. In both cases, ATOM asks the company to connect the whole cycle. Strategy without returning evidence becomes instruction. Evidence without a route to authority becomes reporting.
+
 ## Intent is a usable constraint
 
 “Grow efficiently” is not intent. It does not tell a team what to trade away, which customer matters, or how long the choice should hold.
@@ -45,11 +47,17 @@ Usable intent names an outcome and its boundary. A new business unit might be as
 
 Intent is not a cascade of slogans. It is a constraint that makes local decisions coherent.
 
+A useful intent statement contains tension. “Increase adoption” invites activity. “Increase activation among mid-market customers without raising implementation effort per account” names a result and protects an operating condition. Teams can now reject a feature that attracts sign-ups but increases manual setup. An agent can search for options without being allowed to redefine the tradeoff.
+
+Intent also has a shelf life. A temporary cash constraint should not remain embedded in agent policy after financing changes. A market-entry priority should not silently govern a mature business. The owner and review date belong beside the statement.
+
 ## Context is governed state
 
 Context includes live business data, policy, customer history, commitments, prior decisions, and the state of the work. It also includes provenance: where the information came from, when it was updated, who owns it, and who may see it.
 
 More context is not always better. An agent handling a refund does not need the entire customer data lake. It needs the current account state, the applicable policy, relevant interaction history, and authority limits. Excess context raises cost, creates privacy exposure, and makes conflicts harder to detect.
+
+Context is where many implementations hide organizational choices inside technical retrieval. Selecting an “authoritative” document decides which function's view governs. Setting freshness decides how long the company tolerates drift. Granting access decides which actor can combine sensitive facts. These are operating decisions implemented through infrastructure.
 
 ## A decision is a commitment
 
@@ -57,17 +65,23 @@ Analysis becomes a decision when an authorized actor commits the company. The ac
 
 Every recurring decision should expose its owner, inputs, criteria, consequence, reversibility, evidence requirement, and escalation path. Without these, an agent may offer advice but cannot receive legitimate autonomy.
 
+Decision design also clarifies the role of the center. The center should not decide every case shared functions care about. It should define the enterprise constraints, resolve conflicts among units, and own decisions whose consequences cross the whole company. Local owners decide inside that space.
+
 ## Execution is a designed combination
 
 Execution belongs to the system best suited to the work. Deterministic software handles stable rules. Models interpret ambiguity. Agents manage bounded multi-step work. People set intent, exercise judgment, negotiate conflict, absorb legitimate exceptions, and remain accountable.
 
 The design question is not “human or AI?” It is where each hands work to the other, what state transfers, and what happens when the receiver cannot proceed.
 
+Execution may run in parallel. Several agents can research, test, or prepare options at once. The operating path still needs a convergence point: a decision, accepted artifact, verified state, or stopped run. Parallelism without convergence creates more outputs than the company can integrate.
+
 ## Evidence is an output
 
 ATOM produces two outputs: a business result and evidence about how the result was produced. Evidence includes source versions, decisions, approvals, actions, tool responses, exceptions, cost, and outcome measures. Its depth should match the consequence.
 
 An organization that only records the final answer cannot distinguish a lucky result from a reliable system. It also cannot investigate harm, improve an agent, or defend the decision later.
+
+Evidence is selective, not total surveillance. The company does not need to retain every internal token or employee action. It needs the material facts required to reconstruct a consequential result. Retention, access, and deletion are themselves control decisions.
 
 ## Learning has an owner
 
@@ -77,6 +91,20 @@ Approved and reusable changes enter the **ATOM Playbook**: the maintained collec
 
 ATOM closes the loop by sending approved changes to intent or context. It does not let every observation alter production behavior immediately.
 
+Approved reusable knowledge enters the **ATOM Playbook**: the maintained set of intent statements, context definitions, decision specifications, unit contracts, controls, evaluation cases, and operating lessons that other loops can apply. The Playbook is not a transcript archive. It contains what the organization has chosen to remember.
+
+## One refund through the loop
+
+Take a customer who requests a refund after a service failure.
+
+**Intent** says the company will restore trust quickly while protecting against fraud and preserving consistent treatment. **Context** provides account state, transaction history, service incident, current refund policy, customer communications, and verified identity. **Decision** grants an agent authority to approve standard refunds below a threshold when the service failure and identity are confirmed. **Execution** issues the refund through a payment tool, informs the customer, and opens a service-quality record. **Evidence** retains the sources, policy version, decision, action result, and later repeat contact. **Learning** may reveal that one failure category is creating avoidable refunds and route that pattern to the product owner.
+
+The control plane binds each step. The agent uses a scoped identity. It cannot change the policy or send money to a different account. A high amount, identity conflict, or vulnerable-customer flag routes to a person. The customer can challenge the result.
+
+Now alter one condition. The payment system confirms success, but the account ledger fails to update. Execution is only partly complete. Evidence should make the split state visible and trigger recovery. A dashboard that records the agent's tool call as a successful refund would teach the organization the wrong lesson.
+
+The example is small enough to draw and rich enough to expose the architecture. The same grammar can govern a capital allocation, production incident, hiring decision, or new-business experiment. The depth of context and control changes with consequence; the loop does not.
+
 ## What ATOM is not
 
 ATOM is not an autonomous company. Organizations contain power, conflict, law, identity, trust, and consequences that cannot be reduced to a feedback diagram.
@@ -85,6 +113,8 @@ It is not a technology stack. A company can implement the loop with ordinary dat
 
 It is not a replacement for Lean, Agile, product operating models, or sound functional management. It inherits their concern for flow, feedback, customer value, small batches, and capable teams. It adds a more explicit architecture for decision rights, machine actors, evidence, and control.
 
+ATOM also resists a weakness common to feedback metaphors: the assumption that the measured target is the right one. A tight loop can optimize the wrong outcome with great efficiency. Leadership remains responsible for choosing intent, listening to people the metric excludes, and stopping a locally successful system that damages the wider company.
+
 Nor is ATOM the org chart. The same loop can operate inside a function, across a customer journey, or within a business unit. At scale, repeated loops can form semi-autonomous units, provided their interfaces and central constraints are clear.
 
 The shortest definition is therefore the most useful:
@@ -92,3 +122,5 @@ The shortest definition is therefore the most useful:
 > **ATOM is a governed learning loop that converts intent and authorized context into decisions, human-agent execution, and evidence.**
 
 A reader should now be able to draw it. Start with the six layers. Draw the return from learning. Place control across the path. If an implementation cannot say what enters, who may decide, what may act, what proof returns, and who may change the system, it is not yet an ATOM loop.
+
+When mapping a real workflow, use the diagram as an interrogation device. Ask an approved AI assistant to infer the six layers from actual records, then mark every answer that is absent, contradictory, or merely assumed. The blank spaces usually matter more than the polished map. They show where the company is depending on private memory, informal authority, or unobserved recovery work.
