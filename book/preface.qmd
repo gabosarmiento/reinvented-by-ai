@@ -1,0 +1,17 @@
+# Preface: The Company Is the Design Problem {.unnumbered}
+
+There is a point in a growing company when being the person who can solve anything becomes a liability.
+
+The founder-COO has hired strong people. A Head of Operations now runs delivery. Product, finance, and commercial leaders own their functions. Yet the consequential decisions still return to the founder: a non-standard price, a senior hire, a promise to a strategic customer, a conflict between the established business and a new one.
+
+The company has delegated tasks. It has not transferred the context and authority required to make decisions.
+
+AI makes this condition easier to see and easier to worsen. Teams can produce analysis, software, campaigns, and operating plans much faster. Agents can increasingly act in business systems. But the company still has to decide what matters, which evidence to trust, where authority sits, and who answers when the result is wrong. Faster production sends more work toward any unresolved boundary.
+
+This book is for the operating leader at that boundary: usually a founder, COO, or transformation executive helping a company move from a few dozen people toward a real management system, often while adding products, business units, or geographies. The problem is not simply adoption. Most readers already use AI. The problem is building a company that can convert human and machine intelligence into sound decisions without routing every exception through one person.
+
+ATOM - the Adaptive Transformation Operating Model - is the model developed in these pages. It is a hypothesis about how such a company can operate. It joins intent, context, decisions, human-agent execution, evidence, and learning under explicit controls. It is not a software product, an org chart, or a promise of autonomous management.
+
+The standard throughout the book is practical. Where a claim rests on research, the source is named. Where a company practice is public, it is identified as a real case. Where the narrative combines familiar patterns, it is labeled as an illustrative example. The reader should be able to disagree with the model, alter it, and still use its parts.
+
+The central claim is simple: when production becomes cheap, company design becomes the constraint. The founder's next job is not to make more decisions. It is to design a company capable of making them.

@@ -1,0 +1,51 @@
+# Accountability Cannot Be Delegated {#sec-accountability}
+
+An agent sends the message. A manager approved the workflow. A vendor supplied the model. A platform team exposed the tool. A business unit defined the target.
+
+When the outcome harms a customer, each party can accurately describe only part of the cause. The organization still owes an answer.
+
+## Separate five ideas
+
+**Execution** is performing an action. **Authority** is legitimate permission to choose or act. **Responsibility** is an assigned duty within the system. **Accountability** is the obligation to explain, justify, and repair the outcome. **Liability** is the legal allocation of consequences.
+
+An agent can execute and receive bounded authority. It cannot hold institutional accountability. A vendor contract may allocate liability without becoming the company's moral or managerial answer to an affected person.
+
+## Build the accountability chain
+
+For each consequential agent-assisted outcome, the company should be able to trace:
+
+1. the board or executive intent;
+2. the business owner who chose the use and result;
+3. the authority granted to the person, workflow, or agent;
+4. the context, controls, and version in force;
+5. the actual action and evidence;
+6. the person or group affected;
+7. the route to challenge, correction, and remedy.
+
+The chain prevents a familiar form of evasion: the model made the decision. Models produce outputs inside systems that people select, connect, authorize, and operate.
+
+For uses covered by law, specific duties may attach to providers and deployers. The EU AI Act, for example, requires deployers of high-risk systems to assign human oversight to people with the necessary competence, authority, and support, alongside other technical and organizational measures [@eu-ai-act-2026]. The exact legal duty depends on role and use. The operating principle is broader: oversight without authority is ceremonial.
+
+## Recourse is part of the design
+
+An affected person needs more than disclosure that AI was involved. They need a way to contest the relevant result, reach someone able to change it, and receive repair when warranted.
+
+The route should match the consequence. A poor recommendation may need feedback. A denied service, employment action, financial decision, or binding contract may require explanation, preserved evidence, independent review, and timely correction. The person handling the appeal should not merely ask the same system again.
+
+Recourse also improves the operating model. Challenges reveal missing context, harmful proxies, weak policy, and cases the evaluation suite did not contain. The organization should connect them to learning without using affected people as unpaid testers.
+
+## Illustrative failure review
+
+A hiring-screening agent ranks a candidate below the interview threshold. A recruiter follows the recommendation. Months later, an audit finds that the agent inferred seniority from job-title patterns that disadvantaged candidates from smaller companies.
+
+The failure review should not end with the recruiter or model. The business owner chose automated ranking. The data owner approved the inputs. The agent owner defined the evaluation. The control owner approved the authority boundary. Executive intent prioritized processing speed without an adequate fairness and recourse measure.
+
+The company pauses the action, identifies affected decisions, offers review, repairs the evaluation set, changes the allowed features, and reconsiders whether ranking should carry that authority. Accountability moves upward to the people able to change the system and outward to those who experienced the result.
+
+## Capability does not dissolve obligation
+
+Future agents may operate for longer periods, coordinate with other agents, and manage larger budgets. If capability rises, companies may move human attention from individual actions to authority design, monitoring, incident response, and periodic review.
+
+One condition must remain true: a named human institution can explain why the system was permitted to act and can intervene on behalf of those affected. If nobody can do so because autonomy is distributed across vendors, agents, and policies, the organization has not transcended management. It has abandoned accountability.
+
+Companies may delegate action to software. They cannot delegate the duty to justify, repair, and answer for the consequences.

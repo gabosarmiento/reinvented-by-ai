@@ -1,7 +1,9 @@
-# The Adaptive Company {.unnumbered}
+# How to Read This Book {.unnumbered}
 
-*A Practical Operating System for Human-Agent Work*
+This book is built around one operating problem: AI increases the amount of analysis and execution a company can produce, but production is rarely the only constraint. Decisions, context, interfaces, control, and learning determine whether that new capacity becomes value.
 
-Gabriel Sarmiento
+Part I identifies the shift and shows how Hidden Operational Debt can be observed in customer conversations, workflow records, software, and decision traces. Part II defines ATOM - the Adaptive Transformation Operating Model - as a loop from intent through evidence and learning. Part III shows the loop operating with real stops, exceptions, and human judgment. Part IV gives a bounded path from pilot selection through a thirty-day build and a ninety-day evidence gate. Parts V and VI address multi-business scale, shared resources, agent operations, management, and accountability.
 
-AI changes more than the tools people use. It changes how intent becomes action, how authority is delegated, how evidence is produced, and how the company learns.
+The book is explicit when introducing research evidence, a real documented practice, an illustrative example, or an operating hypothesis. Those distinctions matter. A useful model should not borrow certainty from a company story or present a plausible scenario as evidence.
+
+You do not need to implement the whole model. Choose one recurring decision that crosses a painful boundary. Read the book with that decision in mind. By the Field Kit, you should be able to specify its intent, context, authority, execution, evidence, controls, and learning cycle on one page.

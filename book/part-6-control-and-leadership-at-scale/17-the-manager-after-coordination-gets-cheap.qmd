@@ -1,0 +1,51 @@
+# The Manager After Coordination Gets Cheap {#sec-manager}
+
+Management will not disappear because an agent can summarize status. Some management work should disappear.
+
+A manager who collects updates, reformats them, and carries information between rooms is performing coordination that software can increasingly reduce. A manager who clarifies intent, designs decisions, resolves conflict, develops judgment, and repairs interfaces is doing work the organization needs more of as execution accelerates.
+
+## Five accountabilities
+
+The manager in an adaptive company has five enduring accountabilities.
+
+**Set usable intent.** Translate strategy into outcomes and constraints that a team can apply without asking for preference on every case.
+
+**Design decisions.** Make ownership, evidence, authority, escalation, and recourse explicit. Delegation is incomplete until the receiver can make a valid choice the manager dislikes.
+
+**Maintain context.** Ensure the team can reach current facts, policy, history, and customer reality. Do not become the private database that makes every decision possible.
+
+**Resolve exceptions and conflict.** Handle the work that cannot be settled within existing interfaces. Then decide whether the exception should remain rare or trigger a redesign.
+
+**Develop judgment.** Help people understand tradeoffs, not simply reproduce the manager's answer. Use agent traces and decision outcomes as material for coaching.
+
+These accountabilities do not imply that every manager becomes an AI specialist. They imply that management shifts from moving information to improving the conditions under which decisions are made.
+
+## The Synthesizer
+
+ATOM uses one specialized coordination role. A **Synthesizer** helps an outcome loop preserve coherence across intent, context, decisions, execution, and evidence. The role may be held by a product operations lead, chief of staff, program leader, or manager. It is not automatically a new job title.
+
+The Synthesizer notices that the team is optimizing a proxy, that an exception lacks an owner, that two sources conflict, or that learning never enters the Playbook. The role convenes the right decision and improves the interface. It does not become the permanent human router for all work. If everything depends on the Synthesizer's memory, the role has recreated the debt it was meant to remove.
+
+## Building middle management
+
+A company moving from forty to one hundred and fifty people needs managers because coordination, development, and local judgment become real work. Adding layers before defining their rights creates messengers. Avoiding layers while every conflict returns to the founder creates bottlenecks.
+
+Start with recurring decisions and interfaces. Give a manager an outcome, visible economics, authority, context, and a route for exceptions. Decide which decisions belong to the business unit, shared function, and center. Then choose the span that allows the manager to perform the work, rather than importing a universal ratio.
+
+Agents can reduce reporting and preparation load. They may allow a manager to support a wider span in stable work. In novel, physical, regulated, or relationship-heavy work, human attention may remain the constraint. The organization should change spans from observed work, not a forecast of automatic leverage.
+
+## Influence without hierarchy
+
+The strategic COO increasingly works across peers who do not report to them. Authority comes from making the enterprise tradeoff legible.
+
+Frame the contested decision, expose shared dependencies, show the evidence and uncertainty, state which right belongs where, and name the cost of delay. Ask a model to challenge the argument, surface stakeholder incentives, and generate plausible objections before the meeting. Use it to improve preparation, not simulate consensus.
+
+Peer influence grows when the COO can separate enterprise constraints from personal preference. The goal is not to win every argument. It is to leave the company with a decision that others understand and can execute.
+
+## The founder's hardest delegation
+
+The founder has given a business-unit leader a margin envelope. The leader chooses a price inside it. The founder believes another price would be better.
+
+If the decision is sound, within authority, and supported by required evidence, taking it back teaches the organization that delegation ends at disagreement. The founder may challenge the reasoning, watch the outcome, and revise the envelope at the agreed review. They should not silently reclaim the case.
+
+This is where personal standards can limit initiative. High standards are valuable; unstated standards enforced through intervention are not. The manager after cheap coordination is a steward of the decision system, including when the system produces an answer they would not have chosen.

@@ -1,0 +1,41 @@
+# Allocate Capital, Talent, and Knowledge Dynamically {#sec-allocation}
+
+Adaptability is not the frequency with which a company changes priorities. A company that reallocates people every two weeks can be highly reactive and incapable of learning.
+
+Dynamic allocation means that evidence can change the commitment of capital, talent, and shared capacity at a cadence matched to the reversibility of the decision.
+
+## Fund options, not forecasts
+
+An emerging business needs enough capital to resolve uncertainty, not a five-year plan disguised as precision. Release funding in stages tied to evidence: customer behavior, unit margin, asset use, operational feasibility, or a technical capability.
+
+The unit has authority inside the tranche. The portfolio group decides whether evidence justifies the next one. AI can compare assumptions with current signals, surface variance, and simulate alternatives. It should not automatically move capital. Portfolio choices contain strategic judgment and opportunity cost that remain executive responsibilities.
+
+Mature operations need a different cadence. Constantly reopening a factory plan, regulated process, or committed customer program destroys value. “Continuous” strategy means signals remain visible between formal decisions, not that every decision remains permanently unsettled.
+
+## Protect the economics of shared assets
+
+A multi-business company cannot delegate well if units cannot see what they consume. Shared engineering, distribution, data, brand, or physical capacity needs an explicit allocation method. It does not have to reproduce accounting perfection. It must be consistent enough that local decisions reflect real scarcity.
+
+Useful questions include: Which asset constrains growth? What return does each use produce? Which demand is committed versus optional? What buffer protects reliability? Which unit is exporting cost to another?
+
+AI can detect patterns in usage and forecast pressure. The allocation rule still needs an owner and an appeal path. A model optimizing measured return may starve a new activity whose strategic value has not yet appeared in historical data.
+
+## Move expertise without dissolving teams
+
+Talent marketplaces promise to match skills to opportunities. Used carefully, they can make hidden capability visible and help people find work beyond their reporting line. Used badly, they turn employees into interchangeable capacity and managers into bidders.
+
+Team cohesion, domain knowledge, consent, development, and career identity are real constraints. A specialist loan should specify purpose, duration, home team, receiving owner, protected time, learning to return, and what happens when priorities conflict. The employee should be able to challenge an algorithmic match and understand which data informed it.
+
+**Illustrative example.** The newer business unit needs a reliability engineer for six weeks. An internal matching assistant identifies three people from project histories and declared interests. The highest-ranked candidate is rejected because she is carrying an incident-recovery commitment invisible to the model. The second accepts a time-bounded assignment. Her home team receives backfill capacity, and the platform lesson becomes a shared standard rather than private expertise.
+
+The model accelerated discovery. Human context changed the decision. The contract protected both teams.
+
+## Treat knowledge as maintained infrastructure
+
+Shared knowledge does not improve because the company generates more documents. It improves when reliable decisions, interfaces, policies, and lessons are reusable at the point of work.
+
+Every knowledge product needs an owner, audience, source, freshness expectation, and retirement rule. Search logs and agent failures can reveal unanswered questions. Customer conversations can reveal where policy and reality diverge. Unit reviews can nominate a local pattern for reuse. A shared owner decides whether the pattern becomes an enterprise invariant, an optional template, or remains local.
+
+The ATOM Playbook is this maintained set of operating knowledge. It is not a culture wiki or archive of every meeting. It contains the definitions, unit contracts, decision specifications, context products, controls, evaluation cases, and lessons the company expects others to reuse.
+
+Dynamic allocation is disciplined movement. Capital changes when an option earns another commitment. Talent moves through a contract that respects teams and people. Knowledge travels after it becomes reliable enough to reuse. Adaptability comes from changing deliberately, not keeping everything in motion.

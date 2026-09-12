@@ -1,0 +1,94 @@
+# ATOM: Intent In, Evidence Out {#sec-atom}
+
+An operating model should be drawable without a slide deck.
+
+ATOM has six connected layers and one control plane. Read them clockwise as a loop:
+
+1. **Intent** states the outcome, priority, boundaries, and time horizon.
+2. **Context** supplies the authorized facts, policy, history, and current state.
+3. **Decisions** convert intent and context into a committed choice.
+4. **Execution** combines people, deterministic software, workflows, and agents.
+5. **Evidence** records what happened and what result followed.
+6. **Learning** changes the relevant assumption, context, policy, capability, or strategy.
+
+The **control plane** crosses the loop. It provides identity, permissions, limits, approvals, monitoring, intervention, rollback, and accountability.
+
+```{mermaid}
+%%| label: fig-atom-canonical
+%%| fig-cap: "The canonical ATOM loop: intent enters, evidence returns, and learning changes the next cycle. The control plane constrains every layer."
+%%| fig-alt: "A loop through Intent, Context, Decisions, Execution, Evidence, and Learning, surrounded by a Control Plane."
+flowchart LR
+    I[Intent] --> C[Context]
+    C --> D[Decisions]
+    D --> X["Human + Agent<br/>Execution"]
+    X --> E[Evidence]
+    E --> L[Learning]
+    L --> I
+    L --> C
+    P["CONTROL PLANE<br/>identity · authority · guardrails · intervention"] -.-> C
+    P -.-> D
+    P -.-> X
+    P -.-> E
+    classDef core fill:#eaf4ff,stroke:#1876c9,color:#111;
+    classDef control fill:#fff3bf,stroke:#9a7200,color:#111;
+    class I,C,D,X,E,L core;
+    class P control;
+```
+
+That is the complete model. The rest of the book makes each part operational.
+
+## Intent is a usable constraint
+
+“Grow efficiently” is not intent. It does not tell a team what to trade away, which customer matters, or how long the choice should hold.
+
+Usable intent names an outcome and its boundary. A new business unit might be asked to prove that a particular customer problem can support a positive contribution margin without consuming more than a stated amount of shared engineering capacity. The unit now has room to act and a reason to refuse attractive work that violates the experiment.
+
+Intent is not a cascade of slogans. It is a constraint that makes local decisions coherent.
+
+## Context is governed state
+
+Context includes live business data, policy, customer history, commitments, prior decisions, and the state of the work. It also includes provenance: where the information came from, when it was updated, who owns it, and who may see it.
+
+More context is not always better. An agent handling a refund does not need the entire customer data lake. It needs the current account state, the applicable policy, relevant interaction history, and authority limits. Excess context raises cost, creates privacy exposure, and makes conflicts harder to detect.
+
+## A decision is a commitment
+
+Analysis becomes a decision when an authorized actor commits the company. The actor may be a person, a deterministic rule, or an agent acting within delegated bounds. ATOM does not assume the human always makes the final call. It requires the source and limit of authority to be explicit.
+
+Every recurring decision should expose its owner, inputs, criteria, consequence, reversibility, evidence requirement, and escalation path. Without these, an agent may offer advice but cannot receive legitimate autonomy.
+
+## Execution is a designed combination
+
+Execution belongs to the system best suited to the work. Deterministic software handles stable rules. Models interpret ambiguity. Agents manage bounded multi-step work. People set intent, exercise judgment, negotiate conflict, absorb legitimate exceptions, and remain accountable.
+
+The design question is not “human or AI?” It is where each hands work to the other, what state transfers, and what happens when the receiver cannot proceed.
+
+## Evidence is an output
+
+ATOM produces two outputs: a business result and evidence about how the result was produced. Evidence includes source versions, decisions, approvals, actions, tool responses, exceptions, cost, and outcome measures. Its depth should match the consequence.
+
+An organization that only records the final answer cannot distinguish a lucky result from a reliable system. It also cannot investigate harm, improve an agent, or defend the decision later.
+
+## Learning has an owner
+
+Learning is not a generic retrospective. Evidence may suggest that the model needs a new evaluation, the context source needs repair, a permission is too broad, a decision threshold is wrong, or the strategy itself failed. These changes belong to different owners. Letting one agent rewrite all of them would collapse learning and control into the same authority.
+
+Approved and reusable changes enter the **ATOM Playbook**: the maintained collection of decision specifications, unit contracts, context products, controls, evaluation cases, and operating lessons used in future loops. It is curated memory, not a transcript archive.
+
+ATOM closes the loop by sending approved changes to intent or context. It does not let every observation alter production behavior immediately.
+
+## What ATOM is not
+
+ATOM is not an autonomous company. Organizations contain power, conflict, law, identity, trust, and consequences that cannot be reduced to a feedback diagram.
+
+It is not a technology stack. A company can implement the loop with ordinary databases, workflow tools, meetings, and carefully bounded assistants. New infrastructure is justified only when the current tools cannot provide the needed context, action, or evidence.
+
+It is not a replacement for Lean, Agile, product operating models, or sound functional management. It inherits their concern for flow, feedback, customer value, small batches, and capable teams. It adds a more explicit architecture for decision rights, machine actors, evidence, and control.
+
+Nor is ATOM the org chart. The same loop can operate inside a function, across a customer journey, or within a business unit. At scale, repeated loops can form semi-autonomous units, provided their interfaces and central constraints are clear.
+
+The shortest definition is therefore the most useful:
+
+> **ATOM is a governed learning loop that converts intent and authorized context into decisions, human-agent execution, and evidence.**
+
+A reader should now be able to draw it. Start with the six layers. Draw the return from learning. Place control across the path. If an implementation cannot say what enters, who may decide, what may act, what proof returns, and who may change the system, it is not yet an ATOM loop.

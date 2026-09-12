@@ -1,0 +1,47 @@
+# Human-Agent Execution {#sec-execution}
+
+The phrase “human in the loop” hides more than it explains. Which human? At what point? With what information? Able to change what? Accountable for which consequence?
+
+Good execution design begins with the work, not a general rule that humans should approve or agents should automate.
+
+## Choose the right executor
+
+Stable, explicit rules belong in deterministic software. Language models are useful when the work requires interpreting unstructured material or producing variable outputs. Agents become relevant when a model must select tools and manage several steps toward a goal. People remain essential where intent is contested, tacit context matters, consequences require legitimate judgment, or relationships carry the work.
+
+An agent is not simply a better chatbot. It can decide which action to take next, invoke tools, observe the result, and continue. That flexibility is valuable precisely where a fully specified workflow is difficult. It is also the source of risk. OpenAI's practical definition emphasizes independent task completion through models, tools, and instructions, with the ability to stop and transfer control [@openai-agent-guide-2025].
+
+The organization should use the least autonomous mechanism that solves the problem reliably.
+
+| Level | System behavior | Human role |
+|---|---|---|
+| **Assist** | Retrieve, summarize, draft | Decide and act |
+| **Propose** | Recommend an action with evidence | Approve, change, or reject |
+| **Act with approval** | Prepare the exact transaction | Authorize execution |
+| **Act and report** | Execute within a narrow policy | Review samples and exceptions |
+| **Act within a budgeted policy** | Plan and execute several steps inside limits | Own outcome, monitor, intervene |
+
+Autonomy can differ by action inside one task. A vendor-research agent may search public sources, compare offers, and schedule interviews. It may draft a purchase request. It cannot accept terms, expose confidential data, or send payment unless those separate authorities are granted.
+
+## Design the handoff
+
+The most expensive failures occur at boundaries. An agent escalates without the work it performed. A human approves without seeing the source. Two agents pass summaries until the original customer constraint disappears. A reviewer becomes a rubber stamp because rejecting the action takes longer than accepting it.
+
+A handoff contract states the trigger, receiver, state transferred, evidence required, time expectation, and return path. “Ask a human if uncertain” is not a contract. “Route to the duty manager when the requested refund exceeds the envelope or identity cannot be verified; attach the customer record, policy version, actions attempted, reason for stop, and proposed next action” is.
+
+Review capacity must be designed with execution capacity. If coding agents can open twenty pull requests while qualified maintainers can review four, the system should limit starts, improve tests, or narrow agent scope. Adding more generation creates a queue, not leverage.
+
+## The Synthesizer
+
+ATOM retains one distinctive role from the original model: the **Synthesizer**. This is not an AI whisperer or meeting facilitator. The Synthesizer maintains coherence across a consequential loop.
+
+The role connects intent to the current operating state, exposes conflicts among functions, makes missing decisions visible, and ensures that evidence reaches the owner who can change the system. In a small company the COO may act as Synthesizer. In a business unit it may be the general manager, chief of staff, product-operations lead, or another operator with enough range and trust.
+
+The role should not become a new dependency. A good Synthesizer improves interfaces and decision design so less work requires synthesis by one person. If every cross-functional decision waits for the Synthesizer, the company has renamed its bottleneck.
+
+## Multi-agent is an architecture choice
+
+Several agents can explore in parallel or divide specialized work. They also create more handoffs, duplicated effort, conflicting state, and difficult attribution. Use multiple agents when the tasks are genuinely separable or independent comparison adds value. Do not use them to imitate an org chart.
+
+Anthropic's evaluation guidance stresses that agent behavior must be judged through both trajectory and outcome, using code-based, model-based, and human graders where each fits [@anthropic-agent-evals-2026]. That applies to execution design: test not only whether the final artifact looks good, but whether the system used permitted tools, preserved state, stopped correctly, and produced the intended business result.
+
+The design target is not minimum human involvement. It is minimum ambiguity at the boundary. Humans and agents should each know what they received, what they may do, what proof they owe, and where responsibility remains.

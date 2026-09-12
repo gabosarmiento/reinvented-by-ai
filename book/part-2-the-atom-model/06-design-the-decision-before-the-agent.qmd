@@ -1,0 +1,62 @@
+# Design the Decision Before the Agent {#sec-decisions}
+
+Companies frequently delegate work without delegating the decision. A manager prepares the recommendation, collects the evidence, and coordinates the stakeholders. The founder still chooses. Installing an agent in that arrangement gives the manager faster preparation and the founder more decisions to absorb.
+
+The remedy begins before the agent is selected. Design the decision.
+
+## Inventory commitments, not meetings
+
+A decision inventory records moments when the company commits money, capacity, access, reputation, or a course of action. “Weekly pricing committee” is not a decision. “Approve a discount outside the standard envelope” is.
+
+For each recurring decision, record:
+
+- the outcome it protects;
+- the accountable owner;
+- required inputs and their sources;
+- criteria and prohibited conditions;
+- consequence if wrong;
+- reversibility and cost of reversal;
+- time available;
+- authority granted to people, rules, and agents;
+- evidence retained;
+- escalation and appeal;
+- and the date the design itself will be reviewed.
+
+This inventory often exposes phantom delegation. The business-unit lead owns the result but cannot approve price, hire within budget, or commit shared capacity. Accountability moved on the org chart; authority stayed at the center.
+
+## Consequence and reversibility shape autonomy
+
+Not all uncertainty deserves a human approval. A low-cost, reversible action can often be delegated with monitoring. A consequential but reversible action may be executed within a budget and reported immediately. An irreversible or rights-affecting decision should usually receive stronger review, separation of duties, and recourse.
+
+| Consequence | Reversibility | Default design |
+|---|---|---|
+| Low | Easy | Act within policy; log the result |
+| Material | Easy | Act within limits; monitor and sample |
+| Low | Difficult | Propose or require approval |
+| High | Difficult | Named human decision, strong evidence, independent control |
+
+This is a starting posture, not law. A high-frequency low-value action can create material aggregate exposure. A reversible public message may still damage trust. The owner has to consider scale, affected parties, and failure concentration.
+
+OpenAI's public agent-building guidance similarly recommends human intervention when failure thresholds are exceeded and for sensitive, irreversible, or high-stakes actions [@openai-agent-guide-2025]. The principle is wider than any vendor: intervention should be triggered by consequence and uncertainty, not by a vague demand to keep a human “in the loop.”
+
+## Authority is specific
+
+“The agent can handle refunds” is not an authority grant. A usable grant might allow the customer-service agent to issue a refund up to a stated amount when the account, purchase, and policy conditions are verified; prohibit action when fraud indicators or vulnerable-customer flags are present; require a reason and source references; and route exceptions to a named queue.
+
+The same precision applies to humans. A business-unit leader may set price inside an agreed margin and risk envelope. Finance owns the cost model, not each price decision. The center owns changes to the envelope, not every exception inside it.
+
+True delegation allows a sound decision the founder would not personally have made. If the founder routinely reopens choices that satisfy the agreed criteria, the authority grant is fictional.
+
+## Prediction does not supply judgment
+
+AI can estimate churn, demand, fraud, delay, or the likely result of an option. The company still has to assign value to consequences. Should margin be sacrificed to enter a strategic account? How much false-positive fraud blocking is acceptable? Which customer harm requires recourse even if expected revenue rises?
+
+These are judgment questions. They can be informed by data and challenged by a model, but they require legitimate ownership. Gans's separation of prediction from the rest of the decision is useful here: cheaper prediction raises the value of complementary judgment and action [@gans-2025-microeconomics].
+
+## Turn a recurring escalation into a specification
+
+Take the last ten decisions of one type that returned to the COO. Give an approved model the records and ask it to identify repeated inputs, criteria, missing context, reasons for escalation, reversals, and outcomes. Ask it to draft a decision specification and mark every inferred rule.
+
+The owner then does the difficult work: chooses the tradeoffs, names the authority boundary, and decides what evidence is enough. Test the specification against past cases, including the awkward ones. If two competent leaders apply it differently, the ambiguity is still in the decision design.
+
+Only then decide whether the next occurrence should be handled by a person, a deterministic rule, an agent, or a combination. Autonomy is not a property of the model. It is institutional authority granted for a particular decision under particular conditions.

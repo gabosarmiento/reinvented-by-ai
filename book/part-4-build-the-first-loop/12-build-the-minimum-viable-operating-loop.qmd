@@ -1,0 +1,63 @@
+# Build the Minimum Viable Operating Loop {#sec-build-loop}
+
+A demo proves that a model can perform under chosen conditions. A minimum viable operating loop proves that the company can let the system encounter real variation without losing authority or evidence.
+
+The following thirty-day sequence continues the **illustrative onboarding pilot**. It is a sequence of design gates, not a promise that every company should deploy in a month.
+
+## Days 1-5: establish the baseline
+
+The owner selects one customer segment and one exception class. The team exports prior cases and reconstructs the current path: trigger, data sources, handoffs, decisions, waiting, rework, outcome, and later repeat contact. It samples cases with frontline operators because the system record omits work performed in messages.
+
+The baseline includes distribution, not only average: median and tail resolution time, number of touches, escalations, reopen rate, customer activation, and cost to serve. The team writes the decision-loop charter and names a kill condition.
+
+An AI assistant can classify historical cases and propose the event schema. People who perform the work correct the categories. Those corrections become the first evaluation examples.
+
+## Days 6-10: design authority and context
+
+The owner specifies what the agent may do. In this pilot it can gather account state, classify the exception, request missing information, and propose a resolution. It cannot change contractual terms or modify an account without approval.
+
+The context envelope lists required fields, source systems, policy versions, precedence, freshness, and access. Missing or conflicting required context produces a stop, not a guessed answer. Sensitive fields are removed unless necessary.
+
+The team writes handoff contracts for customer clarification, operations review, and policy exception. Each handoff carries the work already performed and the reason the agent stopped.
+
+## Days 11-15: build the controlled environment
+
+The agent receives test credentials with the same shape but less authority than production. Tools validate parameters and return structured results. Logs capture inputs, context versions, calls, outputs, decisions, and errors. Known sensitive actions remain technically unavailable.
+
+The evaluation suite contains routine historical cases, difficult exceptions, contradictory context, missing data, malicious instructions inside customer content, and situations where escalation is correct. Tests check both outcome and trajectory.
+
+The team rehearses failure: revoke access, stop a run, recover from a partial action, and route a customer to a person. If operators cannot see and interrupt the system, the pilot is not ready.
+
+## Days 16-20: run in shadow
+
+The agent processes live cases without acting. Its proposals are compared with normal handling. Reviewers record disagreement reasons rather than a bare accept/reject. The owner watches for systematic gaps: one policy misunderstood, one customer segment poorly represented, one system too stale for the decision.
+
+Shadow mode should not continue indefinitely. It proves readiness for a bounded release, not performance under real responsibility. Reviewers behave differently when nothing can happen.
+
+## Days 21-25: release narrowly
+
+The agent goes live for a limited share of eligible cases. At first it prepares the exact action and a person approves. Cases outside scope are excluded before the model sees them. Retry, time, and cost limits are enforced. An on-call owner can pause the loop.
+
+Daily review focuses on new failure patterns and customer outcome, not a demand for perfect automation. A failure caused by a stale policy goes to the context owner. A failed tool call goes to the platform owner. A sound but unpopular decision goes to the business owner.
+
+## Days 26-30: decide the next authority
+
+The team compares the live cases with the baseline and reads a sample of traces. It includes human review time, exception handling, model and infrastructure cost, customer repair, and maintenance. Frontline operators and affected customers contribute evidence.
+
+The gate has four outcomes: expand authority or volume, revise and retest, contain the loop at its current scope, or stop. Expansion is specific. The agent might gain authority to execute one reversible resolution inside a narrow policy. It does not receive a general promotion.
+
+## Minimum viable ATOM canvas
+
+Before live action, one page should contain:
+
+| Element | Required statement |
+|---|---|
+| Intent | Outcome, boundary, and learning question |
+| Context | Sources, freshness, provenance, access, missing-data behavior |
+| Decision | Owner, criteria, consequence, reversibility, escalation |
+| Execution | Human, rule, workflow, and agent responsibilities |
+| Evidence | Trace, outcome, evaluation, retention |
+| Learning | Review cadence and owners of possible changes |
+| Control plane | Identity, permissions, approvals, stop, rollback, recourse |
+
+The canvas is complete only when the people operating the loop recognize their real work in it. A pilot is ready when its authority and evidence are designed, not when its demo works.

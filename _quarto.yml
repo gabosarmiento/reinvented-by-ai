@@ -8,8 +8,39 @@ book:
   author: "Gabriel Sarmiento"
   chapters:
     - index.qmd
-    - book/part-1-the-constraint-moved/01-when-production-gets-cheap.qmd
-    - book/part-1-the-constraint-moved/02-hidden-operational-debt.qmd
+    - book/preface.qmd
+    - part: "Part I: The Constraint Moved"
+      chapters:
+        - book/part-1-the-constraint-moved/01-when-production-gets-cheap.qmd
+        - book/part-1-the-constraint-moved/02-hidden-operational-debt.qmd
+        - book/part-1-the-constraint-moved/03-tools-do-not-change-the-operating-model.qmd
+    - part: "Part II: The ATOM Model"
+      chapters:
+        - book/part-2-the-atom-model/04-atom-intent-in-evidence-out.qmd
+        - book/part-2-the-atom-model/05-context-is-infrastructure.qmd
+        - book/part-2-the-atom-model/06-design-the-decision-before-the-agent.qmd
+        - book/part-2-the-atom-model/07-human-agent-execution.qmd
+    - part: "Part III: How the System Runs"
+      chapters:
+        - book/part-3-how-the-system-runs/08-a-week-inside-an-adaptive-company.qmd
+        - book/part-3-how-the-system-runs/09-governance-in-the-work.qmd
+        - book/part-3-how-the-system-runs/10-observe-prove-learn.qmd
+    - part: "Part IV: Build the First Loop"
+      chapters:
+        - book/part-4-build-the-first-loop/11-choose-a-decision-not-an-ai-project.qmd
+        - book/part-4-build-the-first-loop/12-build-the-minimum-viable-operating-loop.qmd
+        - book/part-4-build-the-first-loop/13-prove-value-before-you-expand.qmd
+    - part: "Part V: Scale Without Losing the Plot"
+      chapters:
+        - book/part-5-scale-without-losing-the-plot/14-fractal-units-not-fractal-bureaucracy.qmd
+        - book/part-5-scale-without-losing-the-plot/15-allocate-capital-talent-and-knowledge-dynamically.qmd
+    - part: "Part VI: Leadership and Control"
+      chapters:
+        - book/part-6-control-and-leadership-at-scale/16-agent-operations-control-at-scale.qmd
+        - book/part-6-control-and-leadership-at-scale/17-the-manager-after-coordination-gets-cheap.qmd
+        - book/part-6-control-and-leadership-at-scale/18-accountability-cannot-be-delegated.qmd
+    - book/conclusion.qmd
+    - book/field-kit.qmd
 
 bibliography: book/references.bib
 

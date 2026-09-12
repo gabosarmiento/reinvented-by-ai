@@ -1,0 +1,44 @@
+# Choose a Decision, Not an AI Project {#sec-choose-pilot}
+
+“Deploy an agent in operations” is not a pilot. It names a technology and a department, not a result.
+
+A useful first loop begins with a recurring decision or outcome whose complete path can be observed. The unit might be resolving a service exception, approving a non-standard price, triaging an incident, qualifying a lead, or deciding whether a new business experiment receives another tranche of capital.
+
+## Score the loop
+
+Rate candidates using evidence, not enthusiasm:
+
+| Criterion | Question |
+|---|---|
+| Value | Does improvement affect a customer, economic, risk, or strategic result? |
+| Frequency | Will enough cases occur to learn within the pilot period? |
+| Latency | Is waiting or rework material? |
+| Evaluability | Can correct behavior and outcome be observed? |
+| Context readiness | Are required facts accessible, current, and permitted? |
+| Reversibility | Can mistakes be detected and repaired? |
+| Consequence | Who can be harmed and how severely? |
+| Integration load | How many brittle systems and teams must change? |
+| Ownership | Is one person accountable for the end-to-end result? |
+| Transfer | If successful, can the loop move into normal operations? |
+
+Do not reduce the table to one magic score. A high-value use with no observable outcome is not ready. A technically easy use with no meaningful result is a demo.
+
+## Compare three candidates
+
+An **illustrative scale-up** considers three loops.
+
+The first is an agent that prepares board materials. It is visible and reversible, but low-frequency and difficult to connect to better decisions. The second handles customer-onboarding exceptions. It is frequent, measurable, painful, and linked to activation, but touches sensitive customer data and several systems. The third analyzes funding evidence for experiments in the new business line. It has strategic value and a clear executive sponsor, but only a few decisions will occur during the quarter.
+
+The company selects onboarding exceptions. It narrows scope to one customer segment and one class of exception. The decision is not glamorous. It will reveal context gaps, handoffs, authority, agent limits, customer outcome, and transfer to the run in a few weeks.
+
+The strategic funding loop remains a management redesign candidate, but not the first agent pilot. The board-material assistant can proceed as a local productivity tool without being called transformation.
+
+## Write the pilot as a decision loop
+
+A strong charter fits on one page:
+
+> When **[trigger]** occurs, **[owner]** uses **[authorized context]** to make or delegate **[decision]** within **[authority limits]**. Humans, rules, and agents execute **[work]**. The system retains **[evidence]** and measures **[outcome]**. It stops or escalates when **[condition]** occurs. After **[period/case count]**, **[named group]** decides to expand, revise, contain, or stop.
+
+The charter forces a choice about what the pilot is actually proving. Is the uncertainty model capability, context quality, user behavior, integration, economics, or authority? If the team cannot name the learning question, it will interpret any activity as success.
+
+Start where the consequence is bounded but the operating lesson is real. The first unit of transformation is not a department or an AI platform. It is one honest decision loop.

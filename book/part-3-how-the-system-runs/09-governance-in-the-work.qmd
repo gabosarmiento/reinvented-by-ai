@@ -1,0 +1,51 @@
+# Governance in the Work {#sec-governance}
+
+Governance fails when it arrives as a committee after the action or as a policy document no system can enforce.
+
+For human-agent work, governance belongs in the path. It determines what context can be retrieved, which tools can be called, what value can be committed, when approval is required, what evidence must be retained, and who can stop the system.
+
+## The control plane
+
+ATOM's control plane has seven operating functions:
+
+1. **Identity:** Every person, agent, service, and vendor connection has a distinguishable identity.
+2. **Authority:** Rights are granted for specific resources and actions.
+3. **Policy:** Machine-enforceable rules sit beside human-readable intent.
+4. **Approval:** Consequential actions route to a qualified person or separated role.
+5. **Observation:** The company records actions, denied attempts, exceptions, and outcomes.
+6. **Intervention:** Authorized operators can pause, narrow, override, or roll back.
+7. **Recourse:** Affected people can challenge or repair a result.
+
+These functions should be shared where consistency matters, but outcome ownership remains in the business. Security may define credential standards. Finance may define payment controls. Legal may define retention. The business owner still answers for whether the agent should be doing the work.
+
+## Permissions are not prompts
+
+An instruction such as “do not make payments above €5,000” is not a permission boundary if the agent holds credentials that allow any payment. A model can misunderstand, be manipulated by retrieved content, or call the wrong tool. The payment system must enforce the limit.
+
+This is ordinary security applied to a new actor: least privilege, short-lived credentials, separation of duties, scoped resources, and revocation. Integration protocols do not remove the need. The Model Context Protocol's authorization specification requires audience-bound tokens and explicitly prohibits token passthrough because otherwise a credential intended for one service can be misused elsewhere [@mcp-authorization-2025].
+
+The operating implication is direct. Register the agent as an actor. Do not lend it a founder's account. Grant only the tool, data, action, amount, and duration required for the task.
+
+## Guardrails should fail safely
+
+Some guardrails are deterministic: amount limits, allowed domains, required fields, data classifications, or prohibited actions. Others use models to detect relevance, manipulation, or policy conflict. The two should not be confused. Model-based checks add coverage but also uncertainty.
+
+Layer controls according to consequence. A purchasing agent might draft a request, verify the supplier against approved data, and submit it to the procurement system. It cannot approve the request or release payment. The approver sees the supplier, amount, policy checks, source documents, conflicts, and agent actions. If evidence is missing, the transaction cannot advance.
+
+For reversible low-value purchases, the company may later pre-authorize action inside a budget. It should expand the authority because observed evidence supports the change, not because the agent sounds more confident.
+
+## Treat external content as untrusted
+
+Agents read documents, websites, messages, and tool descriptions that can contain instructions. An attacker may try to make the system reveal data or take an unintended action. A less dramatic failure occurs when a supplier document merely contains language that the agent mistakes for company policy.
+
+Separate data from instructions. Limit which sources can influence action. Validate tool parameters outside the model. Require confirmation when the destination, scope, or consequence changes. Keep sensitive tools unavailable during open-ended research.
+
+The phrase “confused deputy” describes a system tricked into using its legitimate authority for someone else's purpose. It is not an exotic edge case once agents can cross systems. The control plane should assume that content and tools can be wrong even when the model is behaving as designed.
+
+## Compliance is a floor
+
+The EU AI Act now applies in stages and uses different obligations for different roles and risk categories. Since August 2026, transparency requirements apply to specified uses, while deadlines for high-risk systems extend further under the amended timeline [@eu-ai-act-commission-2026]. For high-risk deployments, the regulation includes requirements around human oversight, logging, documentation, data quality, robustness, and deployer responsibilities [@eu-ai-act-2026].
+
+This book cannot determine the legal classification of a particular system. The operating model should make compliance possible: named roles, traceable versions, retained logs, competent oversight, and an inventory of where AI affects people. Waiting for a lawyer to reconstruct that inventory after deployment is poor governance.
+
+Governance creates useful speed when routine actions can proceed because limits are real. A control plane is successful when teams know where they are free to act, exceptions reach the right owner with evidence, and dangerous actions cannot bypass the company simply by moving faster.

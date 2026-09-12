@@ -1,0 +1,56 @@
+# Agent Operations: Control at Scale {#sec-agent-operations}
+
+The first agent is owned by the team that built it. The fiftieth agent reveals that the company has created a new operating estate.
+
+Agents share models, tools, identities, data, and vendors. They change versions. Their permissions drift. One agent's output becomes another's input. Costs accumulate across teams. A local failure can become a repeated enterprise action.
+
+The company needs an Agent Operations capability. It may begin as a responsibility inside platform or security rather than a new department. Its job is to make the fleet operable without taking business accountability away from the units.
+
+## Register the actors
+
+Every production agent should have a registry entry containing:
+
+- name, purpose, and business owner;
+- current version and environment;
+- models, tools, data sources, and downstream dependencies;
+- identity, permissions, credential owner, and expiry;
+- decisions or actions it may take;
+- applicable controls and required approvals;
+- evaluation suites, current results, and monitored outcomes;
+- cost budget and usage;
+- incidents, known limitations, and change history;
+- stop mechanism and retirement condition.
+
+If nobody can list the agents that can modify customer, financial, code, or employee state, the company does not control them.
+
+## Divide responsibility without dividing accountability
+
+The **business owner** defines the outcome, authority, and acceptable failure. **Agent Operations** provides registry, observability, evaluation infrastructure, deployment standards, and lifecycle controls. **Platform teams** operate shared models, tools, context services, and environments. **Security, risk, legal, and privacy** define specialist controls and challenge the deployment.
+
+These roles can be held by a few people in a scale-up. What matters is that they are not collapsed into “the AI team.” A technically reliable agent can still pursue the wrong business objective. A business owner cannot waive an enterprise access control by calling the experiment urgent.
+
+NIST's Generative AI Profile organizes risk work across governance, mapping, measurement, and management throughout the lifecycle [@nist-genai-profile-2024]. The practical lesson is to connect inventory, testing, monitoring, incident response, and ownership rather than treat them as launch paperwork.
+
+## Control the change surface
+
+An agent can change even when its application code does not. The model provider updates a version. A context source changes. A tool adds a parameter. A policy is revised. Another agent begins consuming its output.
+
+Version and test the combination that produces behavior. Material changes should run against relevant evaluations before release. Progressive rollout limits exposure. The registry should show which units and workflows depend on the changed component.
+
+Multi-agent design increases this need. More agents may improve specialization, but every handoff creates another state boundary, failure mode, and cost. Use multiple agents because the task has a real separation of context or authority, not because a diagram looks sophisticated.
+
+## Run incidents as operating failures
+
+Consider an **illustrative incident**. A sourcing agent reads a malicious instruction embedded in a supplier document. It calls a procurement tool using a broad shared token and changes payment details. A second agent treats the changed record as authoritative.
+
+The root cause is not simply “prompt injection.” The organization exposed an unnecessary tool during document analysis, failed to bind the credential to a narrow resource and action, allowed one agent to write a state another trusted, and lacked an approval for a consequential change.
+
+The response should revoke credentials, preserve traces, repair affected records, notify the right owners, and add the case to evaluation. The deeper correction narrows authority and separates untrusted reading from state-changing action.
+
+Protocols such as MCP make tools easier to connect, which increases the importance of audience-bound credentials, consent, and resource-specific authorization [@mcp-authorization-2025]. Integration convenience is not a control model.
+
+## Retire what no longer earns its place
+
+Agents should have sunset conditions. Usage alone is insufficient. An agent may be popular while generating review cost or relying on an outdated process. Compare outcome, total cost, risk, and maintenance with the current alternative. Remove credentials and integrations when the system is retired.
+
+Agent Operations succeeds when the company can answer, quickly: Which agents can act? For whom? Using what? Under whose authority? With what evidence? And how do we stop them? At scale, those are operating questions, not technical inventory trivia.

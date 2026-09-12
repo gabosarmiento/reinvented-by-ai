@@ -1,0 +1,81 @@
+# A Week Inside an Adaptive Company {#sec-week}
+
+The following week is an **illustrative composite**. The company does not exist. Every technical action described is feasible with 2026 tools, but the quality of the result depends on data, integration, and control that many companies do not yet have.
+
+The company has 110 people and two business units sharing a product platform, finance, and operations capacity. Anya leads the newer unit. Malik is its Synthesizer. Customer demand is rising, but contribution margin is below the threshold agreed with the executive team.
+
+## Monday: a signal becomes work
+
+The weekly operating view flags a cluster of customer conversations. Mid-market customers want a service configuration that sales has handled through manual exceptions. Support volume is rising around onboarding, and two recent deals consumed far more implementation capacity than forecast.
+
+An analysis agent groups the conversations, links them to CRM records and delivery time, and proposes three explanations. It labels each as inference and attaches the source cases. One explanation looks commercially attractive: standardize the exception as a new offer.
+
+Anya does not open a project. She opens a decision: should the unit test a standardized offer for this segment within the current quarter?
+
+The intent is already explicit. The unit may test growth options that can reach its contribution-margin threshold without consuming more than the capacity reserved by the platform and operations teams. Malik asks the context system for the current cost model, customer evidence, capacity, prior experiments, and commitments made in active contracts.
+
+One source is stale. The implementation cost model has not been updated since a supplier change. The control plane marks the field as expired. The agent can continue exploring, but it cannot recommend a launch.
+
+That stop is not a failure. It prevents speed from converting weak context into a commitment.
+
+## Tuesday: judgment enters the loop
+
+Finance updates the cost assumptions. The analysis changes: the offer remains attractive only if onboarding work falls below a specific range. The agent prepares two test designs and a third option that would outsource part of delivery.
+
+The third option violates a current data-processing constraint. It is removed automatically, with the policy reference preserved in the trace.
+
+Anya and the operations lead review the remaining choices. The operations lead challenges the agent's forecast because the proposed customer mix differs from the historical sample. The model cannot resolve the disagreement. Anya narrows the test to one segment and accepts a slower learning rate in exchange for a cleaner result.
+
+The decision is hers. It is reversible, inside the unit's experiment budget, and within the shared-capacity envelope. The COO is notified but not asked to approve.
+
+## Wednesday: execution meets a boundary
+
+A workflow agent creates the experiment record, drafts the offer, opens product and legal tasks, and prepares the CRM configuration. Deterministic checks validate required fields and price limits. A product agent proposes the smallest software change and opens a pull request with tests.
+
+The pull request fails an integration test because the new configuration changes a shared billing event. The agent attempts one repair, then stops at its retry limit. The platform engineer receives the trace, failed test, changed files, and proposed cause.
+
+The engineer finds that the event contract is ambiguous. Fixing only the code would leave both business units vulnerable to future changes. She brings the interface decision to the platform owner. They define the contract, update the test, and record which fields each unit may extend.
+
+The experiment loses a day. It also repays a piece of integration debt that would otherwise have returned.
+
+## Thursday: the company refuses its own recommendation
+
+The offer is ready for a limited release. The agent recommends ten customers based on fit and expected margin. One is a strategic account already involved in a sensitive renewal. That relationship state exists in the CRM but was outside the original context envelope.
+
+Sales rejects the selection. The rejection is not treated as human resistance or model failure. It reveals missing context. The relationship flag is added to the envelope, and the test proceeds with another customer.
+
+The change is reviewed by the context owner before it enters production. The analysis agent cannot rewrite its own context policy simply because an operator disagreed with it.
+
+## Friday: evidence changes the next cycle
+
+The operating review lasts forty minutes. It is not a recital of completed tasks. The group sees the decision, exceptions, agent actions, human interventions, elapsed time, cost, and current customer outcome in one trace.
+
+Three changes are approved:
+
+- finance owns a freshness target for the implementation cost model;
+- the platform event contract becomes an invariant for both units;
+- strategic-account status enters the offer-selection context with restricted access.
+
+One proposed change is rejected. Malik suggests increasing the agent's retry limit because the human repair was successful. The platform owner points out that the repair required an architectural decision, not another attempt. More autonomy would have hidden the ambiguity.
+
+The Playbook records the updated context envelope, interface contract, and decision rationale. The customer cases become part of the experiment's evaluation set. The strategy is unchanged; the system around it is better specified.
+
+## What actually changed
+
+The week was not frictionless. Work stopped twice. A human contradicted the model. A launch slipped. Those events are the substance of the operating model, not imperfections to edit out of the story.
+
+ATOM appeared at each boundary:
+
+| Layer | Event during the week |
+|---|---|
+| Intent | Margin and shared-capacity constraints bounded the experiment |
+| Context | A stale cost model stopped recommendation; relationship state was added later |
+| Decision | Anya narrowed and authorized a reversible test |
+| Execution | Agents prepared work; deterministic checks and people handled their parts |
+| Evidence | Sources, failure, rejection, tool actions, and outcomes stayed attached |
+| Learning | Different owners updated cost, interface, and context rules |
+| Control plane | Policy blocked an option, retry limits stopped an agent, access remained scoped |
+
+The COO's role also changed. The old company would have sent the decision upward because it crossed finance, product, sales, and operations. The adaptive company had already designed the unit's authority and the shared constraints. The COO could inspect the decision without becoming its missing operating system.
+
+That is the practical promise of ATOM. Not fewer humans. Not uninterrupted automation. A company that can encounter uncertainty, stop for the right reason, act with legitimate authority, and retain enough evidence to improve the next cycle.

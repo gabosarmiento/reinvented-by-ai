@@ -1,0 +1,65 @@
+# Why Tools Do Not Change the Operating Model {#sec-tools-not-model}
+
+The easiest AI pilot to approve is attached to a task one person already owns. Draft the email. Summarize the meeting. Produce the first analysis. Write the test. The user can adopt the tool without asking anybody else to change.
+
+That is why early gains appear first in individual work. It is also why they can mislead management about the company.
+
+A randomized field experiment gave half of 6,000 knowledge workers access to generative AI inside their normal office applications. Workers who used the tool spent less time on email and appeared to complete documents faster. Meeting time did not change significantly. The authors' explanation is revealing: behavior that one person could change moved before behavior requiring coordination with others [@dillon-et-al-2025].
+
+The tool improved a local action. The shared routine remained intact.
+
+## What an operating model contains
+
+An operating model is the set of arrangements that converts strategy into repeated results. It includes more than process. It determines:
+
+- what the company is trying to achieve and what takes priority;
+- what information is authoritative;
+- where decisions sit and how they escalate;
+- how work crosses teams, systems, and business units;
+- which controls bind action;
+- what evidence is retained;
+- and how results change the next decision.
+
+An AI tool changes the operating model only when it changes one or more of those arrangements. A meeting summary may save time. A decision record that automatically captures the evidence, owner, authority, dissent, and later outcome changes how the company learns. The interface looks similar; the institutional effect is different.
+
+Consider a discount approval. Sales prepares the request, finance checks margin, legal checks terms, and the COO approves. An assistant can draft each handoff. The request moves through the same rights, queues, and data gaps, only with better prose. If the company instead defines a discount envelope, makes current cost and capacity visible, delegates decisions inside the envelope, and logs exceptions with outcomes, the operating model has changed. AI may support the new path. It did not cause the redesign.
+
+## The paved cow path
+
+Automation often preserves an old compromise because the current process is the easiest specification available. The team maps the steps, connects the systems, and asks an agent to move work between them. Nobody asks why the steps exist.
+
+This is the paved cow path failure. A temporary approval becomes a permanent API. A spreadsheet built to reconcile two unreliable systems becomes an automated reconciliation service. A weekly status meeting becomes an AI-generated status pack. Friction declines, so the underlying liability attracts less attention.
+
+The result can be rational. Paying the interest more cheaply may be worthwhile while the company prepares a deeper change. The error is reporting the saving as transformation.
+
+There are three levels of improvement:
+
+| Level | What changes | Typical result |
+|---|---|---|
+| **Task** | One person produces an artifact faster | Local time saving |
+| **Workflow** | Several steps, handoffs, or systems are redesigned | End-to-end throughput or quality improves |
+| **Operating model** | Intent, rights, interfaces, controls, evidence, or learning change | The company can behave differently at scale |
+
+The levels build on one another. A task improvement can fund a workflow redesign. A successful workflow can reveal a better allocation of authority. Problems begin when management assumes the levels are interchangeable.
+
+## Local output can create system load
+
+Every team can optimize itself and make the company slower.
+
+Marketing generates more campaigns, increasing review and sales follow-up. Product produces more specifications, increasing engineering selection work. Coding agents create more pull requests, increasing integration and security review. Finance generates more scenarios, increasing the number of choices leadership must resolve. The local dashboard is green because output rose. The system queue grows elsewhere.
+
+The correct unit of analysis is the complete path from intent to verified result. Ask where work waits, where it returns, where a human reconstructs context, and where exceptions concentrate. If the gain disappears when downstream review, rework, failure recovery, and maintenance are included, the pilot has moved cost rather than removed it.
+
+This does not require a central transformation office to approve every use. Teams should experiment. But every material pilot needs an owner for the end-to-end result, not merely the tool. That owner should know which metric may improve, which downstream cost may rise, and what would justify stopping.
+
+## The test
+
+Before calling an initiative an operating-model change, complete this sentence:
+
+> We used to rely on **[old intent, context, right, interface, control, evidence, or learning mechanism]**. We now rely on **[new mechanism]**, which allows **[specific changed behavior]** while protecting **[specific consequence]**.
+
+“Employees now use copilots” fails the test. “Business-unit leads now decide discounts inside a live margin and capacity envelope, while exceptions route to finance with a trace” passes it.
+
+The distinction protects the company from two mistakes. The first is underestimating a useful local tool because it did not transform the enterprise. The second is overestimating adoption because many people opened an application.
+
+ATOM begins where the tool ends. It describes the arrangements around intelligence: how intent enters, how context is governed, how decisions receive authority, how humans and agents execute, what evidence returns, and how the company learns.

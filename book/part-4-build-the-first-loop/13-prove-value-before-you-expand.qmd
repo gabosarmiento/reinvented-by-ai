@@ -1,0 +1,48 @@
+# Prove Value Before You Expand {#sec-prove-value}
+
+The pilot resolved cases faster. Should the company expand it?
+
+Not yet. Faster can mean customers received good outcomes sooner. It can also mean cases were closed earlier and returned later, reviewers absorbed hidden work, or the easiest cases moved to the agent while people inherited a harder queue.
+
+## Compare complete systems
+
+The relevant comparison is the previous operating path against the new one. Include:
+
+- customer or business outcome;
+- elapsed and working time across the full path;
+- human review, escalation, and repair;
+- model, tool, integration, and monitoring cost;
+- failure severity and recovery;
+- maintenance of prompts, policies, context, and evaluations;
+- and effects on the people doing the remaining work.
+
+Do not claim a causal gain from a before-and-after chart when demand, staffing, or case mix also changed. A randomized or phased comparison may be possible. When it is not, match similar cases, show the limitations, and treat the result as operational evidence rather than scientific proof.
+
+## Read the distribution
+
+Average improvement can conceal concentrated harm. Segment results by case type, customer group, channel, risk, and degree of agent involvement. Inspect the tail. A system that improves routine cases but mishandles rare consequential cases may still be valuable, provided those cases are detected and excluded.
+
+Likewise, aggregate labor savings can hide a worse job. If agents absorb simple cases, human operators may face uninterrupted exceptions. Measure queue difficulty, interruption, discretion, and repair burden. The goal is not to preserve every old task; it is to avoid designing a system whose economics depend on invisible human absorption.
+
+## Use a four-way gate
+
+The review should produce one of four decisions:
+
+| Decision | Evidence |
+|---|---|
+| **Expand** | Outcomes hold, total economics improve, controls work, and new volume is supportable |
+| **Revise** | Value is plausible but a named context, design, or reliability gap is repairable |
+| **Contain** | The loop works only for a stable narrow segment and should remain there |
+| **Stop** | Outcome, economics, control, or affected-party impact does not justify continuation |
+
+Stopping is not an admission that the company “failed at AI.” It proves that the operating model can reject activity that does not create value.
+
+## Transfer to the run
+
+An experiment has not scaled when the founder can operate it. It has scaled when a normal owner can run, monitor, and change it through defined interfaces.
+
+Before transfer, name the business owner, service expectations, support path, incident owner, context owners, evaluation cadence, cost budget, change authority, and retirement condition. Train the people who receive exceptions. Remove temporary credentials and workarounds. Record which assumptions remain unproven.
+
+For a new business line, transfer also requires clear economics and shared-service contracts. If the unit's margin depends on unmeasured founder labor or free platform capacity, the pilot has not proven a scalable business.
+
+The 90-day question is not “Did people use it?” It is “Did this loop improve a result at acceptable total cost and risk, and can the company operate it without exceptional support?” Only a convincing answer earns more authority or scope.

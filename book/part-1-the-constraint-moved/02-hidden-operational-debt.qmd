@@ -1,168 +1,157 @@
 # Hidden Operational Debt {#sec-operational-debt}
 
-The slow decision from Chapter 1 is rarely slow because nobody worked on it.
+Most companies already have the evidence of how they really operate. It sits in customer conversations, CRM histories, issue trackers, approval threads, incident logs, calendars, financial systems, and the software itself.
 
-The business-unit lead prepared the recommendation. Finance checked the margin. Operations assessed capacity. An AI assistant summarized the alternatives and surfaced the main risks. Yet the decision still returned to the COO.
+Management rarely sees that evidence as a connected record. It receives a monthly summary. The summary says revenue is on plan, delivery is broadly on time, and customer satisfaction is stable. It does not show that pricing decisions now cross four desks, that one product manager resolves half the conflicts between two teams, or that the same customer problem has returned under six different labels.
 
-The organization calls this an approval delay. That describes where the work stopped. It does not explain why.
+Then the COO asks an AI assistant what is going wrong. The assistant reads a handful of documents and produces a familiar verdict: clarify ownership, improve communication, streamline processes.
 
-The COO may hold context that never entered the analysis: a promise made to an investor, a constraint in a supplier relationship, the reason an earlier pricing exception failed, or an unresolved disagreement between two executives. The formal owner can prepare the decision but cannot safely make it. The meeting is not the underlying problem. It is an interest payment on an operating liability.
+The verdict is not false. It is almost useless.
 
-That liability is **Hidden Operational Debt**.
+A manager no longer needs a chapter to learn that organizations accumulate debt. Nor does a manager need six new labels for familiar dysfunction. General-purpose AI can propose a classification of the symptoms in seconds. The useful question is harder: **what evidence would allow the company to see the liability forming, estimate its effect, and intervene before another layer of management is added to absorb it?**
 
-## Friction is the payment, not the debt
+That is where Hidden Operational Debt becomes more than a metaphor.
 
-The debt metaphor comes from software engineering. Technical debt describes a design compromise that may accelerate work now while making later change more difficult or expensive. Research has since extended the metaphor to structures, policies, processes, and social arrangements, although the evidence on “organizational debt” remains young and concentrated in software settings. A 2024 multivocal review found only nine academic papers and supplemented them with practitioner writing. Its recurring themes included outdated structures, deferred decisions, siloed work, and the continuing cost of arrangements that no longer serve the organization [@al-baik-et-al-2024]. A small case study of large-scale hybrid software development similarly connected organizational debt with weak shared mental models, coordination, cohesion, and team learning [@liu-stray-sporsem-2023]. These studies make the neighboring concept credible; they do not establish a universal law of organizations.
+## The company is leaving a trail
 
-Hidden Operational Debt is narrower and more usable:
+Joshua Gans frames the economic effect of AI primarily through prediction and its contribution to decision efficiency [@gans-2025-microeconomics]. Inside a company, however, a better prediction has to travel through an operating path. Someone must trust the inputs, understand the tradeoff, possess the right to decide, execute the decision, and observe what happened. A cheaper prediction has little value when that path is broken.
 
-> **Hidden Operational Debt is an unresolved operating-model liability that repeatedly imposes delay, rework, coordination cost, or risk when the company tries to decide, execute, or change.**
+Hidden Operational Debt is the accumulated liability in those broken paths. It appears when the way the company is expected to operate and the way work actually moves have drifted apart.
 
-Four parts matter.
+The monthly report records the eventual output. The operational trail records the struggle:
 
-**The liability** is the unresolved design problem. Decision rights are ambiguous. Critical context lives in one person’s memory. Two systems require manual reconciliation. A shared function and a business unit have no stable interface.
+- when a request entered the system;
+- where it waited;
+- which information was missing;
+- how many people touched it;
+- which rule or precedent was used;
+- when a human overrode an automated recommendation;
+- whether the decision was reversed;
+- what the customer experienced;
+- and whether the economic result matched the original assumption.
 
-**The interest** is the recurring cost of leaving that liability in place. People wait, reconstruct context, attend another meeting, correct duplicated work, request an exception, or escalate to someone with enough authority to proceed.
+These events used to be expensive to assemble. Much of the trail was unstructured, so diagnosis depended on interviews, workshops, process maps, and the memory of experienced operators. Those methods still have value, especially when the record is incomplete. But they are no longer the only option. Language models can read thousands of tickets or decision threads, recover recurring themes, connect similar exceptions expressed in different words, and draft a first map of where the operating path keeps breaking.
 
-**The risk exposure** is what can happen while the liability persists. A margin exception becomes the commercial norm. A regulator cannot reconstruct an approval. A customer receives two incompatible commitments. The company launches a new activity without knowing which costs it truly owns.
+This changes the economics of organizational diagnosis. It does not make the diagnosis automatic. The model can misclassify an exception, miss political context, or confuse correlation with cause. Its advantage is breadth and speed. It gives management a way to inspect actual workflows without commissioning a three-month study.
 
-**The principal** is the work required to change the underlying arrangement. That may mean clarifying one decision right, redesigning an interface, consolidating a source of truth, retiring a workaround, or changing a leader’s behavior. Principal is not the total cost of perfection. It is the smallest coherent change that stops the recurring charge.
+The source events must remain attached. A plausible summary without traceable evidence is merely a faster opinion.
 
-This is a management model, not an accounting standard. The point is to distinguish the visible irritation from the condition that keeps producing it.
+## Debt has an observable fingerprint
 
-## Not every inconvenience is debt
+Six forms of debt are useful here, but as search lenses rather than a maturity model. Each leaves a different fingerprint in the data. Each is also affected differently when AI increases the volume and speed of work.
 
-Calling every slow or disliked process “debt” makes the term useless.
-
-A deliberate control can create friction and still be valuable. Requiring two people to authorize a large payment slows execution because the consequence warrants separation of duties. A stable manufacturing process may resist rapid change because variation would introduce safety or quality risk. A founder may keep a rare acquisition decision because the board expects that accountability.
-
-Debt exists when the recurring cost comes from an unresolved mismatch rather than a justified design choice. Three tests help:
-
-1. **Recurrence:** Does the same class of work keep paying the cost?
-2. **Avoidability:** Could a change to context, rights, interfaces, controls, or learning remove the cost without creating greater harm?
-3. **Persistence:** Has the organization allowed a temporary compromise to become the normal operating path?
-
-One difficult quarter does not prove debt. A repeated pricing escalation caused by an unstated margin rule probably does.
-
-Debt can also be intentional. Early in a company, asking the founder to approve every non-standard contract may be rational. The company has little precedent, few managers, and no reliable way to encode commercial judgment. The mistake is not borrowing. The mistake is forgetting that the arrangement was temporary.
-
-A conscious operating shortcut should therefore have an owner, a reason, a review date, and a condition for repayment. Without those, an expedient decision quietly becomes architecture.
-
-## Six forms of operational debt
-
-The categories below are diagnostic. One liability can create several kinds of interest, so the aim is not perfect classification. The aim is to locate what must change.
-
-| Debt type | Underlying liability | Typical interest payment | Scaling symptom |
-|---|---|---|---|
-| **Decision debt** | Rights, criteria, thresholds, or escalation paths are unclear | Repeated approvals, reversals, executive arbitration | Managers execute work but defer consequential choices |
-| **Context debt** | Current facts, constraints, policies, and state are inaccessible or untrusted | Reconstructing the situation before every decision | The person with the longest memory becomes mandatory |
-| **Coordination debt** | Dependencies lack a stable mechanism or cadence | Status meetings, chasing, manual synchronization | Adding teams creates more alignment work than capacity |
-| **Integration debt** | Technical or organizational interfaces are brittle, bespoke, or undefined | Rework, reconciliation, hand-built handoffs | Each new product or business unit creates exceptions in shared functions |
-| **Knowledge debt** | Rationale, outcomes, and lessons are not retained in reusable form | Repeating analysis, rediscovering failure, inconsistent onboarding | Growth dilutes judgment instead of distributing it |
-| **Control debt** | Permissions, guardrails, evidence, or exception handling are improvised | Manual checking, broad access, approval theater, weak audit trails | The company chooses between paralysis and unsafe autonomy |
-
-The distinctions reveal different remedies. A weekly cross-functional meeting may be coordination debt if no one can see dependencies. It may be decision debt if the meeting exists because nobody can commit. It may be context debt if the first forty minutes are spent establishing which numbers are true. Canceling the meeting treats all three as calendar clutter and resolves none of them.
-
-## Why the debt stays hidden
-
-Financial debt appears on a balance sheet. Operational debt is dispersed.
-
-One team waits. Another team reconciles. Finance rebuilds a model. A manager prepares a pre-meeting so that the real meeting will succeed. The COO answers messages after dinner. Each cost looks small from where it is incurred, and no single budget line shows the total.
-
-Competent people hide the debt further. They remember the exception, call the right colleague, correct the spreadsheet, and obtain the approval. The company interprets the rescued outcome as proof that the process works. In fact, it works because someone repeatedly pays the interest with attention and reputation.
-
-Growth can turn this competence into a trap. The founder who resolves ambiguity fastest receives more ambiguity. The shared-function leader who knows how to navigate every exception becomes the route for every exception. The engineer who understands the integration is added to every project. Their usefulness increases while the organization’s ability to operate without them declines.
-
-This is why measuring only activity is dangerous. More completed analyses can coexist with longer decision latency. More launches can coexist with weaker unit economics. More delegation can coexist with the founder retaining every meaningful right. A dashboard shows the outputs and misses the dependence that produced them.
-
-## An illustrative composite: the business line that never leaves the founder
-
-Consider the company from Chapter 1. The founder-COO personally launches a second business line because uncertainty is high and speed matters. The choice is reasonable. The founder negotiates the first partnerships, approves pricing, decides which capabilities to borrow from the existing business, and uses personal judgment to protect cash.
-
-The activity begins to work. A business-unit lead is appointed. The Head of Operations takes over delivery. The organization chart says the venture has moved into the run.
-
-It has not.
-
-Pricing exceptions still return to the founder because the unit has no explicit margin floor and finance cannot see the full cost of shared assets. Hiring returns because nobody has defined which roles belong inside the unit. Product decisions return because the new activity shares a platform with the original business. Commercial commitments return because only the founder knows which early promises were deliberate and which were experiments.
-
-The visible symptoms are an overloaded COO, slow approvals, and a business-unit lead who appears hesitant. The easy diagnosis is that the leader needs to become more decisive. The harder diagnosis is that the company has assigned accountability without transferring the context and authority required to carry it.
-
-The principal is not “reorganize the company.” It is a set of specific design choices:
-
-- define which economic result the unit owns;
-- expose the cost and capacity of shared assets;
-- state which decisions belong to the unit, shared functions, and the center;
-- convert early promises and exceptions into current policy or retire them;
-- specify when a decision must escalate and what evidence accompanies it;
-- let the delegated owner make a sound decision the founder would not personally prefer.
-
-That last item matters. A founder can repay the formal debt and continue charging interest through behavior. If every different answer triggers a review, the real decision right never moved.
-
-## AI can repay debt or capitalize it
-
-AI does not have a fixed relationship with operational debt. It can reduce an interest payment while leaving the liability untouched. It can help remove the liability. It can also make the debt larger and less visible.
-
-| Debt type | AI can help repay it by... | AI can increase it by... |
+| Debt | Signals already present in the business | What AI tends to amplify |
 |---|---|---|
-| Decision | Structuring options, applying explicit thresholds, recording rationale | Producing more options, concealing weak criteria behind fluent recommendations |
-| Context | Retrieving authorized facts with sources and freshness | Repeating stale summaries, mixing policies, stripping provenance |
-| Coordination | Summarizing state, routing exceptions, exposing dependencies | Starting more parallel work and generating more requests for other teams |
-| Integration | Building adapters, tests, and repeatable handoffs | Proliferating brittle code, tools, data copies, and local workarounds |
-| Knowledge | Capturing decisions and linking outcomes to prior reasoning | Filling repositories with plausible but unverified documents |
-| Control | Enforcing policy, checking permissions, and preserving evidence | Expanding credential access, action volume, and review burden faster than controls |
+| **Decision** | Queue time, repeated approvals, executive escalations, overrides, reversals | More recommendations reach the same unresolved decision boundary |
+| **Context** | Missing fields, conflicting sources, stale policies, time spent reconstructing history | Fluent answers spread weak or outdated context faster |
+| **Coordination** | Handoffs, blocked work, reopened tasks, dependency chasing, recurring alignment meetings | More work starts in parallel and arrives at shared dependencies sooner |
+| **Integration** | Manual re-entry, reconciliation, failed syncs, bespoke handoffs, local data copies | Agents scale brittle interfaces and produce workarounds faster than they are retired |
+| **Knowledge** | Repeated questions, rediscovered failures, undocumented rationale, inconsistent onboarding | Generated content grows while reusable judgment remains scarce |
+| **Control** | Permission exceptions, missing evidence, after-the-fact approvals, unowned incidents | Action volume and access expand faster than review capacity |
 
-The distinction between paying interest and repaying principal is essential. An assistant that writes the weekly status report may save a manager two hours. If the report exists because five teams lack a shared operating view, the assistant has made the interest cheaper. The liability remains.
+This is not a scoring system. One broken path can leave several fingerprints. A contract that waits five days may involve missing margin data, unclear discount authority, and a manual transfer between the CRM and finance model. Forcing it into one category would make the analysis worse.
 
-That can still be worthwhile. There is no virtue in paying interest manually. But leaders should know which result they bought. Automating the workaround is not the same as redesigning the system.
+The categories matter because the remedies differ. Decision debt is not repaired by a better summary if nobody has authority. Context debt is not repaired by delegation if the delegated owner cannot trust the numbers. Coordination debt is not repaired by another integration when the teams have incompatible priorities.
 
-The more dangerous case is new borrowing: debt created in the name of acceleration. A team uses agents to launch several experiments, each with a new data flow and no owner for retirement. A business unit builds its own customer definitions because retrieving the shared ones is slow. An approval agent receives broad permissions because the policy model is incomplete. Local output rises. Future change becomes more expensive.
+AI also changes the impact profile. In a manual organization, ambiguity limits throughput: only so much work can reach the unresolved boundary. Once agents can prepare analyses, write code, contact suppliers, or launch campaigns, far more work can arrive there. The debt may look smaller per task while becoming larger in aggregate.
 
-AI makes disciplined debt management more important because it increases the rate at which temporary arrangements can be created.
+The 2025 DORA research describes AI in software development as an amplifier of the surrounding organizational system rather than an independent performance intervention [@dora-2025]. For operating-model design, the working hypothesis is that the same mechanism travels beyond software. A clear operating path becomes faster. A confused one produces confusion at machine speed.
 
-## Build a debt register, not a complaint list
+## Real practice: agent builders trace the path
 
-A useful register connects a symptom to a liability and a testable repayment. It does not collect everything employees dislike.
+The clearest public operating practices come from teams building agent products. They cannot manage a probabilistic system by reading its final answer alone. They retain the trace: the input, retrieved context, intermediate actions, tool calls, handoffs, errors, human feedback, and final state.
 
-Use these fields:
+Anthropic's guidance makes a useful distinction between a transcript and an outcome. An agent can state that it booked a flight; the outcome is whether a valid reservation exists in the database. Its evaluation practice combines traces with outcome checks and tracks measures such as latency, token use, cost per task, and error rate. It also recommends sourcing new tests from failures seen in real use rather than relying only on synthetic examples [@anthropic-agent-evals-2026].
 
-| Field | Question |
-|---|---|
-| **Trigger** | What recurring event causes the cost to appear? |
-| **Symptom** | What do people observe: waiting, rework, escalation, exception, or failure? |
-| **Liability** | Which missing or outdated design choice creates the symptom? |
-| **Interest** | What time, delay, cost, or attention is paid on each occurrence? |
-| **Risk** | What consequence becomes more likely while the liability remains? |
-| **Owner** | Who can change the underlying operating arrangement? |
-| **Repayment experiment** | What is the smallest coherent change that could reduce recurrence? |
-| **Evidence** | What result would show repayment rather than displacement of the cost? |
-| **Review date** | When will the company keep, revise, or reverse the change? |
+That distinction belongs in the operating model of the company. A team can report that a customer issue was resolved; the outcome may be a repeat contact two days later. A business-unit lead can report that a pricing decision was delegated; the trace may show that the COO rewrote the recommendation in a private message. A product team can close a feature request; the outcome may be lower activation because the underlying customer problem was misunderstood.
 
-For the pricing example, the entry might read:
+Customer-service systems show the same pattern in a narrower domain. Intercom's current reporting for its Fin agent does not stop at how often the agent was used. It separates involvement, resolution, escalation, customer experience, and the performance of the content sources used to answer customers. The underlying conversation record includes the outcome state, rating, escalation reason, and content sources [@intercom-fin-reporting-2026]. Those measures make it possible to ask whether automation produced a result, where it handed work back to a person, and which knowledge failed.
 
-- **Trigger:** a business-unit deal outside the standard price list;
-- **Symptom:** the unit waits for the COO after finance has already reviewed the deal;
-- **Liability:** no delegated discount envelope tied to unit margin, capacity, and contract risk;
-- **Interest:** repeated analysis, executive interruption, commercial delay, and learned hesitation;
-- **Risk:** inconsistent discounts or growth that destroys unit economics;
-- **Owner:** COO with the business-unit and finance leads;
-- **Repayment experiment:** delegate decisions inside a stated margin and risk envelope for thirty days;
-- **Evidence:** decision time, escalation rate, achieved unit margin, reversals, and exceptions;
-- **Review date:** after the first review cycle, not after an arbitrary transformation milestone.
+Agent observability tools take the approach further. Production conversations can be grouped into recurring categories while retaining links to the underlying traces. Error rate, latency, cost, evaluator feedback, and extracted attributes can then be compared by category and over time [@langsmith-insights-2026]. The point is not to endorse a particular tool. It is to notice the operating discipline: **keep the path, connect it to the outcome, and make recurring exceptions visible.**
 
-The experiment can fail. Perhaps shared-asset cost is too unreliable to support the threshold. That result is useful: the apparent decision debt depends on context or integration debt. The register should then change. Debt categories are a route to investigation, not labels to defend.
+Companies can apply the same discipline outside an AI product. A pricing approval, supplier exception, customer onboarding, incident response, or new-business launch is also a trace. It has a trigger, context, steps, decisions, exceptions, actors, and an outcome. Once that record is available, AI can help interpret it continuously.
 
-## What to do on Monday
+## The dashboard should show strain, not activity
 
-Take the recurring decision identified at the end of Chapter 1. Review its last few occurrences.
+Most executive dashboards describe results after the operating system has absorbed the cost. Revenue arrived. Tickets closed. Features shipped. Hiring completed. The company may be hitting those numbers through escalation, rework, and executive intervention that will not survive another doubling in volume.
 
-1. Write one sentence: “Because **[liability]**, every **[trigger]** requires **[interest payment]**, exposing us to **[risk]**.”
-2. Separate necessary control from avoidable friction. State what harm the current step prevents.
-3. Identify the smallest change to a right, context source, interface, control, or learning record that could stop recurrence.
-4. Choose evidence from the complete path: decision time, touches, rework, reversals, exceptions, outcome, and relevant unit economics.
-5. Give the experiment an owner and review date. If it is temporary, say when the company will repay or renew it.
+An operational-debt dashboard sits beneath the result. It should let a leader move through three views.
 
-Do not begin with a company-wide debt score. A precise register of five consequential liabilities is more useful than a survey producing one alarming number. Do not begin with a reorganization. Changing boxes before identifying the liability often moves the interest to a different team.
+The first is the **outcome**. Did the customer's problem stay resolved? Did the deal produce the expected margin? Did the release improve the intended behavior? Did the new business line consume the shared capacity assumed in its model? A proxy such as "task completed" is not enough when the real result can be checked.
 
-Most importantly, do not ask only, “What can AI automate?” Ask, “Which liability would still exist after the automation?”
+The second is the **path**. How long did the work wait compared with the time spent doing it? How many handoffs occurred? How often was an item reopened, reversed, or escalated? Where did the path diverge from policy? Which step repeatedly lacked context?
 
-That question separates a useful tool from an operating-model change. It is the subject of the next chapter.
+The third is the **system boundary**. What did people decide, what did agents execute, and where did control move between them? Useful measures include autonomous completion without correction, human intervention, policy exceptions, failed tool calls, missing evidence, and cost per successful outcome. Adoption is not a result. A high rate of AI use can coexist with poor economics and more rework.
+
+No universal set of thresholds exists. A safety-critical approval and a low-value customer refund should not have the same path. Medians can also hide the cases that consume executive attention, so distributions matter. A COO often learns more from the slowest ten percent of consequential decisions than from average decision time.
+
+The dashboard therefore needs drill-down, not decorative precision. Every aggregate should open into the events behind it. If escalations rise, management should be able to see whether they cluster around one rule, customer type, business unit, data source, or agent action. If the system cannot provide examples, the chart is not ready to govern anything.
+
+## Illustrative example: a new business line seen through its traces
+
+Consider a company moving from one activity to several. The founder-COO launches the second business line personally, then appoints a business-unit lead and hands delivery to a Head of Operations. The organization chart says responsibility moved. Pricing behavior says otherwise.
+
+The usual dashboard shows pipeline, bookings, gross margin, and perhaps the number of deals awaiting approval. It does not explain why pricing keeps returning to the founder.
+
+The company already has most of the required evidence. The CRM holds the proposed price, customer segment, dates, owner, and deal result. Finance holds the cost assumptions. The contract system records non-standard terms. Product and operations systems expose capacity constraints. Email or messaging threads contain the exception rationale and the moment the COO became involved.
+
+An AI analysis can turn the unstructured parts into proposed events: exception reason, missing context, policy cited, people consulted, decision made, and rationale. Those fields should be sampled and corrected by the operators who understand the process before they become metrics. Once calibrated, the analysis can run across the full period.
+
+The resulting view might show:
+
+- pricing-exception volume and rate by business unit and customer segment;
+- median and tail decision time, separated into working time and waiting time;
+- number of handoffs and requests for missing information;
+- share of exceptions escalated to the COO, with the reasons for escalation;
+- concentration of decisions by person, rule, and shared dependency;
+- margin at approval compared with realized margin;
+- reversals, contract amendments, and repeat exceptions for the same cause;
+- deals lost or delayed while an exception remained open.
+
+Now management can distinguish several stories that previously sounded identical. If most delays occur because shared-asset cost is unavailable, transferring pricing authority will not solve the problem. If the data is present but the business-unit lead escalates every deviation from the founder's preference, the liability sits in decision rights or behavior. If an agent proposes discounts inside the agreed envelope but humans repeatedly override them without recording why, the company has created an unobservable control loop.
+
+Alerts should emerge from those stories. The system might flag a new cluster of exception reasons, a material change in tail decision time, repeated use of a stale cost model, an unusual rise in reversals, or growing concentration of approvals around one executive. The threshold must be agreed by the owner and calibrated against the company's own baseline. "Red" should mean that someone knows what to inspect and has the authority to respond.
+
+This dashboard does more than save the COO time. It makes delegation falsifiable. The company can see whether decisions genuinely moved, whether outcomes remained acceptable, and where the next constraint formed.
+
+## Ask AI to build the first version
+
+The first operational-debt view does not require a transformation program. It needs a consequential workflow, enough history to reveal recurrence, and access to an approved AI environment. Sensitive customer, employee, financial, and contractual data should be minimized or anonymized, and only placed in a system the company permits for that information.
+
+Choose one path that is already causing concern: pricing exceptions, customer onboarding, incident resolution, supplier approval, or product requests. Export the last several months of records from the systems involved. Include timestamps and outcomes, not only narrative descriptions. Add the current policy, decision-rights document, or operating rule if one exists.
+
+Then give Claude, ChatGPT, or another capable model a brief like this:
+
+> **Act as an operating-system analyst.** Analyze the attached, anonymized records for one workflow. Reconstruct the common path from trigger to outcome. Identify recurring waiting, handoffs, missing context, escalations, reversals, exceptions, manual reconciliation, and control failures.
+>
+> For each pattern, separate: (1) what is directly observed in the records, (2) what you infer, and (3) what data is missing. Link every finding to representative source records. Do not rank employees or treat activity volume as performance.
+>
+> Produce four outputs: a proposed event schema; a ranked set of operational-debt hypotheses; a dashboard specification with metric definition, source, owner, and drill-down; and alert rules calibrated to the observed baseline. Connect path measures to customer, quality, or economic outcomes wherever the data permits. State clearly where no causal conclusion is possible.
+
+The first response will expose data gaps and bad definitions. That is useful. Ask the model to generate the transformation logic, queries, or formulas only after the operating owner confirms that the proposed events mean what the model thinks they mean.
+
+Then make the build request explicit:
+
+> Using only the validated fields, generate a working local dashboard or an implementation specification for our existing BI tool. Create three views: outcome, operating path, and human-agent boundary. For every metric, show the formula, data source, refresh cadence, owner, and links to the underlying records. Add alert logic for changes against our baseline. Do not invent unavailable fields; list them as instrumentation gaps.
+
+The exact output may be an HTML prototype, SQL and chart definitions, or a specification for Power BI, Looker, Metabase, or the company's existing tool. There is no reason to begin with a new platform.
+
+Before relying on the result, take a sample from each major pattern and compare the AI classification with the source material. Keep the corrections. They become examples for the next run and the beginning of an evaluation set. When a new failure appears, add it. This is the same feedback loop used by teams that improve production agents: real traces become tests, tests protect the definition, and the definition makes the dashboard more trustworthy.
+
+The output should not be a one-time diagnostic deck. Schedule the analysis at a cadence appropriate to the workflow. Let the system surface new clusters and threshold breaches. Let the owner inspect the underlying cases, decide whether a liability is real, and record the intervention. Then watch whether the path and outcome change.
+
+That final step matters. A dashboard that detects recurring debt but cannot trigger a decision becomes another source of operational debt.
+
+## From reporting to an operating instrument
+
+Operational visibility can easily become surveillance. Measuring handoffs and delays at individual level invites gaming and punishes the people who absorb the hardest exceptions. The unit of analysis should normally be the workflow, decision boundary, policy, interface, or recurring condition. Individuals appear when they own the remedy, not as targets on a leaderboard.
+
+AI-generated categories can also harden a weak interpretation. Preserve samples, let operators challenge classifications, and show confidence and missing data. When financial or customer consequences are uncertain, say so. The aim is not a magical debt score. It is a shorter path from signal to investigation to operating change.
+
+Once that path exists, Hidden Operational Debt stops being an annual workshop topic. It becomes observable state. Customer conversations reveal where policy and product diverge. Software logs reveal where work repeatedly fails or returns. Decision traces reveal where delegation is nominal. Agent traces reveal where autonomy exceeds control or where humans are still paying invisible interest.
+
+The company can then ask a better question than "Where should we use AI?"
+
+It can ask: **Where is our operating system preventing intelligence - human or artificial - from becoming a sound decision and a verified result?**
+
+That question leads to the boundary between adding an AI tool and changing how the company operates. It is the subject of the next chapter.

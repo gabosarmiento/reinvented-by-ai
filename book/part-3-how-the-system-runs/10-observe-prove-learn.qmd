@@ -1,0 +1,59 @@
+# Observe, Prove, Learn {#sec-observe}
+
+An agent completes a task, the dashboard records success, and the customer leaves.
+
+The tool returned no error. The workflow closed. The agent's answer was fluent. None of those facts proves that the customer received the right result.
+
+ATOM treats evidence as a product of execution. The system must preserve enough of the path to answer three questions: What happened? Did it work? What is allowed to change because of what we learned?
+
+## Record the path and the state
+
+A useful trace connects:
+
+- the triggering request and relevant context versions;
+- the model, instructions, tools, and permissions used;
+- decisions, tool calls, approvals, denials, and handoffs;
+- intermediate and final outputs;
+- errors, retries, overrides, and interventions;
+- the resulting state in the business system;
+- and later customer, operational, or economic outcomes.
+
+The final state matters. Anthropic's distinction is exact: an agent saying a flight was booked is not the same as a reservation existing [@anthropic-agent-evals-2026]. In company operations, “invoice corrected” should connect to the ledger entry; “customer retained” should connect to subsequent behavior; “decision delegated” should connect to who actually made it.
+
+Evidence depth should follow consequence. A brainstorming assistant needs little retention. An agent changing production code, employment status, a customer contract, or a financial record needs durable identity, version, action, and approval evidence.
+
+## Evaluate before and during use
+
+Offline evaluation tests the system against a controlled set of tasks before release. Online evaluation observes sampled production behavior, outcomes, and new failure patterns. Neither is sufficient alone.
+
+An evaluation suite should include ordinary cases, boundary cases, known failures, adversarial inputs, and cases where the correct behavior is to stop. Different graders answer different questions. Code can verify a database state or prohibited tool call. A model can assess open-ended quality against a rubric. Domain experts calibrate judgment and review cases where consequences matter.
+
+Pass rate alone can hide the failure that matters. Segment by customer type, action, risk level, language, data source, and version. Track tail latency, cost per successful outcome, human intervention, reversal, and evidence completeness. When an agent changes, compare it with the current system on the same cases before expanding authority.
+
+## Do not confuse override with error
+
+A high human-override rate may indicate a poor model. It may also indicate a cautious deployment where humans correctly handle rare exceptions. A low override rate may mean excellent performance or rubber-stamp review.
+
+The trace needs a reason and an outcome. Did the person possess context unavailable to the agent? Did the policy boundary work? Was the override itself wrong? Was the action later reversed? Without those links, acceptance and override rates become management theater.
+
+## Learning requires change authority
+
+Evidence can lead to five different changes:
+
+| Finding | Possible change | Owner |
+|---|---|---|
+| The model fails a known task | Model, prompt, or evaluation | Product/agent owner |
+| Required facts are stale | Context source or freshness rule | Data/context owner |
+| A tool behaves unpredictably | Integration or tool contract | Platform owner |
+| Valid actions violate intent | Policy or authority envelope | Business/control owner |
+| Results are consistently poor | Decision design or strategy | Accountable executive |
+
+These authorities should remain separate. The agent that detects a weak policy should not silently rewrite the policy and expand its own scope. A controlled proposal, review, test, and release path protects the organization from self-reinforcing error.
+
+## Turn incidents into reusable tests
+
+After an incident, preserve the trace and the real outcome. Reproduce the condition in a safe environment. Add the case to the evaluation suite. Decide whether the correction belongs in context, policy, tool behavior, or model instructions. Then run regression tests so the fix does not break a previously reliable behavior.
+
+This is institutional learning with a memory. It is stronger than a retrospective action item because the failure can be tested against future versions.
+
+The operating review should therefore examine a small set of signals linked to source evidence: business outcome, path health, agent behavior, control events, and new failure clusters. The question is not whether the dashboard is green. It is whether the company can reconstruct the result, explain why it was acceptable, and change the correct part of the system.
