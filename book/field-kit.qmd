@@ -2,7 +2,7 @@
 
 The following compact templates are designed for use with an approved AI assistant and the company's existing tools. Adapt the depth to the consequence of the work.
 
-## 1. ATOM loop canvas
+## 1. ATOM loop canvas {.unnumbered .unlisted}
 
 | Layer | Complete this statement |
 |---|---|
@@ -14,11 +14,11 @@ The following compact templates are designed for use with an approved AI assista
 | Learning | ___ reviews ___ and may change ___ |
 | Control plane | Identity, permissions, approval, stop, rollback, and recourse are ___ |
 
-## 2. Operational-debt analysis prompt
+## 2. Operational-debt analysis prompt {.unnumbered .unlisted}
 
 > Analyze the attached anonymized workflow records. Reconstruct trigger, path, waiting, handoffs, missing context, escalations, reversals, exceptions, controls, and outcome. Separate observed evidence from inference. Link every pattern to source cases. Propose a metric, owner, repayment experiment, and alert for each material liability. Do not rank employees or invent unavailable data.
 
-## 3. Decision specification
+## 3. Decision specification {.unnumbered .unlisted}
 
 | Field | Definition |
 |---|---|
@@ -34,7 +34,7 @@ The following compact templates are designed for use with an approved AI assista
 | Escalation/recourse | Trigger, destination, response expectation |
 | Review | When the decision design expires or changes |
 
-## 4. Agent autonomy matrix
+## 4. Agent autonomy matrix {.unnumbered .unlisted}
 
 | Level | Grant | Required evidence |
 |---|---|---|
@@ -46,15 +46,15 @@ The following compact templates are designed for use with an approved AI assista
 
 Increase authority by action and condition, never by giving the agent a general promotion.
 
-## 5. Context envelope
+## 5. Context envelope {.unnumbered .unlisted}
 
 Record task state, enterprise facts, policy, relevant history, provenance, and access. For each source add owner, scope, freshness, precedence, sensitive fields, and behavior when missing or conflicting.
 
-## 6. Pilot selection card
+## 6. Pilot selection card {.unnumbered .unlisted}
 
 Compare value, frequency, latency, evaluability, context readiness, reversibility, consequence, integration load, ownership, and transfer to the run. Reject a candidate that cannot produce observable learning even if the demonstration is impressive.
 
-## 7. First 30 days
+## 7. First 30 days {.unnumbered .unlisted}
 
 - Days 1-5: charter, historical trace, baseline, outcome, kill condition.
 - Days 6-10: decision design, context envelope, handoff contracts.
@@ -63,22 +63,22 @@ Compare value, frequency, latency, evaluability, context readiness, reversibilit
 - Days 21-25: limited release with pause and escalation.
 - Days 26-30: expand, revise, contain, or stop.
 
-## 8. Evidence scorecard
+## 8. Evidence scorecard {.unnumbered .unlisted}
 
 Review outcome, path time, handoffs, human intervention, reversals, failure severity, recovery, model/tool cost, maintenance, affected-party feedback, and evidence completeness. Segment results and inspect tail cases.
 
-## 9. Fractal Unit contract
+## 9. Fractal Unit contract {.unnumbered .unlisted}
 
 State purpose, economics, inputs, outputs, decisions, dependencies, context, controls, evidence, learning rights, and lifecycle. Mark each element as local choice, shared interface, or enterprise invariant.
 
-## 10. Agent registry
+## 10. Agent registry {.unnumbered .unlisted}
 
 Record owner, purpose, version, environment, models, tools, sources, dependencies, identity, permissions, actions, controls, evaluations, outcomes, cost, incidents, stop mechanism, and retirement condition.
 
-## 11. Ninety-day gate
+## 11. Ninety-day gate {.unnumbered .unlisted}
 
 Choose one: expand, revise, contain, or stop. Record the outcome evidence, complete cost, risk, distribution of effects, operating owner, unresolved assumptions, and exact authority or scope change.
 
-## 12. Quality gate
+## 12. Quality gate {.unnumbered .unlisted}
 
 Before expanding a loop, score originality of the design, clarity, evidence, practical usefulness, specificity, flow, internal consistency, and absence of inflated AI language. Any weak dimension requires a named revision, not a lower standard.

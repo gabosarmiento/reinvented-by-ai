@@ -4,7 +4,7 @@ Management will not disappear because an agent can summarize status. Some manage
 
 A manager who collects updates, reformats them, and carries information between rooms is performing coordination that software can increasingly reduce. A manager who clarifies intent, designs decisions, resolves conflict, develops judgment, and repairs interfaces is doing work the organization needs more of as execution accelerates.
 
-## Five accountabilities
+## Five accountabilities {.unlisted}
 
 The manager in an adaptive company has five enduring accountabilities.
 
@@ -20,13 +20,13 @@ The manager in an adaptive company has five enduring accountabilities.
 
 These accountabilities do not imply that every manager becomes an AI specialist. They imply that management shifts from moving information to improving the conditions under which decisions are made.
 
-## The Synthesizer
+## The Synthesizer {.unlisted}
 
 ATOM uses one specialized coordination role. A **Synthesizer** helps an outcome loop preserve coherence across intent, context, decisions, execution, and evidence. The role may be held by a product operations lead, chief of staff, program leader, or manager. It is not automatically a new job title.
 
 The Synthesizer notices that the team is optimizing a proxy, that an exception lacks an owner, that two sources conflict, or that learning never enters the Playbook. The role convenes the right decision and improves the interface. It does not become the permanent human router for all work. If everything depends on the Synthesizer's memory, the role has recreated the debt it was meant to remove.
 
-## Building middle management
+## Building middle management {.unlisted}
 
 A company moving from forty to one hundred and fifty people needs managers because coordination, development, and local judgment become real work. Adding layers before defining their rights creates messengers. Avoiding layers while every conflict returns to the founder creates bottlenecks.
 
@@ -34,7 +34,7 @@ Start with recurring decisions and interfaces. Give a manager an outcome, visibl
 
 Agents can reduce reporting and preparation load. They may allow a manager to support a wider span in stable work. In novel, physical, regulated, or relationship-heavy work, human attention may remain the constraint. The organization should change spans from observed work, not a forecast of automatic leverage.
 
-## Influence without hierarchy
+## Influence without hierarchy {.unlisted}
 
 The strategic COO increasingly works across peers who do not report to them. Authority comes from making the enterprise tradeoff legible.
 
@@ -42,7 +42,7 @@ Frame the contested decision, expose shared dependencies, show the evidence and 
 
 Peer influence grows when the COO can separate enterprise constraints from personal preference. The goal is not to win every argument. It is to leave the company with a decision that others understand and can execute.
 
-## The founder's hardest delegation
+## The founder's hardest delegation {.unlisted}
 
 The founder has given a business-unit leader a margin envelope. The leader chooses a price inside it. The founder believes another price would be better.
 

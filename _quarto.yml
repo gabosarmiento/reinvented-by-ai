@@ -39,7 +39,7 @@ book:
         - book/part-6-control-and-leadership-at-scale/16-agent-operations-control-at-scale.qmd
         - book/part-6-control-and-leadership-at-scale/17-the-manager-after-coordination-gets-cheap.qmd
         - book/part-6-control-and-leadership-at-scale/18-accountability-cannot-be-delegated.qmd
-    - book/conclusion.qmd
+  appendices:
     - book/field-kit.qmd
 
 bibliography: book/references.bib
@@ -53,4 +53,5 @@ format:
     toc: true
   typst:
     toc: true
+    toc-depth: 1
     number-sections: true

@@ -6,7 +6,7 @@ Agents share models, tools, identities, data, and vendors. They change versions.
 
 The company needs an Agent Operations capability. It may begin as a responsibility inside platform or security rather than a new department. Its job is to make the fleet operable without taking business accountability away from the units.
 
-## Register the actors
+## Register the actors {.unlisted}
 
 Every production agent should have a registry entry containing:
 
@@ -23,7 +23,7 @@ Every production agent should have a registry entry containing:
 
 If nobody can list the agents that can modify customer, financial, code, or employee state, the company does not control them.
 
-## Divide responsibility without dividing accountability
+## Divide responsibility without dividing accountability {.unlisted}
 
 The **business owner** defines the outcome, authority, and acceptable failure. **Agent Operations** provides registry, observability, evaluation infrastructure, deployment standards, and lifecycle controls. **Platform teams** operate shared models, tools, context services, and environments. **Security, risk, legal, and privacy** define specialist controls and challenge the deployment.
 
@@ -31,7 +31,7 @@ These roles can be held by a few people in a scale-up. What matters is that they
 
 NIST's Generative AI Profile organizes risk work across governance, mapping, measurement, and management throughout the lifecycle [@nist-genai-profile-2024]. The practical lesson is to connect inventory, testing, monitoring, incident response, and ownership rather than treat them as launch paperwork.
 
-## Control the change surface
+## Control the change surface {.unlisted}
 
 An agent can change even when its application code does not. The model provider updates a version. A context source changes. A tool adds a parameter. A policy is revised. Another agent begins consuming its output.
 
@@ -39,7 +39,7 @@ Version and test the combination that produces behavior. Material changes should
 
 Multi-agent design increases this need. More agents may improve specialization, but every handoff creates another state boundary, failure mode, and cost. Use multiple agents because the task has a real separation of context or authority, not because a diagram looks sophisticated.
 
-## Run incidents as operating failures
+## Run incidents as operating failures {.unlisted}
 
 Consider an **illustrative incident**. A sourcing agent reads a malicious instruction embedded in a supplier document. It calls a procurement tool using a broad shared token and changes payment details. A second agent treats the changed record as authoritative.
 
@@ -49,7 +49,7 @@ The response should revoke credentials, preserve traces, repair affected records
 
 Protocols such as MCP make tools easier to connect, which increases the importance of audience-bound credentials, consent, and resource-specific authorization [@mcp-authorization-2025]. Integration convenience is not a control model.
 
-## Retire what no longer earns its place
+## Retire what no longer earns its place {.unlisted}
 
 Agents should have sunset conditions. Usage alone is insufficient. An agent may be popular while generating review cost or relying on an outdated process. Compare outcome, total cost, risk, and maintenance with the current alternative. Remove credentials and integrations when the system is retired.
 

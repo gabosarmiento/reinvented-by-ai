@@ -4,13 +4,13 @@ An agent sends the message. A manager approved the workflow. A vendor supplied t
 
 When the outcome harms a customer, each party can accurately describe only part of the cause. The organization still owes an answer.
 
-## Separate five ideas
+## Separate five ideas {.unlisted}
 
 **Execution** is performing an action. **Authority** is legitimate permission to choose or act. **Responsibility** is an assigned duty within the system. **Accountability** is the obligation to explain, justify, and repair the outcome. **Liability** is the legal allocation of consequences.
 
 An agent can execute and receive bounded authority. It cannot hold institutional accountability. A vendor contract may allocate liability without becoming the company's moral or managerial answer to an affected person.
 
-## Build the accountability chain
+## Build the accountability chain {.unlisted}
 
 For each consequential agent-assisted outcome, the company should be able to trace:
 
@@ -26,7 +26,7 @@ The chain prevents a familiar form of evasion: the model made the decision. Mode
 
 For uses covered by law, specific duties may attach to providers and deployers. The EU AI Act, for example, requires deployers of high-risk systems to assign human oversight to people with the necessary competence, authority, and support, alongside other technical and organizational measures [@eu-ai-act-2026]. The exact legal duty depends on role and use. The operating principle is broader: oversight without authority is ceremonial.
 
-## Recourse is part of the design
+## Recourse is part of the design {.unlisted}
 
 An affected person needs more than disclosure that AI was involved. They need a way to contest the relevant result, reach someone able to change it, and receive repair when warranted.
 
@@ -34,7 +34,7 @@ The route should match the consequence. A poor recommendation may need feedback.
 
 Recourse also improves the operating model. Challenges reveal missing context, harmful proxies, weak policy, and cases the evaluation suite did not contain. The organization should connect them to learning without using affected people as unpaid testers.
 
-## Illustrative failure review
+## Illustrative failure review {.unlisted}
 
 A hiring-screening agent ranks a candidate below the interview threshold. A recruiter follows the recommendation. Months later, an audit finds that the agent inferred seniority from job-title patterns that disadvantaged candidates from smaller companies.
 
@@ -42,10 +42,40 @@ The failure review should not end with the recruiter or model. The business owne
 
 The company pauses the action, identifies affected decisions, offers review, repairs the evaluation set, changes the allowed features, and reconsiders whether ranking should carry that authority. Accountability moves upward to the people able to change the system and outward to those who experienced the result.
 
-## Capability does not dissolve obligation
+## Capability does not dissolve obligation {.unlisted}
 
 Future agents may operate for longer periods, coordinate with other agents, and manage larger budgets. If capability rises, companies may move human attention from individual actions to authority design, monitoring, incident response, and periodic review.
 
 One condition must remain true: a named human institution can explain why the system was permitted to act and can intervene on behalf of those affected. If nobody can do so because autonomy is distributed across vendors, agents, and policies, the organization has not transcended management. It has abandoned accountability.
 
 Companies may delegate action to software. They cannot delegate the duty to justify, repair, and answer for the consequences.
+
+## Conclusion: Build One Honest Loop {.unnumbered .unlisted}
+
+The adaptive company does not begin with an announcement.
+
+It begins when an operating leader chooses one consequential decision that repeatedly returns, waits, or fails. The company makes the intended outcome explicit. It assembles authorized context. It states who may decide and within what boundary. It assigns work to people, rules, workflows, and agents. It requires evidence of the path and the result. It gives learning to owners who can change the right part of the system.
+
+Then it watches what happens.
+
+The first loop will reveal uncomfortable facts. Delegation may be nominal. A trusted data source may be stale. A shared function may be funded to enforce policy but not to provide usable service. An agent may remove work from one team and create review elsewhere. A founder's intervention may remain the fastest short-term answer and the largest long-term constraint.
+
+That evidence is the work.
+
+Do not begin with an enterprise autonomy target. Do not count generated artifacts as value. Do not build a central AI organization that owns everybody else's outcomes. Do not use observability to rank employees or governance to disguise fear of delegation.
+
+Build one loop whose result matters. Bound the consequence. Keep the traces. Let a real owner make a real decision. When the result is poor, repair the context, right, interface, control, or assumption that produced it. When it is good, prove that normal operations can sustain it before expanding.
+
+ATOM is a model, not the destination. Its value lies in the questions it forces the company to answer:
+
+- What outcome are we trying to create?
+- What context is authorized and current?
+- Who or what may commit us?
+- What can act, and what must stop?
+- What evidence will prove the result?
+- Who may change the system?
+- Who remains accountable?
+
+Answer those questions for one recurring decision and the company has begun to change its operating system.
+
+Build one honest loop. Learn from it. Then decide what deserves to repeat.
