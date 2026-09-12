@@ -2,17 +2,19 @@
 
 The phrase “human in the loop” hides more than it explains. Which human? At what point? With what information? Able to change what? Accountable for which consequence?
 
-Good execution design begins with the work, not a general rule that humans should approve or agents should automate.
+The phrase is reassuring because it suggests that somebody remains in control. In practice, the person may receive hundreds of approvals, see only the agent's summary, or lack the authority to correct the underlying rule. A human presence is not the same as human control.
+
+Execution design starts with the work. It assigns each part to the mechanism best suited to it, then makes the boundaries explicit.
 
 ## Choose the right executor
 
 Stable, explicit rules belong in deterministic software. Language models are useful when the work requires interpreting unstructured material or producing variable outputs. Agents become relevant when a model must select tools and manage several steps toward a goal. People remain essential where intent is contested, tacit context matters, consequences require legitimate judgment, or relationships carry the work.
 
-An agent is not simply a better chatbot. It can decide which action to take next, invoke tools, observe the result, and continue. That flexibility is valuable precisely where a fully specified workflow is difficult. It is also the source of risk. OpenAI's practical definition emphasizes independent task completion through models, tools, and instructions, with the ability to stop and transfer control [@openai-agent-guide-2025].
+These mechanisms can appear in one loop. A customer agent reads a free-form complaint, a deterministic service checks identity and payment status, the model proposes a remedy, a rule verifies that the amount is within policy, and a person handles the exceptional case. Calling the whole thing “the agent” obscures where reliability and authority actually come from.
 
-The organization should use the least autonomous mechanism that solves the problem reliably.
+Agent builders make a useful distinction between workflows, whose paths are largely defined in code, and agents, which choose their own steps and tools. Anthropic recommends starting with the simplest pattern that works because greater flexibility generally adds latency, cost, and new failure modes [@anthropic-building-effective-agents-2024]. That engineering advice translates directly into organization design: discretion should be purchased only where it creates value.
 
-| Level | System behavior | Human role |
+| Level | System behaviour | Human role |
 |---|---|---|
 | **Assist** | Retrieve, summarize, draft | Decide and act |
 | **Propose** | Recommend an action with evidence | Approve, change, or reject |
@@ -20,28 +22,104 @@ The organization should use the least autonomous mechanism that solves the probl
 | **Act and report** | Execute within a narrow policy | Review samples and exceptions |
 | **Act within a budgeted policy** | Plan and execute several steps inside limits | Own outcome, monitor, intervene |
 
-Autonomy can differ by action inside one task. A vendor-research agent may search public sources, compare offers, and schedule interviews. It may draft a purchase request. It cannot accept terms, expose confidential data, or send payment unless those separate authorities are granted.
+This is an autonomy ladder, not a maturity ladder. Higher is not inherently better. The appropriate level depends on the action.
+
+A vendor-research agent may search public sources, compare offers, and schedule interviews. It may draft a purchase request. It cannot accept terms, expose confidential data, or send payment unless those separate authorities are granted. Even inside one tool, reading, proposing, writing a draft, and committing a transaction should be distinct capabilities.
+
+## Decompose the work without fragmenting the outcome
+
+Automation projects often begin with tasks because tasks are easy to count. The danger is that a loop becomes a collection of locally efficient fragments. Sales gets a proposal generator. Finance gets a margin checker. Operations gets a scheduling agent. Nobody owns the quality of the promise made to the customer.
+
+ATOM decomposes execution while preserving one accountable outcome. For each step, ask:
+
+- Is the input structured and the rule stable enough for software?
+- Does the step require interpretation, generation, or exploration?
+- Does it commit the company or merely prepare a commitment?
+- What consequence follows from an error?
+- How will the next actor verify what it receives?
+- Which outcome owner can change the interface when it fails?
+
+The last question prevents an old organizational habit from being reproduced in code. If sales and operations disagree about what a “ready order” means, an agentic handoff will not resolve the disagreement. It will make the ambiguity faster.
+
+Good decomposition creates small interfaces and preserves end-to-end evidence. The customer request should remain traceable through classification, pricing, promised date, fulfilment, and outcome. Otherwise each team can report success while the customer experiences failure.
 
 ## Design the handoff
 
-The most expensive failures occur at boundaries. An agent escalates without the work it performed. A human approves without seeing the source. Two agents pass summaries until the original customer constraint disappears. A reviewer becomes a rubber stamp because rejecting the action takes longer than accepting it.
+The most expensive failures occur at boundaries. An agent escalates without the work it performed. A human approves without seeing the source. Two agents pass summaries until the original constraint disappears. A reviewer becomes a rubber stamp because rejecting the action takes longer than accepting it.
 
-A handoff contract states the trigger, receiver, state transferred, evidence required, time expectation, and return path. “Ask a human if uncertain” is not a contract. “Route to the duty manager when the requested refund exceeds the envelope or identity cannot be verified; attach the customer record, policy version, actions attempted, reason for stop, and proposed next action” is.
+A **handoff contract** contains six elements:
 
-Review capacity must be designed with execution capacity. If coding agents can open twenty pull requests while qualified maintainers can review four, the system should limit starts, improve tests, or narrow agent scope. Adding more generation creates a queue, not leverage.
+1. the event that triggers transfer;
+2. the receiver with authority to continue;
+3. the state and original sources transferred;
+4. the evidence required from the sender;
+5. the response time and safe state while waiting;
+6. the route back, including who closes the work.
+
+“Ask a human if uncertain” is not a contract. “Route to the duty manager when the requested refund exceeds the envelope or identity cannot be verified; attach the customer record, policy version, actions attempted, reason for stopping, and proposed next action” is.
+
+The safe state matters. If an agent pauses a factory order, does production continue, hold, or revert to the last approved plan? If a manager does not answer a pricing escalation, does the quote expire? A queue without a timeout policy is an invisible decision.
+
+Review capacity must be designed with execution capacity. If coding agents can open twenty pull requests while qualified maintainers can review four, the system should limit starts, strengthen automated tests, split the changes differently, or narrow agent scope. Additional generation creates a queue, not leverage.
+
+## The person needs a control surface
+
+Human review should be designed as an operating interface. A reviewer needs to see the proposed action, relevant evidence, applicable rule, uncertainty, alternatives, exposure, and deadline. She should be able to approve, edit, reject, request more context, or change the route. Her action and rationale become part of the trace.
+
+The interface should not show every internal step by default. Raw traces can be enormous and misleading. It should expose the facts that support judgment and allow deeper inspection when needed. A finance approver needs the versioned cost basis and margin effect, not pages of model reasoning.
+
+Two rates reveal whether the control surface works. **Correction yield** is the proportion of reviews that materially change or stop an action. If it is nearly zero, the threshold may be too conservative or the reviewer may be rubber-stamping. **Preventable escalation rate** is the proportion of escalations caused by missing context, unclear rules, or avoidable system failure. Those cases should improve the loop rather than permanently consume human attention.
+
+An override is not automatically evidence that the agent was wrong. The person may be applying an undocumented preference or responding to a fact unavailable to the system. Require a reason code, then inspect the pattern. Repeated justified overrides indicate missing context or a poor rule. Repeated preference overrides may indicate a manager who has not truly delegated.
 
 ## The Synthesizer
 
-ATOM retains one distinctive role from the original model: the **Synthesizer**. This is not an AI whisperer or meeting facilitator. The Synthesizer maintains coherence across a consequential loop.
+ATOM retains one distinctive role: the **Synthesizer**. This is not an AI whisperer, meeting facilitator, or universal approver. The Synthesizer maintains coherence across a consequential loop.
 
 The role connects intent to the current operating state, exposes conflicts among functions, makes missing decisions visible, and ensures that evidence reaches the owner who can change the system. In a small company the COO may act as Synthesizer. In a business unit it may be the general manager, chief of staff, product-operations lead, or another operator with enough range and trust.
 
-The role should not become a new dependency. A good Synthesizer improves interfaces and decision design so less work requires synthesis by one person. If every cross-functional decision waits for the Synthesizer, the company has renamed its bottleneck.
+Consider a new offer that raises sales conversion but consumes a shared asset and increases support demand. Each functional dashboard can be green. The Synthesizer asks whether the unit is creating value after the full cost of the operating promise. She does not replace finance, product, or operations. She ensures their locally valid signals converge into one decision.
+
+The role has four recurring obligations:
+
+- keep the outcome and constraints visible;
+- detect when a disagreement is actually a missing decision;
+- preserve the chain from source to commitment to result;
+- and move a recurring exception into the Playbook or retire it.
+
+The role should shrink its own dependency. A good Synthesizer improves interfaces, context products, and decision rights so fewer issues require synthesis by one person. If every cross-functional decision waits for her, the company has renamed its bottleneck.
 
 ## Multi-agent is an architecture choice
 
-Several agents can explore in parallel or divide specialized work. They also create more handoffs, duplicated effort, conflicting state, and difficult attribution. Use multiple agents when the tasks are genuinely separable or independent comparison adds value. Do not use them to imitate an org chart.
+Several agents can explore in parallel, challenge one another, or divide specialized work. They also create more handoffs, duplicated effort, conflicting state, difficult attribution, and larger cost.
 
-Anthropic's evaluation guidance stresses that agent behavior must be judged through both trajectory and outcome, using code-based, model-based, and human graders where each fits [@anthropic-agent-evals-2026]. That applies to execution design: test not only whether the final artifact looks good, but whether the system used permitted tools, preserved state, stopped correctly, and produced the intended business result.
+Use multiple agents when the work has genuinely separable branches, breadth matters, or independent comparison has value. Anthropic's account of its research system describes an orchestrator assigning parallel searches to workers, then a separate citation process. It also describes early failures: excessive spawning, endless searches, and coordination overhead [@anthropic-multi-agent-research-2025]. That is a useful antidote to the idea that a digital organization chart is automatically sophisticated.
 
-The design target is not minimum human involvement. It is minimum ambiguity at the boundary. Humans and agents should each know what they received, what they may do, what proof they owe, and where responsibility remains.
+Most recurring company processes do not need a swarm. A defined workflow with one model, a few tools, and deterministic checks is often easier to understand and operate. Multi-agent designs earn their complexity when parallelism changes elapsed time, specialisation changes quality, or independent paths reduce a material risk.
+
+If multiple agents are used, define a shared task record, unique actor identities, bounded tools, a merge rule, conflict handling, cost and time limits, and one owner of the final commitment. Two agents producing incompatible recommendations is not resilience unless the system knows who resolves the difference.
+
+## Learn the boundary before raising autonomy
+
+The first live version should usually operate below its intended authority. In shadow mode it observes cases and produces proposed actions without committing them. The team compares those proposals with actual decisions and outcomes. It then releases a narrow class of cases and watches the boundaries.
+
+Raise autonomy when the system demonstrates that it can recognize its scope, obtain valid context, use permitted tools, stop on prohibited conditions, hand off coherently, and produce the expected outcome. Lower it when context quality deteriorates, failure concentration rises, the environment changes, or review data shows that people are repeatedly correcting the same pattern.
+
+Anthropic's evaluation guidance recommends judging agent behaviour through both trajectory and outcome, using code-based, model-based, and human graders where each fits [@anthropic-agent-evals-2026]. For the operator, this means that a plausible final answer is insufficient. The system also has to use the permitted source, respect the spending limit, preserve the customer constraint, and stop where it promised to stop.
+
+## Map one live loop
+
+Choose a recurring process in which a person already uses an AI assistant: preparing a renewal, resolving a support issue, planning inventory, or reviewing a contract. Export a small set of completed cases into an approved workspace.
+
+Ask the assistant to map every step as **deterministic software**, **model task**, **agent choice**, or **human judgment**. For each transition, request the input, output, authority, evidence, failure condition, and receiver. Then ask it to find:
+
+- steps where a model is being used for a stable rule;
+- human approvals with no meaningful information or choice;
+- actions whose permission is broader than their purpose;
+- handoffs that discard original evidence;
+- queues whose capacity is lower than upstream production;
+- and decisions with no owner of the end-to-end outcome.
+
+Validate the map with the people who perform and receive the work. Choose one boundary to redesign. It may be more valuable to improve the escalation packet or separate read from write access than to add a more capable model.
+
+The design target is not minimum human involvement. It is minimum ambiguity about work, authority, and proof. Humans and agents should each know what they received, what they may do, what evidence they owe, and where responsibility remains.
