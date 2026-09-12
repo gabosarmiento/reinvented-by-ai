@@ -1,6 +1,6 @@
 # Research Ledger
 
-Status: live ledger; Chapter 1 evidence pass completed 12 September 2026
+Status: manuscript evidence pass completed 12 September 2026
 Scope: sources used to test the book’s premises, develop ATOM, and support finalized chapter claims.
 
 ## Evidence rules
@@ -23,7 +23,7 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **URL:** https://hai.stanford.edu/ai-index/2026-ai-index-report
 - **Publication:** Stanford Institute for Human-Centered Artificial Intelligence, AI Index Steering Committee.
 - **Date:** April 2026.
-- **Why it matters:** Supports the claim that the 2025 manuscript’s urgency was directionally reasonable, while not proving that adoption produced operating-model change.
+- **Why it matters:** Establishes that capability and adoption increased rapidly while not proving that adoption produced operating-model change.
 - **Chapter:** Preface; Chapter 1.
 - **Limitations/notes:** Inspect underlying definitions and datasets before quoting “88%.” Benchmark results must not be presented as job-level autonomy.
 
@@ -235,6 +235,61 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **Why it matters:** It gives the book a disciplined economic bridge from cheaper model output to organization design. Better or cheaper prediction does not create value alone; the firm also needs judgment, data, action, and a system capable of using the input. ATOM extends that lens to tool-using agents by making authority, evidence, and recovery explicit complements to execution.
 - **Chapter:** Chapters 1, 3, 6, 7, and 13.
 - **Limitations/notes:** The MIT Press summary and official table of contents were verified, as were the DOI, ISBN, date, license, and open-access status. MIT Press Direct blocked automated access to the full chapter text during this pass. The book’s formal prediction framing is analytically useful but does not by itself specify an operating model or fully capture agents that take actions through tools. Do not attribute ATOM’s extensions to Gans.
+
+### S021 — Context is a finite production resource
+
+- **Claim:** Production agent teams treat context as a curated combination of instructions, tools, data, history, and memory; more context can reduce focus rather than reliably improve performance.
+- **Source:** *Effective Context Engineering for AI Agents*.
+- **URL:** https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- **Publication:** Anthropic.
+- **Date:** 29 September 2025.
+- **Why it matters:** Supports the context-envelope architecture in Chapter 5.
+- **Chapter:** Chapter 5.
+- **Limitations/notes:** First-party engineering guidance, not independent organizational-impact evidence.
+
+### S022 — Prompt injection is an authority and impact problem
+
+- **Claim:** OpenAI frames advanced prompt injection as social engineering and recommends constraining the connection between untrusted sources and consequential actions even when detection fails.
+- **Source:** *Designing AI Agents to Resist Prompt Injection*.
+- **URL:** https://openai.com/index/designing-agents-to-resist-prompt-injection/
+- **Publication:** OpenAI.
+- **Date:** 11 March 2026.
+- **Why it matters:** Supports the separation of content, permission, and deterministic control.
+- **Chapter:** Chapters 5, 6, and 9.
+- **Limitations/notes:** First-party security guidance; it does not establish that any control eliminates prompt injection.
+
+### S023 — Production multi-agent systems add coordination failure
+
+- **Claim:** Anthropic’s production research system uses an orchestrator-worker design and required explicit controls for excessive spawning, endless search, coordination, evaluation, and synthesis.
+- **Source:** *How We Built Our Multi-Agent Research System*.
+- **URL:** https://www.anthropic.com/engineering/multi-agent-research-system
+- **Publication:** Anthropic.
+- **Date:** 13 June 2025.
+- **Why it matters:** Grounds the book’s claim that multi-agent design is an architecture choice with additional interfaces and costs.
+- **Chapter:** Chapter 7.
+- **Limitations/notes:** Company-reported experience for one research product.
+
+### S024 — Operational autonomy changes with users and product design
+
+- **Claim:** Anthropic’s first-party interaction study found that experienced Claude Code users granted more auto-approval while also interrupting more, and that agents often initiated clarification themselves.
+- **Source:** *Measuring AI Agent Autonomy in Practice*.
+- **URL:** https://www.anthropic.com/research/measuring-agent-autonomy
+- **Publication:** Anthropic.
+- **Date:** 18 February 2026.
+- **Why it matters:** Supports post-deployment monitoring rather than treating approval settings as a complete measure of oversight.
+- **Chapter:** Chapters 16 and 18.
+- **Limitations/notes:** Product-specific observational evidence; reported rates are not generalized in the manuscript.
+
+### S025 — Domain expertise remains important in agentic coding
+
+- **Claim:** Anthropic’s privacy-preserving analysis of Claude Code sessions reports that domain experts more often succeed and recover from errors, while people still tend to decide what to build and agents how to build it.
+- **Source:** *How Claude Code Is Used in Practice*.
+- **URL:** https://www.anthropic.com/research/claude-code-expertise
+- **Publication:** Anthropic.
+- **Date:** 2026.
+- **Why it matters:** Provides an early, scoped signal for the management argument that problem knowledge grows in relative importance as implementation becomes cheaper.
+- **Chapter:** Chapter 17.
+- **Limitations/notes:** Product-specific, company-reported observational analysis. The manuscript labels the inference and does not generalize the reported effect.
 
 ## Research gaps before drafting
 
