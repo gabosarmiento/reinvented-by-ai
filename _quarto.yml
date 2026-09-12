@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - book/part-1-the-constraint-moved/01-when-production-gets-cheap.qmd
+    - book/part-1-the-constraint-moved/02-hidden-operational-debt.qmd
 
 bibliography: book/references.bib
 
