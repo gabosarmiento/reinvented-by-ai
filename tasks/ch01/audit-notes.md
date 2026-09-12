@@ -11,7 +11,7 @@ Audit completed: 11 September 2026
 
 ## Original chapter function
 
-The original opening tries to create urgency through a fictional revelation, compresses time through invented ratios, declares legacy models obsolete, and introduces ATOM as a necessary replacement. It moves directly from “AI is fast” to “the organization must be rebuilt” without demonstrating the causal link.
+The source opening tries to create urgency through a fictional revelation, compresses time through invented ratios, declares legacy models obsolete, and introduces ATOM as a necessary replacement. It moves directly from “AI is fast” to “the organization must be rebuilt” without demonstrating the causal link.
 
 v2 is more overtly generated and categorical. v4 adds organizational friction and agents but preserves the same sales structure. Neither version distinguishes task production from system value.
 
@@ -70,5 +70,10 @@ The original phrase “scaling means fundamentally rebuilding your organization�
 
 ## Reuse rationale
 
-No original sentence is strong enough to require verbatim reuse. The second edition will preserve the author’s problem selection and rebuild the argument from evidence. The opening will be quieter, more specific, and harder to dismiss: some production is becoming cheap; value is not; therefore the operating constraint moves.
+No source sentence is strong enough to require verbatim reuse. The book preserves the author’s problem selection and rebuilds the argument from evidence. The opening will be quieter, more specific, and harder to dismiss: some production is becoming cheap; value is not; therefore the operating constraint moves.
 
+## Author-review revision, 12 September 2026
+
+The first draft aimed at a generic product team and an established enterprise operator. That audience was too broad. Chapter 1 now opens with an **ILLUSTRATIVE COMPOSITE** of a founder-COO scaling from roughly 40 people toward 150 while adding a business line and handing the run to a Head of Operations.
+
+The public manuscript will not mention the abandoned source drafts or imply an earlier public edition. Decision 0006 records the distinction between internal provenance and reader-facing narrative.

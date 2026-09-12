@@ -36,9 +36,9 @@ None after the evidence pass.
 
 **Decision:** Accepted as part of the argument, not hidden. The studies are used to disprove a universal productivity coefficient. The organization-level moving-constraint mechanism remains explicitly an inference rather than an empirical result established by those studies.
 
-### M3 — The opening example uses invented numerical specificity
+### M3 — The opening composite could sound like disguised client work
 
-**Decision:** Accepted. The eighteen variants form one clearly labeled illustrative example and make the review load concrete. Unlabeled invented ratios elsewhere were removed.
+**Resolution:** Labeled it **ILLUSTRATIVE COMPOSITE** and avoided outcomes, quotations, or company details that imply a reported case. The headcount trajectory describes the intended reader situation, not an empirical company claim.
 
 ### M4 — The cost equation is not a quantified economic model
 
@@ -47,7 +47,7 @@ None after the evidence pass.
 ## Low findings
 
 - The chapter is shorter than the outline estimate. No expansion is warranted; the argument reaches the Monday action without padding.
-- The case mix leans toward software and customer support. Boundary conditions make this visible; later chapters require author and non-software cases.
+- The empirical case mix leans toward software and customer support. The opening now anchors the organizational mechanism in a multi-business scale-up, while later chapters still require author and non-software cases.
 
 ## Skeptical-executive test
 
@@ -60,7 +60,8 @@ None after the evidence pass.
 
 The five-queue diagnostic must remain visibly distinct from ATOM’s six layers and control plane. Chapter 4 should test whether it is best presented as a diagnostic overlay, a pre-ATOM tool, or a recurring constraint view. No Chapter 1 change is needed now.
 
+The reader now needs a visible thread across later chapters connecting decision architecture to business-unit autonomy, shared functions, initiative-to-run transfer, unit economics, and the founder’s own intervention habits. Decision 0006 assigns that cross-book work without changing the chapter count.
+
 ## Result
 
 All high findings were resolved. Medium findings were explicitly accepted with scope or downstream ownership. The chapter is ready for technical finalization and quality scoring.
-

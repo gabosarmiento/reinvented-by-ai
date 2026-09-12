@@ -9,16 +9,16 @@ Each chapter is scored from 1 to 5. A chapter cannot be final if any category is
 
 ## Chapter 1 — When Production Gets Cheap
 
-Final prose word count: **2,081** (headings and table included; Mermaid source and bibliography excluded)
+Final prose word count: **2,533** (headings and table included; Mermaid source and bibliography excluded)
 
 | Category | Score | Basis |
 |---|---:|---|
-| Originality | 5 | Converts the original speed intuition into a five-queue moving-constraint argument and distinguishes accountability from workflow |
+| Originality | 5 | Connects the moving-constraint argument to the founder-COO becoming the company’s integration layer and distinguishes accountability from workflow |
 | Clarity | 5 | Defines output, throughput, outcome, and value; one argument controls the chapter |
-| Evidence | 4 | Eight sources resolve every external quantitative claim; organization-level mechanism remains a labeled inference with boundaries |
-| Practical usefulness | 4 | Ends with a five-step workflow diagnostic; deeper worksheet is intentionally reserved for Chapter 2/field kit |
-| Specificity | 5 | Names queues, costs, authority decisions, evidence requirements, and failure modes |
-| Narrative flow | 5 | Illustrative overload → measured change → conflicting productivity evidence → mechanism → objection → Monday action → Chapter 2 |
+| Evidence | 4 | Nine sources resolve every external claim; the organization-level mechanism and extension from prediction to agent execution remain labeled inferences with boundaries |
+| Practical usefulness | 5 | Ends with a five-step test for delegating a real decision without silently taking it back |
+| Specificity | 5 | Names queues, costs, business-unit tradeoffs, authority decisions, evidence requirements, and failure modes |
+| Narrative flow | 5 | Founder-COO dependency → measured change → decision economics → conflicting productivity evidence → mechanism → objection → Monday action → Chapter 2 |
 | Internal consistency | 4 | Consistent with approved architecture; the relationship between five queues and ATOM’s six layers remains a Chapter 4 design check |
 | Absence of AI-slop language | 5 | Banned-phrase scan clean; no generic urgency, vendor tone, decorative AI adjectives, or invented executive dialogue |
 
@@ -26,9 +26,10 @@ Quality gate: **PASS**
 
 ## Evidence and claim checks
 
-- Eight citation keys resolve against `book/references.bib`.
+- Nine citation keys resolve against `book/references.bib`.
+- Gans’s book supports the prediction, decision, complements, automation, and system-effects frame. The manuscript’s extension to authority, evidence, and recovery for tool-using agents is explicitly its own inference.
 - The final journal version of *Generative AI at Work* replaces the superseded working-paper sample and estimate.
-- The opening is explicitly labeled **ILLUSTRATIVE EXAMPLE**.
+- The opening is explicitly labeled **ILLUSTRATIVE COMPOSITE** and does not imply a real company case.
 - The five-queue mechanism is treated as author inference; the total-cost expression is labeled a checklist, not an accounting standard.
 - Headcount forecasts, displacement claims, universal productivity coefficients, and job-automation claims are excluded.
 - All current external claims appear in `docs/research/sources.md` with limitations.
@@ -39,6 +40,7 @@ Quality gate: **PASS**
 - No “AI-powered,” “AI-driven,” or “AI-native” in the chapter.
 - Controlled terms match `docs/editorial/terminology.md`.
 - ATOM is not prematurely defined; Decision 0004 records the rationale.
+- No public edition history or abandoned-draft narrative remains in the chapter. Decision 0006 records the editorial boundary.
 - Hidden Operational Debt appears only as the transition to Chapter 2.
 
 ## Publishing checks
@@ -65,7 +67,7 @@ The proof PDF contains print-book recto blanks and a sparse home-page spread bec
 ## Open editorial questions
 
 1. In Chapter 4, should the five queues become a recurring diagnostic overlay on ATOM, or remain only a pre-ATOM teaching device?
-2. Does the author want the first-person sentence “What I believed in 2025…” retained verbatim, or made more impersonal in the final voice pass?
-3. Should the opening product example remain the book’s first scene, or be replaced later by a verified author-experience case with the same mechanism?
+2. Should the founder-COO composite eventually be replaced by a verified author-experience case, or remain as the cleanest statement of the target reader’s problem?
+3. The MIT Press Direct interface blocked automated access to the full text of Gans’s open-access book. The verified publisher summary and official contents support the Chapter 1 use, but Chapters 3, 6, 7, and 13 should not draw deeper claims until the relevant full chapters have been reviewed.
 
-None blocks Chapter 1. They are cross-book or author-voice decisions with explicit downstream owners.
+None blocks Chapter 1. They have explicit downstream owners.

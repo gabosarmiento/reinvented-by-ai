@@ -4,7 +4,7 @@ Completed: 11 September 2026
 
 ## Voice test
 
-The chapter speaks as a practitioner revising an earlier claim, not as a vendor announcing a trend. It uses a concrete work path, two conflicting empirical results, a cost heuristic, and a Monday exercise. The prose does not ask the reader to accept urgency as evidence.
+The chapter speaks as a practitioner challenging a scaling founder-COO, not as a vendor announcing a trend. It uses a concrete company transition, two conflicting empirical results, a cost heuristic, and a Monday decision exercise. The prose does not ask the reader to accept urgency as evidence.
 
 ## Removed or avoided
 
@@ -17,7 +17,8 @@ The chapter speaks as a practitioner revising an earlier claim, not as a vendor 
 ## Specific edits
 
 - Replaced the categorical first sentence with “a common early failure.”
-- Added the author’s explicit 2025/2026 correction in a measured first-person voice.
+- Removed the retrospective edition narrative and all invented publication history.
+- Replaced the generic product-team opening with a founder-COO scaling composite.
 - Removed filler from the output/throughput distinction.
 - Recast verification as proportionate evidence, not blanket manual inspection.
 - Recast the cost equation as a checklist rather than an abstract “management correction.”
@@ -25,9 +26,8 @@ The chapter speaks as a practitioner revising an earlier claim, not as a vendor 
 
 ## Repetition check
 
-The production/value distinction appears in the opening, definition table, model, and conclusion for different purposes. No paragraph merely restates the previous conclusion. ATOM is intentionally absent. Hidden Operational Debt appears only in the transition.
+The production/value distinction appears in the opening, economic frame, definition table, model, and conclusion for different purposes. No paragraph merely restates the previous conclusion. ATOM is intentionally absent. Hidden Operational Debt appears only in the transition.
 
 ## Automated scan
 
 A case-insensitive scan found none of the banned phrases and none of “AI-powered,” “AI-driven,” or “AI-native” in the manuscript chapter.
-

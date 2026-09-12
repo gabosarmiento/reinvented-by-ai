@@ -1,26 +1,32 @@
 # When Production Gets Cheap {#sec-production-cheap}
 
-A common early failure caused by cheap production is not bad output. It is unmanaged abundance.
+A common early failure caused by cheap production is not bad output. It is a company that produces more choices than it can absorb.
 
-Consider a product team that needs to improve a checkout flow. A designer, a product manager, and a coding agent can now produce interface alternatives, working branches, test cases, and launch copy before the next morning. By Monday, the team has eighteen plausible versions.
+Consider a founder-COO in a company of forty people. The business is preparing to add a second activity, hire another thirty people, and build its first real layer of management. A Head of Operations is taking over the daily run. This should release the COO to work on structure, capital allocation, and growth.
 
-It has no shared criteria for choosing among them. Several variants depend on services the platform team has not approved. Legal needs to review two new uses of customer data. Nobody has defined what evidence would justify a release. The agent made production faster; the team made the decision surface larger.
+It does not.
 
-This is an **illustrative example**, not a report about a particular company. The mechanism is the point: when the capacity to create expands faster than the capacity to absorb what is created, work does not disappear. It waits somewhere else.
+The new business lead can prepare a market analysis in hours. Finance can generate several pricing and margin scenarios. Product and engineering can prototype different offers in parallel. Each team arrives better prepared. Each also arrives with a decision that crosses the boundaries of the company: which assets remain shared, which capability belongs inside the new unit, what risk the center will carry, and what evidence justifies further investment.
 
-The team has not shortened the path from intent to result. It has moved the queue.
+The Head of Operations can run the process. Only the COO still holds enough of the company in their head to resolve the tradeoffs. Work has been delegated. Decisions have not.
+
+This is an **illustrative composite**, not a report about a particular company. Its mechanism is common enough to recognize. At forty people, the founder’s intervention can be the shortest path to a good answer. During the move to seventy, then perhaps one hundred and fifty, the same habit becomes part of the architecture. Teams learn to escalate because the founder is fast, informed, and exacting. Managers learn that initiative is welcome until it conflicts with an unstated preference. Shared functions accumulate exceptions. New ventures remain attached to the person who launched them because nobody designed the conditions for transfer to the run.
+
+AI can intensify this dependency. It lowers the effort required to produce an analysis, option, plan, prototype, or recommendation. It does not automatically distribute the authority to choose among them. The organization has not shortened the path from intent to result. It has moved the queue toward judgment, integration, and commitment.
 
 ## A real change, stated narrowly
 
-The 2025 edition of this book described AI speed through invented ratios: one “AI year” was said to equal ten conventional years; fifteen AI days were compared with five traditional months. Those comparisons sounded precise but measured nothing. They are removed here.
+Speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still moves through the same decision, integration, and acceptance cycles. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
 
-What I believed in 2025 was directionally right: faster production would expose slow organizational rhythms. What became clearer is that speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still moves through the same decision, integration, and acceptance cycles. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
-
-A narrower claim is easier to defend. The marginal cost and latency of producing *some* cognitive and software artifacts have fallen sharply. The emphasis belongs on *some*. The effect varies by task, quality threshold, workflow, and consequence.
+The defensible claim is narrow. The marginal cost and latency of producing *some* cognitive and software artifacts have fallen sharply. The emphasis belongs on *some*. The effect varies by task, quality threshold, workflow, and consequence.
 
 One useful indicator is the price of model inference at a fixed level of benchmark performance. Stanford’s 2025 AI Index reported that the price for a model performing around the GPT-3.5 level on MMLU fell from about $20 per million tokens in November 2022 to $0.07 in October 2024—a decline of more than 280 times [@stanford-ai-index-2025]. Epoch AI, whose data informed that analysis, found very different rates across tasks and performance thresholds: roughly ninefold to nine-hundredfold annual declines in the cases it examined [@cottier-2025]. The spread matters. There is no single “price of intelligence,” and the fastest historical decline should not be projected indefinitely.
 
 Inference price is also not workflow cost. A reliable system may require data access, retrieval, tools, orchestration, evaluation, security, human review, and recovery from failure. A cheap model call can sit inside an expensive operating process.
+
+Economist Joshua Gans offers a useful discipline for thinking about that difference. He treats AI prediction as an input to a decision and examines its value alongside substitutes, complements, automation, and system effects [@gans-2025-microeconomics]. The point for an operator is straightforward: making one input cheaper does not make the complete decision cheap. The firm still needs data, judgment, and the capacity to act.
+
+Modern generative systems stretch the prediction framing because they can produce artifacts and, when connected to tools, execute actions. The economic discipline still holds. As execution becomes cheaper, its complements become more important. A company needs to specify who may commit resources, what constraints cannot be bypassed, what evidence must return, and how a bad action can be stopped or reversed. These are not features of the model. They are features of the operating system around it.
 
 Capability has expanded as well. METR’s task-horizon research shows agents completing increasingly long, well-specified tasks in software engineering, machine learning, and cybersecurity [@metr-horizons-2026]. But the researchers warn against turning this into a claim about whole jobs. Their benchmark is concentrated in technical tasks with clear scoring and relatively little organizational context. A 50 per cent success rate is not dependable operation. Messy work, tacit knowledge, competing goals, and institutional consequences change the problem.
 
@@ -51,7 +57,7 @@ We need four different words:
 | **Outcome** | A change in customer, operational, or strategic conditions | Work shipped without measured effect |
 | **Value** | The benefit of that outcome after cost, risk, maintenance, and foregone alternatives | Model cost or hours reportedly saved |
 
-Cheap output is useful. It is not the same as throughput, outcome, or value.
+Cheap output is useful. It is not the same as throughput, outcome, or value. The difference matters to a COO because the company pays for the complete system while each team tends to report the part it produced.
 
 ## The constraint moves
 
@@ -94,11 +100,15 @@ None of these capacities is new. What changes is the imbalance between them. Gen
 
 Accountability surrounds all five. It is not another box through which work passes. It answers a different question: who remains answerable for the outcome when work is divided among people, models, software, and vendors?
 
+For the scaling COO, these queues often collapse into one calendar. Selection arrives as portfolio review. Missing context arrives as a request to recall why an earlier promise was made. Integration arrives as conflict between a business unit and a shared function. Verification arrives as a document that needs “one final look.” Authorization arrives as a message asking, “Are you comfortable if we proceed?”
+
+The founder experiences these as unrelated interruptions. They are often one design failure: the organization depends on a person where it needs a decision system.
+
 ## Cheap creation has an option cost
 
 The apparent price of an additional option approaches zero long before its total cost does.
 
-Return to the checkout team. The eighteenth prototype may cost almost nothing to generate. It still asks someone to compare it with seventeen alternatives, determine whether its dependency is acceptable, test it, explain it, and decide whether to maintain it. Even a rejected option can leave residue: branches, documents, data copies, open questions, and expectations.
+Return to the growing company. The fourth plan for the new business line may cost almost nothing to generate. It still asks the leadership team to compare assumptions, resolve conflicts with the existing business, test the economics, decide which capabilities remain shared, and state who may commit the company. Even a rejected plan can leave residue: forecasts, prototypes, provisional hires, technology choices, stakeholder expectations, and exceptions that somebody must later unwind.
 
 A more honest cost equation is:
 
@@ -122,14 +132,16 @@ The point is not that production no longer matters. It is that production can no
 
 ## What to do on Monday
 
-Choose one workflow in which AI has increased output. Use a real unit of demand: a customer request, product change, analysis, campaign, incident, or decision.
+Choose one recurring decision that still returns to the founder or COO. Use a real decision: a price exception, senior hire, product commitment, capital request, customer promise, or dispute between a business unit and a shared function.
 
-1. Mark the request and the accepted outcome. Do not stop at the generated artifact.
-2. Record elapsed time, waiting time, rework, and escalation across the whole path.
-3. Locate the queue: selection, context, integration, verification, or authorization.
-4. Name the person accountable for the outcome and the evidence they need.
-5. Change one constraint before buying more production capacity.
+1. Name the decision and the business outcome it is meant to protect. Do not name a meeting or document.
+2. Write down the formal owner, then the person who makes the decision in practice.
+3. Trace where the decision waits: selection, context, integration, verification, or authorization.
+4. Record what the COO knows, checks, or weighs that the stated owner cannot yet access or apply.
+5. Design one delegation test for the next occurrence: a clear intent, decision boundary, evidence requirement, and escalation condition. Do not silently retake the decision when the answer differs from your preference.
 
-This exercise will often reveal a paradox: the organization is producing more while becoming harder to steer. Decisions multiply. Dependencies accumulate. Review work arrives without capacity. Exceptions live in messages and meetings. Each unresolved queue becomes a liability that charges interest on future change.
+This exercise will often reveal a paradox: the organization is producing more while becoming harder to steer. Decisions multiply. Dependencies accumulate. Review work arrives without capacity. Exceptions live in messages and meetings. The COO remains indispensable not only because others lack skill, but because the company has stored context, judgment, and authority in one person.
+
+That is not solved by telling the COO to let go. It is solved by making the missing operating structure explicit.
 
 That liability is **Hidden Operational Debt**. It is where the next chapter begins.

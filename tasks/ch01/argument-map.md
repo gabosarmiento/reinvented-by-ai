@@ -5,11 +5,11 @@ Argument map approved for drafting: 11 September 2026
 
 ## Reader question
 
-What has changed enough to justify reconsidering the company’s operating model?
+Why can AI make a growing company more dependent on its founder, even while teams produce more work?
 
 ## Primary argument
 
-The marginal cost and latency of producing some cognitive and software outputs have fallen, and bounded agents can execute increasingly substantial tasks. That does not make organizational value cheap. It moves the constraint toward selection, context, integration, verification, authorization, and accountability. Companies that treat higher output as the result will create queues and debt around those functions.
+The marginal cost and latency of producing some cognitive and software outputs have fallen, and bounded agents can execute increasingly substantial tasks. That does not make organizational value cheap. It raises the importance of complementary judgment and action, then moves the constraint toward selection, context, integration, verification, authorization, and accountability. In a scaling company, those queues often converge on the founder-COO. Companies that treat higher output as the result can become more productive locally and less capable of delegated decisions.
 
 ## Reasoning chain
 
@@ -34,6 +34,7 @@ The effect is heterogeneous and system-dependent.
 
 Value requires more than production.
 
+- Economic frame: prediction is an input to decision; its value depends on complements and system effects.
 - An output must be selected, contextualized, integrated, verified, and authorized.
 - Each step consumes scarce attention, knowledge, technical capacity, or legitimate authority.
 - Producing more candidates can increase the load on every downstream step.
@@ -44,7 +45,7 @@ The operating bottleneck moves. A company can have faster individuals and a slow
 
 ### Recommendation
 
-Before scaling AI use, identify the queue created around the newly cheap production step. Measure the decision or outcome cycle, not only the speed of generation.
+Before scaling AI use, identify the decisions and queues that still depend on the founder. Measure the decision or outcome cycle, not only the speed of generation. Delegate one decision with explicit intent, boundaries, evidence, and escalation.
 
 ## Five downstream queues
 
@@ -79,9 +80,8 @@ Automation can move a queue again; it does not remove the need to design the loo
 
 ## Monday decision
 
-Choose one AI-enabled workflow. Stop measuring outputs created. Draw the elapsed path from request to accepted outcome and identify where work now waits. That queue, not the model, is the next operating problem.
+Choose one recurring decision that still returns to the founder or COO. Identify the real decider, the missing context or judgment, the boundary of delegated authority, the evidence required, and the escalation condition. Test the design on the next occurrence without silently taking the decision back.
 
 ## Chapter movement
 
-Open with the production/value distinction → establish cost/capability change → confront heterogeneous productivity evidence → explain the moving constraint → name the five queues → show the option-cost example → end by introducing Hidden Operational Debt as accumulated unresolved queues.
-
+Open with the founder-COO as the company’s integration layer → establish cost/capability change → introduce the economics of prediction, complements, and decisions → confront heterogeneous productivity evidence → explain the moving constraint → name the five queues → return to the scaling-company example → end with a decision-delegation exercise and Hidden Operational Debt.

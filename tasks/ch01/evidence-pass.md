@@ -16,10 +16,12 @@ Completed: 11 September 2026
 | C08 | AI amplifies the surrounding delivery system | OBSERVATIONAL INTERPRETATION | DORA scope and non-causal status stated; used as support, not proof; S019 |
 | C09 | Five downstream queues emerge when generation expands | AUTHOR INFERENCE | Presented as the book’s mechanism, not a measured universal result |
 | C10 | Total-system-cost equation | MANAGEMENT HEURISTIC | Explicitly described as not an accounting standard |
+| C11 | AI prediction affects economic value through decisions, complements, automation, and system effects | SUBSTANTIATED AT BOOK-LEVEL | Paraphrased from the verified MIT Press description and official table of contents; S020 |
+| C12 | Tool-using agents make authority, evidence, and recovery important complements to execution | AUTHOR INFERENCE | Presented as this book’s extension, not attributed to Gans |
 
 ## Case labels
 
-- Opening product-team scene: **ILLUSTRATIVE EXAMPLE** stated in the first four paragraphs.
+- Opening scaling-company scene: **ILLUSTRATIVE COMPOSITE** stated before any empirical claim.
 - Customer-support study: real empirical study named and cited; no company identity invented.
 - Open-source developer study: real randomized study named and cited.
 - No author-experience claim appears in this chapter.
@@ -28,12 +30,11 @@ Completed: 11 September 2026
 ## Corrections and exclusions
 
 - Replaced the older 14%/5,179 working-paper result with the final 15%/5,172 journal result.
-- Removed all invented AI-time ratios from the argument; they appear only as explicitly rejected claims from the old edition.
+- Removed all invented AI-time ratios from the argument and from the reader-facing narrative.
 - Excluded headcount, displacement, universal productivity, and “autonomous enterprise” claims.
 - Did not estimate total agent-workflow cost because no suitable general empirical basis was found.
 - Did not treat benchmark task length as elapsed autonomous run time or job coverage.
 
 ## Result
 
-Every external quantitative claim in the chapter has a bibliography entry and ledger record. The unmeasured organization-level claim is identified as an inference with explicit boundary conditions.
-
+Every external quantitative claim in the chapter has a bibliography entry and ledger record. The economic framing is supported by a primary publisher record and is carefully separated from the manuscript’s extension to tool-using agents. The unmeasured organization-level claim is identified as an inference with explicit boundary conditions.
