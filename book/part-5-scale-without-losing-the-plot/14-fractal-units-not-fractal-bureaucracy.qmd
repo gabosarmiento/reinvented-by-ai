@@ -2,9 +2,23 @@
 
 As a company adds business lines, it faces a familiar choice. Centralize decisions and slow the edges, or decentralize and accept duplication. The choice is false when the organization has not specified what must be shared.
 
+This problem appears early. A forty-person company launches a second offer and appoints a leader. At first the new business borrows sales, product, finance, and operations from the core. Every shared person receives two sets of priorities. The founder resolves conflicts because the interfaces do not exist.
+
+At seventy people, the company adds heads of function. The unit leader still cannot commit shared capacity or change a common product. At one hundred and fifty, leaders may respond by duplicating every function inside every business—or by adding a central planning layer to coordinate the shared ones. Both moves can be expensive ways of avoiding a design decision.
+
 ATOM uses the term **Fractal Unit** for a semi-autonomous group that can run a complete governed outcome loop. “Fractal” does not mean every unit is identical. It means the same operating grammar recurs at different scales: intent, context, decisions, execution, evidence, learning, and control.
 
 The repeatable object is not the team diagram. It is the contract.
+
+## A unit earns autonomy by closing a loop
+
+A collection of people does not become a unit because it receives a name, leader, and targets. It becomes an operating unit when it can observe an outcome, make relevant decisions, execute inside defined boundaries, and learn from the result.
+
+A growth squad that depends on five functions to approve each experiment may be cross-functional on paper but not autonomous. A business line with its own revenue target but no visibility into fulfilment cost does not own its economics. A regional team that can sell but not resolve customer failures owns acquisition, not the customer outcome.
+
+The unit boundary should follow a result that can be owned coherently. It may be a business, product, customer segment, operational service, or platform. The choice depends on where context is deep, decisions interact, and feedback needs to remain close.
+
+Too small a boundary produces fragments whose local goals compete. Too large a boundary recreates the central company inside each unit. The test is whether the group can run the complete loop without continuously negotiating ordinary work across its edge.
 
 ## The unit contract
 
@@ -12,45 +26,96 @@ Every unit should be able to state:
 
 | Element | Contract |
 |---|---|
-| Purpose | Customer or enterprise outcome the unit exists to produce |
-| Economics | Revenue, cost, margin, assets, or risk it owns and can observe |
-| Inputs and outputs | What enters, what leaves, and in what form |
-| Decisions | Rights held locally, shared, and at the center |
-| Dependencies | Services and capacities required from others |
-| Context | Sources and policies required to operate |
-| Controls | Non-negotiable limits and escalation conditions |
-| Evidence | Measures, traces, and review obligations |
-| Learning | What the unit may change and what requires shared approval |
-| Lifecycle | Conditions to grow, split, merge, or close |
+| **Purpose** | Customer or enterprise outcome the unit exists to produce |
+| **Economics** | Revenue, cost, margin, assets, or risk it owns and can observe |
+| **Inputs and outputs** | What enters, what leaves, and in what form |
+| **Decisions** | Rights held locally, shared, and at the centre |
+| **Dependencies** | Services and capacities required from others |
+| **Context** | Sources and policies required to operate |
+| **Controls** | Non-negotiable limits and escalation conditions |
+| **Evidence** | Measures, traces, and review obligations |
+| **Learning** | What the unit may change and what requires shared approval |
+| **Lifecycle** | Conditions to grow, split, merge, or close |
 
-A unit without outcome ownership is a project team. A unit without visible economics is a cost center pretending to be a business. A unit without bounded rights is a reporting layer.
+A unit without outcome ownership is a project team. A unit without visible economics is a cost centre pretending to be a business. A unit without bounded rights is a reporting layer.
+
+The contract is reciprocal. The unit commits to outcomes, evidence, and enterprise constraints. The centre and shared services commit to capacity, interfaces, decision latency, and transparent economics. Autonomy cannot mean that the unit is accountable for a result while a central function can silently delay the input it needs.
 
 ## Invariants and local choices
 
 Scale depends on making a few things rigid enough that everything else can adapt.
 
-Invariants may include customer identity, financial definitions, security controls, core product interfaces, evidence requirements, and rules for allocating shared assets. Units should not invent their own meaning of active customer or contribution margin. They should not bypass access policy because the central service is slow.
+**Enterprise invariants** may include customer identity, financial definitions, security controls, core product interfaces, evidence requirements, and rules for allocating shared assets. Units should not invent their own meaning of active customer or contribution margin. They should not bypass access policy because the central service is slow.
 
-Local choices include workflow, roles, experiments, tools, and decisions inside the unit's authority envelope. The center should resist standardizing them simply because one unit found a successful pattern. Reuse should follow evidence and compatible conditions, not executive preference.
+**Local choices** include workflow, roles, experiments, tools, and decisions inside the unit's authority envelope. The centre should resist standardizing them simply because one unit found a successful pattern. Reuse should follow evidence and compatible conditions, not executive preference.
+
+The difficult category lies between them: shared choices with local consequences. Examples include platform priorities, brand promises, field capacity, scarce expertise, and common data products. These need an owner, allocation rule, service interface, evidence, and appeal. Otherwise the shared function becomes an informal centre of power.
+
+An invariant should be few, explicit, and enforceable. If everything is an invariant, the unit is not autonomous. If nothing is, the company becomes a portfolio of incompatible operations.
+
+## Design shared services as products
+
+Calling a function “shared” does not define how it serves the businesses. A shared service needs a purpose, users, service levels, capacity model, cost, prioritization rule, roadmap, and owner.
+
+Finance may provide close, cash, cost definitions, pricing context, and decision support. Those are different services with different time expectations. A product platform may provide identity, billing, data, and deployment capabilities. A physical network may provide reserved capacity, emergency capacity, and maintenance windows.
+
+The interface should expose scarcity. If all requests appear free, demand becomes political. Units over-request, central teams triage through relationships, and the COO becomes the appeal court.
+
+Internal pricing can help but is not the only mechanism. Capacity envelopes, priority classes, explicit queues, and opportunity-cost views may be sufficient. The objective is to make local choices feel the consequence of shared constraints without constructing a complex internal market that costs more than it clarifies.
 
 ## Illustrative example: two locally correct decisions
 
 A company adds an energy-services unit beside its original equipment business. Both use the same field engineers and device platform.
 
-The equipment unit schedules engineers to protect installation revenue. The services unit promises response times to win recurring contracts. Each choice is rational inside its own P&L. Together they oversubscribe the same asset, and both units miss commitments.
+The equipment unit schedules engineers to protect installation revenue. The services unit promises response times to win recurring contracts. Each choice is rational inside its own plan. Together they oversubscribe the same people, and both units miss commitments.
 
-The first response is a central capacity committee. Every exception moves upward. The meeting becomes the operating system.
+The first response is a central capacity committee. Every exception moves upward. Each leader brings forecasts, customer stories, and urgency. The meeting becomes the operating system.
 
-The better design exposes available engineering capacity as a shared service with a clear owner, reservation rules, priority classes, cost, and exception path. Each unit decides inside its allocation. The center sets the portfolio tradeoff and capacity buffer. Evidence shows demand, utilization, missed commitments, and the economic value of each use.
+A stronger design exposes field capacity as a shared service with a named owner, reservation rules, priority classes, cost, and exception path. The centre sets the portfolio allocation and reliability buffer. Each unit commits inside its envelope. Evidence shows demand, utilization, missed promises, and the economic value of each use.
+
+When an unexpected outage consumes the buffer, the shared-service owner applies the emergency rule. If the rule cannot settle the conflict, the exception goes to the portfolio owner with the affected commitments and options—not to a general coordination meeting.
 
 The units remain different. The interface becomes stable.
 
-## Where work belongs
+## Decide where work belongs
 
-Place a capability inside a unit when it requires deep local context, changes frequently with the offer, and can be owned end to end. Share it when scale, scarce expertise, risk consistency, or a common asset creates real advantage. Keep it at the center when the decision sets enterprise intent, allocates capital among units, defines non-negotiable policy, or resolves a conflict the unit cannot legitimately settle.
+Place a capability inside a unit when it requires deep local context, changes frequently with the offer, and can be owned end to end. Share it when scale, scarce expertise, risk consistency, or a common asset creates real advantage. Keep it at the centre when the decision sets enterprise intent, allocates capital among units, defines non-negotiable policy, or resolves a conflict the unit cannot legitimately settle.
 
-Do not decide from ideology. Centralization has a latency cost; decentralization has duplication and divergence costs. Make both visible.
+Five questions improve the choice:
 
-The fractal hypothesis has a boundary. Constantly re-forming teams destroys relationships and accumulated context. Physical assets do not reallocate like cloud capacity. Regulated accountability may remain centralized even when execution does not. A stable unit with clear interfaces is often more adaptive than a fluid network that renegotiates ownership every week.
+1. Where does the information needed for good judgment live?
+2. How often must the capability adapt to the unit's customer or economics?
+3. Does duplication create meaningful cost or merely discomfort?
+4. Does divergence create enterprise risk or healthy variation?
+5. Can the dependency be expressed through a stable interface?
 
-What repeats at scale is a governed outcome loop. When unit contracts are explicit, local autonomy and enterprise coherence stop being opposites.
+Do not decide from ideology. Centralization has latency, queue, and context-loss costs. Decentralization has duplication, inconsistency, and fragmented-learning costs. Make both visible.
+
+A function may also move over time. A new unit can borrow central expertise while its needs remain uncertain, then embed capability when the volume and local context justify it. Another service may centralize after units converge on a common pattern. The lifecycle belongs in the contract.
+
+## The fractal boundary
+
+The fractal idea can become bad management if it is interpreted as endless fluidity.
+
+Constantly reforming teams destroys relationships, tacit knowledge, and accountability. Physical assets do not reallocate like cloud capacity. Regulated responsibility may remain centralized even when execution moves. People need a home, a manager who understands their development, and enough stability to become competent together.
+
+Nor should a small unit reproduce every corporate role. The operating grammar repeats; the bureaucracy does not. A six-person venture does not need miniature finance, legal, HR, and security departments. It needs usable interfaces to those capabilities and clear local decision rights.
+
+The strongest boundary is often stable for the work and explicit at the interfaces. Adaptation then happens through changes in intent, authority, capacity, and practice—not through constant reorganization.
+
+## Use AI to test the unit design
+
+Give an approved assistant the proposed unit charters, P&L definitions, shared-service catalogues, decision inventory, dependency data, escalation records, and capacity use. Ask it to:
+
+- map decisions that supposedly belong to a unit but routinely travel to the centre;
+- identify outcomes whose costs or dependencies sit outside the owner's view;
+- find shared services with no service level, allocation rule, or appeal path;
+- compare conflicting definitions across units;
+- locate duplicate capabilities and test whether the duplication is harmful;
+- model two or three boundary options and expose the tradeoffs;
+- draft unit contracts with every inferred right clearly marked;
+- and simulate a stress event in which two units compete for one constrained asset.
+
+Use the result to conduct a boundary review with the unit and shared-service owners. Do not ask the model to choose the structure. It can expose inconsistency, hidden dependency, and likely failure paths. Leaders must decide which outcomes deserve autonomy and which obligations bind the enterprise together.
+
+What repeats at scale is a governed outcome loop. When unit contracts and shared interfaces are explicit, local autonomy and enterprise coherence stop being opposites.

@@ -2,50 +2,128 @@
 
 Management will not disappear because an agent can summarize status. Some management work should disappear.
 
-A manager who collects updates, reformats them, and carries information between rooms is performing coordination that software can increasingly reduce. A manager who clarifies intent, designs decisions, resolves conflict, develops judgment, and repairs interfaces is doing work the organization needs more of as execution accelerates.
+A manager who collects updates, reformats them, and carries information between rooms performs coordination that software can increasingly reduce. A manager who clarifies intent, designs decisions, resolves conflict, develops judgment, and repairs interfaces does work the organization needs more of as execution accelerates.
+
+The distinction is important because companies can remove the visible administrative task without changing the system around it. The weekly report is generated automatically, but the meeting still exists because nobody trusts the measures or knows who may decide. An agent drafts performance feedback, but the manager has not observed the work closely enough to use it. Automation reveals whether the role contained judgment or merely information movement.
+
+## What cheap coordination actually changes {.unlisted}
+
+Generative systems can prepare briefs, compare plans with actuals, retrieve decisions, follow action items, draft communications, cluster customer feedback, and monitor routine signals. These capabilities reduce the cost of assembling and transmitting information.
+
+They do not automatically reduce the cost of agreement, commitment, conflict, or consequence. A randomized Microsoft study across more than 6,000 workers found changes in independently alterable work patterns such as email time and document completion, but no significant change in meeting time [@dillon-et-al-2025]. One study cannot settle the future of management. It does show why task efficiency should not be confused with a redesigned organization.
+
+When analysis becomes abundant, managerial attention moves toward deciding which question deserves analysis, which evidence is authoritative, what threshold justifies action, and which tradeoff belongs at which level. A faster flow of recommendations makes those choices more frequent.
+
+The manager becomes less valuable as a relay and more valuable as an architect of local judgment.
 
 ## Five accountabilities {.unlisted}
 
 The manager in an adaptive company has five enduring accountabilities.
 
-**Set usable intent.** Translate strategy into outcomes and constraints that a team can apply without asking for preference on every case.
+**Set usable intent.** Translate strategy into outcomes and constraints that a team can apply without asking for preference on every case. “Grow responsibly” is not usable. A defined customer outcome, economic boundary, risk limit, and review point are.
 
 **Design decisions.** Make ownership, evidence, authority, escalation, and recourse explicit. Delegation is incomplete until the receiver can make a valid choice the manager dislikes.
 
 **Maintain context.** Ensure the team can reach current facts, policy, history, and customer reality. Do not become the private database that makes every decision possible.
 
-**Resolve exceptions and conflict.** Handle the work that cannot be settled within existing interfaces. Then decide whether the exception should remain rare or trigger a redesign.
+**Resolve exceptions and conflict.** Handle work that cannot be settled within existing interfaces. Then decide whether the exception should remain rare or trigger a redesign.
 
-**Develop judgment.** Help people understand tradeoffs, not simply reproduce the manager's answer. Use agent traces and decision outcomes as material for coaching.
+**Develop judgment.** Help people understand tradeoffs rather than reproduce the manager's answer. Use agent traces, alternatives, overrides, and outcomes as material for coaching.
 
-These accountabilities do not imply that every manager becomes an AI specialist. They imply that management shifts from moving information to improving the conditions under which decisions are made.
+These accountabilities do not require every manager to become an AI specialist. They require managers to understand the work well enough to assign authority between people and systems and to recognize when the loop is learning the wrong lesson.
+
+## Manage by exceptions without becoming reactive {.unlisted}
+
+Real-time signals invite constant intervention. A manager sees an alert, opens the trace, changes the priority, and asks for another analysis. The organization gains observability and loses stability.
+
+Exception-based management needs thresholds and cadence. Some signals trigger immediate action because the consequence is acute. Others enter a daily or weekly review. Strategic evidence accumulates until a defined decision point. The manager should know which category a signal belongs to before it arrives.
+
+Alerts also need an owner and a possible action. An alert that nobody can resolve is anxiety delivered by software. Track which alerts lead to a decision, which are repeatedly dismissed, and which reveal a broken threshold.
+
+The manager's discipline is partly restraint. When a team acts inside its authority and evidence remains within agreed limits, visibility does not create a right to intervene.
 
 ## The Synthesizer {.unlisted}
 
-ATOM uses one specialized coordination role. A **Synthesizer** helps an outcome loop preserve coherence across intent, context, decisions, execution, and evidence. The role may be held by a product operations lead, chief of staff, program leader, or manager. It is not automatically a new job title.
+ATOM uses one specialized coordination role. A **Synthesizer** helps an outcome loop preserve coherence across intent, context, decisions, execution, evidence, and learning. The role may be held by a product-operations lead, chief of staff, programme leader, general manager, or another operator. It is not automatically a job title.
 
-The Synthesizer notices that the team is optimizing a proxy, that an exception lacks an owner, that two sources conflict, or that learning never enters the Playbook. The role convenes the right decision and improves the interface. It does not become the permanent human router for all work. If everything depends on the Synthesizer's memory, the role has recreated the debt it was meant to remove.
+The Synthesizer notices that a team is optimizing a proxy, an exception lacks an owner, two sources conflict, a shared dependency is unpriced, or learning never enters the Playbook. The role brings the right decision into view and improves the interface.
 
-## Building middle management {.unlisted}
+This role requires breadth, but not ownership of everything. The Synthesizer does not approve every exception, curate every source, or run every review. She ensures that the actual owner receives a decision-shaped problem with evidence.
+
+Her success can be measured by what stops depending on her: fewer repeat escalations, clearer handoffs, faster resolution by legitimate owners, and more operating knowledge embedded in products and contracts. If everything depends on the Synthesizer's memory, the role has recreated the debt it was meant to remove.
+
+## Build middle management around decisions {.unlisted}
 
 A company moving from forty to one hundred and fifty people needs managers because coordination, development, and local judgment become real work. Adding layers before defining their rights creates messengers. Avoiding layers while every conflict returns to the founder creates bottlenecks.
 
-Start with recurring decisions and interfaces. Give a manager an outcome, visible economics, authority, context, and a route for exceptions. Decide which decisions belong to the business unit, shared function, and center. Then choose the span that allows the manager to perform the work, rather than importing a universal ratio.
+Start with recurring decisions and interfaces. Give a manager an outcome, visible economics, authority, context, and a route for exceptions. Decide which choices belong to the business unit, shared function, and centre. Then choose the span that lets the manager perform that work.
 
-Agents can reduce reporting and preparation load. They may allow a manager to support a wider span in stable work. In novel, physical, regulated, or relationship-heavy work, human attention may remain the constraint. The organization should change spans from observed work, not a forecast of automatic leverage.
+Universal span-of-control ratios are weak guides. Agents can reduce reporting and preparation load and may allow wider spans in stable work. In novel, physical, regulated, or relationship-heavy operations, human attention may remain the constraint. A manager with twenty people and clean, repeatable work may have more capacity than one with six people across a new cross-functional service.
+
+Observe the actual load:
+
+- time spent relaying status versus improving decisions;
+- number and age of escalations;
+- coaching and development demand;
+- interfaces owned across teams;
+- operational incidents and customer consequence;
+- amount of tacit context held by the manager;
+- and decisions that return after delegation.
+
+Use those signals to shape the role. Do not assume that adding an agent automatically creates room for more direct reports. The system may remove simple work while increasing the density of exceptions.
+
+## Develop judgment with traces {.unlisted}
+
+Traditional coaching often reviews the outcome after the reasoning has vanished. Agent-assisted work can preserve the evidence, alternatives, recommendation, decision, and later result.
+
+A manager can use those records to ask better questions. Which fact changed your mind? Which uncertainty did you accept? Why did you override the recommendation? What would have made the decision reversible? Which part of the rule should apply next time?
+
+This is different from monitoring every keystroke. The purpose is to improve judgment and the operating system, not to score employees by model agreement or activity. People must be able to explore, dissent, and make a defensible decision that produces an uncertain outcome.
+
+Early data from Anthropic's Claude Code use suggests that domain expertise helps people direct agents and recover from errors, even when coding proficiency differs [@anthropic-claude-code-expertise-2026]. The finding is specific to one product and domain. It supports a broader hypothesis: as implementation becomes cheaper, understanding the problem and its consequences becomes more valuable.
+
+Managers should therefore deepen domain judgment rather than outsource it. An agent can provide options, counterarguments, and simulations. The manager helps people recognize which model of the situation is appropriate.
 
 ## Influence without hierarchy {.unlisted}
 
-The strategic COO increasingly works across peers who do not report to them. Authority comes from making the enterprise tradeoff legible.
+The strategic COO works increasingly through peers who do not report to them. Authority comes from making the enterprise tradeoff legible.
 
-Frame the contested decision, expose shared dependencies, show the evidence and uncertainty, state which right belongs where, and name the cost of delay. Ask a model to challenge the argument, surface stakeholder incentives, and generate plausible objections before the meeting. Use it to improve preparation, not simulate consensus.
+Suppose sales wants capacity for a strategic account, the new business wants the same capacity for an experiment, and operations wants a reliability buffer. The COO should not arrive with more slides. She should frame the decision: the scarce asset, existing commitments, alternatives, reversibility, economic and customer consequences, and the right owner.
 
-Peer influence grows when the COO can separate enterprise constraints from personal preference. The goal is not to win every argument. It is to leave the company with a decision that others understand and can execute.
+An AI assistant can prepare the ground. Give it each function's proposal, operating data, prior decisions, and enterprise intent. Ask it to identify incompatible assumptions, missing evidence, likely incentives, the cost of delay, and what each side would need to believe to change its position. Ask it to produce the strongest objection to the COO's preferred answer.
+
+The meeting remains human because the tradeoff requires legitimate commitment. Better preparation reduces rhetorical conflict and makes disagreement specific.
+
+Peer influence grows when the COO can separate enterprise constraints from personal preference. The aim is not to win every argument. It is to leave the company with a decision that others understand, can execute, and can later evaluate.
 
 ## The founder's hardest delegation {.unlisted}
 
 The founder has given a business-unit leader a margin envelope. The leader chooses a price inside it. The founder believes another price would be better.
 
-If the decision is sound, within authority, and supported by required evidence, taking it back teaches the organization that delegation ends at disagreement. The founder may challenge the reasoning, watch the outcome, and revise the envelope at the agreed review. They should not silently reclaim the case.
+If the decision is sound, within authority, and supported by required evidence, taking it back teaches the organization that delegation ends at disagreement. The founder may challenge the reasoning, observe the outcome, and revise the envelope at the agreed review. They should not silently reclaim the case.
 
-This is where personal standards can limit initiative. High standards are valuable; unstated standards enforced through intervention are not. The manager after cheap coordination is a steward of the decision system, including when the system produces an answer they would not have chosen.
+This is particularly difficult for founders whose standards built the company. Their intuition often contains real customer and product knowledge. But an unstated standard enforced through intervention cannot scale. The organization learns to anticipate taste instead of exercising judgment.
+
+The founder must separate three reactions:
+
+1. **The decision violates an agreed boundary.** Intervene and repair the control.
+2. **The decision reveals missing enterprise context.** Add the context through its owner.
+3. **The decision differs from personal preference inside the grant.** Let it stand and learn from the result.
+
+An AI assistant can help review patterns in founder interventions. Classify the last thirty reclaimed or heavily edited decisions by violated boundary, missing context, weak judgment, or preference difference. Show which categories repeat and what system change would reduce them. The classification will not be perfect; the discomfort is still useful.
+
+## Rewrite the management week {.unlisted}
+
+Take one manager's calendar, approval queue, recurring reports, messages, and decision log from the last month. In an approved workspace, ask an assistant to separate the work into:
+
+- information assembly that can be automated;
+- recurring decisions that need a specification;
+- approvals that add no material judgment;
+- genuine exceptions requiring the manager;
+- coaching and relationship work;
+- cross-functional interface failures;
+- and work that exists because authority is unclear.
+
+Then redesign the week. Automate one relay. Remove one ceremonial approval. Delegate one decision with a real envelope. Reserve time for exception review, coaching with evidence, and interface repair. Set a rule for which alerts deserve immediate attention.
+
+The manager after cheap coordination is not a supervisor of more output. The role is stewardship of the conditions under which people and agents make good commitments. That includes allowing a legitimate decision to stand when it is not the one the manager would have made.

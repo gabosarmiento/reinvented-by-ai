@@ -2,40 +2,124 @@
 
 Adaptability is not the frequency with which a company changes priorities. A company that reallocates people every two weeks can be highly reactive and incapable of learning.
 
-Dynamic allocation means that evidence can change the commitment of capital, talent, and shared capacity at a cadence matched to the reversibility of the decision.
+Dynamic allocation means that evidence can change the commitment of capital, talent, and shared capacity at a cadence matched to the reversibility of the decision. It is disciplined movement, not permanent motion.
+
+This distinction matters in a scale-up. The core business needs reliability. New businesses need options. Shared capabilities need enough stability to improve. If every signal can rewrite every commitment immediately, the operating model becomes a contest of urgency.
+
+## Match cadence to the decision
+
+Different resources should move at different speeds.
+
+Cloud compute or a marketing budget can often be changed quickly. Specialist time and field capacity require notice. A product architecture, warehouse footprint, or regulated process creates longer commitments. Team relationships and domain knowledge accumulate slowly even when the organization chart can be redrawn overnight.
+
+For each resource, define:
+
+- the decision owner;
+- the smallest useful allocation unit;
+- commitment period and notice required;
+- evidence that can change the allocation;
+- cost of reversal;
+- protected buffer;
+- and the next review point.
+
+“Continuous allocation” then means the organization can see new evidence without pretending every resource is continuously reversible.
 
 ## Fund options, not forecasts
 
-An emerging business needs enough capital to resolve uncertainty, not a five-year plan disguised as precision. Release funding in stages tied to evidence: customer behavior, unit margin, asset use, operational feasibility, or a technical capability.
+An emerging business needs enough capital to resolve uncertainty, not a five-year plan disguised as precision. Release funding in stages tied to evidence: customer behaviour, unit margin, asset use, operational feasibility, or a technical capability.
 
-The unit has authority inside the tranche. The portfolio group decides whether evidence justifies the next one. AI can compare assumptions with current signals, surface variance, and simulate alternatives. It should not automatically move capital. Portfolio choices contain strategic judgment and opportunity cost that remain executive responsibilities.
+The unit has authority inside the tranche. It should not return to the executive team for every experiment that fits the agreed intent and budget. The portfolio owner decides whether the evidence justifies the next commitment.
 
-Mature operations need a different cadence. Constantly reopening a factory plan, regulated process, or committed customer program destroys value. “Continuous” strategy means signals remain visible between formal decisions, not that every decision remains permanently unsettled.
+Each tranche should answer one or two uncertainties. If the new unit does not know whether customers will pay and whether the operation can deliver profitably, one experiment may test willingness to pay while another measures delivery effort. A larger budget that blends both can produce activity without learning.
+
+AI can compare assumptions with current signals, trace which evidence supports each claim, and simulate the effect of alternative allocations. It can expose when a unit quietly changes its success definition. It should not automatically move capital. Portfolio choices contain strategic judgment, timing, and opportunity cost that remain executive responsibilities.
+
+Mature operations need a different cadence. Constantly reopening a factory plan, regulated process, or committed customer programme destroys value. Signals should remain visible between formal decisions, but evidence earns a review; it does not erase commitments by itself.
+
+## Make opportunity cost visible
+
+Budgets show what a unit spends. They do not always show what the company forgoes.
+
+A new offer consumes product attention that could improve the core. A strategic customer receives scarce field capacity. An internal agent project uses security and data specialists needed elsewhere. The direct cost may be small while the displaced option is large.
+
+The portfolio view should show constrained resources and the choices competing for them. This does not require a single mathematical ranking. It requires comparable units, explicit assumptions, and an owner able to make the tradeoff.
+
+Ask what would receive the resource if this option did not. If the answer is “nothing,” verify that the capacity is actually available. In growing companies, founder time and shared-team effort often appear free because no system records the work they displaced.
 
 ## Protect the economics of shared assets
 
 A multi-business company cannot delegate well if units cannot see what they consume. Shared engineering, distribution, data, brand, or physical capacity needs an explicit allocation method. It does not have to reproduce accounting perfection. It must be consistent enough that local decisions reflect real scarcity.
 
-Useful questions include: Which asset constrains growth? What return does each use produce? Which demand is committed versus optional? What buffer protects reliability? Which unit is exporting cost to another?
+Useful questions include:
 
-AI can detect patterns in usage and forecast pressure. The allocation rule still needs an owner and an appeal path. A model optimizing measured return may starve a new activity whose strategic value has not yet appeared in historical data.
+- Which asset constrains growth now, and which is likely to constrain it next?
+- What return, learning, or obligation does each use produce?
+- Which demand is committed and which remains optional?
+- What buffer protects reliability?
+- Which unit is exporting cost or risk to another?
+- Who can override the allocation rule, and what evidence is required?
+
+AI can detect patterns in usage, forecast pressure, and prepare allocation scenarios. The rule still needs an owner and an appeal path. A model optimizing measured return may starve a new activity whose strategic value has not yet appeared in historical data. It may also favour the mature business because its measurements are cleaner.
+
+Keep strategic exceptions explicit and budgeted. Otherwise every unit learns to describe ordinary demand as strategic.
 
 ## Move expertise without dissolving teams
 
-Talent marketplaces promise to match skills to opportunities. Used carefully, they can make hidden capability visible and help people find work beyond their reporting line. Used badly, they turn employees into interchangeable capacity and managers into bidders.
+Internal talent systems can make hidden capability visible and connect people to work beyond their reporting line. Used badly, they turn employees into interchangeable capacity and managers into bidders.
 
-Team cohesion, domain knowledge, consent, development, and career identity are real constraints. A specialist loan should specify purpose, duration, home team, receiving owner, protected time, learning to return, and what happens when priorities conflict. The employee should be able to challenge an algorithmic match and understand which data informed it.
+People are not compute. Team cohesion, domain knowledge, consent, development, and career identity are operating constraints. A specialist loan should specify purpose, duration, home team, receiving owner, protected time, learning to return, and what happens when priorities conflict.
 
-**Illustrative example.** The newer business unit needs a reliability engineer for six weeks. An internal matching assistant identifies three people from project histories and declared interests. The highest-ranked candidate is rejected because she is carrying an incident-recovery commitment invisible to the model. The second accepts a time-bounded assignment. Her home team receives backfill capacity, and the platform lesson becomes a shared standard rather than private expertise.
+The home team should feel the cost. If another unit receives a specialist without replacing capacity or reducing commitments, the “dynamic” allocation merely transfers an invisible queue.
 
-The model accelerated discovery. Human context changed the decision. The contract protected both teams.
+The person should also see and challenge the information used to suggest the match. Project history may be incomplete. Self-declared interests may be old. Performance data may be sensitive or inappropriate for the decision. A recommendation can broaden opportunity only if it does not become an opaque assignment system.
+
+**Illustrative example.** The newer business unit needs a reliability engineer for six weeks. An internal matching assistant identifies three people from project histories and declared interests. The highest-ranked candidate is carrying an incident-recovery commitment invisible to the model. The second is interested and accepts a time-bounded assignment. Her home team receives backfill capacity, and the platform lesson becomes a shared standard rather than private expertise.
+
+The system accelerated discovery. Human context changed the decision. The contract protected both teams.
+
+## Allocate management attention
+
+Senior attention is another constrained asset, usually managed poorly.
+
+If the COO is copied on every exception, attends every new-business review, and resolves every cross-unit conflict, the company has not delegated the decision. It has delegated preparation. The founder's calendar becomes the control plane.
+
+Track executive attention by decision type. Which issues return repeatedly? Which could be settled by a unit contract, context product, or shared-service rule? Which require genuine portfolio judgment? The objective is not an empty calendar. It is to spend senior attention where enterprise intent, legitimacy, or irreversible commitments are at stake.
+
+An AI assistant can classify meeting notes, approval records, and messages to reveal recurring decision demands. The uncomfortable part is managerial: leaders must stop reopening choices they granted to others.
 
 ## Treat knowledge as maintained infrastructure
 
 Shared knowledge does not improve because the company generates more documents. It improves when reliable decisions, interfaces, policies, and lessons are reusable at the point of work.
 
-Every knowledge product needs an owner, audience, source, freshness expectation, and retirement rule. Search logs and agent failures can reveal unanswered questions. Customer conversations can reveal where policy and reality diverge. Unit reviews can nominate a local pattern for reuse. A shared owner decides whether the pattern becomes an enterprise invariant, an optional template, or remains local.
+Every knowledge product needs an owner, audience, source, freshness expectation, and retirement rule. Search logs and agent failures can reveal unanswered questions. Customer conversations can reveal where policy and reality diverge. Unit reviews can nominate a local pattern for reuse.
 
-The ATOM Playbook is this maintained set of operating knowledge. It is not a culture wiki or archive of every meeting. It contains the definitions, unit contracts, decision specifications, context products, controls, evaluation cases, and lessons the company expects others to reuse.
+A shared owner decides whether the pattern becomes:
 
-Dynamic allocation is disciplined movement. Capital changes when an option earns another commitment. Talent moves through a contract that respects teams and people. Knowledge travels after it becomes reliable enough to reuse. Adaptability comes from changing deliberately, not keeping everything in motion.
+- an enterprise invariant;
+- a reusable but optional template;
+- a local practice that remains local;
+- an evaluation case;
+- or a retired approach.
+
+This prevents “best practice” from spreading without its conditions. A sales play that worked in the core business may destroy margin in the new one. A support workflow designed for one region may violate another's obligations. Knowledge travels with evidence and scope.
+
+The **ATOM Playbook** is the maintained set of operating knowledge. It is not a culture wiki or an archive of meetings. It contains intent statements, definitions, unit contracts, decision specifications, context products, controls, evaluation cases, and operating lessons the company expects others to reuse.
+
+Agents can make the Playbook active. At the point of work they retrieve the relevant rule, example, or interface. After incidents they propose updates. They compare local practice with the current standard. But each change still has an owner. Generating a new page is not organizational learning.
+
+## Run a monthly allocation review
+
+The review begins with constrained resources, not every project. Give an approved assistant the current allocations, actual consumption, unit outcomes, commitments, experiment evidence, skill requests, executive approval logs, and Playbook changes. Ask it to:
+
+1. identify where actual use differs materially from allocation;
+2. expose assets whose scarcity is hidden by queues or founder intervention;
+3. compare each growth option with the next-best use of the constrained resource;
+4. find tranches whose learning question was not answered;
+5. map specialist loans and the commitments displaced in home teams;
+6. cluster recurring executive interventions by missing decision or interface;
+7. identify knowledge products that are stale, duplicated, or widely reused without an owner;
+8. generate three allocation scenarios with explicit assumptions and reversibility.
+
+The portfolio group does not accept the model's ranking. It uses the analysis to make opportunity cost visible, decides which commitments change, and records what evidence would cause the next change.
+
+Capital moves when an option earns another commitment. Talent moves through a contract that respects teams and people. Knowledge travels after it becomes reliable enough to reuse. Adaptability comes from changing deliberately, not keeping everything in motion.

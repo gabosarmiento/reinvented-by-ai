@@ -2,9 +2,11 @@
 
 The first agent is owned by the team that built it. The fiftieth agent reveals that the company has created a new operating estate.
 
-Agents share models, tools, identities, data, and vendors. They change versions. Their permissions drift. One agent's output becomes another's input. Costs accumulate across teams. A local failure can become a repeated enterprise action.
+Agents share models, tools, identities, data, vendors, and evaluation infrastructure. They change versions. Their permissions drift. One agent's output becomes another's input. Costs accumulate across teams. A local failure can become a repeated enterprise action.
 
-The company needs an Agent Operations capability. It may begin as a responsibility inside platform or security rather than a new department. Its job is to make the fleet operable without taking business accountability away from the units.
+The company needs an **Agent Operations** capability. It may begin as a responsibility inside platform or security rather than a new department. Its job is to make the estate visible and operable without taking business accountability away from the units.
+
+This is different from an AI centre of excellence. A centre often advises projects and spreads methods. Agent Operations runs common control infrastructure and the lifecycle of production actors. It does not decide which customer outcomes a unit should pursue.
 
 ## Register the actors {.unlisted}
 
@@ -12,45 +14,115 @@ Every production agent should have a registry entry containing:
 
 - name, purpose, and business owner;
 - current version and environment;
-- models, tools, data sources, and downstream dependencies;
+- models, instructions, tools, data sources, and downstream dependencies;
 - identity, permissions, credential owner, and expiry;
-- decisions or actions it may take;
+- decisions and actions it may take;
 - applicable controls and required approvals;
 - evaluation suites, current results, and monitored outcomes;
-- cost budget and usage;
+- cost and exposure budgets;
 - incidents, known limitations, and change history;
-- stop mechanism and retirement condition.
+- stop mechanism, fallback, and retirement condition.
 
-If nobody can list the agents that can modify customer, financial, code, or employee state, the company does not control them.
+The entry should describe the deployed combination, not merely a model endpoint. The same model with another tool, context source, or authority is a different operating actor.
+
+If nobody can list the agents that can modify customer, financial, code, physical, or employee state, the company does not control them. Discovery should include vendor features and departmental automations, not only systems built by the platform team. Agents can enter through a SaaS configuration, an employee's connected workspace, or a script that quietly becomes operational.
+
+The registry must remain useful. Ownership is periodically attested. Unused credentials expire. An agent without a current owner loses production authority. A team should be able to query, “Which actors can write to the CRM and read contract data?” and receive an answer that matches reality.
+
+## Give agents identity without personhood {.unlisted}
+
+An agent needs a distinct technical identity so its access, actions, and costs can be attributed. That does not make it an employee or accountable person.
+
+Avoid shared human accounts, founder credentials, and permanent broad tokens. Bind identity to a workload, environment, purpose, and owner. Separate development, testing, and production. Use short-lived credentials where possible. Record delegation: which human or service initiated the run and under which authority.
+
+NIST's 2026 work on software-agent identity and authorization highlights identification, authorization, auditing, non-repudiation, and prompt-injection controls as open enterprise concerns [@nist-agent-identity-2026]. The standards are still developing. The operational need is already present.
+
+Identity enables revocation. If one agent is compromised or retired, the company can remove its access without breaking an unrelated workflow. It also makes an incident intelligible. “The integration user changed the record” is not enough when several systems share it.
 
 ## Divide responsibility without dividing accountability {.unlisted}
 
-The **business owner** defines the outcome, authority, and acceptable failure. **Agent Operations** provides registry, observability, evaluation infrastructure, deployment standards, and lifecycle controls. **Platform teams** operate shared models, tools, context services, and environments. **Security, risk, legal, and privacy** define specialist controls and challenge the deployment.
+The **business owner** defines the outcome, authority, exclusions, and acceptable failure. **Agent Operations** provides registry, observability, evaluation infrastructure, deployment standards, and lifecycle controls. **Platform teams** operate shared models, tools, context services, and environments. **Security, risk, legal, privacy, and finance** define specialist constraints and challenge the deployment.
 
-These roles can be held by a few people in a scale-up. What matters is that they are not collapsed into “the AI team.” A technically reliable agent can still pursue the wrong business objective. A business owner cannot waive an enterprise access control by calling the experiment urgent.
+These roles can be held by a few people in a scale-up. What matters is that they are not collapsed into “the AI team.”
+
+A technically reliable agent can still pursue the wrong business objective. A business owner cannot waive an enterprise access control by calling the experiment urgent. Security should not become the owner of customer-resolution quality because it approved the connection. Responsibility is distributed; accountability for the outcome remains named.
 
 NIST's Generative AI Profile organizes risk work across governance, mapping, measurement, and management throughout the lifecycle [@nist-genai-profile-2024]. The practical lesson is to connect inventory, testing, monitoring, incident response, and ownership rather than treat them as launch paperwork.
 
+Use a RACI chart if the organization already understands it, but add two fields it often misses: **who can technically stop the system** and **who can authorize its return**. In an incident, advisory responsibility is not enough.
+
 ## Control the change surface {.unlisted}
 
-An agent can change even when its application code does not. The model provider updates a version. A context source changes. A tool adds a parameter. A policy is revised. Another agent begins consuming its output.
+An agent can change even when its application code does not. The model provider updates a version. A context source changes schema or meaning. A tool adds a parameter. A policy is revised. Another agent begins consuming its output. The environment around the actor is part of its version.
 
-Version and test the combination that produces behavior. Material changes should run against relevant evaluations before release. Progressive rollout limits exposure. The registry should show which units and workflows depend on the changed component.
+Material changes should run against relevant evaluations before release. Progressive rollout limits exposure. The registry should show which units and workflows depend on the changed component. A high-consequence loop may pin versions until its owner reviews evidence; a low-consequence assistant may accept faster updates.
 
-Multi-agent design increases this need. More agents may improve specialization, but every handoff creates another state boundary, failure mode, and cost. Use multiple agents because the task has a real separation of context or authority, not because a diagram looks sophisticated.
+Define materiality before the change occurs. New write access, a different data class, higher transaction limit, new model, modified authority, changed policy, new downstream consumer, or expanded population usually qualifies. Minor wording and bug fixes may follow a lighter path if regression tests remain sound.
+
+The change process must include rollback. “Switch back to the old model” is insufficient if the context schema and tool behaviour also changed. Preserve compatible versions and the state needed to recover partial work.
+
+## Watch autonomy in operation {.unlisted}
+
+Autonomy is not a static setting. It emerges from the model, product design, user behaviour, task, and permissions. The same agent may be closely supervised by a new operator and largely unattended by an experienced one.
+
+Anthropic's analysis of millions of interactions found that experienced Claude Code users were more likely to use auto-approval and also more likely to interrupt, while agent-initiated requests for clarification remained important [@anthropic-autonomy-practice-2026]. The study is specific to Anthropic's products and should not be generalized into a universal rate. It still demonstrates why approval configuration alone does not describe operational oversight.
+
+Monitor time and actions between human interventions, but also whether the system stops appropriately, which tools it uses, the consequence accumulated during a run, and whether a human is actually able to understand and intervene. One long read-only analysis is not equivalent to five minutes of state-changing action.
+
+At scale, use autonomy budgets: permitted action types, cumulative value, destinations, time, iterations, and scope. The budget attaches to a decision loop and owner, not to the model's reputation.
+
+## Multi-agent systems enlarge the estate {.unlisted}
+
+Multiple agents can parallelize work or separate contexts and tools. They also create internal supply chains.
+
+Each agent needs identity and scope. The orchestrator needs a limit on what it can delegate. Worker output carries provenance. A merge or synthesis step resolves conflicts. The final action remains bound to one authority, even when many agents contributed.
+
+Do not automatically register every ephemeral worker as a separate business system. Register the production architecture, role types, permissions, and run identities at the level required for audit and revocation. The design should let an investigator reconstruct which worker accessed which source and influenced which commitment.
+
+Coordination failure can be expensive. Workers duplicate calls, search indefinitely, consume inconsistent state, or amplify one another's error. Put limits on spawning, recursion, cost, and time. Test incomplete, contradictory, and malicious worker outputs. A hierarchy of agents is not exempt from the interface design expected of human teams.
 
 ## Run incidents as operating failures {.unlisted}
 
-Consider an **illustrative incident**. A sourcing agent reads a malicious instruction embedded in a supplier document. It calls a procurement tool using a broad shared token and changes payment details. A second agent treats the changed record as authoritative.
+Consider an **illustrative example**. A sourcing agent reads a malicious instruction embedded in a supplier document. It calls a procurement tool using a broad shared token and changes payment details. A second agent treats the changed record as authoritative.
 
-The root cause is not simply “prompt injection.” The organization exposed an unnecessary tool during document analysis, failed to bind the credential to a narrow resource and action, allowed one agent to write a state another trusted, and lacked an approval for a consequential change.
+The root cause is not simply “prompt injection.” The organization exposed an unnecessary tool during document analysis, failed to bind the credential to a narrow resource and action, allowed one actor to write a state another trusted, and omitted approval for a consequential change.
 
-The response should revoke credentials, preserve traces, repair affected records, notify the right owners, and add the case to evaluation. The deeper correction narrows authority and separates untrusted reading from state-changing action.
+The immediate response revokes credentials, isolates the workflow, preserves traces, repairs affected records, and informs the relevant owners. The business response identifies exposed suppliers and payments. The technical correction separates untrusted reading from state change, narrows authority, and requires independent verification of bank-detail changes. The evaluation suite receives the incident.
 
-Protocols such as MCP make tools easier to connect, which increases the importance of audience-bound credentials, consent, and resource-specific authorization [@mcp-authorization-2025]. Integration convenience is not a control model.
+Protocols such as MCP make tools easier to connect, which increases the importance of audience-bound credentials and resource-specific authorization [@mcp-authorization-2025]. Integration convenience is not a control model.
+
+Incident review should classify the failure by ATOM layer. Was intent ambiguous? Context untrusted? Decision authority too broad? Execution unable to recover? Evidence incomplete? Learning assigned to the wrong owner? That classification prevents every incident from becoming a generic model problem.
+
+## Operate cost and dependency risk {.unlisted}
+
+Agent economics can drift. A workflow begins with a small model and three calls, then gains retries, larger context, extra graders, and a second provider. Per-case cost remains hard to see because each component reports separately.
+
+Connect usage to the decision record and successful outcome. Track cost distributions, not only monthly totals. Set alerts for loops, unusually large contexts, repeated tool failure, and sudden changes by version or source. Include human review and vendor minimums when evaluating the operating cost.
+
+Dependencies deserve the same visibility. Which provider outage stops the loop? Which data source lacks a fallback? Which vendor can alter a model or feature without the company's release gate? A resilient design may use a manual fallback, queued safe state, alternate model, or reduced service. It does not need redundant providers everywhere.
 
 ## Retire what no longer earns its place {.unlisted}
 
-Agents should have sunset conditions. Usage alone is insufficient. An agent may be popular while generating review cost or relying on an outdated process. Compare outcome, total cost, risk, and maintenance with the current alternative. Remove credentials and integrations when the system is retired.
+Agents should have sunset conditions. Usage is insufficient. A system may be popular while generating review cost, duplicating another tool, or preserving an outdated process.
 
-Agent Operations succeeds when the company can answer, quickly: Which agents can act? For whom? Using what? Under whose authority? With what evidence? And how do we stop them? At scale, those are operating questions, not technical inventory trivia.
+At review, compare outcome, total cost, risk, and maintenance with the current alternative. Look for owners who have left, evaluations that no longer run, credentials without recent use, agents that lost their source system, and outputs no decision consumes.
+
+Retirement means more than hiding the interface. Revoke identities, remove integrations, archive the decision and evidence required by retention policy, notify downstream consumers, and delete data or memory that no longer has a lawful and operational purpose. Update the Playbook so people do not continue relying on a retired actor.
+
+## Ask the registry hard questions {.unlisted}
+
+Once a month, give an approved analysis agent the registry, identity and access exports, tool catalogue, evaluation status, usage and cost, incidents, dependency graph, and business outcomes. Ask it to find:
+
+- actors whose technical permissions exceed their registered authority;
+- shared or human credentials used by agents;
+- write-capable agents that consume untrusted external content;
+- downstream systems trusting output without provenance;
+- expired evaluations, owners, policies, or data sources;
+- changes that reached production without relevant regression tests;
+- concentration by model, vendor, tool, or source;
+- systems whose use is high but outcome is unknown;
+- and candidates for narrowing, consolidation, or retirement.
+
+The report goes to the business and control owners. The analysis agent can expose drift; it should not grant, revoke, or expand its own authority.
+
+Agent Operations succeeds when the company can answer quickly: Which agents can act? For whom? Using what? Under whose authority? With what evidence? At what total exposure? And how do we stop them? At scale, those are operating questions, not technical inventory trivia.

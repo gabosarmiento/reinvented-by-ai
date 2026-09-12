@@ -4,49 +4,139 @@ An agent sends the message. A manager approved the workflow. A vendor supplied t
 
 When the outcome harms a customer, each party can accurately describe only part of the cause. The organization still owes an answer.
 
+This is the final boundary of the adaptive company. Action can be distributed across people, rules, services, models, vendors, and agents. Accountability cannot disappear into the distribution.
+
 ## Separate five ideas {.unlisted}
 
-**Execution** is performing an action. **Authority** is legitimate permission to choose or act. **Responsibility** is an assigned duty within the system. **Accountability** is the obligation to explain, justify, and repair the outcome. **Liability** is the legal allocation of consequences.
+**Execution** is performing an action.
 
-An agent can execute and receive bounded authority. It cannot hold institutional accountability. A vendor contract may allocate liability without becoming the company's moral or managerial answer to an affected person.
+**Authority** is legitimate permission to choose or act.
+
+**Responsibility** is an assigned duty within the system.
+
+**Accountability** is the obligation to explain, justify, and repair the outcome.
+
+**Liability** is the legal allocation of consequences.
+
+These ideas overlap but are not interchangeable. An agent can execute and receive bounded technical authority. It cannot hold institutional accountability. A vendor contract may allocate liability without becoming the company's moral or managerial answer to an affected person. A human reviewer may be responsible for one approval without being accountable for the decision to deploy the system.
+
+Confusion is convenient. After a failure, the business owner points to the model, the platform team points to the approved use case, the vendor points to configuration, and the approver points to the recommendation. Each statement contains some truth. None answers why the company designed the system that way.
+
+## Accountability follows the power to change {.unlisted}
+
+The accountable owner must have enough authority to alter the outcome and the conditions that produce it. Naming a frontline operator accountable while policy, data, permissions, and product design sit elsewhere is unfair and ineffective.
+
+This does not mean one executive personally performs every repair. It means one human institution owns the result and can require action from the responsible parts. For a customer-resolution loop, the business owner may be accountable while context, platform, security, and operations owners hold defined responsibilities.
+
+Ask a simple question: after a harmful pattern is confirmed, who can stop the activity, compensate the affected party, change the decision envelope, and require the relevant system owners to repair it? If no role can do those things, accountability exists only in language.
+
+The accountable owner also needs information. A person cannot answer for a system whose actions and versions cannot be reconstructed. Evidence is therefore not merely an audit feature. It is a precondition for meaningful accountability.
 
 ## Build the accountability chain {.unlisted}
 
-For each consequential agent-assisted outcome, the company should be able to trace:
+For each consequential human–agent outcome, the company should be able to trace:
 
 1. the board or executive intent;
-2. the business owner who chose the use and result;
-3. the authority granted to the person, workflow, or agent;
-4. the context, controls, and version in force;
+2. the business owner who chose the use and target result;
+3. the authority granted to each person, workflow, service, and agent;
+4. the context, controls, and versions in force;
 5. the actual action and evidence;
 6. the person or group affected;
-7. the route to challenge, correction, and remedy.
+7. the route to challenge, correction, and remedy;
+8. the owner able to change the system after the case.
 
-The chain prevents a familiar form of evasion: the model made the decision. Models produce outputs inside systems that people select, connect, authorize, and operate.
+The chain prevents a familiar evasion: “the model made the decision.” Models produce outputs inside systems that people select, connect, authorize, monitor, and continue to operate.
 
-For uses covered by law, specific duties may attach to providers and deployers. The EU AI Act, for example, requires deployers of high-risk systems to assign human oversight to people with the necessary competence, authority, and support, alongside other technical and organizational measures [@eu-ai-act-2026]. The exact legal duty depends on role and use. The operating principle is broader: oversight without authority is ceremonial.
+It also prevents the opposite evasion: blaming the last human who touched the case. An approver may have received a polished recommendation without the source, faced an impossible queue, or lacked authority to reject. The review should examine the design of oversight as well as the person's action.
+
+For uses covered by law, duties may attach to providers and deployers. The EU AI Act, for example, requires deployers of high-risk systems to assign oversight to people with the necessary competence, authority, and support, together with other technical and organizational measures [@eu-ai-act-2026]. The exact duty depends on role and use and requires qualified legal analysis. The operating principle is broader: oversight without competence, information, and authority is ceremonial.
+
+## The board and executive team still choose the exposure {.unlisted}
+
+Operational ownership does not remove enterprise responsibility. Boards and executives choose where the company permits increasingly autonomous systems to affect customers, employees, capital, infrastructure, and public obligations.
+
+They do not need to approve every agent or understand every prompt. They do need a view of material deployments, aggregate exposure, incidents, concentration, control capability, and unresolved risks. They set risk appetite and demand evidence that the organization can stop and repair its systems.
+
+A useful executive review asks:
+
+- Where can agents commit material value or affect rights?
+- Which outcomes lack a named business owner?
+- Which controls depend on human approval at a volume humans cannot sustain?
+- Where do several agents or units create aggregate exposure beyond local limits?
+- Which critical loops depend on one vendor, model, source, or operator?
+- Which incidents changed a decision right, control, or evaluation?
+- Which systems would we be unable to explain to the affected person?
+
+This is operating oversight, not a catalogue of experiments. The executive team should spend more time on concentration and accountability than on adoption anecdotes.
 
 ## Recourse is part of the design {.unlisted}
 
 An affected person needs more than disclosure that AI was involved. They need a way to contest the relevant result, reach someone able to change it, and receive repair when warranted.
 
-The route should match the consequence. A poor recommendation may need feedback. A denied service, employment action, financial decision, or binding contract may require explanation, preserved evidence, independent review, and timely correction. The person handling the appeal should not merely ask the same system again.
+The route should match the consequence. A poor recommendation may need feedback and correction. A denied service, employment action, financial decision, or binding contract may require explanation, preserved evidence, independent review, and timely remedy. The person handling the appeal should not merely ask the same system again.
 
-Recourse also improves the operating model. Challenges reveal missing context, harmful proxies, weak policy, and cases the evaluation suite did not contain. The organization should connect them to learning without using affected people as unpaid testers.
+Recourse has an operational specification:
+
+- which outcomes can be challenged;
+- how the person reaches the channel;
+- what identity and evidence are needed;
+- who can pause or reverse the effect;
+- what response time applies;
+- how the person receives an explanation;
+- how repeated challenges enter incident and learning processes.
+
+The channel must survive automation. If a support agent handles the appeal, it must recognize that the case challenges the system itself and route to independent authority.
+
+Recourse also improves the operating model. Challenges reveal missing context, harmful proxies, weak policy, inaccessible language, and cases absent from evaluation. The organization should learn from them without treating affected people as unpaid testers.
 
 ## Illustrative failure review {.unlisted}
 
-A hiring-screening agent ranks a candidate below the interview threshold. A recruiter follows the recommendation. Months later, an audit finds that the agent inferred seniority from job-title patterns that disadvantaged candidates from smaller companies.
+The following is an **illustrative example**, not a report of a real company.
 
-The failure review should not end with the recruiter or model. The business owner chose automated ranking. The data owner approved the inputs. The agent owner defined the evaluation. The control owner approved the authority boundary. Executive intent prioritized processing speed without an adequate fairness and recourse measure.
+A hiring-screening system ranks a candidate below the interview threshold. A recruiter follows the recommendation. Months later, an audit finds that the system inferred seniority partly from job-title patterns that systematically undervalued experience in smaller companies.
 
-The company pauses the action, identifies affected decisions, offers review, repairs the evaluation set, changes the allowed features, and reconsiders whether ranking should carry that authority. Accountability moves upward to the people able to change the system and outward to those who experienced the result.
+A shallow review blames the ranking model or instructs recruiters to “apply judgment.” A real review follows the accountability chain.
+
+The business owner chose automated ranking and the volume target. The data owner approved the inputs. The agent owner defined the evaluation population. The control owner accepted the authority boundary. The recruiting operation designed a review queue in which disagreement was difficult. Executive intent emphasized processing speed without a sufficient measure for access and recourse.
+
+The response pauses automated rejection, preserves versions and affected records, identifies people who may have been wrongly screened, offers a new review, and gives recruiters a workable route to restore candidates. The evaluation set is rebuilt across company types and career paths. The allowed features and authority are reconsidered. The business owner reports what changed and why the system may—or may not—return.
+
+No single person caused the failure. Accountability still has an address.
+
+## When a vendor is inside the chain {.unlisted}
+
+Companies will depend on external models, data, platforms, and agent services. Vendor responsibility matters, but the buyer still chooses how the component enters its operating loop.
+
+Before a consequential deployment, know which changes the vendor can make, which evidence it provides, how incidents are communicated, how data is handled, how versions are controlled, what service is available during failure, and how the company exits.
+
+Contractual assurances do not replace local evidence. A model provider may test general capability and safety; only the deploying company knows its customer context, decision right, connected tools, and failure consequence. A shared-responsibility statement is useful only when each responsibility has an owner and an operational test.
+
+If the system cannot function without a vendor but the company cannot pause it, obtain traces, or restore state, dependency has become loss of control.
 
 ## Capability does not dissolve obligation {.unlisted}
 
-Future agents may operate for longer periods, coordinate with other agents, and manage larger budgets. If capability rises, companies may move human attention from individual actions to authority design, monitoring, incident response, and periodic review.
+Agents are already being given longer tasks and more latitude in practice. Anthropic's 2026 autonomy study found changing patterns of auto-approval, interruption, and agent-initiated clarification in its own products [@anthropic-autonomy-practice-2026]. The authors explicitly caution that autonomy emerges from the model, user, and product design rather than belonging to the model alone.
+
+As capability rises, companies may move human attention from individual actions to authority design, post-deployment monitoring, exception review, and incident response. That can be a stronger form of control than approving every step, provided people can understand the system, intervene in time, and repair consequences.
 
 One condition must remain true: a named human institution can explain why the system was permitted to act and can intervene on behalf of those affected. If nobody can do so because autonomy is distributed across vendors, agents, and policies, the organization has not transcended management. It has abandoned accountability.
+
+## Conduct the accountability drill {.unlisted}
+
+Choose one consequential live loop and give an approved assistant its registry entry, decision specification, authority grant, sample traces, policies, vendor terms, incident plan, and recourse materials. Ask it to answer:
+
+1. Who can stop the system immediately?
+2. Who can authorize restart?
+3. Who can reverse or compensate for the outcome?
+4. Which owner can change context, tools, policy, and decision rights?
+5. What evidence would be missing during an investigation?
+6. Where could each participant plausibly deflect responsibility?
+7. Can an affected person reach independent review?
+8. Which vendor dependency limits explanation, recovery, or exit?
+
+Then run a tabletop incident. Remove one critical source, allow an excessive cumulative action, simulate a vendor change, and introduce a credible customer challenge. Require the team to identify affected cases, stop exposure, communicate, repair state, and change the correct artifact.
+
+If the exercise ends with “we would ask the AI team,” the accountability chain is incomplete.
 
 Companies may delegate action to software. They cannot delegate the duty to justify, repair, and answer for the consequences.
 
@@ -54,17 +144,17 @@ Companies may delegate action to software. They cannot delegate the duty to just
 
 The adaptive company does not begin with an announcement.
 
-It begins when an operating leader chooses one consequential decision that repeatedly returns, waits, or fails. The company makes the intended outcome explicit. It assembles authorized context. It states who may decide and within what boundary. It assigns work to people, rules, workflows, and agents. It requires evidence of the path and the result. It gives learning to owners who can change the right part of the system.
+It begins when an operating leader chooses one consequential decision that repeatedly returns, waits, or fails. The company makes the intended outcome explicit. It assembles authorized context. It states who may decide and within what boundary. It assigns work to people, deterministic software, workflows, and agents. It requires evidence of the path and the result. It gives learning to owners who can change the right part of the system.
 
 Then it watches what happens.
 
-The first loop will reveal uncomfortable facts. Delegation may be nominal. A trusted data source may be stale. A shared function may be funded to enforce policy but not to provide usable service. An agent may remove work from one team and create review elsewhere. A founder's intervention may remain the fastest short-term answer and the largest long-term constraint.
+The first loop will reveal uncomfortable facts. Delegation may be nominal. A trusted data source may be stale. A shared function may enforce policy without providing a usable service. An agent may remove work from one team and create review elsewhere. A founder's intervention may remain the fastest short-term answer and the largest long-term constraint.
 
 That evidence is the work.
 
 Do not begin with an enterprise autonomy target. Do not count generated artifacts as value. Do not build a central AI organization that owns everybody else's outcomes. Do not use observability to rank employees or governance to disguise fear of delegation.
 
-Build one loop whose result matters. Bound the consequence. Keep the traces. Let a real owner make a real decision. When the result is poor, repair the context, right, interface, control, or assumption that produced it. When it is good, prove that normal operations can sustain it before expanding.
+Build one loop whose result matters. Bound the consequence. Keep the evidence. Let a real owner make a real decision. When the result is poor, repair the context, right, interface, control, or assumption that produced it. When it is good, prove that normal operations can sustain it before expanding.
 
 ATOM is a model, not the destination. Its value lies in the questions it forces the company to answer:
 
@@ -79,3 +169,9 @@ ATOM is a model, not the destination. Its value lies in the questions it forces 
 Answer those questions for one recurring decision and the company has begun to change its operating system.
 
 Build one honest loop. Learn from it. Then decide what deserves to repeat.
+
+```{=typst}
+#pagebreak()
+```
+
+{{< include ../field-kit.qmd >}}
