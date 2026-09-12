@@ -2,11 +2,13 @@
 
 Governance fails when it arrives as a committee after the action or as a policy document no system can enforce.
 
-For human-agent work, governance belongs in the path. It determines what context can be retrieved, which tools can be called, what value can be committed, when approval is required, what evidence must be retained, and who can stop the system.
+For human–agent work, governance belongs in the path. It determines what context can be retrieved, which tools can be called, what value can be committed, when approval is required, what evidence must be retained, and who can stop the system.
+
+This is not a case for central control of every decision. The purpose of governance is to make local freedom real. A business unit can act quickly when its boundaries are explicit and technically enforced. Without those boundaries, senior leaders compensate with approvals, meetings, and personal vigilance.
 
 ## The control plane
 
-ATOM's control plane has seven operating functions:
+ATOM's **control plane** crosses all six layers of the operating loop. It has seven functions:
 
 1. **Identity:** Every person, agent, service, and vendor connection has a distinguishable identity.
 2. **Authority:** Rights are granted for specific resources and actions.
@@ -16,36 +18,95 @@ ATOM's control plane has seven operating functions:
 6. **Intervention:** Authorized operators can pause, narrow, override, or roll back.
 7. **Recourse:** Affected people can challenge or repair a result.
 
-These functions should be shared where consistency matters, but outcome ownership remains in the business. Security may define credential standards. Finance may define payment controls. Legal may define retention. The business owner still answers for whether the agent should be doing the work.
+These functions should be shared where consistency matters, but outcome ownership remains in the business. Security defines credential standards. Finance defines payment controls. Legal defines retention and prohibited processing. The unit owner still answers for whether the system should perform the work and whether the result creates value.
+
+That division prevents two common failures. In the first, a central AI committee becomes the owner of every use case but has no operational accountability. In the second, each team invents its own controls and the company cannot identify which agents exist or what they can do.
+
+The centre should provide paved roads: identity, logging, approved integrations, policy checks, evaluation infrastructure, and incident handling. Units use those capabilities inside outcome-specific decision rights.
 
 ## Permissions are not prompts
 
 An instruction such as “do not make payments above €5,000” is not a permission boundary if the agent holds credentials that allow any payment. A model can misunderstand, be manipulated by retrieved content, or call the wrong tool. The payment system must enforce the limit.
 
-This is ordinary security applied to a new actor: least privilege, short-lived credentials, separation of duties, scoped resources, and revocation. Integration protocols do not remove the need. The Model Context Protocol's authorization specification requires audience-bound tokens and explicitly prohibits token passthrough because otherwise a credential intended for one service can be misused elsewhere [@mcp-authorization-2025].
+This is ordinary security applied to a new actor: least privilege, short-lived credentials, separation of duties, scoped resources, and revocation. The difference is that an agent can interpret language, choose tools, and cross several systems in one run. Its usable authority may therefore be wider than any single permission suggests.
 
-The operating implication is direct. Register the agent as an actor. Do not lend it a founder's account. Grant only the tool, data, action, amount, and duration required for the task.
+Integration protocols do not remove the problem. The Model Context Protocol authorization specification requires tokens intended for the correct audience and prohibits token passthrough, which could allow a credential meant for one service to be misused by another [@mcp-authorization-2025]. The operational lesson is straightforward: a convenient connection should not collapse the trust boundaries between systems.
+
+Register the agent as an actor. Do not lend it a founder's account or a generic integration user. Grant only the tool, data, action, amount, destination, and duration required for the task. Make revocation possible without disabling unrelated work.
+
+Read and write deserve separate treatment. An agent that analyses invoices may need access to amounts and supplier records. It may not need the ability to alter supplier bank details. A support agent may update a ticket while only proposing a refund. The smallest capability set is easier to reason about and reduces the damage of a mistaken or manipulated action.
+
+## Policy needs two forms
+
+A policy written for people explains purpose, judgment, exceptions, and accountability. A policy enforced by software needs precise conditions, parameters, and failure behaviour. One cannot replace the other.
+
+Consider a rule that experimental offers must “protect unit economics.” The human version may describe why the rule exists and when strategic exceptions are legitimate. The machine form needs a versioned margin definition, included costs, threshold, allowed experimental budget, data freshness rule, and escalation route.
+
+The two forms should reference each other. Operators need to understand why a limit exists. Systems need a condition they can enforce. When the business changes the human policy, the machine rule and affected evaluation cases must change through the same release process.
+
+This linkage also exposes fake precision. If leaders cannot agree which fulfilment costs belong in unit margin, automating a threshold will not settle the question. Governance begins by naming the judgment, not hiding it in configuration.
 
 ## Guardrails should fail safely
 
-Some guardrails are deterministic: amount limits, allowed domains, required fields, data classifications, or prohibited actions. Others use models to detect relevance, manipulation, or policy conflict. The two should not be confused. Model-based checks add coverage but also uncertainty.
+Some guardrails are deterministic: amount limits, allowed domains, required fields, data classifications, or prohibited actions. Others use models to detect relevance, manipulation, or policy conflict. The two should not be confused. Model-based checks add coverage, but they also add uncertainty.
 
-Layer controls according to consequence. A purchasing agent might draft a request, verify the supplier against approved data, and submit it to the procurement system. It cannot approve the request or release payment. The approver sees the supplier, amount, policy checks, source documents, conflicts, and agent actions. If evidence is missing, the transaction cannot advance.
+Layer controls according to consequence. A purchasing agent might draft a request, verify the supplier against approved data, and submit it to the procurement system. It cannot approve the request or release payment. The approver sees the supplier, amount, policy checks, source documents, conflicts, and agent actions. If required evidence is missing, the transaction cannot advance.
 
-For reversible low-value purchases, the company may later pre-authorize action inside a budget. It should expand the authority because observed evidence supports the change, not because the agent sounds more confident.
+For reversible low-value purchases, the company may later allow action inside a budget and review samples. It should expand authority because observed evidence supports the change, not because the agent sounds more confident.
+
+Safe failure needs an operating state. A rejected payment remains uncommitted. An uncertain customer message remains a draft. A production change stays in a branch. An inventory action keeps the last approved plan. “Stop” is useful only if people know what the system preserves, who receives the case, and how long the business can wait.
+
+Controls also require aggregate limits. An agent authorized to issue €100 credits can still create €100,000 of exposure. The control plane should watch frequency, cumulative value, destination concentration, and unusual sequences, not just individual transactions.
 
 ## Treat external content as untrusted
 
-Agents read documents, websites, messages, and tool descriptions that can contain instructions. An attacker may try to make the system reveal data or take an unintended action. A less dramatic failure occurs when a supplier document merely contains language that the agent mistakes for company policy.
+Agents read documents, websites, messages, and tool descriptions that can contain instructions. An attacker may try to make the system reveal data or take an unintended action. A less dramatic failure occurs when a supplier document contains language that the agent mistakes for company policy.
 
-Separate data from instructions. Limit which sources can influence action. Validate tool parameters outside the model. Require confirmation when the destination, scope, or consequence changes. Keep sensitive tools unavailable during open-ended research.
+OpenAI frames prompt injection as a social-engineering problem: an untrusted source attempts to steer an agent toward a dangerous capability. It argues for layered defences and for limiting the impact even when manipulation is not detected [@openai-prompt-injection-2026]. That is a better operating assumption than believing a classifier will identify every malicious sentence.
 
-The phrase “confused deputy” describes a system tricked into using its legitimate authority for someone else's purpose. It is not an exotic edge case once agents can cross systems. The control plane should assume that content and tools can be wrong even when the model is behaving as designed.
+Separate content from authority. Validate tool parameters outside the model. Require confirmation when the destination, scope, or consequence changes. Keep sensitive tools unavailable during open-ended research. Do not allow a retrieved instruction to grant a new permission.
+
+The “confused deputy” problem describes a system tricked into using its legitimate authority for somebody else's purpose. It becomes ordinary risk once agents can read one system and act in another. The control plane should assume that content, tools, and even well-formed requests can be wrong while the model behaves exactly as designed.
+
+## Approval is a scarce control
+
+Companies often add approval whenever risk feels uncomfortable. This is cheap in a diagram and expensive in operation.
+
+An approval should be reserved for a material judgment or a required separation of duties. The reviewer must possess the competence and authority to decide, not merely occupy a senior title. The interface must make rejection practical. The queue must have capacity and a fallback when the response is late.
+
+Track what the approval layer does. If nearly every action is accepted, determine whether the cases could be sampled or pre-authorized. If reviewers frequently change the same field, repair the specification or context. If one person receives unrelated exceptions, route by the reason for escalation. If reviewers cannot explain the evidence, the system is producing ceremony rather than control.
+
+Approval thresholds should be versioned like other policies. A unit that demonstrates reliable execution inside a narrow envelope can earn wider authority. A deteriorating process can lose it. Governance becomes adaptive without becoming discretionary.
+
+## Recourse is an operating function
+
+An affected customer, supplier, or employee may discover a problem before the dashboard does. They need a way to challenge the result and reach a person able to repair it.
+
+Recourse requires a visible channel, the identity of the responsible operating owner, access to the relevant evidence, the authority to pause or reverse the action, and a route for changing the system when the complaint reveals a pattern. Merely offering contact with support does not satisfy this if support cannot inspect or alter the automated decision.
+
+The requirement improves the design even when regulation does not demand it. A company that cannot explain and repair a consequential decision does not fully control that decision.
 
 ## Compliance is a floor
 
-The EU AI Act now applies in stages and uses different obligations for different roles and risk categories. Since August 2026, transparency requirements apply to specified uses, while deadlines for high-risk systems extend further under the amended timeline [@eu-ai-act-commission-2026]. For high-risk deployments, the regulation includes requirements around human oversight, logging, documentation, data quality, robustness, and deployer responsibilities [@eu-ai-act-2026].
+The EU AI Act applies in stages and assigns obligations according to role and risk category. Transparency requirements began applying to specified uses in August 2026, while the timeline for some high-risk obligations extends further [@eu-ai-act-commission-2026]. High-risk deployments carry requirements concerning human oversight, logging, documentation, data quality, robustness, and deployer responsibilities [@eu-ai-act-2026].
 
-This book cannot determine the legal classification of a particular system. The operating model should make compliance possible: named roles, traceable versions, retained logs, competent oversight, and an inventory of where AI affects people. Waiting for a lawyer to reconstruct that inventory after deployment is poor governance.
+This book cannot classify a particular system or provide legal advice. The operating model should make compliance possible: named roles, traceable versions, retained logs, competent oversight, recourse, and an inventory of where AI affects people. Waiting for counsel to reconstruct that inventory after deployment is poor governance.
 
-Governance creates useful speed when routine actions can proceed because limits are real. A control plane is successful when teams know where they are free to act, exceptions reach the right owner with evidence, and dangerous actions cannot bypass the company simply by moving faster.
+Compliance sets the minimum. A pricing agent may not fall into a regulated high-risk category and still create material commercial or reputational exposure. The company needs controls aligned with its own obligations and appetite, not only the edge of the law.
+
+## Build the first control map
+
+Select one live agent or AI-assisted workflow. Ask an approved assistant to turn its documentation, permission exports, tool list, sample traces, and policies into a control map. Require it to identify:
+
+- every human, agent, service, and shared account involved;
+- each source the system can read and action it can commit;
+- where limits are enforced in software and where they exist only in prose;
+- untrusted sources connected to consequential tools;
+- approval points, reviewer capacity, and safe waiting states;
+- cumulative exposures that individual limits do not capture;
+- pause, rollback, revocation, and recourse paths;
+- and missing evidence needed to investigate an incident.
+
+Then test the map. Attempt an out-of-scope read, an excessive amount, a wrong destination, an expired source, a delayed approval, and a revoked credential in a safe environment. A control that exists in policy but fails in execution is not yet a control.
+
+Governance creates useful speed when routine actions can proceed because the limits are real. The control plane succeeds when teams know where they are free to act, exceptions reach the right owner with evidence, and dangerous actions cannot bypass the company simply by moving faster.

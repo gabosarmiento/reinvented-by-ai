@@ -2,7 +2,9 @@
 
 The pilot resolved cases faster. Should the company expand it?
 
-Not yet. Faster can mean customers received good outcomes sooner. It can also mean cases were closed earlier and returned later, reviewers absorbed hidden work, or the easiest cases moved to the agent while people inherited a harder queue.
+Not yet. Faster can mean customers received good outcomes sooner. It can also mean cases were closed early and returned later, reviewers absorbed hidden work, or the easiest cases moved to the agent while people inherited a harder queue.
+
+An operating-model pilot is not successful because the technology worked. It is successful when the new combination of people, software, agent, controls, and management produces a better result at an acceptable total cost and risk.
 
 ## Compare complete systems
 
@@ -13,16 +15,59 @@ The relevant comparison is the previous operating path against the new one. Incl
 - human review, escalation, and repair;
 - model, tool, integration, and monitoring cost;
 - failure severity and recovery;
-- maintenance of prompts, policies, context, and evaluations;
+- maintenance of instructions, policies, context, and evaluations;
+- capacity created or consumed elsewhere;
 - and effects on the people doing the remaining work.
 
-Do not claim a causal gain from a before-and-after chart when demand, staffing, or case mix also changed. A randomized or phased comparison may be possible. When it is not, match similar cases, show the limitations, and treat the result as operational evidence rather than scientific proof.
+This prevents a familiar accounting trick. The agent's handling cost falls, but the operations team spends more time correcting account state. The visible queue shrinks, but repeat contact rises. A business unit appears more profitable because shared platform and founder time remain free.
+
+Use a unit of value tied to the loop: cost per correctly resolved case, margin per delivered order, time to qualified decision, avoidable loss prevented, or another outcome that survives contact with finance and operations. Report model cost, but do not confuse it with total cost.
+
+## Establish a believable comparison
+
+A before-and-after chart is easy to make and easy to misread. Demand, case mix, staffing, seasonality, pricing, and customer behaviour may have changed during the pilot.
+
+Where possible, release in phases or compare eligible cases assigned to old and new paths. If random assignment is operationally and ethically appropriate, it provides the strongest comparison. Where it is not, match cases on the factors that drive difficulty and show the remaining limitations.
+
+Preserve the inclusion and exclusion rules. If the system handled only simple cases, compare it with similar simple cases—not the entire historical queue. Measure what happened to the excluded population as well. A pilot can improve one segment while degrading the rest through capacity shifts.
+
+The aim is not to turn every operating review into an academic study. It is to avoid claiming causality the evidence cannot support. State whether the result is a controlled comparison, a phased operational comparison, an observed association, or an informed judgment.
 
 ## Read the distribution
 
-Average improvement can conceal concentrated harm. Segment results by case type, customer group, channel, risk, and degree of agent involvement. Inspect the tail. A system that improves routine cases but mishandles rare consequential cases may still be valuable, provided those cases are detected and excluded.
+Average improvement can conceal concentrated harm. Segment results by case type, customer group, channel, risk, language, business unit, and degree of agent involvement. Inspect the tail.
 
-Likewise, aggregate labor savings can hide a worse job. If agents absorb simple cases, human operators may face uninterrupted exceptions. Measure queue difficulty, interruption, discretion, and repair burden. The goal is not to preserve every old task; it is to avoid designing a system whose economics depend on invisible human absorption.
+A system that improves routine cases but mishandles rare consequential cases may still be useful if those cases can be detected and excluded. If the failure has no reliable signature, the average may not justify the exposure.
+
+Latency deserves the same treatment. A lower median can coexist with a much worse tail. The agent resolves ordinary cases immediately but leaves ambiguous cases waiting in an under-staffed approval queue. The customer does not experience the median.
+
+Likewise, aggregate labour savings can hide a worse job. When agents absorb simple cases, operators may face uninterrupted exceptions. Measure queue difficulty, interruption, emotional load, discretion, and repair burden. The objective is not to preserve every old task. It is to avoid economics that depend on invisible human absorption and eventual turnover.
+
+## Measure decision quality and system quality
+
+The outcome may take time to appear. A pricing decision is immediate; margin and retention arrive later. A customer resolution closes today; recurrence appears next month. Use leading indicators, but keep them connected to the final result.
+
+Decision quality asks whether the commitment was appropriate given the evidence and policy available at the time. System quality asks whether the loop assembled good context, used authority correctly, executed, and learned. Outcome quality asks what actually happened.
+
+These can diverge. A sound decision can have a bad outcome because uncertainty is real. A poor decision can get lucky. Judging only the outcome encourages hindsight. Judging only compliance rewards a system that follows an unhelpful rule perfectly.
+
+Review a sample in which decision and outcome disagree. Those cases teach the company whether to change the prediction, the judgment, or the policy.
+
+## Calculate the operating economics
+
+Build a small model with ranges rather than fake precision. For each case or unit of work, include:
+
+**Variable costs:** model and tool usage, external data, compute, per-transaction fees, and expected human handling.
+
+**Fixed and step costs:** integration, evaluation, monitoring, incident response, governance, vendor minimums, and specialist support. Show how these change when volume or business units expand.
+
+**Failure costs:** repair, compensation, delayed revenue, operational disruption, customer loss, security exposure, and the expected concentration of rare events.
+
+**Capacity effects:** work removed, work added, bottlenecks displaced, and throughput created at the constrained part of the system.
+
+Avoid converting every saved minute into cash unless capacity actually leaves the cost base or moves to valuable work. Ten minutes “saved” across a team may create convenience without creating an economic return. That can still be worthwhile, but it should be named accurately.
+
+For a new business line, include the cost of shared assets. If margin depends on free platform capacity, founder intervention, or underpriced operations support, the pilot has not demonstrated a scalable business.
 
 ## Use a four-way gate
 
@@ -32,17 +77,48 @@ The review should produce one of four decisions:
 |---|---|
 | **Expand** | Outcomes hold, total economics improve, controls work, and new volume is supportable |
 | **Revise** | Value is plausible but a named context, design, or reliability gap is repairable |
-| **Contain** | The loop works only for a stable narrow segment and should remain there |
+| **Contain** | The loop works for a stable narrow segment and should remain there |
 | **Stop** | Outcome, economics, control, or affected-party impact does not justify continuation |
 
-Stopping is not an admission that the company “failed at AI.” It proves that the operating model can reject activity that does not create value.
+Containment is underused. A system may be excellent for a defined class of requests and unreliable elsewhere. Keeping it narrow is a sound operating decision, not a failure of ambition.
+
+Expansion should name exactly what changes: volume, customer segment, geography, action right, financial limit, or operating hours. Each change has an owner, a new risk hypothesis, and evidence that could reverse it.
+
+Stopping proves that the company can reject activity that does not create value. Preserve the cases, cost model, and lessons. The next loop should not have to rediscover them.
 
 ## Transfer to the run
 
-An experiment has not scaled when the founder can operate it. It has scaled when a normal owner can run, monitor, and change it through defined interfaces.
+An experiment has not scaled when the founder or pilot team can operate it. It has scaled when a normal owner can run, monitor, and change it through defined interfaces.
 
-Before transfer, name the business owner, service expectations, support path, incident owner, context owners, evaluation cadence, cost budget, change authority, and retirement condition. Train the people who receive exceptions. Remove temporary credentials and workarounds. Record which assumptions remain unproven.
+Before transfer, name:
 
-For a new business line, transfer also requires clear economics and shared-service contracts. If the unit's margin depends on unmeasured founder labor or free platform capacity, the pilot has not proven a scalable business.
+- the business owner and service expectation;
+- the people who receive exceptions;
+- the agent, context, platform, and control owners;
+- the incident and recourse path;
+- evaluation and operating-review cadence;
+- cost and exposure budgets;
+- change and release authority;
+- vendor and dependency risks;
+- and the conditions for containment or retirement.
 
-The 90-day question is not “Did people use it?” It is “Did this loop improve a result at acceptable total cost and risk, and can the company operate it without exceptional support?” Only a convincing answer earns more authority or scope.
+Remove temporary credentials, manual joins, and founder workarounds. Train the people who receive escalations with real cases. Put maintenance into capacity planning. Record which assumptions remain unproven and when they will be revisited.
+
+The receiving owner should have the right to refuse transfer. If the loop depends on specialist heroics or undocumented repairs, the pilot team has built a service, not an operating capability.
+
+## Ask AI to prepare the value case
+
+Give an approved assistant the baseline, eligibility rules, case-level outcomes, event traces, cost data, human time, review reasons, and incidents. Ask it to:
+
+1. construct comparable cohorts and show where matching remains weak;
+2. calculate outcome, flow, control, and cost measures by segment;
+3. expose changes in the human exception queue;
+4. identify missing downstream outcomes and likely survivor bias;
+5. build low, base, and high operating-cost scenarios;
+6. list every assumption required to claim value;
+7. generate the evidence for expand, revise, contain, and stop;
+8. draft a transfer checklist and name unresolved dependencies.
+
+Ask finance, operations, frontline staff, and the outcome owner to challenge the result. The model can join, segment, and stress-test the evidence. It cannot decide which customer harm is acceptable or whether a strategic option deserves continued funding.
+
+The ninety-day question is not, “Did people use it?” It is, “Did this loop improve a result at acceptable total cost and risk, and can the company operate it without exceptional support?” Only a convincing answer earns more authority or scope.

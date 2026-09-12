@@ -2,7 +2,27 @@
 
 “Deploy an agent in operations” is not a pilot. It names a technology and a department, not a result.
 
-A useful first loop begins with a recurring decision or outcome whose complete path can be observed. The unit might be resolving a service exception, approving a non-standard price, triaging an incident, qualifying a lead, or deciding whether a new business experiment receives another tranche of capital.
+This framing creates predictable trouble. A vendor demo becomes the target state. The team searches for tasks the tool can perform. Adoption becomes the measure. When the trial ends, leaders can report that the model summarized tickets or prepared reports, but they cannot say whether an operating result improved or whether any decision changed.
+
+A useful first loop begins with a recurring commitment whose complete path can be observed. The unit might resolve a service exception, approve a non-standard price, qualify an operational lead, allocate scarce field capacity, or decide whether a new-business experiment receives another tranche of capital.
+
+The first pilot does not need to be the company's biggest opportunity. It needs to teach the company how to design authority, context, execution, evidence, and learning around real work.
+
+## Begin with operating pain, not an idea backlog
+
+Most companies already have long lists of possible AI uses. Those lists over-represent visible tasks and under-represent the queues between them. Drafting a proposal appears on the list. Waiting for margin data, checking delivery capacity, resolving contract deviations, and obtaining authority often do not.
+
+Look instead for repeated symptoms:
+
+- decisions that return to the COO despite supposed delegation;
+- customer cases that move across several functions;
+- a queue whose inputs must be reconstructed manually;
+- repeated exceptions to a stable rule;
+- work in which people spend more time finding state than applying judgment;
+- commitments later reversed because a fact or owner was missing;
+- a new business line relying on informal access to shared assets.
+
+These symptoms identify a loop worth mapping. The candidate should contain enough real organizational friction to teach something, but not so much consequence or integration complexity that the first failure becomes existential.
 
 ## Score the loop
 
@@ -10,35 +30,86 @@ Rate candidates using evidence, not enthusiasm:
 
 | Criterion | Question |
 |---|---|
-| Value | Does improvement affect a customer, economic, risk, or strategic result? |
-| Frequency | Will enough cases occur to learn within the pilot period? |
-| Latency | Is waiting or rework material? |
-| Evaluability | Can correct behavior and outcome be observed? |
-| Context readiness | Are required facts accessible, current, and permitted? |
-| Reversibility | Can mistakes be detected and repaired? |
-| Consequence | Who can be harmed and how severely? |
-| Integration load | How many brittle systems and teams must change? |
-| Ownership | Is one person accountable for the end-to-end result? |
-| Transfer | If successful, can the loop move into normal operations? |
+| **Value** | Does improvement affect a customer, economic, risk, or strategic result? |
+| **Frequency** | Will enough cases occur to learn within the pilot period? |
+| **Latency** | Is waiting or rework material? |
+| **Evaluability** | Can correct behaviour and outcome be observed? |
+| **Context readiness** | Are required facts accessible, current, and permitted? |
+| **Reversibility** | Can mistakes be detected and repaired? |
+| **Consequence** | Who can be harmed and how severely? |
+| **Integration load** | How many brittle systems and teams must change? |
+| **Ownership** | Is one person accountable for the end-to-end result? |
+| **Transfer** | If successful, can the loop move into normal operations? |
 
-Do not reduce the table to one magic score. A high-value use with no observable outcome is not ready. A technically easy use with no meaningful result is a demo.
+Do not reduce the table to one magic score. The criteria are not interchangeable. A high-value use with no observable outcome is not ready. A technically easy use with no meaningful result is a demo. A process with clean data and no owner will stall after the novelty disappears.
+
+Use scores to make disagreement visible. Finance may see large value while operations sees irreversibility. Product may rate context as ready while frontline staff know that half the state lives in messages. The discussion is more useful than the average.
+
+## Choose for learning density
+
+The strongest first loop reveals several parts of the operating model at once.
+
+A document-summary assistant may test model usability but teach little about authority, action, or outcome. A fully autonomous pricing system touches every part of ATOM but may create too much exposure for a first attempt. Between them sits a useful class of pilots: frequent operational decisions with bounded consequence, available historical cases, measurable results, and a person who already owns the outcome.
+
+Customer-onboarding exceptions are a good example. They require unstructured interpretation, account context, policy, cross-functional handoffs, and a decision. The result can be observed in activation, repeat contact, service cost, and customer experience. Scope can be restricted to one segment or exception type. An agent can begin by proposing rather than acting.
+
+The selection principle is **learning density per unit of exposure**. The pilot should teach the organization about its data, decision rights, controls, human handoffs, economics, and ability to learn—without requiring a company-wide platform or betting the relationship with its most important customer.
 
 ## Compare three candidates
 
 An **illustrative scale-up** considers three loops.
 
-The first is an agent that prepares board materials. It is visible and reversible, but low-frequency and difficult to connect to better decisions. The second handles customer-onboarding exceptions. It is frequent, measurable, painful, and linked to activation, but touches sensitive customer data and several systems. The third analyzes funding evidence for experiments in the new business line. It has strategic value and a clear executive sponsor, but only a few decisions will occur during the quarter.
+The first is an assistant that prepares board materials. It is visible and reversible, but low-frequency and difficult to connect to better decisions. Most of its value is personal productivity for a small group.
 
-The company selects onboarding exceptions. It narrows scope to one customer segment and one class of exception. The decision is not glamorous. It will reveal context gaps, handoffs, authority, agent limits, customer outcome, and transfer to the run in a few weeks.
+The second handles customer-onboarding exceptions. It is frequent, measurable, painful, and linked to activation. It touches sensitive customer data and several systems, but the company can narrow it to one segment and keep account changes behind approval.
 
-The strategic funding loop remains a management redesign candidate, but not the first agent pilot. The board-material assistant can proceed as a local productivity tool without being called transformation.
+The third analyzes evidence for funding experiments in the new business line. It has strategic value and an executive sponsor, but only a handful of decisions occur each quarter. The limited sample makes rapid operational learning difficult.
+
+The company selects onboarding exceptions. It does not automate the full process. It begins with one class of exception, a controlled context envelope, and proposal-only authority.
+
+The funding loop remains a management redesign candidate. Leaders can use an AI assistant to organize evidence and challenge assumptions while retaining the decision. The board-material assistant can proceed as a local productivity tool. Neither needs to be called transformation.
+
+Naming these categories accurately matters. A useful assistant is not a failed operating-model pilot. It simply proves a smaller claim.
+
+## Exclude before you build
+
+A pilot should have explicit exclusions. Do not rely on the agent to discover them after it begins.
+
+For onboarding, the company may exclude strategic accounts, regulated customer categories, active disputes, cases with identity ambiguity, and contract variations. It may include only one product, language, and region. The excluded cases continue through the current process and form a queue for future analysis.
+
+Exclusions serve three purposes. They cap consequence, create a more coherent evaluation population, and reveal what the organization believes is special. Repeatedly excluding the same high-value category may later expose a missing capability or an unresolved policy question. The exclusion is therefore versioned, owned, and reviewed.
+
+The pilot also needs kill conditions. A serious data exposure, inability to reconstruct an action, unacceptable customer harm, or loss of control over a connected tool should pause the loop. Economic and operational thresholds can trigger reassessment without implying a security incident.
 
 ## Write the pilot as a decision loop
 
 A strong charter fits on one page:
 
-> When **[trigger]** occurs, **[owner]** uses **[authorized context]** to make or delegate **[decision]** within **[authority limits]**. Humans, rules, and agents execute **[work]**. The system retains **[evidence]** and measures **[outcome]**. It stops or escalates when **[condition]** occurs. After **[period/case count]**, **[named group]** decides to expand, revise, contain, or stop.
+> When **[trigger]** occurs, **[owner]** uses **[authorized context]** to make or delegate **[decision]** within **[authority limits]**. Humans, rules, and agents execute **[work]**. The system retains **[evidence]** and measures **[outcome]**. It stops or escalates when **[condition]** occurs. After **[period or case count]**, **[named group]** decides to expand, revise, contain, or stop.
 
-The charter forces a choice about what the pilot is actually proving. Is the uncertainty model capability, context quality, user behavior, integration, economics, or authority? If the team cannot name the learning question, it will interpret any activity as success.
+The charter forces a choice about what the pilot is proving. Is the uncertainty model capability, context quality, user behaviour, integration, economics, or authority? “All of them” is usually a sign that the scope remains too broad.
 
-Start where the consequence is bounded but the operating lesson is real. The first unit of transformation is not a department or an AI platform. It is one honest decision loop.
+For the illustrative onboarding loop, the learning question might be:
+
+> Can the company reduce time to resolve one common onboarding exception without increasing repeat contact or customer repair, while producing sufficient evidence for a normal operations owner to take over?
+
+That statement contains a result, a counter-metric, a scope, and a transfer condition. It avoids a target adoption rate because using the tool is not the outcome.
+
+## Use AI to select the pilot
+
+The COO should not spend a week assembling a workshop deck. Use the tools already in hand.
+
+Export a representative sample of operating tickets, escalation records, approval logs, customer contacts, process timestamps, and outcome measures into an approved analysis environment. Add descriptions of current decision rights and the candidate list. Ask the assistant to:
+
+1. cluster recurring decisions and exception types;
+2. estimate frequency, elapsed time, handoffs, rework, and outcome visibility;
+3. identify which candidates have enough historical cases for evaluation;
+4. map required sources and flag missing identifiers or restricted data;
+5. score each candidate against the selection criteria, showing uncertainty;
+6. propose a narrow inclusion set, exclusions, counter-metrics, and kill conditions;
+7. draft the one-page loop charter for the top three candidates;
+8. argue against each selection from the perspective of a customer, frontline operator, security lead, and finance owner.
+
+The model accelerates reconstruction and comparison. The accountable leaders validate the process, choose the tradeoff, and own the selection. If the analysis reveals that outcomes cannot be joined to cases, the first action may be instrumentation rather than deployment.
+
+Start where consequence is bounded but the operating lesson is real. The first unit of transformation is not a department, an agent platform, or an innovation programme. It is one honest decision loop.
