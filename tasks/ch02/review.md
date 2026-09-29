@@ -24,7 +24,7 @@ Reviewed: 28 September 2026
 ### M1 — The chapter required an author-experience case
 
 **Finding:** The approved outline calls for a transformation case from the author's experience, but none is present.  
-**Disposition:** Outstanding author input. The existing scenario remains explicitly illustrative; no personal or client case was invented.
+**Disposition:** Outstanding author input. The Aster scenario is explicitly fictional; no personal or client case was invented.
 
 ### M2 — Product sources could sound like independent evidence
 
@@ -44,3 +44,7 @@ Reviewed: 28 September 2026
 ## Remaining release condition
 
 The chapter is editorially revised, but finalization remains open until the author supplies or explicitly waives the author-experience case and the chapter passes the book's final production gate.
+
+## Aster illustration
+
+Replaced the generic business-line scenario with a fictional infrastructure company whose four-stage revenue and workload arithmetic uses one stated pricing equation. Implementation fees are excluded from ARR. Fleet authority-unit and operation volumes are products of the chosen assumptions, not market evidence. The case links growth to observable onboarding, review, support, incident, reconciliation, and authority-change work without assigning universal thresholds. It does not satisfy the author-experience release condition above.

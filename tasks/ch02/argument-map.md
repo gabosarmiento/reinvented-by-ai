@@ -19,6 +19,7 @@ As organizations produce more work, unresolved design gaps can reappear as waiti
 - Six overlapping categories help search for decision, context, coordination, integration, knowledge, and control debt.
 - Principal and interest are useful metaphors only when tied to observable gaps and recurring effects; they are not automatic monetary valuations.
 - An AI-generated pattern is a hypothesis until operators verify it against source records.
+- The fictional Aster pricing and volume ladder shows how recurring revenue can rise while onboarding, review, support, and authority-change work accumulates. Its numbers are chosen for illustration, not evidence of market demand or operating performance.
 
 ## Skeptical objection and response
 
@@ -28,6 +29,8 @@ As organizations produce more work, unresolved design gaps can reappear as waiti
 ## Boundary and falsification
 
 The six-category model is an author-developed diagnostic lens, not validated theory. It is weakened if categories do not help operators locate recurring cost, predict where work will stall, or select an effective intervention. Data gaps and selection effects must be recorded.
+
+The Aster case does not replace the required author-experience case.
 
 ## Monday decision
 

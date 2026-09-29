@@ -17,7 +17,7 @@ Completed: 28 September 2026
 
 ## Case labels and unsupported detail
 
-- The founder-COO pricing scenario is labeled **ILLUSTRATIVE EXAMPLE**.
+- The Aster revenue and operating-load scenario is labeled **ILLUSTRATIVE** and **fictional**. Its prices, usage, and customer counts are chosen assumptions; the arithmetic does not establish market demand or operating outcomes.
 - No author-experience case is claimed. A real case is still required by the approved outline.
 - Removed unsupported illustrative counts from the opening and reduced one fabricated time example to a qualitative “days.”
 - No percentage claims or cost estimates are made for Hidden Operational Debt.
