@@ -1,5 +1,7 @@
 # How to Read This Book {.unnumbered}
 
+> **Public draft — 29 September 2026.** This book is open for reading and review. Chapters 1–18 have received an editorial and evidence pass; the remaining review work is tracked in the [draft status](https://github.com/gabosarmiento/reinvented-by-ai/blob/draft/chapter-evidence-review/docs/editorial/draft-status.md). The text may change.
+
 This book is built around one operating problem: AI increases the amount of analysis and execution a company can produce, but production is rarely the only constraint. Decisions, context, interfaces, control, and learning determine whether that new capacity becomes value.
 
 Part I identifies the shift and shows how Hidden Operational Debt can be observed in customer conversations, workflow records, software, and decision traces. Part II defines ATOM - the Adaptive Transformation Operating Model - as a loop from intent through evidence and learning. Part III shows the loop operating with real stops, exceptions, and human judgment. Part IV gives a bounded path from pilot selection through a thirty-day build and a ninety-day evidence gate. Parts V and VI address multi-business scale, shared resources, agent operations, management, and accountability.

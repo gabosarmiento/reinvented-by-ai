@@ -18,6 +18,8 @@ This is the final boundary of the adaptive company. Action can be distributed ac
 
 **Liability** is the legal allocation of consequences.
 
+These are working terms for this book, not legal definitions that apply in every jurisdiction.
+
 These ideas overlap but are not interchangeable. An agent can execute and receive bounded technical authority. It cannot hold institutional accountability. A vendor contract may allocate liability without becoming the company's moral or managerial answer to an affected person. A human reviewer may be responsible for one approval without being accountable for the decision to deploy the system.
 
 Confusion is convenient. After a failure, the business owner points to the model, the platform team points to the approved use case, the vendor points to configuration, and the approver points to the recommendation. Each statement contains some truth. None answers why the company designed the system that way.
@@ -70,6 +72,8 @@ A useful executive review asks:
 This is operating oversight, not a catalogue of experiments. The executive team should spend more time on concentration and accountability than on adoption anecdotes.
 
 ## Recourse is part of the design {.unlisted}
+
+The recourse route described here is an operating recommendation. Whether a person has a particular legal right to explanation, review, or appeal depends on the applicable law and facts.
 
 An affected person needs more than disclosure that AI was involved. They need a way to contest the relevant result, reach someone able to change it, and receive repair when warranted.
 

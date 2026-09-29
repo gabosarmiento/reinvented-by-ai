@@ -40,4 +40,4 @@ Audit completed: 28 September 2026
 
 ## Author material still needed
 
-The outline requests an author-experience case about a delivery problem caused by a hidden operating liability. None is available in the repository. The existing pricing example remains explicitly illustrative until the author supplies a real, publishable case.
+The outline requests an author-experience case about a delivery problem caused by a hidden operating liability. None is available in the repository. The Aster case remains explicitly fictional until the author supplies a real, publishable case.

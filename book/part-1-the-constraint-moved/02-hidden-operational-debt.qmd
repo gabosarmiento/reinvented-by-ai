@@ -106,32 +106,28 @@ No universal set of thresholds exists. A safety-critical approval and a low-valu
 
 The dashboard therefore needs drill-down, not decorative precision. Every aggregate should open into the events behind it. If escalations rise, management should be able to see whether they cluster around one rule, customer type, business unit, data source, or agent action. If the system cannot provide examples, the chart is not ready to govern anything.
 
-## Illustrative example: a new business line seen through its traces
+## Illustrative case: the economics scale before the operating model does
 
-Consider a company moving from one activity to several. The founder-COO launches the second business line personally, then appoints a business-unit lead and hands delivery to a Head of Operations. The organization chart says responsibility moved. Pricing behavior says otherwise.
+Aster is a **fictional** B2B infrastructure company that governs actions taken by AI agents. The prices, customer counts, and usage below are chosen for this worked example. They are not market evidence or a forecast.
 
-The usual dashboard shows pipeline, bookings, gross margin, and perhaps the number of deals awaiting approval. It does not explain why pricing keeps returning to the founder.
+Aster's monthly recurring revenue per customer is a $1,500 cloud base, plus $3 for each active authority unit, plus $0.75 for each 1,000 governed operations. It may also charge $7,500 for implementation once; that fee is not recurring revenue and is excluded from annual recurring revenue (ARR). Annual contract value (ACV) here means twelve months of the modeled recurring charge per customer, without the implementation fee.
 
-The company already has most of the required evidence. The CRM holds the proposed price, customer segment, dates, owner, and deal result. Finance holds the cost assumptions. The contract system records non-standard terms. Product and operations systems expose capacity constraints. Email or messaging threads contain the exception rationale and the moment the COO became involved.
+| Stage | Customers | Active authority units/customer | Governed operations/customer/month | Monthly revenue/customer | ACV/customer | Fleet ARR |
+|---|---:|---:|---:|---:|---:|---:|
+| First proof | 10 | 50 | 100,000 | $1,725 | $20,700 | $207,000 |
+| Repeatable offer | 100 | 400 | 1.2 million | $3,600 | $43,200 | $4.32 million |
+| Scale company | 800 | 1,000 | 5.1 million | $8,325 | $99,900 | $79.92 million |
+| Large platform | 4,000 | 2,500 | 21.3 million | $24,975 | $299,700 | $1.1988 billion |
 
-An AI analysis can turn the unstructured parts into proposed events: exception reason, missing context, policy cited, people consulted, decision made, and rationale. Those fields should be sampled and corrected by the operators who understand the process before they become metrics. Once calibrated, the analysis can run across the full period.
+The first row is $1,500 + (50 × $3) + (100,000 ÷ 1,000 × $0.75) = $1,725 per customer per month; 10 customers × $1,725 × 12 = $207,000 ARR. At 4,000 customers, the same calculation is $1,500 + (2,500 × $3) + (21.3 million ÷ 1,000 × $0.75) = $24,975 per customer per month; multiplied by 4,000 customers and twelve months, it yields $1.1988 billion ARR. The middle rows use the same equation, not different pricing assumptions.
 
-The resulting view might show:
+The revenue equation is simple. The operating system underneath it is not. At 100 customers, the modeled fleet has 40,000 active authority units and 120 million governed operations each month. At 800 customers, it has 800,000 units and 4.08 billion operations. At 4,000 customers, it has 10 million units and 85.2 billion operations. These are products of the chosen customer counts and usage assumptions, not projected demand.
 
-- pricing-exception volume and rate by business unit and customer segment;
-- median and tail decision time, separated into working time and waiting time;
-- number of handoffs and requests for missing information;
-- share of exceptions escalated to the COO, with the reasons for escalation;
-- concentration of decisions by person, rule, and shared dependency;
-- margin at approval compared with realized margin;
-- reversals, contract amendments, and repeat exceptions for the same cause;
-- deals lost or delayed while an exception remained open.
+Onboarding may require one-off integration work. Customers may request different approval paths and authority changes. Manual reviews, failed reconciliations, support cases, incidents, and founder escalations can accumulate even while recurring revenue rises. If a change to an authority unit waits for one specialist, the queue can grow with the installed base. If an incident requires reconstructing actions across customers, higher operation volume raises the investigation burden. Revenue can scale faster than the operating model.
 
-Now management can distinguish several stories that previously sounded identical. If most delays occur because shared-asset cost is unavailable, transferring pricing authority will not solve the problem. If the data is present but the business-unit lead escalates every deviation from the founder's preference, the liability sits in decision rights or behavior. If an agent proposes discounts inside the agreed envelope but humans repeatedly override them without recording why, the company has created an unobservable control loop.
+Aster would need the underlying traces, not just ARR, to see whether that is happening. Useful measures include onboarding hours and implementation exceptions per customer; manual reviews per 1,000 governed operations; incidents per 10,000 active authority units; support cases per customer; median and tail authority-change latency; cost per governed operation; and gross margin by customer cohort. Count exceptions, incidents, and reviews from defined source events, and connect them to customer and cost outcomes. None of these measures has a universal safe threshold. The owner should inspect changes against Aster's own baseline and investigate the cases behind them.
 
-Alerts should emerge from those stories. The system might flag a new cluster of exception reasons, a material change in tail decision time, repeated use of a stale cost model, an unusual rise in reversals, or growing concentration of approvals around one executive. The threshold must be agreed by the owner and calibrated against the company's own baseline. "Red" should mean that someone knows what to inspect and has the authority to respond.
-
-Managers can use this dashboard to check whether decisions moved, outcomes remained acceptable, and another constraint formed elsewhere.
+The debt register can then name a specific gap: for example, an authority-change queue caused by unclear approval rights, with waiting time and repeat escalations as interest signals. A billing mismatch may instead point to inconsistent operation meters or customer definitions. The remedy follows the observed path; the revenue curve alone cannot choose it.
 
 ## Ask AI to build the first version
 

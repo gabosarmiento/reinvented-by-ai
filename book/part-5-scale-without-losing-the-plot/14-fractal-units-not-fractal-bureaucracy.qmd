@@ -65,19 +65,21 @@ The interface should expose scarcity. If all requests appear free, demand become
 
 Internal pricing can help but is not the only mechanism. Capacity envelopes, priority classes, explicit queues, and opportunity-cost views may be sufficient. The objective is to make local choices feel the consequence of shared constraints without constructing a complex internal market that costs more than it clarifies.
 
-## Illustrative example: two locally correct decisions
+## Illustrative case: Aster grows into distinct operating needs
 
-A company adds an energy-services unit beside its original equipment business. Both use the same field engineers and device platform.
+Return to Aster, the **fictional** agent-action infrastructure company introduced in Chapter 2. Its figures are chosen for the worked example, not observed performance or a forecast. At 100 customers, its modeled $4.32 million ARR comes from 100 × [$1,500 cloud base + (400 active authority units × $3) + (1.2 million governed operations ÷ 1,000 × $0.75)] × 12. One integrated company could plausibly handle the resulting implementations and exceptions if its queues remain visible and bounded. The customer count alone does not require a new unit.
 
-The equipment unit schedules engineers to protect installation revenue. The services unit promises response times to win recurring contracts. Each choice is rational inside its own plan. Together they oversubscribe the same people, and both units miss commitments.
+At 800 customers, the same prices and higher assumed usage yield $79.92 million ARR: 800 × [$1,500 + (1,000 × $3) + (5.1 million ÷ 1,000 × $0.75)] × 12. That is 800,000 active authority units and 4.08 billion governed operations a month. Customer requirements, integrations, support, security reviews, and operating needs may now diverge. If each exception still travels to the founder or one central function, the organization has not grown a corresponding decision capacity.
 
-The first response might be a central capacity committee. If every exception moves upward and leaders bring competing forecasts, customer stories, and urgency, the meeting can become the operating system.
+At 4,000 customers, the modeled revenue is $1.1988 billion ARR, approximately $1.2 billion: 4,000 × [$1,500 + (2,500 × $3) + (21.3 million ÷ 1,000 × $0.75)] × 12. That entails 10 million active authority units and 85.2 billion governed operations a month under the same assumptions. ARR is fifteen times the 800-customer stage. Making every central function fifteen times larger would preserve the same queues and unclear interfaces at greater cost. That is not an operating model.
 
-A stronger design exposes field capacity as a shared service with a named owner, reservation rules, priority classes, cost, and exception path. The centre sets the portfolio allocation and reliability buffer. Each unit commits inside its envelope. Evidence shows demand, utilization, missed promises, and the economic value of each use.
+One possible boundary gives enterprise, growth, regulated-industry, and regional units ownership of distinct customer outcomes. These are options to test, not a prescribed chart; a region may overlap a customer segment, so Aster would need to choose one primary owner for each customer and outcome. Each unit could own its onboarding, service decisions, support path, and local economics inside a stated authority envelope.
 
-When an unexpected outage consumes the buffer, the shared-service owner applies the emergency rule. If the rule cannot settle the conflict, the exception goes to the portfolio owner with the affected commitments and options—not to a general coordination meeting.
+The units would reuse a shared core runtime, identity model, evidence format, billing meters, security baseline, common interfaces, and availability and reliability commitments. A shared platform owner must publish capacity, change rules, costs, and incident paths. Units cannot each redefine an active authority unit or count a governed operation differently. Security controls and cross-unit reliability remain enterprise obligations even when a unit handles a customer's case.
 
-The units remain different. The interface becomes stable.
+A unit's working economic equation is **customers × [cloud base + active authority-unit revenue + governed-operation consumption revenue] − [allocated platform cost + service cost + sales cost + local operating cost]**. The revenue terms are monthly per customer, so the costs must be measured over the same month before comparing them. The optional $7,500 one-time implementation fee, if charged, belongs in a separate implementation account; it is not ARR. Unit leaders need both the recurring revenue and the costs of implementations, reviews, incidents, and support to see whether a segment's growth pays for its operating load.
+
+Suppose a regulated customer requires a new evidence field. The unit can own the customer outcome and specify the need, but it cannot change the shared evidence format alone. The platform owner evaluates the interface change, cost, migration, and effect on other units. The unit contract defines who can decide locally, what service response to expect, and where a contested priority goes. A founder should see a portfolio choice only when the published allocation rule cannot resolve it. Whether these boundaries help must be judged by customer outcomes, unit economics, decision latency, and cross-unit failures—not by the existence of four boxes on an organization chart.
 
 ## Decide where work belongs
 

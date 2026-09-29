@@ -14,5 +14,5 @@ Evidence checked 29 September 2026. The core chapter is a proposed operating mod
 
 ## Scenarios
 
-- The energy-services / equipment conflict is an illustrative example. It does not describe an observed company.
-- Growth headcounts were softened; no universal threshold is asserted.
+- The Aster scaling case is fictional. Its prices, usage, customer counts, and unit boundaries are chosen assumptions, not observations or a forecast.
+- Customer counts are not asserted as universal thresholds for organizational change.

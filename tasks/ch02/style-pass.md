@@ -16,4 +16,4 @@ Completed: 28 September 2026
 
 ## Remaining authoring choice
 
-The chapter uses the debt metaphor to organize practical work. The author should decide whether this language matches their own operating experience and whether the illustrative pricing example should later be replaced by a permissioned real case.
+The chapter uses the debt metaphor to organize practical work. The author should decide whether this language matches their own operating experience. The fictional Aster case does not replace the required permissioned real case.

@@ -6,7 +6,7 @@ Status: existing chapter revised 29 September 2026
 ## Work
 
 - [x] Review existing draft against argument map.
-- [x] Retain concrete capacity-conflict example and unit contract.
+- [x] Retain the unit contract and develop the Aster scaling illustration.
 - [x] Label invented example and distinguish proposal from evidence.
 - [x] Keep claims within evidence boundaries.
 

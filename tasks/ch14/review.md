@@ -19,3 +19,7 @@ Changed categorical wording to conditional risk; no numerical or universal effec
 ## Remaining gate
 
 Compare with named existing models; validate field-kit links/diagrams and perform final multi-format review.
+
+## Aster illustration
+
+Replaced the unrelated capacity scenario with Aster's 100-, 800-, and 4,000-customer stages. The unit equation uses monthly recurring revenue and monthly costs; the optional implementation fee remains separate from ARR. The case makes the shared platform and unit contract concrete without claiming that customer count alone determines structure or that Fractal Units outperform established models. The named-model comparison remains open.
