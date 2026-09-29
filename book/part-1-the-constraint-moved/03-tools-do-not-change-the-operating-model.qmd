@@ -4,11 +4,11 @@ The easiest AI pilot to approve is attached to a task one person already owns. D
 
 That is why early gains appear first in individual work. It is also why they can mislead management about the company.
 
-A randomized field experiment gave half of 6,000 knowledge workers access to generative AI inside their normal office applications. Workers who used the tool spent less time on email and appeared to complete documents faster. Meeting time did not change significantly. The authors' explanation is revealing: behavior that one person could change moved before behavior requiring coordination with others [@dillon-et-al-2025].
+A randomized field experiment across 66 firms assigned access to generative AI to half of 7,137 knowledge workers. Among treated workers who used the tool in more than half of the study weeks, email time fell by about 3.6 hours a week; the intent-to-treat estimate was about 1.3 hours. Document work was modestly faster, while meeting time did not change significantly. The authors found no shift in the quantity or composition of tasks from individual access alone. The result is specific to one integrated office assistant and one six-month study. It supports a narrower point: individual access can change individual routines without, by itself, changing coordinated work [@dillon-et-al-2025].
 
 The tool improved a local action. The shared routine remained intact.
 
-That distinction explains why adoption dashboards and operating results often diverge. A company may report thousands of prompts, broad license activation, and enthusiastic employee stories while decisions still wait for the same executives. The evidence of use is real. The inference about transformation is not.
+That distinction helps explain why adoption dashboards and operating results may diverge. A company may report thousands of prompts, broad license activation, and employee stories while decisions still wait for the same executives. The evidence of use is real; it does not alone establish operating-model change.
 
 Tools spread through tasks because the user can usually decide alone. Operating models change through agreements among people who own different constraints. Sales cannot unilaterally redefine recognized margin. A business unit cannot promise shared engineering capacity that the platform team has not allocated. An agent cannot give itself permission to change a customer contract. These dependencies make system change slower than tool adoption even when everybody likes the tool.
 

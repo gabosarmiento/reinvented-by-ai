@@ -4,9 +4,9 @@ An agent completes a task, the dashboard records success, and the customer leave
 
 The tool returned no error. The workflow closed. The answer was fluent. None of those facts proves that the customer received the right result.
 
-Traditional software observability asks whether a system is available, fast, and producing errors. Those signals remain necessary. Agentic work adds another problem: the system can run exactly as built and still pursue the wrong interpretation, use poor evidence, or produce an undesirable business outcome.
+Traditional software observability asks whether a system is available, responsive, and producing errors. Those signals remain necessary. In an agentic workflow, a system can meet technical service targets while interpreting a request incorrectly, using poor evidence, or producing an undesirable business outcome.
 
-ATOM therefore treats evidence as a product of execution. The system must preserve enough of the path to answer three questions:
+In the ATOM proposal, evidence is an output of execution. A system should preserve enough of the path to answer three questions:
 
 1. What happened?
 2. Did it work for the business and the affected party?
@@ -26,7 +26,7 @@ A useful trace connects:
 - the resulting state in the business system;
 - and later customer, operational, or economic outcomes.
 
-The final state matters. Anthropic's example is exact: an agent saying a flight was booked is not equivalent to a reservation existing [@anthropic-agent-evals-2026]. In company operations, “invoice corrected” should connect to the ledger entry. “Customer retained” should connect to subsequent behaviour. “Decision delegated” should connect to who actually made it.
+The final state matters. Anthropic's 2026 engineering example distinguishes an agent saying a flight was booked from verifying that a reservation exists [@anthropic-agent-evals-2026]. This is first-party guidance, not an independent impact study. In company operations, “invoice corrected” should connect to the ledger entry. “Customer retained” should connect to subsequent behaviour. “Decision delegated” should connect to who actually made it.
 
 Not every trace needs every token or hidden reasoning step. Excessive capture raises cost, privacy exposure, and review burden. Preserve the events needed to reconstruct authority, inputs, actions, control decisions, and outcomes. Store source references and versions where retaining full content would be inappropriate.
 
@@ -56,7 +56,7 @@ One dashboard should not attempt to compress the whole loop into a single “age
 
 **Learning signals** show whether evidence changes the system: new eval cases, recurring failure clusters, stale-source repairs, policy changes, and time from discovery to validated correction.
 
-Commercial agent platforms already expose parts of this pattern. Intercom's reporting separates involvement, resolution, escalation, customer experience, and content performance [@intercom-fin-reporting-2026]. LangSmith groups production traces and supports analysis by errors, latency, cost, feedback, and other dimensions [@langsmith-insights-2026]. These are useful examples, not complete operating models. A company still has to connect agent telemetry to its own economics and obligations.
+Commercial agent platforms expose some of these measures. Intercom's documentation describes its Fin reporting categories; its 2026 definition update also changed the denominator for involvement and resolution metrics [@intercom-fin-reporting-2026]. LangSmith's documentation describes grouping traces and analysis by errors, latency, cost, feedback, and other dimensions [@langsmith-insights-2026]. These are vendor product descriptions, not evidence that the metrics establish business value. A company must connect telemetry to its own economics and obligations.
 
 ## Evaluate before and during use
 
@@ -68,7 +68,7 @@ Different graders answer different questions. Code can verify a database state, 
 
 Pass rate alone hides the failure that matters. Segment by customer type, action, risk level, language, data source, business unit, and version. Track tail latency, cost per successful outcome, human intervention, reversal, and evidence completeness. When a model, prompt, tool, source, or policy changes, compare it with the current system on the same cases before expanding authority.
 
-An evaluation set is not permanent truth. Products, customers, policies, and attacks change. Cases that were difficult can become routine, while new boundaries appear. The set needs ownership and a release cadence.
+An evaluation set is not permanent truth. Products, customers, policies, and attacks change. Cases that were difficult can become routine, while new boundaries appear. Assign an owner and a review cadence; how often to refresh the set depends on the rate of change and consequence.
 
 ## The correct stop is a success
 

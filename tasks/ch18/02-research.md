@@ -1,18 +1,17 @@
 # Research
 
 Chapter: 18 — Accountability Cannot Be Delegated  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; legal sign-off remains open
 
 ## Questions
 
 Research accountability, liability, human oversight, affected-party recourse, audit, non-repudiation, and governance law.
 
-- [ ] Convert each material factual question into a claim-ledger entry.
-- [ ] Prefer primary research, standards, official documentation, law, and original data.
-- [ ] Record contradictory findings and boundary conditions.
-- [ ] Identify where author experience is required; do not fabricate it.
+- [x] Convert material external/legal claims into source-ledger entries.
+- [x] Use current official EU legal text and Commission implementation guidance.
+- [x] Record classification, role, and application-date boundaries.
+- [x] Identify where author experience is required; do not fabricate it.
 
 ## Exit
 
-Create research-notes.md; update the research ledger, future claims index, and case register. Every case has a valid label.
-
+Research notes updated. Qualified legal sign-off remains open.

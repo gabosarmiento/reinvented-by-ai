@@ -1,17 +1,15 @@
 # Evidence Pass
 
 Chapter: 10 — Observe, Prove, Learn  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; final production checks remain open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check product and evaluation claims against current source documentation.
+- [x] Verify scope and distinguish product documentation, engineering guidance, and proposed measures.
+- [x] Remove implication that a dashboard measure proves business value.
+- [x] Recheck dates and source scope.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+External source descriptions are bounded and product documentation limitations stated; final link/render checks remain.

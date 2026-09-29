@@ -1,18 +1,17 @@
 # Research
 
 Chapter: 15 — Allocate Capital, Talent, and Knowledge Dynamically  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; deployment-specific research remains open
 
 ## Questions
 
 Research dynamic funding, stable teams, talent marketplaces, bias, consent, learning transfer, privacy, and labor constraints.
 
-- [ ] Convert each material factual question into a claim-ledger entry.
-- [ ] Prefer primary research, standards, official documentation, law, and original data.
-- [ ] Record contradictory findings and boundary conditions.
-- [ ] Identify where author experience is required; do not fabricate it.
+- [x] Convert material external claims into ledger entries.
+- [x] Prefer official and primary evidence; record its limits.
+- [x] Record boundary conditions and evidence gaps.
+- [x] Identify where author experience is required; do not fabricate it.
 
 ## Exit
 
-Create research-notes.md; update the research ledger, future claims index, and case register. Every case has a valid label.
-
+Research notes and ledger updated. Jurisdiction-specific deployment guidance remains outside this pass.

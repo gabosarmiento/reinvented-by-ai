@@ -2,7 +2,7 @@
 
 An operating model should be drawable without a slide deck.
 
-ATOM has six connected layers and one control plane. Read them clockwise as a loop:
+This book proposes six connected layers and one control plane for describing an operating loop. Read them clockwise:
 
 1. **Intent** states the outcome, priority, boundaries, and time horizon.
 2. **Context** supplies the authorized facts, policy, history, and current state.
@@ -15,7 +15,7 @@ The **control plane** crosses the loop. It provides identity, permissions, limit
 
 ![The canonical ATOM loop: intent enters, evidence returns, and learning changes the next cycle. The control plane constrains the whole loop.](../../assets/diagrams/atom-canonical.png){#fig-atom-canonical fig-alt="A compact clockwise loop connecting Intent, Context, Decision, Human and Agent Execution, Evidence, and Learning. The complete loop sits inside a control-plane boundary containing identity, authority, guardrails, and intervention." width=88%}
 
-That is the complete model. The rest of the book makes each part operational.
+The rest of the book develops this proposed model and shows where each part is useful.
 
 The loop can be entered from two directions. Leadership can begin with intent: a strategic outcome that needs an operating path. Operations can begin with evidence: a recurring failure, customer signal, or exception that reveals the present system. In both cases, ATOM asks the company to connect the whole cycle. Strategy without returning evidence becomes instruction. Evidence without a route to authority becomes reporting.
 
@@ -67,15 +67,11 @@ Evidence is selective, not total surveillance. The company does not need to reta
 
 Learning is not a generic retrospective. Evidence may suggest that the model needs a new evaluation, the context source needs repair, a permission is too broad, a decision threshold is wrong, or the strategy itself failed. These changes belong to different owners. Letting one agent rewrite all of them would collapse learning and control into the same authority.
 
-Approved and reusable changes enter the **ATOM Playbook**: the maintained collection of decision specifications, unit contracts, context products, controls, evaluation cases, and operating lessons used in future loops. It is curated memory, not a transcript archive.
-
-ATOM closes the loop by sending approved changes to intent or context. It does not let every observation alter production behavior immediately.
-
-Approved reusable knowledge enters the **ATOM Playbook**: the maintained set of intent statements, context definitions, decision specifications, unit contracts, controls, evaluation cases, and operating lessons that other loops can apply. The Playbook is not a transcript archive. It contains what the organization has chosen to remember.
+ATOM closes the loop by sending approved changes to intent or context. It does not let every observation alter production behavior immediately. When a lesson should carry to other loops, an owner can add it to the **ATOM Playbook**: a maintained set of decision specifications, context definitions, controls, evaluation cases, and operating lessons. The Playbook is curated organizational memory, not a transcript archive.
 
 ## One refund through the loop
 
-Take a customer who requests a refund after a service failure.
+**Illustrative example.** Take a customer who requests a refund after a service failure.
 
 **Intent** says the company will restore trust quickly while protecting against fraud and preserving consistent treatment. **Context** provides account state, transaction history, service incident, current refund policy, customer communications, and verified identity. **Decision** grants an agent authority to approve standard refunds below a threshold when the service failure and identity are confirmed. **Execution** issues the refund through a payment tool, informs the customer, and opens a service-quality record. **Evidence** retains the sources, policy version, decision, action result, and later repeat contact. **Learning** may reveal that one failure category is creating avoidable refunds and route that pattern to the product owner.
 
@@ -83,7 +79,7 @@ The control plane binds each step. The agent uses a scoped identity. It cannot c
 
 Now alter one condition. The payment system confirms success, but the account ledger fails to update. Execution is only partly complete. Evidence should make the split state visible and trigger recovery. A dashboard that records the agent's tool call as a successful refund would teach the organization the wrong lesson.
 
-The example is small enough to draw and rich enough to expose the architecture. The same grammar can govern a capital allocation, production incident, hiring decision, or new-business experiment. The depth of context and control changes with consequence; the loop does not.
+This example is small enough to draw and exposes the architecture. Similar questions arise in capital allocation, production incidents, hiring, and new-business experiments. The required context and controls depend on the consequences; this loop is a design proposal, not evidence that one template fits every decision.
 
 ## What ATOM is not
 
@@ -91,7 +87,7 @@ ATOM is not an autonomous company. Organizations contain power, conflict, law, i
 
 It is not a technology stack. A company can implement the loop with ordinary databases, workflow tools, meetings, and carefully bounded assistants. New infrastructure is justified only when the current tools cannot provide the needed context, action, or evidence.
 
-It is not a replacement for Lean, Agile, product operating models, or sound functional management. It inherits their concern for flow, feedback, customer value, small batches, and capable teams. It adds a more explicit architecture for decision rights, machine actors, evidence, and control.
+It is not a replacement for Lean, Agile, product operating models, or sound functional management. It draws on their concern for flow, feedback, customer value, small batches, and capable teams. This book's proposed contribution is to make decision rights, machine actors, evidence, and control explicit in one operating loop.
 
 ATOM also resists a weakness common to feedback metaphors: the assumption that the measured target is the right one. A tight loop can optimize the wrong outcome with great efficiency. Leadership remains responsible for choosing intent, listening to people the metric excludes, and stopping a locally successful system that damages the wider company.
 

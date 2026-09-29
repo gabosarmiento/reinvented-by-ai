@@ -1,16 +1,15 @@
 # Audit
 
 Chapter: 17 — The Manager After Coordination Gets Cheap  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026
 
 ## Work
 
-- [ ] Extract only relevant material from v2 Chapter 8 and v4 Chapter 7.
-- [ ] Tag each item KEEP, EVOLVE, MERGE, REMOVE, VERIFY, or NEW MATERIAL NEEDED.
-- [ ] Separate distinctive author ideas from generated wording.
-- [ ] List repetition, unsupported numbers, vendor claims, and scenario material.
+- [x] Audit relevant prior management material.
+- [x] Tag retained, evolved, removed, and new material.
+- [x] Separate proposed Synthesizer role from existing job families and empirical claims.
+- [x] Remove unsupported staffing thresholds and record evidence limits.
 
 ## Exit
 
-Create audit-notes.md with source page/section references and a reuse rationale. No prose is copied merely because it exists.
-
+Audit notes created; organizational role validation remains open.

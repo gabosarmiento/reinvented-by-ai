@@ -1,6 +1,6 @@
 # When Production Gets Cheap {#sec-production-cheap}
 
-A common early failure caused by cheap production is not bad output. It is a company that produces more choices than it can absorb.
+A common failure as production gets cheaper is a company producing more choices than it can absorb. The outputs may be good; the company still has to select, integrate, and act on them.
 
 Consider a founder-COO in a company of forty people. The business is preparing to add a second activity, hire another thirty people, and build its first real layer of management. A Head of Operations is taking over the daily run. This should release the COO to work on structure, capital allocation, and growth.
 
@@ -8,7 +8,7 @@ It does not.
 
 The new business lead can prepare a market analysis in hours. Finance can generate several pricing and margin scenarios. Product and engineering can prototype different offers in parallel. Each team arrives better prepared. Each also arrives with a decision that crosses the boundaries of the company: which assets remain shared, which capability belongs inside the new unit, what risk the center will carry, and what evidence justifies further investment.
 
-The Head of Operations can run the process. Only the COO still holds enough of the company in their head to resolve the tradeoffs. Work has been delegated. Decisions have not.
+The Head of Operations can run the process, while the COO remains the only person with enough cross-company context and authority to resolve the tradeoffs. Teams can carry out the work; consequential decisions still collect at the center.
 
 This is an **illustrative composite**, not a report about a particular company. Its mechanism is common enough to recognize. At forty people, the founder’s intervention can be the shortest path to a good answer. During the move to seventy, then perhaps one hundred and fifty, the same habit becomes part of the architecture. Teams learn to escalate because the founder is fast, informed, and exacting. Managers learn that initiative is welcome until it conflicts with an unstated preference. Shared functions accumulate exceptions. New ventures remain attached to the person who launched them because nobody designed the conditions for transfer to the run.
 
@@ -16,11 +16,11 @@ AI can intensify this dependency. It lowers the effort required to produce an an
 
 ## A real change, stated narrowly
 
-Speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still moves through the same decision, integration, and acceptance cycles. The useful question is not “How fast is AI?” It is “Which constraint moves when this work becomes cheaper?”
+Speed has no organizational meaning until we specify where it occurs and what constrains the complete result. A model can answer in seconds while the company still moves through the same decision, integration, and acceptance cycles. Ask instead: “Which constraint moves when this work becomes cheaper?”
 
 The defensible claim is narrow. The marginal cost and latency of producing *some* cognitive and software artifacts have fallen sharply. The emphasis belongs on *some*. The effect varies by task, quality threshold, workflow, and consequence.
 
-One useful indicator is the price of model inference at a fixed level of benchmark performance. Stanford’s 2025 AI Index reported that the price for a model performing around the GPT-3.5 level on MMLU fell from about $20 per million tokens in November 2022 to $0.07 in October 2024—a decline of more than 280 times [@stanford-ai-index-2025]. Epoch AI, whose data informed that analysis, found very different rates across tasks and performance thresholds: roughly ninefold to nine-hundredfold annual declines in the cases it examined [@cottier-2025]. The spread matters. There is no single “price of intelligence,” and the fastest historical decline should not be projected indefinitely.
+One useful indicator is the price of model inference at a fixed level of benchmark performance. Stanford’s 2025 AI Index reported that the price for a model performing around the GPT-3.5 level on MMLU fell from about $20 per million tokens in November 2022 to $0.07 in October 2024—a decline of more than 280 times [@stanford-ai-index-2025]. Epoch AI, whose data informed that analysis, found very different rates across tasks and performance thresholds: roughly ninefold to nine-hundredfold annual declines in the cases it examined [@cottier-2025]. A September 2026 preprint argues that the measured rate depends heavily on the price unit: posted prices per token continued to fall in its sample, while its short series for estimated cost per completed task did not show a statistically clear decline [@zhu-2026-ai-price]. That result is preliminary and method-dependent. It reinforces a practical distinction: cheaper tokens do not guarantee cheaper completed work.
 
 Inference price is also not workflow cost. A reliable system may require data access, retrieval, tools, orchestration, evaluation, security, human review, and recovery from failure. A cheap model call can sit inside an expensive operating process.
 
@@ -28,25 +28,23 @@ Economist Joshua Gans offers a useful discipline for thinking about that differe
 
 Modern generative systems stretch the prediction framing because they can produce artifacts and, when connected to tools, execute actions. The economic discipline still holds. As execution becomes cheaper, its complements become more important. A company needs to specify who may commit resources, what constraints cannot be bypassed, what evidence must return, and how a bad action can be stopped or reversed. These are not features of the model. They are features of the operating system around it.
 
-Capability has expanded as well. METR’s task-horizon research shows agents completing increasingly long, well-specified tasks in software engineering, machine learning, and cybersecurity [@metr-horizons-2026]. But the researchers warn against turning this into a claim about whole jobs. Their benchmark is concentrated in technical tasks with clear scoring and relatively little organizational context. A 50 per cent success rate is not dependable operation. Messy work, tacit knowledge, competing goals, and institutional consequences change the problem.
+Capability has expanded as well. METR’s latest task-horizon estimates model the task duration at which agents reach specified success probabilities on a suite of more than a hundred software tasks. The tasks are mainly in software engineering, machine learning, and cybersecurity; they are comparatively self-contained and have clear scoring rules [@metr-horizons-2026]. METR says measurements above sixteen hours are unreliable on its current suite. The result is evidence about performance on that task set, not about how long an agent can reliably run a company process. Work with tacit context, competing goals, other people, or consequential exceptions remains a different problem.
 
-The difference between adoption and autonomy is equally important. Stanford’s 2026 AI Index reports AI use in 88 per cent of surveyed organizations, while deployment of agents remains in the single digits across nearly all business functions [@stanford-ai-index-2026]. The survey does not show that 88 per cent of companies have redesigned work or captured value. It shows that contact with AI is broad while delegated execution remains early.
+Stanford’s 2026 AI Index reports that 88 per cent of surveyed organizations adopted AI in 2025; generative AI was used in at least one business function by 70 per cent, while agent deployment remained in the single digits across nearly all functions [@stanford-ai-index-2026]. Adoption figures do not show that companies redesigned work or captured value. They show that broad use and delegated execution are different stages.
 
-These findings justify attention. They do not justify declaring the autonomous company inevitable.
+These findings justify attention. They provide no basis for declaring the autonomous company inevitable.
 
 ## Productivity belongs to a system
 
-“Does AI improve productivity?” is usually too broad a question. Productivity is not an inherent property of a model. It is a result produced by a worker, a task, a tool, a process, and a measure.
+“Does AI improve productivity?” is usually too broad a question. Productivity depends on the worker, task, tool, process, and measure—not on the model alone.
 
-In a staggered rollout involving 5,172 customer-support agents, Erik Brynjolfsson, Danielle Li, and Lindsey Raymond found that access to a generative assistant increased issues resolved per hour by 15 per cent on average. The gain was much larger for novice and lower-skilled workers and small for the most experienced workers [@brynjolfsson-li-raymond-2025]. That is strong evidence for a specific assisted workflow. It is not evidence that every function becomes 15 per cent more productive, or that the assistant can own the customer relationship.
+Recent randomized field studies show why a single productivity number is misleading. In three company-run experiments at Microsoft, Accenture, and a Fortune 100 company, 4,867 developers were randomly offered access to a code-completion assistant. The pooled estimate was about 26 per cent more completed tasks (standard error: 10.3 percentage points); individual experiments were noisy and varied [@cui-et-al-2026]. This measures task completion in those software settings. It does not establish a comparable increase in releases, quality, or business value.
 
-A randomized study of experienced open-source developers reached a different result. Sixteen developers completed 246 real tasks in repositories they knew well. With early-2025 AI tools, they took 19 per cent longer, even though they believed the tools had made them faster [@becker-et-al-2025]. The sample was small and the result belongs to those developers, repositories, tasks, and tools. It should not become a general claim that coding agents slow engineers.
+A separate randomized study examined sixteen experienced open-source developers working in repositories they knew well. With early-2025 tools, they took 19 per cent longer to complete 246 tasks, despite expecting the tools to save time [@becker-et-al-2025]. The sample is small and specific to its developers, repositories, tasks, and tools. It should not become a general claim that AI slows software work.
 
-Nor should it be dismissed because tools improved later. When METR tried to update the estimate in 2026, participation choices, task selection, non-compliance, and concurrent agent work made the treatment effect difficult to identify. The researchers thought newer systems probably offered more acceleration, but described the evidence for the magnitude as weak [@metr-uplift-2026]. The methodological difficulty is itself instructive: once people delegate, supervise several runs, or choose different work because an agent is available, keyboard time stops being an adequate measure.
+METR’s February 2026 update reports that its attempt to estimate effects from later tools was compromised by selection: some developers and tasks were missing because they preferred to use AI, while concurrent agent work made time accounting difficult. The researchers considered speedups plausible but said their new data was weak evidence of the size [@metr-uplift-2026]. Once people choose different tasks, delegate several runs, or work while agents run, time spent on a single task no longer captures the full result.
 
-The support and software studies do not cancel each other. They describe different systems. One offered recommendations inside a high-volume workflow with observable outcomes. The other involved experienced maintainers changing mature codebases where understanding, integration, and review are substantial parts of the work. A person may become faster at a task while the system around that person remains unchanged—or becomes slower under the added load.
-
-DORA’s 2025 research on software delivery describes AI as an amplifier of the surrounding organization: strong systems can convert local acceleration into performance, while weak ones can produce instability faster [@dora-2025]. That finding is observational, not proof of a universal law. It nevertheless points toward the right unit of analysis. Faster generation alone does not tell us how much organizational value was created.
+These studies differ in task, population, and measurement. The larger field experiments count completed tasks after access to a coding assistant; METR studied experienced maintainers doing work in familiar, mature repositories. Neither measures the full cost of review, integration, operation, or maintenance. DORA’s 2025 software-delivery research also reports that AI’s effects depend on the surrounding organizational system. Its survey design supports a scoped association, not a universal causal rule [@dora-2025]. For the COO, the working question is whether a specific workflow turns output into accepted work and a worthwhile outcome.
 
 We need four different words:
 
@@ -109,7 +107,7 @@ An agent selecting investments still needs an objective and evidence of decision
 
 The claim also has boundaries. It is strongest in digital, decomposable, repeated work with observable results. Physical constraints may dominate manufacturing or logistics. Trust and relationship may dominate negotiation or care. Ambiguous strategy cannot be made sound merely by generating more strategic options. Stable processes should not be made fluid for the sake of appearing modern.
 
-The point is not that production no longer matters. It is that production can no longer be assumed to be the limiting step.
+Production still matters. It can no longer be assumed to be the limiting step.
 
 ## What to do on Monday
 

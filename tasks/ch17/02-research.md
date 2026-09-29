@@ -1,18 +1,17 @@
 # Research
 
 Chapter: 17 — The Manager After Coordination Gets Cheap  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; organizational validation remains open
 
 ## Questions
 
 Research managerial coordination, spans/layers, work design, psychological safety, human-agent teams, and coaching evidence.
 
-- [ ] Convert each material factual question into a claim-ledger entry.
-- [ ] Prefer primary research, standards, official documentation, law, and original data.
-- [ ] Record contradictory findings and boundary conditions.
-- [ ] Identify where author experience is required; do not fabricate it.
+- [x] Convert material external claims into ledger entries.
+- [x] Use recent randomized studies and record their task-specific boundaries.
+- [x] Record the lack of evidence on structure, spans, and managerial role changes.
+- [x] Identify where author experience is required; do not fabricate it.
 
 ## Exit
 
-Create research-notes.md; update the research ledger, future claims index, and case register. Every case has a valid label.
-
+Research notes and ledger updated. Organizational validation remains open.

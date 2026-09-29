@@ -1,7 +1,7 @@
 # Research Ledger
 
-Status: manuscript evidence pass completed 12 September 2026
-Scope: sources used to test the book’s premises, develop ATOM, and support finalized chapter claims.
+Status: rolling chapter-by-chapter evidence pass through 29 September 2026
+Scope: sources used to test the book’s premises, develop ATOM, and support chapter claims. Chapters 1–18 reviewed through 29 September 2026; front/back matter remains to review.
 
 ## Evidence rules
 
@@ -45,9 +45,9 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **URL:** https://academic.oup.com/qje/article/140/2/889/7990658
 - **Publication:** National Bureau of Economic Research working paper; published in *Quarterly Journal of Economics* 140(2) in 2025.
 - **Date:** Published online 4 February 2025; May 2025 issue.
-- **Why it matters:** Provides credible evidence of value in a specific assisted workflow and demonstrates that gains vary by experience.
-- **Chapter:** Chapters 1 and 7.
-- **Limitations/notes:** Assistive customer support is not autonomous execution and cannot support claims about all knowledge work. The earlier working-paper version reported 5,179 agents and a 14% average gain; Chapter 1 uses the final journal sample and estimate.
+- **Why it matters:** Historical benchmark for an assisted workflow and evidence that effects vary by experience.
+- **Chapter:** Reviewed for Chapter 1; excluded from the current manuscript because the underlying data are outside the two-year evidence window.
+- **Limitations/notes:** Although published in 2025, the field data are from 2020–2021. The result is not used to support current productivity claims. The earlier working-paper version reported 5,179 agents and a 14% average gain.
 
 ### S004 — AI can reduce experienced-developer productivity in real codebases
 
@@ -71,16 +71,16 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **Chapter:** Chapters 1 and 7.
 - **Limitations/notes:** Current task distribution is primarily software engineering, ML, and cybersecurity; measurements above sixteen hours are flagged as unreliable on the current suite.
 
-### S006 — Individual tool use does not automatically change coordinated work
+### S006 — Individual tool use can affect routines without changing task composition
 
-- **Claim:** In a six-month randomized field experiment involving 6,000 workers, access to generative AI changed independently adjustable behaviors such as email time and document completion, but did not significantly change time spent in meetings.
-- **Source:** Dillon, Jaffe, Immorlica, and Stanton, *Shifting Work Patterns with Generative AI*.
-- **URL:** https://www.microsoft.com/en-us/research/publication/shifting-work-patterns-with-generative-ai/
-- **Publication:** Microsoft Research.
-- **Date:** April 2025.
-- **Why it matters:** Strongly supports the book’s distinction between task acceleration and operating-model redesign.
+- **Claim:** A six-month randomized field experiment across 66 firms and 7,137 knowledge workers found that frequent users in the treatment group spent about 3.6 fewer hours per week on email (intent-to-treat estimate about 1.3 hours); meeting time did not significantly change, and researchers did not detect shifts in task quantity or composition from individual access alone.
+- **Source:** Dillon, Jaffe, Immorlica, and Stanton, *Shifting Work Patterns with Generative AI*, November 2025 NBER revision.
+- **URL:** https://www.nber.org/papers/w33795
+- **Publication:** National Bureau of Economic Research, Working Paper 33795, revised November 2025.
+- **Date:** Issue date May 2025; revised November 2025.
+- **Why it matters:** Supports the bounded distinction between individual routine changes and measured system-level changes; it does not show that task, workflow, and operating-model effects always separate.
 - **Chapter:** Chapter 3.
-- **Limitations/notes:** Obtain and inspect the full paper before using detailed estimates. Product access and first-year behavior do not establish long-term effects.
+- **Limitations/notes:** The experiment tested individual access to one integrated office assistant over six months. The 3.6-hour estimate is for treated workers who used the tool in more than half the study weeks; the intent-to-treat estimate is about 1.3 hours. Several authors are Microsoft employees and the experiment concerned Microsoft 365 Copilot. Does not establish long-term effects or outcomes of coordinated redesign.
 
 ### S007 — Simple, composable agent patterns are often preferable
 
@@ -115,16 +115,16 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **Chapter:** Chapters 9, 10, and 16.
 - **Limitations/notes:** A first-party account of one company and product. Do not present it as proof of general effectiveness.
 
-### S010 — MCP authorization matured from connection to enterprise control
+### S010 — MCP authorization continues to change
 
-- **Claim:** MCP authorization specifies OAuth-based access, resource-bound tokens, audience validation, and prohibitions on token passthrough; 2026 extensions add centrally managed authorization and machine-to-machine credentials.
-- **Source:** *Authorization — Model Context Protocol*; *Enterprise-Managed Authorization: Zero-touch OAuth for MCP*.
-- **URL:** https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization
+- **Claim:** The July 2026 MCP specification adds issuer validation and binds client credentials to the issuing authorization server; enterprise-managed authorization is available as an extension.
+- **Source:** *The 2026-07-28 Specification*; *The New MCP Roadmap*.
+- **URL:** https://blog.modelcontextprotocol.io/posts/2026-07-28/
 - **Publication:** Model Context Protocol project.
-- **Date:** Specification dated 18 June 2025; enterprise-managed authorization announced 18 June 2026.
+- **Date:** 28 July 2026 specification; roadmap updated 22 August 2026.
 - **Why it matters:** Shows that tool connectivity creates organization-level questions about delegated authority, identity, policy, and audit.
 - **Chapter:** Chapters 5, 9, and 16.
-- **Limitations/notes:** Verify against the final 2026-07-28 specification before manuscript publication. Protocol support does not ensure secure implementation.
+- **Limitations/notes:** MCP authorization and agent identity remain in active development. Protocol support does not ensure secure implementation or replace host application controls. Recheck the current specification and extension status before publication.
 
 ### S011 — Agent identity and authority are active standards problems
 
@@ -161,14 +161,14 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 
 ### S014 — EU requirements make logging and human oversight operational concerns
 
-- **Claim:** The EU AI Act framework requires, for covered high-risk systems when applicable, risk management, logging/traceability, documentation, information for deployers, human oversight, robustness, cybersecurity, and accuracy; transparency and other provisions follow a staged timeline.
+- **Claim:** The European Commission states that transparency rules apply from August 2026. Following the July 2026 AI Omnibus, specified high-risk use cases are scheduled to apply from 2 December 2027 and high-risk AI embedded in regulated products from 2 August 2028; requirements vary by legal role and system category.
 - **Source:** *AI Act — Regulatory Framework for AI* and implementation FAQ.
 - **URL:** https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
 - **Publication:** European Commission, Shaping Europe’s Digital Future.
-- **Date:** Updated August 2026; AI Act generally applicable 2 August 2026 with later dates for specified high-risk rules following the 2026 AI Omnibus.
+- **Date:** Commission page last updated 3 August 2026; AI Omnibus entered into force 27 July 2026.
 - **Why it matters:** Demonstrates that controls, logs, documentation, and oversight are not optional abstractions for affected organizations.
 - **Chapter:** Chapters 9, 16, and 18.
-- **Limitations/notes:** Legal timelines and scope changed in 2026 and may change again. Obtain legal review; the book must not give legal advice.
+- **Limitations/notes:** This summary is not legal advice or a system classification. Specific obligations, exceptions, and dates depend on role and use. Recheck final law/guidance and obtain legal review before publication.
 
 ### S015 — Multi-task workplace agents remain substantially weaker than single-task benchmarks suggest
 
@@ -290,6 +290,110 @@ Scope: sources used to test the book’s premises, develop ATOM, and support fin
 - **Why it matters:** Provides an early, scoped signal for the management argument that problem knowledge grows in relative importance as implementation becomes cheaper.
 - **Chapter:** Chapter 17.
 - **Limitations/notes:** Product-specific, company-reported observational analysis. The manuscript labels the inference and does not generalize the reported effect.
+
+### S026 — Randomized developer studies find gains that vary by setting
+
+- **Claim:** Three company-run randomized field experiments at Microsoft, Accenture, and an anonymous Fortune 100 company pooled results from 4,867 developers given access to a code-completion assistant. The pooled estimate was 26.08% more completed tasks (standard error 10.3 percentage points); individual experiments were noisy and varied.
+- **Source:** Cui, Demirer, Jaffe, Musolff, Peng, and Salz, *The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers*.
+- **URL:** https://pubsonline.informs.org/doi/10.1287/mnsc.2025.00535
+- **Publication:** *Management Science*, published online 27 February 2026.
+- **Why it matters:** Adds recent, large-sample randomized evidence to the productivity discussion and illustrates why task completion should not be conflated with shipped software or business value.
+- **Chapter:** Chapter 1.
+- **Limitations/notes:** The authors report noisy, varying estimates across the three experiments. The outcome is task completion after access to code-completion assistance; it is not a direct measure of production releases, software quality, or end-to-end value. The pooled estimate should not be generalized across jobs or tools.
+
+### S027 — Token prices and cost per completed task can diverge
+
+- **Claim:** A September 2026 preprint constructs price indices from posted inference prices, benchmark performance, and estimated token consumption. It reports falling per-token prices but does not establish a fall in per-task prices over the short window available for that comparison.
+- **Source:** Zhu, *The Price of Intelligence: A Quality-Adjusted Price Index for AI Services*.
+- **URL:** https://arxiv.org/abs/2608.29843
+- **Publication:** arXiv preprint, posted 30 August 2026.
+- **Why it matters:** It distinguishes a provider’s unit price from a buyer’s cost of completing a useful task, strengthening the book’s insistence on measuring total workflow economics.
+- **Chapter:** Chapter 1.
+- **Limitations/notes:** Not peer reviewed. The task-denominated series covers only a few months and its estimate is explicitly imprecise. Treat the result as an emerging measurement issue, not settled evidence that task prices have stopped declining.
+
+### S028 — Organizational debt remains an emerging concept
+
+- **Claim:** A 2024 multivocal literature review describes organizational debt in software engineering as an emerging concept. It synthesized nine peer-reviewed articles and 22 practitioner posts, and identified outdated structures, policies, and processes as one recurring definition.
+- **Source:** Al-Baik, Abu Alhija, Abdeljaber, and Ovais Ahmad, *Organizational Debt—Roadblock to Agility in Software Engineering*.
+- **URL:** https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0308183
+- **Publication:** *PLOS ONE*, 19(11), published 25 November 2024.
+- **Why it matters:** Establishes the nearest recent literature context for Hidden Operational Debt, while leaving room for the book’s workflow-trace definition and diagnostic model.
+- **Chapter:** Chapter 2.
+- **Limitations/notes:** The review itself calls for more empirical research; it includes practitioner posts and its literature search is limited through June 2024. It supports conceptual context only, not the prevalence or economic effect of the six categories in this book.
+
+### S029 — Agent evaluations can verify intermediate actions and end states
+
+- **Claim:** Anthropic's January 2026 evaluation guide describes task checks for end-state conditions, required tool calls, interaction quality, and latency.
+- **Source:** *Demystifying Evals for AI Agents*.
+- **URL:** https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+- **Publication:** Anthropic, 9 January 2026.
+- **Why it matters:** Supports the chapter's distinction between an agent's transcript and the state of the customer or system after execution.
+- **Chapter:** Chapter 2.
+- **Limitations/notes:** First-party engineering guidance; it documents an evaluation practice, not independent evidence that the practice improves business results.
+
+### S030 — Metric definitions can change what an agent dashboard reports
+
+- **Claim:** Intercom's 2026 documentation changed Fin involvement and resolution-rate definitions to exclude conversations where the agent could not answer; its overall automation rate was unchanged.
+- **Source:** *Update to Fin Performance Metrics*.
+- **URL:** https://www.intercom.com/help/en/articles/15599377-update-to-fin-performance-metrics
+- **Publication:** Intercom, updated in 2026; accessed 28 September 2026.
+- **Why it matters:** A concrete example of a provider revising denominator definitions after identifying constrained cases that distorted reported performance.
+- **Chapter:** Chapter 2.
+- **Limitations/notes:** Vendor documentation describes metric changes in its own product. It does not independently establish customer outcome or productivity effects.
+
+### S031 — Production trace tools can group patterns and expose source records
+
+- **Claim:** Current LangSmith documentation describes grouping production traces by recurring categories while retaining links to traces and displaying error, latency, cost, and evaluator feedback summaries.
+- **Source:** *Discover Errors and Usage Patterns with Insights*.
+- **URL:** https://docs.langchain.com/langsmith/insights
+- **Publication:** Current product documentation; accessed 28 September 2026.
+- **Why it matters:** Shows that trace-level drill-down and category summaries are implementable features in current observability tools.
+- **Chapter:** Chapter 2.
+- **Limitations/notes:** Vendor documentation establishes product capability, not evaluation accuracy or organizational value.
+
+### S032 — Boundary management relates to team performance, with contingent effects
+
+- **Claim:** A 2025 meta-analysis synthesizes 85 primary studies covering 10,848 teams and finds a positive overall association between team boundary management and team performance. Effects vary with who performs boundary work, what it targets, and whether activities span or strengthen boundaries; in the analysis, spanning activities and extra-organizational targets showed stronger effects.
+- **Source:** Leicht-Deobald et al., “A Contingency Framework for the Performance Consequences of Team Boundary Management: A Meta-Analysis of 30 Years of Research.”
+- **URL:** https://pubmed.ncbi.nlm.nih.gov/39781564/
+- **Publication:** *Journal of Management*, 51(2), 704–747.
+- **Date:** Issue February 2025 (published online November 2023).
+- **Why it matters:** Supports treating team boundaries and cross-team activity as design questions with contextual effects, not assuming autonomy or standardization is always beneficial.
+- **Chapter:** Chapter 14.
+- **Limitations/notes:** The synthesis covers varied teams and boundary activities over 30 years, not the book's proposed Fractal Units or AI-enabled companies. It supports boundary-management nuance, not a causal claim that adopting this chapter's unit contract improves performance.
+
+### S033 — Employer-reported benefits and concerns in algorithmic management
+
+- **Claim:** An OECD survey of employers reports manager-perceived changes in decision quality and also trustworthiness concerns including bias, explainability, accountability, worker health, and worker notice. The report notes country differences in perceived bias effects.
+- **Source:** Milanez, Lemmens, and Ruggiu, *Algorithmic Management in the Workplace: New Evidence from an OECD Employer Survey*.
+- **URL:** https://www.oecd.org/en/publications/algorithmic-management-in-the-workplace_287c13c4-en.html
+- **Publication:** OECD Artificial Intelligence Papers, No. 31.
+- **Date:** 6 February 2025.
+- **Why it matters:** Supports keeping AI-assisted workforce allocation reviewable and contestable, while accounting for affected workers.
+- **Chapter:** Chapter 15.
+- **Limitations/notes:** Employer survey and manager perceptions, not worker-level outcome measurement or evidence about internal talent marketplaces. It does not show causal productivity gains or validate the chapter's proposed allocation practice.
+
+### S034 — Agentic security guidance identifies identity, tool, and delegation risks
+
+- **Claim:** OWASP's December 2025 Agentic Applications Top 10 includes risks such as agent goal hijacking, tool misuse, identity and privilege abuse, supply-chain vulnerabilities, insecure inter-agent communication, cascading failures, human-agent trust exploitation, and rogue agents.
+- **Source:** OWASP GenAI Security Project, *OWASP Top 10 for Agentic Applications*.
+- **URL:** https://genai.owasp.org/2025/12/09/owasp-top-10-for-agentic-applications-the-benchmark-for-agentic-security-in-the-age-of-autonomous-ai/
+- **Publication:** OWASP GenAI Security Project.
+- **Date:** 9 December 2025.
+- **Why it matters:** Supports considering agent-specific failure paths in deployment control and incident design.
+- **Chapter:** Chapter 16.
+- **Limitations/notes:** Practitioner threat taxonomy, not prevalence estimates or proof that any particular control is effective.
+
+### S035 — AI changed collaboration outcomes in a bounded product-development field experiment
+
+- **Claim:** A preregistered field experiment with 791 Procter & Gamble professionals working on real product-innovation challenges found that AI-assisted individuals performed at the level of unaided teams and produced more balanced solutions across commercial and R&D perspectives; the article also measured social engagement and expertise integration.
+- **Source:** Dell'Acqua et al., *The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork*.
+- **URL:** https://pubsonline.informs.org/doi/10.1287/orsc.2025.20702
+- **Publication:** *Organization Science*, online 2026.
+- **Date:** Published online 2026; accessed 29 September 2026.
+- **Why it matters:** Provides a recent experimental case for discussing AI's possible effect on collaboration and expertise sharing.
+- **Chapter:** Chapter 17.
+- **Limitations/notes:** One company, product-development tasks, and experimental setup. Does not test management structures, job design over time, or universal substitution of team roles.
 
 ## Research gaps before drafting
 

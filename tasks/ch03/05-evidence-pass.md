@@ -1,17 +1,16 @@
 # Evidence Pass
 
 Chapter: 3 — Why Tools Do Not Change the Operating Model  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; final production checks remain open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check every number, date, company, technical capability, prediction, and regulatory statement.
+- [x] Verify that each source supports the exact sentence and population/task claimed.
+- [x] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
+- [x] Remove orphan citations and false precision.
+- [x] Recheck the field study against its November 2025 revision.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+The chapter's material external claim has ledger entry S006 and its scope limits are stated. The examples are illustrative. Final link and render checks remain for the production gate.

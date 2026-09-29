@@ -1,17 +1,17 @@
 # Evidence Pass
 
 Chapter: 9 — Governance in the Work  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; publication-time legal/security check remains open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check material security, protocol, and legal claims against current primary sources.
+- [x] Update MCP citation and summarize only July 2026 authorization changes.
+- [x] Correct AI Act schedule to the current Commission page after July 2026 amendments.
+- [x] State legal-role/scope caveats and separate first-party guidance from law.
+- [x] Recheck source dates and limitations.
+- [ ] Obtain final publication-time legal and protocol review.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+Current legal dates are in S014 and the cited official Commission page; current MCP evidence in S010. Final legal/security review remains open.

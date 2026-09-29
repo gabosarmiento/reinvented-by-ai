@@ -71,7 +71,7 @@ People are not compute. Team cohesion, domain knowledge, consent, development, a
 
 The home team should feel the cost. If another unit receives a specialist without replacing capacity or reducing commitments, the “dynamic” allocation merely transfers an invisible queue.
 
-The person should also see and challenge the information used to suggest the match. Project history may be incomplete. Self-declared interests may be old. Performance data may be sensitive or inappropriate for the decision. A recommendation can broaden opportunity only if it does not become an opaque assignment system.
+The person should also see and challenge the information used to suggest the match. Project history may be incomplete. Self-declared interests may be old. Performance data may be sensitive or inappropriate for the decision. A recommendation can broaden opportunity only if it does not become an opaque assignment system. A 2025 OECD employer survey on algorithmic management found that managers perceived decision-quality benefits while also reporting concerns including bias, explainability, accountability, worker health, and lack of notice; the survey captures employer reports, not independently measured effects on workers [@oecd-algorithmic-management-2025]. That is a reason to keep allocation recommendations reviewable and contestable, not evidence that a talent-matching system will improve allocation.
 
 **Illustrative example.** The newer business unit needs a reliability engineer for six weeks. An internal matching assistant identifies three people from project histories and declared interests. The highest-ranked candidate is carrying an incident-recovery commitment invisible to the model. The second is interested and accepts a time-bounded assignment. Her home team receives backfill capacity, and the platform lesson becomes a shared standard rather than private expertise.
 
@@ -120,6 +120,6 @@ The review begins with constrained resources, not every project. Give an approve
 7. identify knowledge products that are stale, duplicated, or widely reused without an owner;
 8. generate three allocation scenarios with explicit assumptions and reversibility.
 
-The portfolio group does not accept the model's ranking. It uses the analysis to make opportunity cost visible, decides which commitments change, and records what evidence would cause the next change.
+The portfolio group does not accept the model's ranking. It uses the analysis to make opportunity cost visible, decides which commitments change, and records what evidence would cause the next change. This is a design recommendation; current evidence does not establish that AI-generated portfolio scenarios produce better enterprise returns.
 
 Capital moves when an option earns another commitment. Talent moves through a contract that respects teams and people. Knowledge travels after it becomes reliable enough to reuse. Adaptability comes from changing deliberately, not keeping everything in motion.

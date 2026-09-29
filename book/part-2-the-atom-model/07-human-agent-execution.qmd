@@ -2,7 +2,7 @@
 
 The phrase “human in the loop” hides more than it explains. Which human? At what point? With what information? Able to change what? Accountable for which consequence?
 
-The phrase is reassuring because it suggests that somebody remains in control. In practice, the person may receive hundreds of approvals, see only the agent's summary, or lack the authority to correct the underlying rule. A human presence is not the same as human control.
+The phrase can suggest that somebody remains in control. In a poorly designed process, a person may receive more approvals than they can assess, see only a summary, or lack authority to correct the underlying rule. Human presence alone does not establish meaningful control.
 
 Execution design starts with the work. It assigns each part to the mechanism best suited to it, then makes the boundaries explicit.
 
@@ -12,7 +12,7 @@ Stable, explicit rules belong in deterministic software. Language models are use
 
 These mechanisms can appear in one loop. A customer agent reads a free-form complaint, a deterministic service checks identity and payment status, the model proposes a remedy, a rule verifies that the amount is within policy, and a person handles the exceptional case. Calling the whole thing “the agent” obscures where reliability and authority actually come from.
 
-Agent builders make a useful distinction between workflows, whose paths are largely defined in code, and agents, which choose their own steps and tools. Anthropic recommends starting with the simplest pattern that works because greater flexibility generally adds latency, cost, and new failure modes [@anthropic-building-effective-agents-2024]. That engineering advice translates directly into organization design: discretion should be purchased only where it creates value.
+Agent builders use different definitions, but a useful distinction is between workflows with predefined code paths and agents that dynamically select steps and tools. Anthropic's December 2024 engineering guidance recommends starting with the simplest sufficient pattern and notes that agentic systems trade latency and cost for task performance [@anthropic-building-effective-agents-2024]. This is practitioner guidance, not a general comparative study. For organization design, add discretion only where it is expected to create value and can be evaluated.
 
 | Level | System behaviour | Human role |
 |---|---|---|
@@ -45,7 +45,7 @@ Good decomposition creates small interfaces and preserves end-to-end evidence. T
 
 ## Design the handoff
 
-The most expensive failures occur at boundaries. An agent escalates without the work it performed. A human approves without seeing the source. Two agents pass summaries until the original constraint disappears. A reviewer becomes a rubber stamp because rejecting the action takes longer than accepting it.
+Boundary failures can be costly. An agent may escalate without the work it performed; a human may approve without the source; two agents may pass summaries until the original constraint is lost. A reviewer may become a rubber stamp if rejecting an action takes longer than accepting it.
 
 A **handoff contract** contains six elements:
 
@@ -76,7 +76,7 @@ An override is not automatically evidence that the agent was wrong. The person m
 
 ## The Synthesizer
 
-ATOM retains one distinctive role: the **Synthesizer**. This is not an AI whisperer, meeting facilitator, or universal approver. The Synthesizer maintains coherence across a consequential loop.
+ATOM retains one distinctive role: the **Synthesizer**. This is not an AI whisperer, meeting facilitator, or universal approver. The Synthesizer helps maintain coherence across a consequential loop.
 
 The role connects intent to the current operating state, exposes conflicts among functions, makes missing decisions visible, and ensures that evidence reaches the owner who can change the system. In a small company the COO may act as Synthesizer. In a business unit it may be the general manager, chief of staff, product-operations lead, or another operator with enough range and trust.
 
@@ -95,7 +95,7 @@ The role should shrink its own dependency. A good Synthesizer improves interface
 
 Several agents can explore in parallel, challenge one another, or divide specialized work. They also create more handoffs, duplicated effort, conflicting state, difficult attribution, and larger cost.
 
-Use multiple agents when the work has genuinely separable branches, breadth matters, or independent comparison has value. Anthropic's account of its research system describes an orchestrator assigning parallel searches to workers, then a separate citation process. It also describes early failures: excessive spawning, endless searches, and coordination overhead [@anthropic-multi-agent-research-2025]. That is a useful antidote to the idea that a digital organization chart is automatically sophisticated.
+Use multiple agents when the work has separable branches, breadth matters, or independent comparison has value. Anthropic's 2025 account of its research system reports strong results on an internal research evaluation, alongside roughly four times the tokens for a single-agent interaction and fifteen times for its multi-agent system. It also describes excessive spawning, unproductive searches, and coordination overhead [@anthropic-multi-agent-research-2025]. This is company-reported performance on a research task, not independent evidence for organizational workflows. Match parallel agents to separable, valuable work and measure the added cost.
 
 Most recurring company processes do not need a swarm. A defined workflow with one model, a few tools, and deterministic checks is often easier to understand and operate. Multi-agent designs earn their complexity when parallelism changes elapsed time, specialisation changes quality, or independent paths reduce a material risk.
 
@@ -103,7 +103,7 @@ If multiple agents are used, define a shared task record, unique actor identitie
 
 ## Learn the boundary before raising autonomy
 
-The first live version should usually operate below its intended authority. In shadow mode it observes cases and produces proposed actions without committing them. The team compares those proposals with actual decisions and outcomes. It then releases a narrow class of cases and watches the boundaries.
+For a consequential first deployment, one option is to begin below the intended authority. In shadow mode the system proposes actions without committing them; the team compares these with actual decisions and outcomes. If the comparison supports it, release a narrow case class and monitor the boundaries. Shadow mode itself does not establish safety or value.
 
 Raise autonomy when the system demonstrates that it can recognize its scope, obtain valid context, use permitted tools, stop on prohibited conditions, hand off coherently, and produce the expected outcome. Lower it when context quality deteriorates, failure concentration rises, the environment changes, or review data shows that people are repeatedly correcting the same pattern.
 

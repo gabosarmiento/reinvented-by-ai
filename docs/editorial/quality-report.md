@@ -1,7 +1,7 @@
 # Editorial Quality Report
 
-Updated: 12 September 2026  
-Scope: chapters finalized to date
+Updated: 29 September 2026
+Scope: Chapters 1–18 editorial checkpoints; final production status is tracked separately
 
 ## Scoring rule
 
@@ -9,7 +9,7 @@ Each chapter is scored from 1 to 5. A chapter cannot be final if any category is
 
 ## Chapter 1 — When Production Gets Cheap
 
-Final prose word count: **2,533** (headings and table included; Mermaid source and bibliography excluded)
+Final prose word count: **2,544** (headings and table included; Mermaid source and bibliography excluded)
 
 | Category | Score | Basis |
 |---|---:|---|
@@ -26,13 +26,68 @@ Quality gate: **PASS**
 
 ## Evidence and claim checks
 
-- Nine citation keys resolve against `book/references.bib`.
+- Ten citation keys resolve against `book/references.bib`.
 - Gans’s book supports the prediction, decision, complements, automation, and system-effects frame. The manuscript’s extension to authority, evidence, and recovery for tool-using agents is explicitly its own inference.
-- The final journal version of *Generative AI at Work* replaces the superseded working-paper sample and estimate.
+- The 2025 customer-support study was removed from the current evidence base because its field data were collected in 2020–2021, outside the requested two-year window.
+- Added the 2026 pooled developer field experiments and preserved their noisy, varying estimates and task-completion outcome limits.
+- Added the August 2026 inference-price preprint as preliminary evidence; it explicitly does not establish a per-task price decline over its short observation window.
+- The early-2025 METR result remains as a bounded counterexample, paired with the February 2026 update on selection and measurement limitations.
+- Stanford’s 2026 AI adoption figures now distinguish overall organizational adoption, generative AI use, and agent deployment.
+
+## Chapter 2 — Hidden Operational Debt
+
+- Editorial and evidence checkpoint: 29 September 2026.
+- The six-category taxonomy is presented as an author-developed diagnostic lens; evidence for organizational debt remains limited.
+- The debt register distinguishes design gap from recurring work/exposure and avoids implying a financial valuation.
+- Vendor practice examples are explicitly separated from independent impact evidence.
+- Final author-experience case and production gate remain open (see `tasks/ch02/review.md`).
+
+## Chapter 3 — Why Tools Do Not Change the Operating Model
+
+- Editorial and evidence checkpoint: 29 September 2026.
+- Updated the Microsoft field study to the November 2025 NBER revision, with the frequent-user and intent-to-treat estimates identified separately.
+- Kept the interpretation narrow to one integrated office assistant and six months; individual access alone did not detectably shift task quantity/composition or meeting time in that study.
+- Final production checks have not been run; see `tasks/ch03/review.md`.
+
+## Chapter 4 — ATOM: Intent In, Evidence Out
+
+- Editorial checkpoint: 29 September 2026.
+- The architecture is explicitly framed as this book's proposal, not an established or validated model.
+- Removed a duplicate Playbook definition, labeled the refund scenario illustrative, and bounded generalization to other decisions.
+- Final diagram, links, terminology, and multi-format checks have not been run; see `tasks/ch04/review.md`.
+
+## Chapter 5 — Context Is Infrastructure
+
+- Editorial and source checkpoint: 29 September 2026.
+- Distinguished first-party engineering guidance, voluntary risk guidance, and proposed operating practice; bounded prompt-injection protections as risk reduction, not elimination.
+- Added data access/retention instruction and required owner validation of context boundaries.
+- Final terminology, source-link, access-policy, and multi-format checks have not been run; see `tasks/ch05/review.md`.
+
+## Chapters 6–13 — Decision design, execution, control, evidence, and first loop
+
+- Editorial/source checkpoint: 29 September 2026.
+- Chapters 6–7 bound proposed decision-rights and autonomy frameworks and separate first-party vendor guidance from impact evidence.
+- Chapter 8 remains an explicitly fictional composite; its claims of universal current-tool feasibility were replaced with conditional language. Per-action capability checks are still required before production.
+- Chapter 9's MCP reference and AI Act schedule were updated against the 2026-07-28 protocol release and current European Commission page after the July 2026 amendments.
+- Chapter 10 distinguishes product telemetry from business-outcome evidence.
+- Chapters 11–13 present pilot selection, a 30-day build sequence, and value review as proposed practices, not validated universal methods. Shadow mode limitations and the evidentiary limits of causal comparisons remain explicit.
+- Finalization, source link checks, glossary/terminology checks, diagram review, and HTML/EPUB/PDF rendering have not been completed for these chapters.
 - The opening is explicitly labeled **ILLUSTRATIVE COMPOSITE** and does not imply a real company case.
 - The five-queue mechanism is treated as author inference; the total-cost expression is labeled a checklist, not an accounting standard.
 - Headcount forecasts, displacement claims, universal productivity coefficients, and job-automation claims are excluded.
 - All current external claims appear in `docs/research/sources.md` with limitations.
+
+## Style and consistency checks
+
+## Chapters 14–18 — Scale, agent operations, management, and accountability
+
+- Editorial/evidence checkpoint: 29 September 2026.
+- Chapter 14 frames Fractal Unit as a proposed term, adds bounded recent team-boundary evidence, and explicitly notes overlap with existing operating models. A substantive comparison remains an editorial release condition.
+- Chapter 15 adds recent OECD employer-survey evidence only to motivate reviewable workforce allocation; it does not claim talent-marketplace or portfolio-ranking efficacy.
+- Chapter 16 cites current NIST agent identity work and OWASP 2025 threat taxonomy, clearly as guidance rather than proof of control effectiveness. The incident scenario is illustrative.
+- Chapter 17 uses recent randomized evidence on work patterns and team collaboration while stating these studies do not validate a management structure or role redesign. Removed unsupported headcount thresholds.
+- Chapter 18 updates AI Act oversight wording and the post-Omnibus timeline against current Commission material; legal scope/sign-off remains open.
+- Final legal/security review, link and worksheet checks, consistency pass, and multi-format rendering remain incomplete; see chapter review notes.
 
 ## Style and consistency checks
 

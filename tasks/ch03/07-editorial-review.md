@@ -1,18 +1,17 @@
 # Editorial Review
 
 Chapter: 3 — Why Tools Do Not Change the Operating Model  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; see review.md
 
 ## Attack the chapter
 
-- [ ] What is vague, obvious, repeated, or asserted without evidence?
-- [ ] What evidence shows that coordination, not adoption, is the limiting factor?
-- [ ] Where would an experienced COO disagree?
-- [ ] What failure mode, tradeoff, affected party, or boundary is missing?
-- [ ] Is the tool-layer versus operating-system diagram usable without the prose?
-- [ ] Does the chapter advance ATOM rather than generic AI advice?
+- [x] What is vague, obvious, repeated, or asserted without evidence?
+- [x] What evidence shows that coordination, not adoption, is the limiting factor?
+- [x] Where would an experienced COO disagree?
+- [x] What failure mode, tradeoff, affected party, or boundary is missing?
+- [x] Is the tool-layer versus operating-system diagram usable without the prose?
+- [x] Does the chapter advance ATOM rather than generic AI advice?
 
 ## Exit
 
-Record findings by severity in review.md; revise all critical/high findings and explicitly accept or reject medium findings with reasons.
-
+Findings and dispositions are recorded in review.md; the stale evidence and overgeneralization were revised.

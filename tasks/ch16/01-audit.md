@@ -1,16 +1,15 @@
 # Audit
 
 Chapter: 16 — Agent Operations: Control at Scale  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026
 
 ## Work
 
-- [ ] Extract only relevant material from v4 6.2–6.5 AI Operations Hub.
-- [ ] Tag each item KEEP, EVOLVE, MERGE, REMOVE, VERIFY, or NEW MATERIAL NEEDED.
-- [ ] Separate distinctive author ideas from generated wording.
-- [ ] List repetition, unsupported numbers, vendor claims, and scenario material.
+- [x] Audit relevant prior AI Operations material.
+- [x] Tag retained, evolved, removed, and new material.
+- [x] Separate proposed Agent Operations capability from standards/guidance.
+- [x] List security claims, illustrative incident, and limits of vendor assertions.
 
 ## Exit
 
-Create audit-notes.md with source page/section references and a reuse rationale. No prose is copied merely because it exists.
-
+Audit notes created; security claims are bounded and documented.

@@ -10,11 +10,11 @@ The distinction is important because companies can remove the visible administra
 
 Generative systems can prepare briefs, compare plans with actuals, retrieve decisions, follow action items, draft communications, cluster customer feedback, and monitor routine signals. These capabilities reduce the cost of assembling and transmitting information.
 
-They do not automatically reduce the cost of agreement, commitment, conflict, or consequence. A randomized Microsoft study across more than 6,000 workers found changes in independently alterable work patterns such as email time and document completion, but no significant change in meeting time [@dillon-et-al-2025]. One study cannot settle the future of management. It does show why task efficiency should not be confused with a redesigned organization.
+They do not automatically reduce the cost of agreement, commitment, conflict, or consequence. A six-month randomized Microsoft field experiment across 66 firms and 7,137 knowledge workers found email-time reductions among frequent users but no significant change in meeting time or detected task composition from individual access alone [@dillon-et-al-2025]. A 2025 preregistered field experiment with 791 P&G professionals found that AI-assisted individuals matched the performance of unaided teams on real product-innovation tasks, while also finding changes in how expertise was integrated [@dellacqua-et-al-2026]. These studies test particular tasks and tools; neither tests management structure. They show why task efficiency should not be confused with a redesigned organization.
 
-When analysis becomes abundant, managerial attention moves toward deciding which question deserves analysis, which evidence is authoritative, what threshold justifies action, and which tradeoff belongs at which level. A faster flow of recommendations makes those choices more frequent.
+When analysis becomes abundant, managerial attention may shift toward deciding which question deserves analysis, which evidence is authoritative, what threshold justifies action, and which tradeoff belongs at which level. This is a design hypothesis, not a demonstrated consequence for every manager or organization.
 
-The manager becomes less valuable as a relay and more valuable as an architect of local judgment.
+The proposed shift is from acting as a relay toward designing conditions for local judgment. Whether that changes managerial workload or value must be established in each operating context.
 
 ## Five accountabilities {.unlisted}
 
@@ -54,7 +54,7 @@ Her success can be measured by what stops depending on her: fewer repeat escalat
 
 ## Build middle management around decisions {.unlisted}
 
-A company moving from forty to one hundred and fifty people needs managers because coordination, development, and local judgment become real work. Adding layers before defining their rights creates messengers. Avoiding layers while every conflict returns to the founder creates bottlenecks.
+As a company grows, coordination, development, and local judgment may require more management capacity. Headcount alone does not prescribe a layer or reporting span. Adding layers before defining their rights can create messengers; avoiding layers while every conflict returns to the founder can preserve a bottleneck.
 
 Start with recurring decisions and interfaces. Give a manager an outcome, visible economics, authority, context, and a route for exceptions. Decide which choices belong to the business unit, shared function, and centre. Then choose the span that lets the manager perform that work.
 
@@ -80,7 +80,7 @@ A manager can use those records to ask better questions. Which fact changed your
 
 This is different from monitoring every keystroke. The purpose is to improve judgment and the operating system, not to score employees by model agreement or activity. People must be able to explore, dissent, and make a defensible decision that produces an uncertain outcome.
 
-Early data from Anthropic's Claude Code use suggests that domain expertise helps people direct agents and recover from errors, even when coding proficiency differs [@anthropic-claude-code-expertise-2026]. The finding is specific to one product and domain. It supports a broader hypothesis: as implementation becomes cheaper, understanding the problem and its consequences becomes more valuable.
+An analysis of Anthropic Claude Code usage found that users with greater expertise in a repository used the tool differently, including more precise task descriptions and more verification behaviors [@anthropic-claude-code-expertise-2026]. This observational analysis is specific to one product and coding domain; it does not establish that expertise caused better work. It is consistent with the hypothesis that understanding a problem and its consequences remains important as implementation tools improve.
 
 Managers should therefore deepen domain judgment rather than outsource it. An agent can provide options, counterarguments, and simulations. The manager helps people recognize which model of the situation is appropriate.
 

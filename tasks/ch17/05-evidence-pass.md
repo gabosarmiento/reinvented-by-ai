@@ -1,17 +1,16 @@
 # Evidence Pass
 
 Chapter: 17 — The Manager After Coordination Gets Cheap  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; production verification remains open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check material external claims and sample descriptions.
+- [x] Verify studies are not used to infer management structure effects.
+- [x] Label role and structure recommendations as hypotheses/proposals.
+- [x] Remove unsupported headcount thresholds.
+- [ ] Recheck sources at final production.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+External claims are ledgered and bounded; final source check remains open.

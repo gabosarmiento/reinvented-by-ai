@@ -1,18 +1,17 @@
 # Editorial Review
 
 Chapter: 9 — Governance in the Work  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; see review.md
 
 ## Attack the chapter
 
-- [ ] What is vague, obvious, repeated, or asserted without evidence?
-- [ ] What action stops, who is paged, and who can change the rule?
-- [ ] Where would an experienced COO disagree?
-- [ ] What failure mode, tradeoff, affected party, or boundary is missing?
-- [ ] Is the control-plane overlay and authority envelope usable without the prose?
-- [ ] Does the chapter advance ATOM rather than generic AI advice?
+- [x] What is vague, obvious, repeated, or asserted without evidence?
+- [x] What action stops, who is paged, and who can change the rule?
+- [x] Where would an experienced COO disagree?
+- [x] What failure mode, tradeoff, affected party, or boundary is missing?
+- [x] Is the control-plane overlay and authority envelope usable without the prose?
+- [x] Does the chapter advance ATOM rather than generic AI advice?
 
 ## Exit
 
-Record findings by severity in review.md; revise all critical/high findings and explicitly accept or reject medium findings with reasons.
-
+Findings and dispositions are in review.md; legal and production gates remain open.

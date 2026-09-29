@@ -49,7 +49,7 @@ The chain prevents a familiar evasion: “the model made the decision.” Models
 
 It also prevents the opposite evasion: blaming the last human who touched the case. An approver may have received a polished recommendation without the source, faced an impossible queue, or lacked authority to reject. The review should examine the design of oversight as well as the person's action.
 
-For uses covered by law, duties may attach to providers and deployers. The EU AI Act, for example, requires deployers of high-risk systems to assign oversight to people with the necessary competence, authority, and support, together with other technical and organizational measures [@eu-ai-act-2026]. The exact duty depends on role and use and requires qualified legal analysis. The operating principle is broader: oversight without competence, information, and authority is ceremonial.
+For uses covered by law, duties may attach to providers and deployers. The EU AI Act assigns human-oversight duties to deployers of high-risk systems, including assigning people with necessary competence, training, authority, and support. The Commission's current timeline says Annex III high-risk rules, including employment use cases, apply from 2 December 2027 following the 2026 Omnibus, while transparency rules apply from August 2026 [@eu-ai-act-2026; @eu-ai-act-commission-2026]. Classification and duties depend on the system, role, and use and require qualified legal analysis. The operating principle is broader: oversight without competence, information, and authority is ceremonial.
 
 ## The board and executive team still choose the exposure {.unlisted}
 

@@ -1,7 +1,7 @@
 # Finalize
 
 Chapter: 16 — Agent Operations: Control at Scale  
-Status: not started; blocked until Gate 0 approval
+Status: open; security and final production review remain
 
 ## Work
 
@@ -14,4 +14,3 @@ Status: not started; blocked until Gate 0 approval
 ## Exit
 
 The chapter is in book/, renders in HTML/EPUB/PDF, has no placeholders, and is committed separately as chapter-16: finalize.
-

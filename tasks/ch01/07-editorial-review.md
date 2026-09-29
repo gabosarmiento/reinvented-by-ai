@@ -1,7 +1,7 @@
 # Editorial Review
 
 Chapter: 1 — When Production Gets Cheap  
-Status: complete — 11 September 2026
+Status: complete — refreshed 28 September 2026
 
 ## Attack the chapter
 

@@ -1,18 +1,18 @@
 # Context Is Infrastructure {#sec-context}
 
-The first failure of an agent is often blamed on the model. Inside a company, the failure more often begins with the material the model was allowed to see.
+When an agent gives a wrong answer, check both the model and the information supplied to it. In a company, the records, policies, and permissions around a model can be part of the failure.
 
 Imagine a supplier-selection agent. It compares price, lead time, and defect history and recommends the incumbent. The answer is well reasoned. It is also wrong. The contract repository contains an old agreement, the current sanctions policy lives in a legal memo, and the operations system uses a different supplier identifier. A senior buyer notices the conflict because she remembers the negotiation.
 
-Calling this a hallucination would let the company avoid the real issue. The agent acted on a context product the organization never designed.
+Calling this a hallucination would leave out the operating failure: the agent used conflicting sources that the organization had not reconciled.
 
 Humans have always compensated for poor organizational context. They remember that the dashboard is late, know which spreadsheet contains the real forecast, call the person who negotiated the exception, and reinterpret the rule according to what happened last quarter. That hidden reconstruction is expensive, but it is also forgiving. An experienced operator can notice that two records which look identical are not the same customer.
 
-Agents make context debt visible. They can retrieve more material and connect it faster, but they do not inherit the unwritten map of authority that lives in an operator's head. Giving them access to every repository does not solve this. It increases the number of plausible mistakes they can make.
+Agents can retrieve and combine material quickly, but they do not automatically inherit an operator's unwritten map of authority. Giving them access to every repository does not resolve conflicting sources and can increase the number of plausible mistakes.
 
 ## The context envelope
 
-ATOM gives each recurring decision or task a **context envelope**. It is the smallest body of current, authorized, attributable information required to do the work.
+For each recurring decision or task, this book uses a **context envelope**: the smallest body of current, authorized, attributable information that appears sufficient for the work. The owner must validate that boundary against real cases.
 
 | Part | Question |
 |---|---|
@@ -27,7 +27,7 @@ The envelope is deliberately smaller than “company knowledge.” A pricing dec
 
 ![A context envelope admits governed facts, definitions, policy, and decision memory while treating external content as untrusted data.](../../assets/diagrams/context-envelope.png){#fig-context-envelope fig-alt="Intent, systems of record, and untrusted external content feed a bounded context envelope containing current facts, shared definitions, policy and rights, and decision memory. The envelope supports a human and agent decision, which produces a traceable decision record and approved learning." width=100%}
 
-This is not merely an architectural preference. Teams building long-running agents now describe context as a finite resource that must be curated. Anthropic's engineering guidance distinguishes context engineering from prompt engineering: the job is to select and maintain the system instructions, tools, external data, history, and memory most likely to produce the desired behaviour. It also warns that simply increasing the amount of context can reduce focus and retrieval precision [@anthropic-context-engineering-2025]. The organizational implication is more important than the model behaviour. Someone must decide what deserves to become context, under whose authority, for how long, and for which decision.
+This is an engineering choice with organizational consequences. Anthropic's 2025 engineering guidance treats context as a finite resource and distinguishes context engineering from prompt engineering: it includes selecting and maintaining system instructions, tools, external data, history, and memory. The post reports engineering experience, not independent organizational-impact research; it warns that larger contexts can reduce focus and retrieval precision [@anthropic-context-engineering-2025]. Someone still has to decide what enters a context, under whose authority, for how long, and for which decision.
 
 Retrieval is not truth. A search system can return an obsolete policy with perfect semantic relevance. A long conversation can contain a decision that was later reversed. A model can merge two customer records into one fluent account. Context has to be governed before it is generated into prose.
 
@@ -43,7 +43,7 @@ Each item admitted to a consequential decision should survive four tests.
 
 **Permission.** Is this actor allowed to access and combine the information for this purpose? Access to two systems separately does not automatically authorize joining their data. Nor does the ability to read a record imply permission to retain it in agent memory.
 
-These tests turn a retrieval pipeline into an operating contract. When one fails, the system should retrieve a better source, reduce its confidence, request clarification, or stop. It should not hide the gap behind fluent language.
+These tests give the retrieval pipeline an operating contract. When one fails, a system might retrieve a better source, ask for clarification, or stop; a confidence score alone does not repair missing authority or stale information.
 
 ## Separate memory by purpose
 
@@ -67,7 +67,7 @@ Every authoritative source used for consequential work should answer four questi
 
 If two sources conflict, the agent should not silently choose the one with the clearer wording or later timestamp. It should apply a declared precedence rule or stop. If a source has expired, the system should surface that fact at the point of use. If a human supplies an exception, the exception should have scope, rationale, owner, and duration rather than becoming an invisible new rule.
 
-The NIST Generative AI Profile treats governance, content provenance, data privacy, testing, and incident handling as lifecycle concerns rather than prompt-level features [@nist-genai-profile-2024]. That framing is useful for operators. The quality of context depends on work that happens outside the model: defining records, assigning ownership, resolving contradictions, controlling access, and maintaining sources.
+The NIST Generative AI Profile treats governance, content provenance, data privacy, testing, and incident handling as lifecycle concerns rather than prompt-level features [@nist-genai-profile-2024]. It is voluntary risk-management guidance, not a technical standard that settles context design. It usefully points to work outside the model: defining records, assigning ownership, resolving contradictions, controlling access, and maintaining sources.
 
 This can feel slower than connecting an agent to a drive and seeing it answer questions in an afternoon. The difference appears when the answer changes a price, blocks a shipment, commits capacity, or sends a customer message. At that point, a source map and a precedence rule are not administrative overhead. They are part of the product.
 
@@ -77,7 +77,7 @@ An agent may need to read customer emails, supplier documents, web pages, and su
 
 The security problem is easy to miss because the same model reads both trusted directions and untrusted content. OpenAI describes prompt injection as a form of social engineering and recommends limiting access to the minimum data and capability required. Its more recent design guidance frames the dangerous combination as an untrusted **source** connected to a consequential **sink**, such as transmitting data or invoking a tool [@openai-prompt-injection-2026].
 
-ATOM handles this in the envelope. Each source has a trust class. Retrieved content supplies facts; it does not acquire authority to change the task. Tools enforce permissions outside the prompt. A supplier PDF can state a new bank account, but it cannot authorize the payment system to use it. A customer message can request a refund, but it cannot alter the refund ceiling. The action still has to pass the decision specification and the control plane.
+The proposed context envelope records a source's trust class. Retrieved content may supply evidence; it should not gain authority to change the task. A label in a prompt is not a security boundary: enforce permissions and high-impact limits in the tools or surrounding system. OpenAI's 2026 security guidance describes prompt injection as an evolving manipulation risk and recommends limiting the impact of an attack that succeeds [@openai-prompt-injection-2026]. A supplier PDF may state a new bank account, but that document alone cannot authorize a payment change. A customer message may request a refund, but it cannot alter a policy limit. The action needs a separate authorized path.
 
 ## Build context as a product
 
@@ -100,7 +100,7 @@ The product also needs a change path. When finance modifies the cost definition,
 
 ## What to build this week
 
-Start with one recurring decision, not a company-wide knowledge graph. In an approved AI workspace, provide the blank decision template from the field kit and samples of the materials currently used by the people who make that decision. Where policy permits, add structured exports with sensitive fields removed or masked.
+Start with one recurring decision, not a company-wide knowledge graph. In an approved AI workspace, provide the blank decision template from the field kit and samples of the materials currently used by the people who make that decision. Follow the organization's access and retention rules; mask or omit sensitive fields where possible and permitted.
 
 Ask the assistant to produce five outputs:
 
@@ -112,4 +112,4 @@ Ask the assistant to produce five outputs:
 
 Do not ask the model to settle ownership disputes. Ask it to find them. Source owners then validate the map, decide precedence, and set failure behaviour. Connect the agent only after the envelope survives those tests.
 
-An agent's autonomy cannot exceed the authority and quality of its context. Once context is treated as infrastructure, experienced judgment becomes easier to distribute. The company no longer depends on each operator remembering which part of the official system is unofficially wrong.
+An agent's authority should be bounded by what its context and controls support. A maintained source map can reduce reliance on operators remembering which official record is out of date, but it does not replace their review of exceptions or source ownership.

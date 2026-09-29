@@ -1,17 +1,16 @@
 # Evidence Pass
 
 Chapter: 6 — Design the Decision Before the Agent  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; final production checks remain open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check every number, date, company, technical capability, prediction, and regulatory statement.
+- [x] Verify the sources support the exact human-oversight and security statements.
+- [x] Distinguish voluntary NIST risk guidance, first-party engineering/security guidance, and proposed design tools.
+- [x] Remove unsupported implication that the authority matrix is validated.
+- [x] Recheck currentness and limits.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+Claims are bounded to NIST profile S012, OpenAI guidance S022, and other documented conceptual sources; matrix and examples are proposals/illustrations. Final production checks remain open.

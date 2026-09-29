@@ -1,17 +1,16 @@
 # Evidence Pass
 
 Chapter: 16 — Agent Operations: Control at Scale  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; production verification remains open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check material dates and external claims.
+- [x] Bound OWASP/NIST as guidance and threat taxonomy, not outcome evidence.
+- [x] Bound MCP spec to protocol safeguards; distinguish illustrative incident.
+- [x] Avoid prevalence and effectiveness claims without data.
+- [ ] Recheck current standards and links at final production.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+Current external claims are ledgered and bounded. Production source check remains open.

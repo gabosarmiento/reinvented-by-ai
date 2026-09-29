@@ -2,11 +2,11 @@
 
 As a company adds business lines, it faces a familiar choice. Centralize decisions and slow the edges, or decentralize and accept duplication. The choice is false when the organization has not specified what must be shared.
 
-This problem appears early. A forty-person company launches a second offer and appoints a leader. At first the new business borrows sales, product, finance, and operations from the core. Every shared person receives two sets of priorities. The founder resolves conflicts because the interfaces do not exist.
+This problem can appear early. A forty-person company launches a second offer and appoints a leader. At first the new business borrows sales, product, finance, and operations from the core. Shared people now serve two sets of priorities. The founder may end up resolving conflicts because the interfaces are unclear.
 
-At seventy people, the company adds heads of function. The unit leader still cannot commit shared capacity or change a common product. At one hundred and fifty, leaders may respond by duplicating every function inside every business—or by adding a central planning layer to coordinate the shared ones. Both moves can be expensive ways of avoiding a design decision.
+As the company grows, the unit leader may still lack authority over shared capacity or common products. Leaders can respond by duplicating functions inside each business or by adding a central planning layer. Either choice can be costly if it substitutes for a clear decision about interfaces and rights.
 
-ATOM uses the term **Fractal Unit** for a semi-autonomous group that can run a complete governed outcome loop. “Fractal” does not mean every unit is identical. It means the same operating grammar recurs at different scales: intent, context, decisions, execution, evidence, learning, and control.
+This book uses **Fractal Unit** for a semi-autonomous group designed to run a governed outcome loop. The term is a proposed design lens, not a validated organizational form. “Fractal” does not mean every unit is identical. It means the same proposed operating grammar—intent, context, decisions, execution, evidence, learning, and control—can be applied at different scales. This overlaps with established work on team boundaries and platform operating models; the useful question is whether the explicit outcome, authority, evidence, and lifecycle contract helps diagnose a real coordination problem. It is not a claim that the label itself is new.
 
 The repeatable object is not the team diagram. It is the contract.
 
@@ -14,7 +14,7 @@ The repeatable object is not the team diagram. It is the contract.
 
 ## A unit earns autonomy by closing a loop
 
-A collection of people does not become a unit because it receives a name, leader, and targets. It becomes an operating unit when it can observe an outcome, make relevant decisions, execute inside defined boundaries, and learn from the result.
+A collection of people is not operationally autonomous just because it has a name, leader, and targets. The unit needs access to outcome evidence, relevant decision rights, execution capacity inside its boundaries, and a way to learn from results.
 
 A growth squad that depends on five functions to approve each experiment may be cross-functional on paper but not autonomous. A business line with its own revenue target but no visibility into fulfilment cost does not own its economics. A regional team that can sell but not resolve customer failures owns acquisition, not the customer outcome.
 
@@ -51,7 +51,7 @@ Scale depends on making a few things rigid enough that everything else can adapt
 
 **Local choices** include workflow, roles, experiments, tools, and decisions inside the unit's authority envelope. The centre should resist standardizing them simply because one unit found a successful pattern. Reuse should follow evidence and compatible conditions, not executive preference.
 
-The difficult category lies between them: shared choices with local consequences. Examples include platform priorities, brand promises, field capacity, scarce expertise, and common data products. These need an owner, allocation rule, service interface, evidence, and appeal. Otherwise the shared function becomes an informal centre of power.
+The difficult category lies between them: shared choices with local consequences. Examples include platform priorities, brand promises, field capacity, scarce expertise, and common data products. They need an owner, allocation rule, service interface, evidence, and appeal. A recent meta-analysis found that team boundary management's relationship with performance varies by the kind of boundary activity, its target, and who performs it; spanning activities and extra-organizational targets showed stronger effects in that synthesis [@leicht-deobald-et-al-2025]. This does not validate the Fractal Unit model, but cautions against treating every boundary as an interface to standardize.
 
 An invariant should be few, explicit, and enforceable. If everything is an invariant, the unit is not autonomous. If nothing is, the company becomes a portfolio of incompatible operations.
 
@@ -71,7 +71,7 @@ A company adds an energy-services unit beside its original equipment business. B
 
 The equipment unit schedules engineers to protect installation revenue. The services unit promises response times to win recurring contracts. Each choice is rational inside its own plan. Together they oversubscribe the same people, and both units miss commitments.
 
-The first response is a central capacity committee. Every exception moves upward. Each leader brings forecasts, customer stories, and urgency. The meeting becomes the operating system.
+The first response might be a central capacity committee. If every exception moves upward and leaders bring competing forecasts, customer stories, and urgency, the meeting can become the operating system.
 
 A stronger design exposes field capacity as a shared service with a named owner, reservation rules, priority classes, cost, and exception path. The centre sets the portfolio allocation and reliability buffer. Each unit commits inside its envelope. Evidence shows demand, utilization, missed promises, and the economic value of each use.
 
@@ -91,7 +91,7 @@ Five questions improve the choice:
 4. Does divergence create enterprise risk or healthy variation?
 5. Can the dependency be expressed through a stable interface?
 
-Do not decide from ideology. Centralization has latency, queue, and context-loss costs. Decentralization has duplication, inconsistency, and fragmented-learning costs. Make both visible.
+Do not decide from ideology. Centralization can add latency, queues, and context loss. Decentralization can add duplication, inconsistency, and fragmented learning. Make the relevant costs visible in the setting at hand.
 
 A function may also move over time. A new unit can borrow central expertise while its needs remain uncertain, then embed capability when the volume and local context justify it. Another service may centralize after units converge on a common pattern. The lifecycle belongs in the contract.
 
@@ -99,11 +99,11 @@ A function may also move over time. A new unit can borrow central expertise whil
 
 The fractal idea can become bad management if it is interpreted as endless fluidity.
 
-Constantly reforming teams destroys relationships, tacit knowledge, and accountability. Physical assets do not reallocate like cloud capacity. Regulated responsibility may remain centralized even when execution moves. People need a home, a manager who understands their development, and enough stability to become competent together.
+Frequent reorganization can disrupt relationships, tacit knowledge, and accountability; the cost depends on work and team context. Physical assets do not reallocate like cloud capacity. Some regulated responsibilities may remain centralized even when execution moves. People also need role clarity, development support, and enough continuity to build competence together.
 
 Nor should a small unit reproduce every corporate role. The operating grammar repeats; the bureaucracy does not. A six-person venture does not need miniature finance, legal, HR, and security departments. It needs usable interfaces to those capabilities and clear local decision rights.
 
-The strongest boundary is often stable for the work and explicit at the interfaces. Adaptation then happens through changes in intent, authority, capacity, and practice—not through constant reorganization.
+A useful starting point is a boundary stable enough for the work, with explicit interfaces. Adaptation can then happen through intent, authority, capacity, and practice; restructure when the work or evidence justifies it.
 
 ## Use AI to test the unit design
 
@@ -120,4 +120,4 @@ Give an approved assistant the proposed unit charters, P&L definitions, shared-s
 
 Use the result to conduct a boundary review with the unit and shared-service owners. Do not ask the model to choose the structure. It can expose inconsistency, hidden dependency, and likely failure paths. Leaders must decide which outcomes deserve autonomy and which obligations bind the enterprise together.
 
-What repeats at scale is a governed outcome loop. When unit contracts and shared interfaces are explicit, local autonomy and enterprise coherence stop being opposites.
+The proposal is that a governed outcome loop can recur at different scales. Clear unit contracts and shared interfaces may help align local authority with enterprise constraints; whether they do so in a given company must be evaluated through its actual outcomes and coordination costs.

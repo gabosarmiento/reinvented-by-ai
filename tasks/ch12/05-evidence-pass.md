@@ -1,17 +1,15 @@
 # Evidence Pass
 
 Chapter: 12 — Build the Minimum Viable Operating Loop  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; final technical/production checks remain open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Confirm 30-day plan is explicitly illustrative, not promised deployment timing.
+- [x] Confirm shadow-mode limitations and no measured-effect claim.
+- [x] Identify implementation/security statements for current source check at publication.
+- [ ] Verify all named tool behaviors and links during the final production gate.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+The chapter is process guidance with bounded claims; tool-specific validation remains open.

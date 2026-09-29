@@ -1,17 +1,16 @@
 # First Draft
 
 Chapter: 15 — Allocate Capital, Talent, and Knowledge Dynamically  
-Status: not started; blocked until Gate 0 approval
+Status: existing chapter revised 29 September 2026
 
 ## Work
 
-- [ ] Draft from the approved argument map, not by sentence-spinning the PDFs.
-- [ ] Open with a mechanism, decision, failure, or concrete scene.
-- [ ] Develop one running example and the resource-allocation loop and human/agent responsibility map.
-- [ ] Label every case or scenario.
-- [ ] Keep claims at the level supported by evidence.
+- [x] Review existing chapter against its argument map.
+- [x] Open with the allocation mechanism and define cadence and reversibility.
+- [x] Develop the resource-allocation loop and human/agent responsibility map.
+- [x] Label illustrative examples.
+- [x] Keep claims at the level supported by evidence.
 
 ## Exit
 
-Create the target QMD chapter with draft status, claim-linked citations, figure alt text, resource links, and no invented detail.
-
+Existing QMD revised; final worksheets/links and production review remain.

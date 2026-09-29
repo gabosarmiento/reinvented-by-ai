@@ -121,4 +121,4 @@ Give an approved assistant the baseline, eligibility rules, case-level outcomes,
 
 Ask finance, operations, frontline staff, and the outcome owner to challenge the result. The model can join, segment, and stress-test the evidence. It cannot decide which customer harm is acceptable or whether a strategic option deserves continued funding.
 
-The ninety-day question is not, “Did people use it?” It is, “Did this loop improve a result at acceptable total cost and risk, and can the company operate it without exceptional support?” Only a convincing answer earns more authority or scope.
+At the ninety-day review, ask more than, “Did people use it?” Ask whether the loop appears to improve a result at acceptable total cost and risk, and whether the company can operate it without exceptional support. The answer should be proportional to the comparison available; expand authority or scope only where the evidence supports that next step.

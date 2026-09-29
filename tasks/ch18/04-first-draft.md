@@ -1,17 +1,3 @@
-# First Draft
+# First-draft status
 
-Chapter: 18 — Accountability Cannot Be Delegated  
-Status: not started; blocked until Gate 0 approval
-
-## Work
-
-- [ ] Draft from the approved argument map, not by sentence-spinning the PDFs.
-- [ ] Open with a mechanism, decision, failure, or concrete scene.
-- [ ] Develop one running example and the accountability chain.
-- [ ] Label every case or scenario.
-- [ ] Keep claims at the level supported by evidence.
-
-## Exit
-
-Create the target QMD chapter with draft status, claim-linked citations, figure alt text, resource links, and no invented detail.
-
+Chapter 18 manuscript exists and has been revised for current legal accuracy and evidence bounds. This record tracks revision; it does not certify production readiness.

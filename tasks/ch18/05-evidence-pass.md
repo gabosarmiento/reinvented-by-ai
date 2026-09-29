@@ -1,17 +1,16 @@
 # Evidence Pass
 
 Chapter: 18 — Accountability Cannot Be Delegated  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; legal review remains open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check current AI Act application dates and oversight wording against official sources.
+- [x] Verify distinction between statutory duty, scope, and application date.
+- [x] Distinguish working terminology and recommendation from law.
+- [x] Label invented failure as illustrative and avoid universal appeal-right claims.
+- [ ] Recheck law and guidance at publication and obtain legal review.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+Material legal claim is sourced and bounded; legal sign-off and final publication-date check remain open.

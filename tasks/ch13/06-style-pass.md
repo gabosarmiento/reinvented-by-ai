@@ -1,17 +1,15 @@
 # Style Pass
 
 Chapter: 13 — Prove Value Before You Expand  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026
 
 ## Work
 
-- [ ] Remove generic urgency, inflated adjectives, slogan endings, consultant-speak, and vendor tone.
-- [ ] Challenge repeated “AI-powered,” “AI-driven,” “real-time,” “seamless,” “transformative,” “clearly,” and “fundamentally.”
-- [ ] Replace personified ATOM claims with actors and mechanisms.
-- [ ] Shorten recaps and vary rhythm without becoming ornamental.
-- [ ] Preserve practitioner confidence only where experience supports it.
+- [x] Remove generic urgency, inflated adjectives, slogan endings, consultant-speak, and vendor tone.
+- [x] Challenge repeated AI slogans and personification.
+- [x] Replace absolute language with evidence-calibrated wording.
+- [x] Shorten repeated recaps and preserve direct practical advice.
 
 ## Exit
 
-Every paragraph performs one job; no generated scaffolding, fake quotation, empty transition, or repeated explanation remains.
-
+Editorial style pass completed. Final read during production is still required.

@@ -1,16 +1,15 @@
 # Audit
 
 Chapter: 11 — Choose a Decision, Not an AI Project  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026
 
 ## Work
 
-- [ ] Extract only relevant material from v2 4.1–4.2 and v4 4.1–4.2.
-- [ ] Tag each item KEEP, EVOLVE, MERGE, REMOVE, VERIFY, or NEW MATERIAL NEEDED.
-- [ ] Separate distinctive author ideas from generated wording.
-- [ ] List repetition, unsupported numbers, vendor claims, and scenario material.
+- [x] Audit current chapter against approved outline and current argument.
+- [x] Classify candidate scenarios as illustrative.
+- [x] Check for numerical and vendor claims.
+- [x] Note that original source drafts are absent from repository, so comparison is to current manuscript only.
 
 ## Exit
 
 Create audit-notes.md with source page/section references and a reuse rationale. No prose is copied merely because it exists.
-

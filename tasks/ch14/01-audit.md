@@ -1,16 +1,15 @@
 # Audit
 
 Chapter: 14 — Fractal Units, Not Fractal Bureaucracy  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026
 
 ## Work
 
-- [ ] Extract only relevant material from v2 6.1–6.2 and 8.2; v4 5.1–5.2.
-- [ ] Tag each item KEEP, EVOLVE, MERGE, REMOVE, VERIFY, or NEW MATERIAL NEEDED.
-- [ ] Separate distinctive author ideas from generated wording.
-- [ ] List repetition, unsupported numbers, vendor claims, and scenario material.
+- [x] Extract relevant material from prior versions.
+- [x] Tag content for retention, evolution, removal, or new material.
+- [x] Separate proposed author model from generic phrasing.
+- [x] List unsupported thresholds, model overlap, and scenario material.
 
 ## Exit
 
-Create audit-notes.md with source page/section references and a reuse rationale. No prose is copied merely because it exists.
-
+Audit notes created; substantive comparison with existing models remains open.

@@ -49,7 +49,7 @@ These roles can be held by a few people in a scale-up. What matters is that they
 
 A technically reliable agent can still pursue the wrong business objective. A business owner cannot waive an enterprise access control by calling the experiment urgent. Security should not become the owner of customer-resolution quality because it approved the connection. Responsibility is distributed; accountability for the outcome remains named.
 
-NIST's Generative AI Profile organizes risk work across governance, mapping, measurement, and management throughout the lifecycle [@nist-genai-profile-2024]. The practical lesson is to connect inventory, testing, monitoring, incident response, and ownership rather than treat them as launch paperwork.
+NIST's February 2026 agent-identity concept paper and OWASP's December 2025 Agentic Applications Top 10 identify identity and privilege abuse, tool misuse, supply-chain, and inter-agent risks as current design concerns [@nist-agent-identity-2026; @owasp-agentic-top10-2025]. These are guidance and threat taxonomies, not evidence that a registry or the proposed Agent Operations function prevents incidents. Connect inventory, testing, monitoring, incident response, and ownership rather than treating them as launch paperwork.
 
 Use a RACI chart if the organization already understands it, but add two fields it often misses: **who can technically stop the system** and **who can authorize its return**. In an incident, advisory responsibility is not enough.
 
@@ -91,7 +91,7 @@ The root cause is not simply “prompt injection.” The organization exposed an
 
 The immediate response revokes credentials, isolates the workflow, preserves traces, repairs affected records, and informs the relevant owners. The business response identifies exposed suppliers and payments. The technical correction separates untrusted reading from state change, narrows authority, and requires independent verification of bank-detail changes. The evaluation suite receives the incident.
 
-Protocols such as MCP make tools easier to connect, which increases the importance of audience-bound credentials and resource-specific authorization [@mcp-authorization-2025]. Integration convenience is not a control model.
+The July 2026 MCP authorization specification defines protocol-level protections, including authorization-server validation [@mcp-authorization-2025]. Protocol conformance does not establish the safety of a deployment; application permissions, tool behavior, identity binding, and the surrounding recovery controls still need review. Integration convenience is not a control model.
 
 Incident review should classify the failure by ATOM layer. Was intent ambiguous? Context untrusted? Decision authority too broad? Execution unable to recover? Evidence incomplete? Learning assigned to the wrong owner? That classification prevents every incident from becoming a generic model problem.
 

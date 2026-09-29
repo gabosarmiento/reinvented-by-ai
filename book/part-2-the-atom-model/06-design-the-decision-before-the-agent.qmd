@@ -1,10 +1,10 @@
 # Design the Decision Before the Agent {#sec-decisions}
 
-Companies frequently delegate work without delegating the decision. A manager prepares the recommendation, collects the evidence, and coordinates the stakeholders. The founder still chooses. Installing an agent in that arrangement gives the manager faster preparation and the founder more decisions to absorb.
+Companies can delegate preparation without delegating the commitment. A manager prepares the recommendation, collects evidence, and coordinates stakeholders while the founder still chooses. An agent in that arrangement may speed preparation while leaving the founder with the same decision rights and potentially more options to review.
 
-The founder may feel less overloaded at first because the briefs arrive cleanly. Soon they arrive more often. Cheaper analysis lowers the threshold for asking for analysis. Options multiply. Every team can generate a convincing case. The approval queue becomes the last scarce resource.
+The founder may feel less overloaded when briefs arrive cleanly. But cheaper analysis can lower the threshold for requesting more analysis. If teams generate more cases than the approver can resolve, the approval queue remains a constraint.
 
-The remedy begins before the agent is selected. Design the decision.
+One useful starting point is to specify the decision before choosing the agent.
 
 ## Inventory commitments, not meetings
 
@@ -34,7 +34,7 @@ It can also expose orphaned decisions. Everyone contributes analysis, but nobody
 
 An operational decision is a small system. It starts with a trigger, builds a state from evidence, evaluates alternatives, applies values and constraints, commits an action, and creates consequences that should be observed. The answer—approve, reject, price, route, hire, allocate—is only one event in that system.
 
-This is why automating an answer can fail even when the answer is statistically good. The trigger may be wrong. The inputs may omit a promise. The action may exceed authority. Nobody may observe whether the result was useful. The company has improved prediction without improving the decision.
+Automating an answer can fail even when its prediction is accurate for the evaluated cases. The trigger may be wrong, inputs may omit a commitment, action may exceed authority, or nobody may observe the result. Improving prediction alone does not ensure a better decision.
 
 Joshua Gans's microeconomic treatment of AI is valuable here because it separates prediction from the complementary parts of a decision. When prediction becomes cheaper, judgment, action, data, and the design of the surrounding system can become more valuable [@gans-2025-microeconomics]. A model can estimate churn or delay. The company still decides which errors matter, what it owes the affected party, and which action is legitimate.
 
@@ -51,13 +51,13 @@ Not all uncertainty deserves a human approval. A low-cost, reversible action can
 | Low | Difficult | Propose or require approval |
 | High | Difficult | Named human decision, strong evidence, independent control |
 
-This is a starting posture, not a formula. Frequency changes exposure. Ten thousand individually trivial credits can become a material loss. A reversible public message may still damage trust. A recommendation may have no formal authority yet strongly influence an employee's future. The owner has to consider aggregate value, affected parties, detectability, concentration, and the time available to correct a mistake.
+This is a starting posture, not a validated formula. Frequency changes exposure. Many individually small credits can become a material loss. A message can be technically reversible and still damage trust. A recommendation may have no formal authority yet influence an employee's future. The owner should consider aggregate value, affected parties, detectability, concentration, and time to correct a mistake.
 
-Human review is also not automatically a strong control. A tired approver presented with a polished recommendation may click accept. If the system sends nearly every case to the same person, review becomes a queue rather than judgment. A useful approval point tells the reviewer what is uncertain, which rules were applied, which evidence supports the recommendation, what the alternatives are, and what happens after approval.
+Human review is not automatically an effective control. NIST identifies over-reliance on automated outputs as a risk in human-AI configurations, though the degree depends on task and review design [@nist-genai-profile-2024]. If too many cases go to one person, review can become a queue. An approval point should show uncertainty, applicable rules, supporting evidence, alternatives, and the consequences of approval.
 
 ![Authority follows the consequence and reversibility of a specific decision; every execution path returns evidence.](../../assets/diagrams/decision-authority.png){#fig-decision-authority fig-alt="A decision trigger becomes a decision specification and is classified by consequence and reversibility. It then follows one of three paths: a pre-authorized action, a supervised approval gate, or a human-reserved decision. All paths return decision evidence." width=88%}
 
-OpenAI's agent-building guidance recommends intervention when failure thresholds are exceeded and for sensitive, irreversible, or high-stakes actions [@openai-agent-guide-2025]. The broader operating principle is that intervention should be triggered by consequence and uncertainty, not by the comforting phrase “human in the loop.”
+OpenAI's agent-building guidance recommends intervention when failure thresholds are exceeded and for sensitive, irreversible, or high-stakes actions [@openai-agent-guide-2025]. This is product engineering guidance, not comparative evidence that a specific review design is effective. The chapter's proposed principle is to trigger intervention based on consequence and uncertainty and to specify what the reviewer can inspect and change.
 
 ## Authority is specific
 
@@ -74,7 +74,7 @@ Blending these permissions creates unnecessary risk. An agent may need to see a 
 
 The same precision applies to humans. A business-unit leader may set price inside an agreed margin and risk envelope. Finance owns the cost model, not each price decision. The centre owns changes to the envelope, not every choice inside it.
 
-True delegation permits a sound decision the founder would not personally have made. If the founder routinely reopens choices that satisfy the agreed criteria, the authority grant is fictional. The organization learns to wait for preference rather than exercise judgment.
+Delegation is tested when the founder allows a sound decision they would not personally have made. If they routinely reopen choices that satisfy agreed criteria, the authority grant may exist on paper but not in practice. People then have reason to wait for preference rather than use the delegated right.
 
 ## Confidence does not equal authority
 
@@ -82,7 +82,7 @@ Teams are tempted to connect autonomy to a model's confidence score. High confid
 
 Authority must come from the decision specification. Confidence affects how the system proceeds within that authority. A low-confidence case may escalate. A high-confidence case may execute when every deterministic condition is satisfied. Neither score can override a prohibited condition, access limit, cumulative exposure cap, or required separation of duties.
 
-This distinction matters when agents read outside material. A malicious instruction embedded in a supplier document may be followed confidently. OpenAI's security analysis argues that effective prompt-injection defences must constrain the impact even when manipulation succeeds [@openai-prompt-injection-2026]. In operating terms, the model's interpretation of content must never be the sole source of its permission to act.
+This distinction matters when agents read outside material. A malicious instruction embedded in a supplier document may be followed confidently. OpenAI's security analysis argues for constraining the impact of prompt injection even when manipulation succeeds [@openai-prompt-injection-2026]. This is first-party security guidance, not proof that any control eliminates attacks. The model's interpretation of content must not be the sole source of its permission to act.
 
 ## Design the escalation, too
 
@@ -92,11 +92,11 @@ A good escalation has a reason code, the unresolved fact or violated boundary, t
 
 Escalation data is also strategic evidence. If a new business unit repeatedly asks the centre to approve ordinary commercial terms, the local authority envelope may be too narrow. If most escalations come from missing cost data, the problem is context infrastructure. If one policy produces constant exceptions, the policy may no longer match the business.
 
-The objective is not zero escalation. A system that never asks for help may be hiding uncertainty. The objective is to reserve human attention for cases in which judgment, legitimacy, or the redesign of the rule is actually required.
+The objective is not zero escalation. A system that never asks for help may be hiding uncertainty. The design goal is to use human attention where judgment, legitimacy, or rule redesign is needed, while measuring avoidable escalation and the cost of review.
 
 ## An illustrative pricing decision
 
-Consider a company moving from one business line to three. A new unit wants authority to discount in order to win early reference customers. The COO does not want every deal on her desk, but the shared operations network has limited capacity and the finance team is concerned about contribution margin.
+**Illustrative example.** Consider a company moving from one business line to three. A new unit wants authority to discount to win early reference customers. The COO does not want every deal on her desk, while shared operations capacity is limited and finance is concerned about contribution margin.
 
 The decision specification could define a standard envelope: permitted segments, minimum unit margin after fulfilment cost, maximum discount, available capacity by delivery window, contract deviations that require legal review, and total experimental budget for the quarter. Inside that envelope, the unit's commercial lead—or an agent acting for the unit—can commit. The evidence record captures the inputs, versioned cost model, policy rules, decision, and expected learning.
 

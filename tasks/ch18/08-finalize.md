@@ -1,7 +1,7 @@
 # Finalize
 
 Chapter: 18 — Accountability Cannot Be Delegated  
-Status: not started; blocked until Gate 0 approval
+Status: open; legal review and final production not started
 
 ## Work
 
@@ -14,4 +14,3 @@ Status: not started; blocked until Gate 0 approval
 ## Exit
 
 The chapter is in book/, renders in HTML/EPUB/PDF, has no placeholders, and is committed separately as chapter-18: finalize.
-

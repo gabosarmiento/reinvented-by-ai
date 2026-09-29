@@ -1,18 +1,16 @@
 # Editorial Review
 
 Chapter: 16 — Agent Operations: Control at Scale  
-Status: not started; blocked until Gate 0 approval
+Status: reviewed 29 September 2026; security sign-off remains open
 
-## Attack the chapter
+## Findings
 
-- [ ] What is vague, obvious, repeated, or asserted without evidence?
-- [ ] Does central Agent Operations enable the business or quietly reclaim every decision?
-- [ ] Where would an experienced COO disagree?
-- [ ] What failure mode, tradeoff, affected party, or boundary is missing?
-- [ ] Is the agent registry and responsibility map usable without the prose?
-- [ ] Does the chapter advance ATOM rather than generic AI advice?
+- [x] Guidance is distinguished from measured control effectiveness.
+- [x] Agent Operations is a proposed capability, not assumed to require a central department.
+- [x] Protocol safeguards are not described as full deployment security.
+- [x] The incident scenario is explicitly illustrative.
+- [x] Registry and responsibility material is tied to ATOM's control/evidence model.
 
-## Exit
+## Remaining gate
 
-Record findings by severity in review.md; revise all critical/high findings and explicitly accept or reject medium findings with reasons.
-
+Qualified security review, validate incident/registry worksheet and links/diagrams, then production review.

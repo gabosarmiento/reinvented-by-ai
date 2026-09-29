@@ -1,6 +1,6 @@
 # A Week Inside an Adaptive Company {#sec-week}
 
-The following week is an **illustrative example**. The company does not exist. Every technical action described is feasible with current tools, but the quality of the result depends on data, integration, and control that many companies have not built.
+The following week is an **illustrative example**; the company and its events are fictional. The actions describe a possible design pattern. Whether a company can implement them depends on its products, data, integrations, permissions, and controls.
 
 Northstar has 110 employees. It began with one operationally intensive service and is now building a second business around the same physical network and software platform. The new unit has real commercial autonomy, but finance, legal, the product platform, and field capacity remain shared.
 

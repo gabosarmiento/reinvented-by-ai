@@ -1,17 +1,15 @@
 # Evidence Pass
 
 Chapter: 13 — Prove Value Before You Expand  
-Status: not started; blocked until Gate 0 approval
+Status: completed 29 September 2026; final production checks remain open
 
 ## Work
 
-- [ ] Check every number, date, company, technical capability, prediction, and regulatory statement.
-- [ ] Verify that each source supports the exact sentence and population/task claimed.
-- [ ] Distinguish measured result, company report, inference, author experience, illustration, and hypothesis.
-- [ ] Remove orphan citations and false precision.
-- [ ] Recheck time-sensitive sources immediately before finalization.
+- [x] Check the design/evaluation claims and distinguish methods from findings.
+- [x] Ensure no universal ROI or causal effect is asserted.
+- [x] Keep comparative-design recommendation conditional on suitability.
+- [x] No time-sensitive numerical claim is used.
 
 ## Exit
 
-All material claims have ledger IDs and limitations where they affect interpretation. Unsupported claims are removed or relabeled.
-
+The chapter is measurement guidance with no new external numerical claim. Final cross-reference and production checks remain.

@@ -30,7 +30,7 @@ An instruction such as “do not make payments above €5,000” is not a permis
 
 This is ordinary security applied to a new actor: least privilege, short-lived credentials, separation of duties, scoped resources, and revocation. The difference is that an agent can interpret language, choose tools, and cross several systems in one run. Its usable authority may therefore be wider than any single permission suggests.
 
-Integration protocols do not remove the problem. The Model Context Protocol authorization specification requires tokens intended for the correct audience and prohibits token passthrough, which could allow a credential meant for one service to be misused by another [@mcp-authorization-2025]. The operational lesson is straightforward: a convenient connection should not collapse the trust boundaries between systems.
+Integration protocols do not remove the problem. The July 2026 Model Context Protocol specification adds issuer validation and binds client credentials to the authorization server that issued them [@mcp-authorization-2025]. These protocol safeguards support a broader security design; they do not ensure that a particular deployment is secure. A convenient connection should not collapse trust boundaries between systems.
 
 Register the agent as an actor. Do not lend it a founder's account or a generic integration user. Grant only the tool, data, action, amount, destination, and duration required for the task. Make revocation possible without disabling unrelated work.
 
@@ -88,7 +88,7 @@ The requirement improves the design even when regulation does not demand it. A c
 
 ## Compliance is a floor
 
-The EU AI Act applies in stages and assigns obligations according to role and risk category. Transparency requirements began applying to specified uses in August 2026, while the timeline for some high-risk obligations extends further [@eu-ai-act-commission-2026]. High-risk deployments carry requirements concerning human oversight, logging, documentation, data quality, robustness, and deployer responsibilities [@eu-ai-act-2026].
+The EU AI Act applies in stages and assigns obligations according to role and risk category. The European Commission states that its transparency rules apply from August 2026. Following the July 2026 amendments, certain high-risk use cases are scheduled for December 2027, and high-risk AI embedded in regulated products for August 2028; applicable requirements include risk management, data quality, logging, documentation, human oversight, robustness, and accuracy [@eu-ai-act-commission-2026; @eu-ai-act-2026]. These dates and obligations depend on the system, role, and legal scope.
 
 This book cannot classify a particular system or provide legal advice. The operating model should make compliance possible: named roles, traceable versions, retained logs, competent oversight, recourse, and an inventory of where AI affects people. Waiting for counsel to reconstruct that inventory after deployment is poor governance.
 
